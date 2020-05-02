@@ -1,0 +1,38 @@
+\documentclass[
+	a4paper,
+	pagesize,
+	pdftex,
+	12pt,
+	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
+	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
+	ngerman,
+	fleqn,
+	final,
+	]{scrartcl}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} % Eingabekodierung: UTF-8
+\usepackage{fixltx2e} % Schickere Ausgabe
+\usepackage[T1]{fontenc} % ordentliche Trennung
+\usepackage[ngerman]{babel}
+\usepackage{lmodern} % ordentliche Schriften
+\usepackage[unicode=true]{hyperref}
+\usepackage{setspace,graphicx,tikz,tabularx} % für Elemente der Titelseite
+\usepackage[draft=false,babel,tracking=true,kerning=true,spacing=true]{microtype} % optischer Randausgleich etc.
+
+\begin{document}
+
+\input{Institutsvorlage}
+\titel{Analyse von Visitentexten mittels maschinellem Lernen zur Optimierung der Leitlinienadhärenz auf einer Intensivstation} % Titel der Arbeit
+\typ{Bachelorarbeit} % Typ der Arbeit:  Diplomarbeit, Masterarbeit, Bachelorarbeit
+\grad{Bachelor of Science (B. Sc.)} % erreichter Akademischer Grad
+\autor{Martin Hoffmann} % Autor der Arbeit, mit Vor- und Nachname
+\gebdatum{06.09.1998} % Geburtsdatum des Autors
+\gebort{Berlin} % Geburtsort des Autors
+\gutachter{Prof. Dr. med. Dr. rer. nat. Felix Balzer}{Dr. med. Fridtjof Schiefenhövel} % Erst- und Zweitgutachter der Arbeit
+\mitverteidigung % entfernen, falls keine Verteidigung erfolgt
+\makeTitel
+
+% Erzeugen der Selbständigkeitserklärung auf einem neuen Blatt:
+% \selbstaendigkeitserklaerung{\today}
+
+\end{document}
