@@ -4,17 +4,17 @@ allgemeine Notizen
 Datendateien
 ----
 
-**Input:** Visite_ZNS, Visite_Pflege, Visite_Oberarzt
+**Input:** Visite_ZNS, Visite_Pflege, Visite_Oberarzt (ggf. später z.B. auch Zeit auf ICU)
 
 **Output:** DDS, GCS, BPS, RASS
 
 |Dateiname |Beschreibung|
 |----------|------------|
-|delir.csv|Gibt für einzelne Patienten an, ob die Diagnose Delir nach ICD gestellt wurde (F05?).
+|delir.csv|Gibt für einzelne Patienten an, ob die Diagnose Delir nach ICD gestellt wurde (F05.*).
 |patienten.csv, patienten20200312.csv:|Metadaten über einzelne Patienten (Alter, Geschlecht, Zeit auf ICU etc). patienten20200312.csv enthält zusätzlich BMI
-|scores1.csv:|Enthält Scores der VarIDs 20512769,20512802,20512801 (GCS, DDS, BPS) pro Patient und Zeitpunkt.
-|scores2.csv:|Enthält Scores der 10 VarIDs aus Tabelle daten pro Patient und Zeitpunkt
-|VarIDs.xlsx:|Menschen-lesbare Namen der VarIDs
+|scores1.csv|Enthält Scores der VarIDs 20512769,20512802,20512801 (GCS, DDS, BPS) pro Patient und Zeitpunkt.
+|scores2.csv|Enthält Scores der 10 VarIDs aus Tabelle daten pro Patient und Zeitpunkt
+|VarIDs.xlsx|Menschen-lesbare Namen der VarIDs
 
 --------------
 
