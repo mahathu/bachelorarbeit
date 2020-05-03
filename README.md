@@ -4,10 +4,6 @@ allgemeine Notizen
 Datendateien
 ----
 
-**Input:** Visite_ZNS, Visite_Pflege, Visite_Oberarzt (ggf. später z.B. auch Zeit auf ICU)
-
-**Output:** DDS, GCS, BPS, RASS
-
 |Dateiname |Beschreibung|
 |----------|------------|
 |delir.csv|Gibt für einzelne Patienten an, ob die Diagnose Delir nach ICD gestellt wurde (F05.*).
@@ -18,22 +14,34 @@ Datendateien
 
 Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die Eintragung gelten soll" und ist berechnet in "Sekunden nach Aufnahme ins Krankenhaus"
 
-|VarID     |Inhalt               |Tabelle |
-|----------|---------------------|--------|
-| 20512802 | DDS                 | scores |
-| 20512769 | GCS                 | scores |
-| 20512801 | BPS                 | scores |
-| 22085815 | Visite_ZNS          | daten  |
-| 22085836 | Visite_Pflege       | daten  |
-| 22085820 | Visite_Oberarzt     | daten  |
-| 22085897 | Ramsay              | daten  |
-| 22086169 | CAM-ICU             | daten  |
-| 22086158 | RASS                | daten  |
-| 22086067 | Vigilanz            | daten  |
-| 22086170 | BPS-Bewertung       | daten  |
-| 22085911 | NRS/VAS             | daten  |
-| 22086172 | NRS/VAS Bedingungen | daten  |
+|VarID     |Wert                                    |Inhalt                                         |Tabelle |
+|----------|----------------------------------------|-----------------------------------------------|--------|
+| 20512802 | **DDS** (Delirium Detection Score)         | int, 1-35 (?)                                 | scores |
+| 20512769 | **GCS** (Glasgow Coma Scale)           | int, 3-15                                     | scores |
+| 20512801 | **BPS** (Behavior Pain Scale)          | int, 3-12                                     | scores |
+| 22085815 | **Visite_ZNS**                         | Text, idr kurz                                | daten  |
+| 22085836 | **Visite_Pflege**                      | Text, eher länger                             | daten  |
+| 22085820 | **Visite_Oberarzt**                    | Text, idr lang                                | daten  |
+| 22085897 | Ramsay Sedation Scale (ähnl. RASS, wird aber nicht oft erhoben) | int, 1-6             | daten  |
+| 22086169 | **CAM-ICU** (Confusion Assessment Method)  | (neg./pos.)                               | daten  |
+| 22086158 | **RASS** (Richmond Agitation Sedation Scale) | int, +4 - -5                            | daten  |
+| 22086067 | Vigilanz                               | Freitext, 1 Wort (z.b. "wach","somnolent")    | daten  |
+| 22086170 | BPS-Bewertung                          | Freitext, 1-2 Worte (fast immer "ruhe")       | daten  |
+| 22085911 | NRS/VAS (Schmerz?)                     | int (0-9)                                     | daten  |
+| 22086172 | NRS/VAS Bedingungen                    | Freitext, 1-2 Worte (sehr ähnlich zu BPS)     | daten  |
 
+**Input:** Visite_ZNS, Visite_Pflege, Visite_Oberarzt (ggf. später z.B. auch Zeit auf ICU)
+
+**Predict:** (DDS), GCS, BPS, CAM-ICU, RASS
+
+--------------
+
+Ideen f. BA
+----
+
+* Visualisierungen
+    * Bar Charts f. Häufigkeit der verschiedenen Werte von DDS, GCS, BPS
+* kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc. 
 --------------
 
 Baseline Model
