@@ -39,9 +39,17 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 Ideen f. BA
 ----
 
-* Visualisierungen
+* Danksagungen: Henry Powell, Christine Szkudlarek, Felix Biessmann, Betreuer
+* Überblick über die Daten
+    * Probleme
+        * Scores können sich schnell ändern
+        * Daten evtl ungenau, erlauben keine hohe Präzision beim Predicten
     * Bar Charts f. Häufigkeit der verschiedenen Werte von DDS, GCS, BPS
-* kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc. 
+    * exemplarisch: Eintragungen der Events pro Patient über Zeit, z.b. Patient 1019 
+        * dazu Details zum Patienten, um es anschaulicher zu machen
+        * Hinweis darauf, dass Daten anonymisiert vorlagen
+* kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
+
 --------------
 
 Baseline Model
