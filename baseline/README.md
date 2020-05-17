@@ -21,3 +21,6 @@ Vergleich von:
 Key-Value Daten-Generierung: most recent Text per Score oder most recent Score per Text?
 Stemming ja/nein
 Naive Bayes, **SVM**, ...
+
+### Probleme
+Texte enthalten z.B "RASS = -4"
