@@ -50,27 +50,3 @@ Ideen f. BA
         * Hinweis darauf, dass Daten anonymisiert vorlagen
 * kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
 
---------------
-
-Baseline Model
-----
-
-Annahme: **gelabelte, eingetragene Werte als "ground truth". Vermutlich ist so keine hohe predictive Genauigkeit möglich, weil die eingetragenen Werte im Datensatz oft von denen im Text abweichen. Das zu bestimmen ist ja genau der Punkt der Arbeit.**
-
-### Input/Output
-Verschiedene Möglichkeiten zum Generieren von Trainings-/Testdaten:
-
-1) last observation carried forward 
-    * (+ ggf. wie lange diese her ist?)
-    * Zeilen sortieren nach: Patient, dann Zeitpunkt. Danach Werte für GCS, RASS etc nach unten hin propagieren, bis sie geupdatet werden.
-2) über einen Zeitraum labels Durchschnitt bilden, input texte konkatenieren
-3) "man koennte auch irgendwie interpolieren zwischen den einzelnen werten der Schicht, dazu kann man auch andere Daten mit hoeherer Auflösung hernehmen um die Vorhersagen zu verbessern"
-
-v.a.: damit rumexperimentieren, welche Textfelder die größte predictive power haben
-
-Output: **RASS, GCS, etc**
-
-### Vorgang (siehe E-Mail von Felix Biessmann vom 13.03.)
-Du kannst dann vielleicht dem Beispiel [hier](https://scikit-learn.org/stable/auto_examples/compose/plot_column_transformer_mixed_types.html) folgen fuer ne baseline, da werden numerische und kategorische features berücksichtigt. Für Text-Daten: **TfIdfVectorizer**. Supervised model: entweder regression oder classification (wenn scores gethresholded werden). Hyperparameter (preprocessing Parameter und regularizer oder so) per GridSearchCV bestimmen.
-
-Compare: Naive Bayes, **SVM**, ...
