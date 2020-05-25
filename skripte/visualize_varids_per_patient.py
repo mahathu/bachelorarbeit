@@ -1,18 +1,27 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 from datetime import timedelta
 
-input_file = "../data/clean/all_scores.csv"
-out_file_name = "labels.csv"
+pd.options.mode.chained_assignment = None  # default='warn'
 
 MARKER_COLOR_DEFAULT = 'lightgrey'
 MARKER_COLOR_LABEL = 'orange'
 MARKER_COLOR_TEXT = 'blue'
 
-PREDICTION_MAX_DISTANCE = 60*60*2 #2 hours
+PAIR_GENERATION_METHOD = "nearest"
+PREDICTION_MAX_DISTANCE = 60*60*1 #1 hour
+DRAW_PLOTS = True
 
-total_data_pairs = 0
+input_file = "../data/clean/all_scores.csv"
+out_file_name = f"labels_{PAIR_GENERATION_METHOD}.csv"
+plot_out_folder = f"out_{PAIR_GENERATION_METHOD}_{PREDICTION_MAX_DISTANCE}"
+
+if not os.path.isdir(plot_out_folder):
+    print(f"{plot_out_folder} folder has been created")
+    os.makedirs(plot_out_folder)
+
 training_pairs = [] #2d array, containing one text and label per row (+metadata)
 
 var_ids = {
@@ -71,24 +80,51 @@ for patient_n in df['patient'].unique():
         tr_y = tr['VarIDIndex']
 
         for v_id in label_varids:
-            # only consider scores recorded within 2h of the text:
-            corresponding_labels = patient_df[(patient_df['VarID'] == v_id) & 
-                    (patient_df['Zeitpkt_offset'] > tr_x) & 
-                    (patient_df['Zeitpkt_offset']-tr_x <= PREDICTION_MAX_DISTANCE)]
+            if PAIR_GENERATION_METHOD == 'default':
+                # only consider scores recorded within 2h of the text:
+                corresponding_labels = patient_df[(patient_df['VarID'] == v_id) & 
+                        (patient_df['Zeitpkt_offset'] > tr_x) & 
+                        (patient_df['Zeitpkt_offset']-tr_x <= PREDICTION_MAX_DISTANCE)
+                ]
 
-            if corresponding_labels.empty: #if no matching label was found vor this var_id, continue
-                continue
+                if corresponding_labels.empty: #if no matching label was found vor this var_id, continue
+                    continue
 
-            label_marker = corresponding_labels.iloc[0]
-            l_x = label_marker['Zeitpkt_offset']
-            l_y = label_marker['VarIDIndex']
+                best_matching_label = corresponding_labels.iloc[0]
+
+            elif PAIR_GENERATION_METHOD == 'nearest':
+                # only consider scores recorded within 2h of the text, before or after:
+                corresponding_labels = patient_df[(patient_df['VarID'] == v_id) & 
+                        (abs(patient_df['Zeitpkt_offset']-tr_x) <= PREDICTION_MAX_DISTANCE)
+                ]
+
+                if corresponding_labels.empty: #if no matching label was found vor this var_id, continue
+                    continue
+                
+                corresponding_labels['offset'] = (corresponding_labels['Zeitpkt_offset'] - tr_x).abs()
+                # we need to look at the absolute distance between the two times, instead of simply the minimum value (which would give the first event)
+                best_matching_label = corresponding_labels[corresponding_labels['offset'] == corresponding_labels['offset'].min()].iloc[0]
+                
+            else:
+                print(f"Invalid pair generation method: {PAIR_GENERATION_METHOD}")
+                break
+
+            l_x = best_matching_label['Zeitpkt_offset']
+            l_y = best_matching_label['VarIDIndex']
 
             #Add the training pair to the list:
-            pair = [patient_n, tr['VarID'], tr['Zeitpkt_offset'], tr['wert'], label_marker['VarID'], l_x, label_marker['wert']]
+            pair = [patient_n, tr['VarID'], tr['Zeitpkt_offset'], tr['wert'], best_matching_label['VarID'], l_x, best_matching_label['wert']]
             training_pairs.append(pair)
+
+            if not DRAW_PLOTS:
+                continue
 
             #Draw the arrow:
             plt.annotate("", xy=(l_x,l_y), xytext=(tr_x, tr_y), arrowprops=arrow_props)
+
+    if not DRAW_PLOTS:
+        print(f"Patient {patient_n} done. n={len(training_pairs)} (+{len(training_pairs)-prev_columns_n})")
+        continue
 
     xtick_pos = np.arange(0, seconds_in_icu, 86400) #86400 seconds in a day --> 1 label per 24h
     xtick_labels = [f"Tag {s+1}" for s in range(xtick_pos.size)]
@@ -108,7 +144,7 @@ for patient_n in df['patient'].unique():
     fig.set_size_inches(15, 6)
 
     #Save figure and clean up
-    filename = f'out/patient_{patient_n:04}.png'
+    filename = f'{plot_out_folder}/patient_{patient_n:04}.png'
     plt.savefig(filename, bbox_inches='tight', dpi=280)
     plt.clf() #clear figure
     plt.close() #close plot and release memory (in theory?)

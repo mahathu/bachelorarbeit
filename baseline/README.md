@@ -23,4 +23,8 @@ Stemming ja/nein
 Naive Bayes, **SVM**, ...
 
 ### Probleme
-Texte enthalten z.B "RASS = -4"
+* Texte enthalten z.B "RASS = -4"
+
+### Noch ausprobieren
+* Key-Value Daten-Generierung: most recent Text per Score oder most recent Score per Text?
+* Einfluss von Stemming

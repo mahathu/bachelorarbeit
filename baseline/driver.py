@@ -20,7 +20,7 @@ var_ids = {
 }
 
 input_varids = [22085836, 22085815]
-output_varids = [22086158, 22086169, 20512769]
+output_varids = [22086158, 22086169, 20512769, 20512801]
 max_time_difference = 60*60*.5 #30 minutes
 
 acc = np.zeros((len(input_varids), len(output_varids)))
@@ -55,3 +55,29 @@ for i, input_varid in enumerate(input_varids):
         
         print(f"=== Accuracy: {score} ===\n")
         acc[i,j] = score
+
+
+#plot results:
+x = np.arange(acc.shape[1])  # label locations
+bar_width = .25  # width of the bars
+
+fig, ax = plt.subplots()
+for index,accuracies in enumerate(acc):
+    l = var_ids[input_varids[index]]
+    rects = ax.bar(x + index*bar_width, [max(0,a) for a in accuracies], bar_width, edgecolor='white', label=l)
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate(f"{height:5.3f}",
+            xy=(rect.get_x() + bar_width / 2, height),
+            xytext=(0, 3),  # 3pt vertical offset
+            textcoords="offset points",
+            ha='center', va='bottom')
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_ylabel('Accuracy')
+ax.set_title('Baseline model performance by input and output varid')
+plt.xticks( list(map(lambda p:p+bar_width/2, x)), [var_ids[vi] for vi in output_varids])
+ax.legend()
+
+fig.tight_layout()
+plt.show()

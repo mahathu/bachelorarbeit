@@ -48,5 +48,10 @@ Ideen f. BA
     * exemplarisch: Eintragungen der Events pro Patient über Zeit, z.b. Patient 1019 
         * dazu Details zum Patienten, um es anschaulicher zu machen
         * Hinweis darauf, dass Daten anonymisiert vorlagen
+    * Methoden der Generierung von Wertepaaren aus den Daten
+        * lassen sich gut durch Pfeile vergleichen
+        * latest text
+        * latest score
+        * nearest value
 * kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
 
