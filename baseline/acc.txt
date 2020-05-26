@@ -1,29 +1,40 @@
+martin@martin-mbp baseline % python3 driver.py
 Predicting RASS based on Visite_Pflege
-Unique labels: [-1  0 -2  1  2 -5  3 -4 -3  4] (10 in total)
-Total training pairs after filtering: 4202
-=== Accuracy: 0.4606871926358026 ===
+Unique labels: [ 0 -1 -4  1 -2 -3  2  3 -5  4] (10 in total)
+Total training pairs after filtering: 9114
+=== Accuracy: SVM: 0.511, Dummy: 0.501 ===
 
 Predicting CAM-ICU based on Visite_Pflege
 Unique labels: [0 2 1] (3 in total)
-Total training pairs after filtering: 3726
-=== Accuracy: 0.5009059488441413 ===
+Total training pairs after filtering: 8623
+=== Accuracy: SVM: 0.523, Dummy: 0.507 ===
 
 Predicting GCS based on Visite_Pflege
-Unique labels: [ 9 14 15 10 11  8 13 12  4  3  7  5  6] (13 in total)
-Total training pairs after filtering: 5548
-=== Accuracy: 0.5013402953771136 ===
+Unique labels: [11  9 15  4 10  6 14  7 13 12  5  3  8] (13 in total)
+Total training pairs after filtering: 11508
+=== Accuracy: SVM: 0.557, Dummy: 0.550 ===
+
+Predicting BPS based on Visite_Pflege
+Unique labels: [ 3  4  6  5  8  7 10  9 12 11] (10 in total)
+Total training pairs after filtering: 4726
+=== Accuracy: SVM: 0.097, Dummy: 0.097 ===
 
 Predicting RASS based on Visite_ZNS
-Unique labels: [ 0 -3  2 -1  1  3 -2 -4 -5  4] (10 in total)
-Total training pairs after filtering: 3919
-=== Accuracy: 0.5264157402278267 ===
+Unique labels: [ 2 -1  0 -3  1 -2 -5 -4  3  4] (10 in total)
+Total training pairs after filtering: 8746
+=== Accuracy: SVM: 0.571, Dummy: 0.562 ===
 
 Predicting CAM-ICU based on Visite_ZNS
-Unique labels: [0 2 1] (3 in total)
-Total training pairs after filtering: 3588
-=== Accuracy: 0.6067110490290066 ===
+Unique labels: [0 1 2] (3 in total)
+Total training pairs after filtering: 8331
+=== Accuracy: SVM: 0.593, Dummy: 0.574 ===
 
 Predicting GCS based on Visite_ZNS
-Unique labels: [15 14  6 11  9 10  3 13  5 12  7  4  8] (13 in total)
-Total training pairs after filtering: 5020
-=== Accuracy: 0.7198553089280368 ===
+Unique labels: [12  9 11 14 15  6 10  8  3  5  7 13  4] (13 in total)
+Total training pairs after filtering: 10528
+=== Accuracy: SVM: 0.738, Dummy: 0.718 ===
+
+Predicting BPS based on Visite_ZNS
+Unique labels: [ 3  5  6  8  4  7 10  9 11 12] (10 in total)
+Total training pairs after filtering: 4616
+=== Accuracy: SVM: 0.026, Dummy: 0.005 ===

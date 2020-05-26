@@ -39,12 +39,11 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 Ideen f. BA
 ----
 
-* Danksagungen: Henry Powell, Christine Szkudlarek, Felix Biessmann, Betreuer
 * Überblick über die Daten
     * Probleme
         * Scores können sich schnell ändern
         * Daten evtl ungenau, erlauben keine hohe Präzision beim Predicten
-    * Bar Charts f. Häufigkeit der verschiedenen Werte von DDS, GCS, BPS
+    * VISUALISIERUNG: Bar Charts f. Häufigkeit der verschiedenen Werte von DDS, GCS, BPS
     * exemplarisch: Eintragungen der Events pro Patient über Zeit, z.b. Patient 1019 
         * dazu Details zum Patienten, um es anschaulicher zu machen
         * Hinweis darauf, dass Daten anonymisiert vorlagen
@@ -53,5 +52,6 @@ Ideen f. BA
         * latest text
         * latest score
         * nearest value
+        * VISUALISIERUNG: (y) n of data pairs vs (x) max time between (cut off)
 * kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
-
+* Performance Metriken, und warum diese geeignet sind Performance der Modelle zu beurteilen

@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, Tf
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import SGDClassifier
 from sklearn import svm
+from sklearn.dummy import DummyRegressor
 
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
@@ -21,16 +22,20 @@ def clean_text(text):
     return text
 
 def train_model(df, test_size=.15, ngram_max_len=3):
-    df['text_clean'] = df['text'].apply(clean_text)
-
-    X_col = df['text_clean'] #df['text']
+    # df['text_clean'] = df['text'].apply(clean_text)
+    X_col = df['text'] #X_col = df['text_clean']
     y_col = df['label']
     
     # Create a processing pipeline containing preprocessing and the model:
-    text_clf = Pipeline([
+    clf_pipeline = Pipeline([
         ('vect', CountVectorizer()), # count terms
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('clf', svm.SVR(cache_size=2048)), #SVM
+        ('rgr', svm.SVR(cache_size=2048, kernel="linear")), #SVR
+    ])
+    dummy_pipeline = Pipeline([
+        ('vect', CountVectorizer()), # count terms
+        ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
+        ('rgr', DummyRegressor()), #dummy regressor
     ])
 
     X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=test_size)
@@ -42,9 +47,15 @@ def train_model(df, test_size=.15, ngram_max_len=3):
         'tfidf__use_idf': (True, False), # divide term frequency by document frequency?
     }
     
-    gs_clf = GridSearchCV(text_clf, gs_params, cv=5, n_jobs=-1)
+    print("GridSearchCV running...")
+    gs_clf = GridSearchCV(clf_pipeline, gs_params, n_jobs=4)
     gs_clf.fit(X_train, y_train)
-
     acc = gs_clf.score(X_test, y_test)
 
-    return acc
+    dummy_clf = GridSearchCV(dummy_pipeline, {}, n_jobs=2)
+    dummy_clf.fit(X_train, y_train)
+    dummy_acc = dummy_clf.score(X_test, y_test)
+
+    print(f"=== Accuracy: SVR: {acc:.3f} ===\n") # R^2 of the prediction
+
+    return acc, dummy_acc

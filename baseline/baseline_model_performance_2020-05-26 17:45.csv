@@ -1,0 +1,5 @@
+label_varid,predict_varid,max_time_between,n_samples,r2,dummy_r2,note
+Visite_ZNS,RASS,900.0,8746,0.5050566925500074,-0.003951712133017038,"NO STEMMING/CLEANING --> CountVectorizer (w/ n=[1,2,3] word ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
+Visite_ZNS,GCS,900.0,10528,0.7251008654716323,-0.001995953981414722,"NO STEMMING/CLEANING --> CountVectorizer (w/ n=[1,2,3] word ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
+Visite_Pflege,RASS,900.0,9114,0.5283866622287704,-6.911091254613311e-06,"NO STEMMING/CLEANING --> CountVectorizer (w/ n=[1,2,3] word ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
+Visite_Pflege,GCS,900.0,11508,0.6062517284265287,-0.00012280846713474958,"NO STEMMING/CLEANING --> CountVectorizer (w/ n=[1,2,3] word ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
