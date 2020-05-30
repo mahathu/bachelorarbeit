@@ -43,14 +43,14 @@ def train_SVR(df, X_col, y_col, test_size=.2):
     
     input_param_grids = [
         {
-            'vect__analyzer': 'word',
-            'vect__ngram_range': list((1,i+1) for i in range(3)), # try out these ngram ranges: (1,1), (1,2), (1,3)
+            'vect__analyzer': ['word'],
+            'vect__ngram_range': [(1,i+1) for i in range(3)], # try out these ngram ranges: (1,1), (1,2), (1,3)
             'vect__stop_words': [None, stopwords.words('german')], # use stop words or not
             'tfidf__use_idf': [True, False], # divide term frequency by document frequency?
         },
         {
-            'vect__analyzer': 'char',
-            'vect__ngram_range': (1,9),
+            'vect__analyzer': ['char'],
+            'vect__ngram_range': [(1,9)],
             'vect__stop_words': [stopwords.words('german')], # use stop words when analyzing char ngrams
             'tfidf__use_idf': [True, False], # divide term frequency by document frequency?
         }
