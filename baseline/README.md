@@ -26,5 +26,12 @@ Naive Bayes, **SVM**, ...
 * Texte enthalten z.B "RASS = -4"
 
 ### Noch ausprobieren
-* Key-Value Daten-Generierung: most recent Text per Score oder most recent Score per Text?
 * Einfluss von Stemming
+* estimators: (performance in txt speichern!) https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+    * SGDRegressor
+    * LinearSVR (faster than svr if kernel=="linear")
+    * Lasso
+    * ElasticNet
+    * RidgeRegression
+    * SVR
+    * Ensembleregressors

@@ -36,6 +36,8 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 
 --------------
 
+Farben: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
 Ideen f. BA
 ----
 
