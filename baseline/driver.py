@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from model import train_model
+from model import train_SVR
 from datetime import datetime
 
 var_ids = {
@@ -21,12 +21,12 @@ var_ids = {
 }
 
 draw_accuracy_plot = False
-input_varids = [22085815, 22085836]
-output_varids = [22086158, 20512769]
+input_varids = [22085815, 22085836][:1]
+output_varids = [22086158, 20512769][:1]
 max_time_between = 60*60/4 #15 minutes
 
-accuracies = np.zeros((len(input_varids), len(output_varids)))
-note = "NO STEMMING/CLEANING --> CountVectorizer (w/ n=[1,2,3] word ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
+# accuracies = np.zeros((len(input_varids), len(output_varids)))
+note = "CountVectorizer (w/ n=[3,4,5] CHARACTER ngrams) --> TfidfTransformer --> svm.SVR(kernel='linear')"
 
 df_all = pd.read_csv("../data/clean/labels_nearest.csv")
 perf_rows = []
@@ -56,41 +56,41 @@ for i, input_varid in enumerate(input_varids):
               f"Unique labels: {df['label'].unique()} ({len(df['label'].unique())} in total)\n"
               f"Total samples after filtering: {len(df)}")
         
-        acc, dummy_acc = train_model(df)
+        acc = train_SVR(df, X_col=df['text'], y_col=df['label'])
 
-        row = [var_ids[input_varid], var_ids[output_varid], max_time_between, len(df), acc, dummy_acc, note]
+        row = [var_ids[input_varid], var_ids[output_varid], max_time_between, len(df), acc, note]
         perf_rows.append(row)
 
-        accuracies[i,j] = acc
+        #accuracies[i,j] = acc
         exit()
 
-perf_df = pd.DataFrame(perf_rows, columns=['label_varid', 'predict_varid', 'max_time_between', 'n_samples', 'r2', 'dummy_r2', 'note'])
+perf_df = pd.DataFrame(perf_rows, columns=['label_varid', 'predict_varid', 'max_time_between', 'n_samples', 'r2', 'note'])
 perf_df.to_csv(f"baseline_model_performance_{datetime.now().strftime('%Y-%m-%d %H:%M')}.csv", index=False)
 
 if not draw_accuracy_plot:
     exit()
 
 #plot results:
-x = np.arange(accuracies.shape[1])  # label locations
-bar_width = .25  # width of the bars
+# x = np.arange(accuracies.shape[1])  # label locations
+# bar_width = .25  # width of the bars
 
-fig, ax = plt.subplots()
-for index,accuracies in enumerate(accuracies):
-    l = var_ids[input_varids[index]]
-    rects = ax.bar(x + index*bar_width, [max(0,a) for a in accuracies], bar_width, edgecolor='white', label=l)
-    for rect in rects:
-        height = rect.get_height()
-        ax.annotate(f"{height:5.3f}",
-            xy=(rect.get_x() + bar_width / 2, height),
-            xytext=(0, 3),  # 3pt vertical offset
-            textcoords="offset points",
-            ha='center', va='bottom')
+# fig, ax = plt.subplots()
+# for index,accuracies in enumerate(accuracies):
+#     l = var_ids[input_varids[index]]
+#     rects = ax.bar(x + index*bar_width, [max(0,a) for a in accuracies], bar_width, edgecolor='white', label=l)
+#     for rect in rects:
+#         height = rect.get_height()
+#         ax.annotate(f"{height:5.3f}",
+#             xy=(rect.get_x() + bar_width / 2, height),
+#             xytext=(0, 3),  # 3pt vertical offset
+#             textcoords="offset points",
+#             ha='center', va='bottom')
 
-# Add some text for labels, title and custom x-axis tick labels, etc.
-ax.set_ylabel('R²')
-ax.set_title('Baseline model performance by input and output varid')
-plt.xticks( list(map(lambda p:p+bar_width/2, x)), [var_ids[vi] for vi in output_varids])
-ax.legend()
+# # Add some text for labels, title and custom x-axis tick labels, etc.
+# ax.set_ylabel('R²')
+# ax.set_title('Baseline model performance by input and output varid')
+# plt.xticks( list(map(lambda p:p+bar_width/2, x)), [var_ids[vi] for vi in output_varids])
+# ax.legend()
 
-fig.tight_layout()
-plt.show()
+# fig.tight_layout()
+# plt.show()
