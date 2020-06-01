@@ -30,7 +30,7 @@ max_time_between = 60*60/3 #20 minutes
 
 note = ""
 
-df_all = pd.read_csv("../data/clean/labels_nearest.csv", nrows=100)
+df_all = pd.read_csv("../data/clean/labels_nearest.csv")
 perf_rows = []
 
 for i, input_varid in enumerate(input_varids):
