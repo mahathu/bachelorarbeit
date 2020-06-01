@@ -5,7 +5,7 @@
 	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
 	fleqn, % flush equations left (--> Formeln linksbündig)
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
-]{scrreprt}
+]{report}
 
 \usepackage{pdfpages}
 \usepackage{graphicx}
@@ -20,8 +20,8 @@
 
 \bibliographystyle{plainnat}
 
-\usepackage{fontspec} % custom font (needs compiling via xelatex)
-\setmainfont{Fira Sans} % Alternative: z.B. Karmilla, aber Fira Sans sieht schöner aus
+% \usepackage{fontspec} % custom font (needs compiling via xelatex)
+% \setmainfont{Fira Sans}
     
 \begin{document}
 
@@ -36,25 +36,18 @@
 	\tableofcontents
 
 	\chapter{Einführung}
-	\section{Abschnitt}
-	\lipsum[1]
+	\input{1-einleitung}
 	
-	\begin{quote}
-		{\foreignlanguage{english}{A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.}}
-	\end{quote}
-	
-	\lipsum[2]
-	\section{Abschnitt}
-	\lipsum[3-4]
 	
 	\chapter{Übersicht über die Daten}
-	\lipsum[1-2]
+	\input{2-daten}
+	
 	
 	\chapter{Vorgehensweise}
-	\lipsum[3-4]
+	\input{3-vorgehensweise}
 	
 	\chapter{Schluss}
-	\lipsum[1-2]
+	\input{4-schluss}
 
 	\newpage
 	\bibliography{literatur}

@@ -1,0 +1,104 @@
+Predicting RASS based on Visite_ZNS
+Unique labels: [ 2 -1  0 -3  1 -2 -5 -4  3  4] (10 in total)
+Total samples after filtering: 8746
+[4m[1m### Tuning hyper-parameters for r2 ###[0m
+[33mGridSearchCV running...[0m
+Fitting 5 folds for each of 90 candidates, totalling 450 fits
+[32mR^2 performance for model after hyperparameter tuning using r2: 0.596
+[0m
+[1mBest parameters set found on development set: 
+{'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+[0m
+[1mGrid scores on development set:[0m
+0.528 (+/-0.030) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.525 (+/-0.032) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.529 (+/-0.031) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.525 (+/-0.029) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.537 (+/-0.028) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.538 (+/-0.028) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.535 (+/-0.031) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.531 (+/-0.029) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+-0.018 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+-0.017 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+-0.032 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+-0.032 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+-0.005 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+-0.002 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+-0.031 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+-0.031 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.522 (+/-0.024) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.515 (+/-0.029) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.549 (+/-0.020) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.537 (+/-0.017) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.530 (+/-0.019) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.526 (+/-0.024) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.553 (+/-0.020) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.542 (+/-0.019) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.091 (+/-0.013) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.098 (+/-0.013) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+-0.029 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+-0.028 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.164 (+/-0.015) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.179 (+/-0.015) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+-0.021 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+-0.018 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.515 (+/-0.024) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.508 (+/-0.025) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.549 (+/-0.020) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.537 (+/-0.018) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.519 (+/-0.019) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.513 (+/-0.022) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.552 (+/-0.020) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.541 (+/-0.019) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.407 (+/-0.030) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.413 (+/-0.029) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.007 (+/-0.008) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.015 (+/-0.008) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.434 (+/-0.034) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.441 (+/-0.031) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.073 (+/-0.011) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.093 (+/-0.012) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.559 (+/-0.025) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.570 (+/-0.024) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.033 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.033 (+/-0.008) for {'rgr__C': 1, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.575 (+/-0.016) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.577 (+/-0.016) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.032 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.031 (+/-0.008) for {'rgr__C': 10, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.574 (+/-0.017) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.571 (+/-0.018) for {'rgr__C': 100, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.026 (+/-0.008) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+-0.021 (+/-0.008) for {'rgr__C': 100, 'rgr__gamma': 'auto', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.501 (+/-0.031) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.495 (+/-0.031) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.523 (+/-0.036) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.505 (+/-0.035) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.509 (+/-0.029) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.505 (+/-0.029) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.525 (+/-0.033) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.512 (+/-0.032) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.393 (+/-0.038) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.382 (+/-0.040) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.484 (+/-0.023) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.459 (+/-0.018) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.445 (+/-0.034) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.430 (+/-0.033) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.494 (+/-0.024) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.474 (+/-0.016) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.126 (+/-0.113) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.127 (+/-0.089) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.460 (+/-0.010) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.436 (+/-0.021) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.236 (+/-0.053) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
+0.203 (+/-0.063) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
+0.453 (+/-0.017) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
+0.433 (+/-0.028) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': 'Yes (n=232)'}
+0.569 (+/-0.022) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.565 (+/-0.020) for {'rgr__C': 1, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.513 (+/-0.025) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.550 (+/-0.019) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.446 (+/-0.045) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+0.461 (+/-0.024) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+
+
