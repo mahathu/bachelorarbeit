@@ -11,7 +11,8 @@ Inhalt
       * A machine is said to learn from experience E with respect to some class of tasks T and performance measure P...
     * historischer Kontext (big data, processing power Moore's law etc)
     * Arten von maschinellem lernen (supervised, unsupervised)
-    * numerische optimierung
+    * classification vs regression
+    * (numerische optimierung)
     * Herausforderungen von ML für NLP
     * warum ML f. Bearbeitung der Problematik?
 
@@ -43,6 +44,10 @@ Inhalt
     * Vorgänge bei Datenerfassung auf ICU optimieren
     * Erfassung von Qualität der bisher eingetragenen Daten
 
+Notizen
+===
+section, subsection, und ggf. subsubsection machen noch sinn. 
+paragraph, subparagraph sollten nicht verwendet werden
 
 Literatur
 ===
@@ -53,3 +58,5 @@ Literatur
 * https://www.aclweb.org/anthology/W17-5043/
 * Mitchell, Tom. (1997). Machine Learning
   * formelle Definition von ML für die Einleitung
+* https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b91400f14e27ec9dacf0a389e72fd0e0fa9c2535.pdf
+* https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf

@@ -1,0 +1,18 @@
+\section{Datenerfassung auf Intensivstationen}
+
+\lipsum[1-3]
+\section{Maschinelles Lernen}
+\lipsum[4]
+\begin{quote}
+    {\foreignlanguage{english}{A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.}}
+\end{quote}
+\lipsum[5]
+\subsection{Klassifikation vs Regression}
+siehe: https://stats.stackexchange.com/a/282890 Handelt es sich um \glqq ordinal classification\grqq{}?
+
+Eigentlich ist es eine Einordnung der Daten in diskrete Klassen/Scores. Aber Argumente für Regression sind:
+\begin{itemize}
+    \item Betrachtet man die Scores als separate Klassen geht verloren, dass z.b. 2 näher an 3 ist als an -4.
+    \item insbesondere bei gängigen performance-metriken wie accuracy gibt es nur "richtig" oder falsch.
+    \item floats können zu integer gerundet werden, anhand der abweichung könnte man sogar eine \glqq confidence\grqq{} ermitteln.
+\end{itemize}
