@@ -81,12 +81,7 @@ def search_params_SVR(df, X_col, y_col, score):
     ]
 
     gs_params = [ # concatenate the dicts to finally save a list of dicts in gs_params
-        #{**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
-        {
-            'vect__analyzer': ['word'],
-            'vect__ngram_range': [(1,i+1) for i in [0,5]],
-            'vect__stop_words': [None, stopwords.words('german')],
-        }
+        {**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
     ]
 
     print(f"Tuning hyper-parameters for {score}.")
