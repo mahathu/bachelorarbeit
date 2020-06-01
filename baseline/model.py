@@ -50,7 +50,7 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
 
 def clean_text(text):
     stemmer = SnowballStemmer('german')
-    pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß \.]', re.UNICODE) #remove all but words
+    pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß \.]', re.UNICODE)
 
     text = pattern.sub(' ', text) # remove special characters
     text = ' '.join( [stemmer.stem(word) for word in text.split()] ) # stem words
@@ -62,15 +62,15 @@ def search_params_SVR(df, X_col, y_col, score):
     input_param_grids = [
         {
             'vect__analyzer': ['word'],
-            'vect__ngram_range': [(1,i+1) for i in [0,2]], # try out these ngram ranges: (1,1), (1,3)
-            'vect__stop_words': [None, stopwords.words('german')], # use stop words or not
-            'tfidf__use_idf': [True, False], # divide term frequency by document frequency?
+            'vect__ngram_range': [(1,i+1) for i in [0,2,5]],
+            'vect__stop_words': [None, stopwords.words('german')],
+            'tfidf__use_idf': [True, False],
         },
         {
             'vect__analyzer': ['char'],
             'vect__ngram_range': [(1,9)],
             'vect__stop_words': [stopwords.words('german')], # use stop words when analyzing char ngrams
-            'tfidf__use_idf': [True, False], # divide term frequency by document frequency?
+            'tfidf__use_idf': [True, False],
         }
     ]
 
@@ -81,7 +81,12 @@ def search_params_SVR(df, X_col, y_col, score):
     ]
 
     gs_params = [ # concatenate the dicts to finally save a list of dicts in gs_params
-        {**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
+        #{**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
+        {
+            'vect__analyzer': ['word'],
+            'vect__ngram_range': [(1,i+1) for i in [0,5]],
+            'vect__stop_words': [None, stopwords.words('german')],
+        }
     ]
 
     print(f"Tuning hyper-parameters for {score}.")
@@ -97,7 +102,7 @@ def search_params_SVR(df, X_col, y_col, score):
     # Automatic parameter tuning using grid search:
     cprint("GridSearchCV running...", "yellow")
     regressor = GridSearchCV(
-        clf_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1, cv=2 #remove cv=2
+        clf_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1 #remove cv=2
     )
     regressor.fit(X_train, y_train)
 
