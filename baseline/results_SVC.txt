@@ -1,15 +1,19 @@
+Am besten: 
+0.577 (+/-0.016) for {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
+
+
 Predicting RASS based on Visite_ZNS
 Unique labels: [ 2 -1  0 -3  1 -2 -5 -4  3  4] (10 in total)
 Total samples after filtering: 8746
-[4m[1m### Tuning hyper-parameters for r2 ###[0m
-[33mGridSearchCV running...[0m
+### Tuning hyper-parameters for r2 ###
+GridSearchCV running...
 Fitting 5 folds for each of 90 candidates, totalling 450 fits
-[32mR^2 performance for model after hyperparameter tuning using r2: 0.596
-[0m
-[1mBest parameters set found on development set: 
+R^2 performance for model after hyperparameter tuning using r2: 0.596
+
+Best parameters set found on development set: 
 {'rgr__C': 10, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
-[0m
-[1mGrid scores on development set:[0m
+
+Grid scores on development set:
 0.528 (+/-0.030) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': None}
 0.525 (+/-0.032) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 1), 'vect__stop_words': 'Yes (n=232)'}
 0.529 (+/-0.031) for {'rgr__C': 1, 'rgr__gamma': 'scale', 'rgr__kernel': 'rbf', 'tfidf__use_idf': True, 'vect__analyzer': 'word', 'vect__ngram_range': (1, 3), 'vect__stop_words': None}
@@ -100,5 +104,3 @@ Fitting 5 folds for each of 90 candidates, totalling 450 fits
 0.550 (+/-0.019) for {'rgr__C': 10, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
 0.446 (+/-0.045) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': True, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
 0.461 (+/-0.024) for {'rgr__C': 100, 'rgr__kernel': 'linear', 'tfidf__use_idf': False, 'vect__analyzer': 'char', 'vect__ngram_range': (1, 9), 'vect__stop_words': 'Yes (n=232)'}
-
-
