@@ -11,22 +11,42 @@ from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 
 from termcolor import cprint
+from datetime import datetime
+from os.path import isfile
 
 import re
 
-def print_performance_report(regressor):
-    # based on: https://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_digits.html
-    cprint(f"Best parameters set found on development set: \n{regressor.best_params_}\n", attrs=['bold'])
-    cprint("Grid scores on development set:", attrs=['bold'])
-    means = regressor.cv_results_['mean_test_score']
-    stds = regressor.cv_results_['std_test_score']
+def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method):
+    means = regressor_obj.cv_results_['mean_test_score']
+    stds = regressor_obj.cv_results_['std_test_score']
+    df_rows = []
+    df_colnames = ["estimator", "scoring_method", "performance_mean", "performance_std"] + all_params
 
-    for mean, std, params in zip(means, stds, regressor.cv_results_['params']):
+    for mean, std, params in zip(means, stds, regressor_obj.cv_results_['params']):
         if params['vect__stop_words']: # use a different string instead of printing the entire list
             params['vect__stop_words'] = f"Yes (n={len(params['vect__stop_words'])})"
-        print("%0.3f (+/-%0.03f) for %r"
-            % (mean, std * 2, params))
-    print("\n")
+        
+        row = [estimator_name, scoring_method, mean, std] + ['N/A' for p in all_params]
+
+        for p in params:
+            idx = all_params.index(p) + 4
+            row[idx] = params[p]
+
+        df_rows.append(row)
+
+    df = pd.DataFrame(df_rows, columns=df_colnames)
+
+    out_file_name_base = f"perf_reports/performance_{estimator_name}_{scoring_method}"
+    file_n = 0
+    #change to walrus operator!
+    fn = f"{out_file_name_base}_{file_n}.csv"
+    while isfile(fn):
+        cprint("Skipping file name: "+fn, "yellow")
+        file_n += 1
+        fn = f"{out_file_name_base}_{file_n}.csv"
+
+    df.to_csv(fn, index=False)
+    cprint("Saved performance report to "+fn, "green", attrs=['bold'])
 
 def clean_text(text):
     stemmer = SnowballStemmer('german')
@@ -36,10 +56,8 @@ def clean_text(text):
     text = ' '.join( [stemmer.stem(word) for word in text.split()] ) # stem words
     return text
 
-def train_SVR(df, X_col, y_col, test_size=.2):
-    X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=test_size, random_state=1)
-
-    scores = ['r2', 'neg_mean_squared_error'][:1] # https://scikit-learn.org/stable/modules/model_evaluation.html
+def search_params_SVR(df, X_col, y_col, score):
+    X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.2, random_state=1)
     
     input_param_grids = [
         {
@@ -57,37 +75,39 @@ def train_SVR(df, X_col, y_col, test_size=.2):
     ]
 
     # https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
-    svr_param_grids = [ # rgr_gamma is used only for kernel=rbf
-        {'rgr__kernel': ['rbf'], 'rgr__gamma': ['scale', 'auto'], 'rgr__C': [1, 10, 100]},
-        {'rgr__kernel': ['linear'], 'rgr__C': [1, 10, 100]}
+    svr_param_grids = [ # svr_gamma is used only for kernel=rbf
+        {'svr__kernel': ['rbf'], 'svr__gamma': ['scale', 'auto'], 'svr__C': [1, 10, 100]},
+        {'svr__kernel': ['linear'], 'svr__C': [1, 10, 100]}
     ]
 
     gs_params = [ # concatenate the dicts to finally save a list of dicts in gs_params
         {**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
     ]
 
+    print(f"Tuning hyper-parameters for {score}.")
 
-    for score in scores:
-        cprint(f"### Tuning hyper-parameters for {score} ###", attrs=['bold', 'underline'])
- 
-        # Create a processing pipeline containing preprocessing and the model:
-        clf_pipeline = Pipeline([
-            #('vect', CountVectorizer(analyzer='char', ngram_range=(2,3))), # count characters
-            ('vect', CountVectorizer()), # count terms
-            ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-            ('rgr', SVR(cache_size=512)), #SVR
-        ])
+    # Create a processing pipeline containing preprocessing and the model:
+    clf_pipeline = Pipeline([
+        #('vect', CountVectorizer(analyzer='char', ngram_range=(2,3))), # count characters
+        ('vect', CountVectorizer()), # count terms
+        ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
+        ('svr', SVR(cache_size=512)), #SVR
+    ])
 
-        # Automatic parameter tuning using grid search:
-        cprint("GridSearchCV running...", "yellow")
-        regressor = GridSearchCV(
-            clf_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1
-        )
-        regressor.fit(X_train, y_train)
+    # Automatic parameter tuning using grid search:
+    cprint("GridSearchCV running...", "yellow")
+    regressor = GridSearchCV(
+        clf_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1, cv=2 #remove cv=2
+    )
+    regressor.fit(X_train, y_train)
 
-        performance = regressor.score(X_test, y_test)
-        cprint(f"R^2 performance for model after hyperparameter tuning using {score}: {performance:.3f}\n", "green")
-        
-        print_performance_report(regressor)
+    performance = regressor.score(X_test, y_test)
+    cprint(f"R^2 performance for model after hyperparameter tuning using {score}: {performance:.3f}", "green", attrs=['bold'])
+    cprint(f"Best parameters set found on development set: \n{regressor.best_params_}\n", "green")
 
-    return 1
+    param_names = []
+    for d in gs_params: #d is a dict
+        for n in d:
+            if n not in param_names:
+                param_names.append(n)
+    save_performance_report('SVR', regressor, param_names, score)
