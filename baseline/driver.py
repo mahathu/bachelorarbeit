@@ -1,8 +1,8 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from model import search_params_SVR
-from datetime import datetime
+import SVRmodel
+from utilities import iprint, sprint, wprint, eprint
+
+MAX_SAMPLES = 0 # maximum n of training pairs. Should only be used to speed up testing
 
 var_ids = {
     22086067: "Vigilanz",
@@ -42,6 +42,10 @@ for i, input_varid in enumerate(input_varids):
         # remove unwanted rows:
         df = df_all[filter]
 
+        if MAX_SAMPLES:
+            df = df[:MAX_SAMPLES]
+            eprint(f"Only considering the first {MAX_SAMPLES} samples!")
+
         # remove irrelevant columns:
         df = df[['text', 'label']]
         if output_varid == 22086169: # CAM-ICU
@@ -56,9 +60,10 @@ for i, input_varid in enumerate(input_varids):
         
         print(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
                 f"({len(df['label'].unique())} unique labels, "
-                f"max_min={int(max_time_between/60)}, {len(df)} total rows)")
+                f"max_minutes={int(max_time_between/60)}, {len(df)} total rows)")
         
-        search_params_SVR(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
+        #SVRmodel.search_params_SVR(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
+        SVRmodel.test_SVR(df, df['text'], df['label'])
 
         # acc = 1
         # row = [var_ids[input_varid], var_ids[output_varid], max_time_between, len(df), acc, note]

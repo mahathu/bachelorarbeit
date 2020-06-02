@@ -26,6 +26,7 @@ Inhalt
     * Vergleich anhand der scatter plots f. **einen** geeigneten Patienten
   * **Tabelle: VarIDs | Bedeutungen**
   * **jeweils kurzer Überblick über die einzelnen VarIDs**
+  * **Problem mit Qualität der Daten! Geeignete Trainingspaare?**
 
 ## 3) Vorgehensweise
   * Baseline-Modell
@@ -38,11 +39,15 @@ Inhalt
   * Novel model (ANN)
     * ...
 
-## 4) Schluss
+## 4) Fazit
   * Ergebnisse
   * **Anwendung in der Zukunft**
     * Vorgänge bei Datenerfassung auf ICU optimieren
     * Erfassung von Qualität der bisher eingetragenen Daten
+
+## 5) Anhänge
+  * Anhang A: ausgewählte Listings
+
 
 Notizen
 ===
@@ -60,3 +65,4 @@ Literatur
   * formelle Definition von ML für die Einleitung
 * https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b91400f14e27ec9dacf0a389e72fd0e0fa9c2535.pdf
 * https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf
+* https://pubmed.ncbi.nlm.nih.gov/31947237/
