@@ -19,19 +19,18 @@ Output: **RASS, GCS, etc**
 ### Vorgang (siehe E-Mail von Felix Biessmann vom 13.03.)
 Vergleich von:
 Key-Value Daten-Generierung: most recent Text per Score oder most recent Score per Text?
-Stemming ja/nein
-Naive Bayes, **SVM**, ...
 
 ### Probleme
 * Texte enthalten z.B "RASS = -4"
 
 ### Noch ausprobieren
 * Einfluss von Stemming
-* estimators: (performance in txt speichern!) https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+* estimators: https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
     * SGDRegressor
-    * LinearSVR (faster than svr if kernel=="linear")
     * Lasso
     * ElasticNet
     * RidgeRegression
-    * SVR
+    * SVR (X)
     * Ensembleregressors
+
+Anzahl der samples und die meisten Hyperparameter machen scheinbar keinen Unterschied f SVR
