@@ -39,20 +39,22 @@ def clean_text(text):
     text = ' '.join( [stemmer.stem(word) for word in text.split()] ) # stem words
     return text
 
-def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method):
+def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method, fixed_params={}):
+    #fixed params can be used to save hyperparams in columns that aren't actually tuned by GSCV.
+
     means = regressor_obj.cv_results_['mean_test_score']
     stds = regressor_obj.cv_results_['std_test_score']
     df_rows = []
-    df_colnames = ["estimator", "scoring_method", "performance_mean", "performance_std"] + all_params
+    df_colnames = ["estimator", scoring_method+"_performance_mean", scoring_method+"_performance_std"] + [*fixed_params] + all_params
 
     for mean, std, params in zip(means, stds, regressor_obj.cv_results_['params']):
         if 'vect__stop_words' in params and params['vect__stop_words']: # use a different string instead of printing the entire list
             params['vect__stop_words'] = f"Yes (n={len(params['vect__stop_words'])})"
         
-        row = [estimator_name, scoring_method, mean, std] + ['N/A' for p in all_params]
+        row = [estimator_name, mean, std] + [fixed_params[k] for k in fixed_params] + ['N/A' for p in all_params]
 
         for p in params:
-            idx = all_params.index(p) + 4
+            idx = all_params.index(p) + 3 + len(fixed_params)
             row[idx] = params[p]
 
         df_rows.append(row)
@@ -70,3 +72,5 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
 
     df.to_csv(fn, index=False)
     sprint("Saved performance report to "+fn)
+    if len(fixed_params):
+        iprint("Included fixed parameters:" + str([k for k in fixed_params]))

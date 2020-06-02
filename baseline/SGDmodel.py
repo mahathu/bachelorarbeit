@@ -13,22 +13,26 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
 
     X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.2, random_state=1)
 
+    #Use a fixed CountVectorizer because it's expensive to count char ngrams each time:
+    iprint("Building character ngram vectorizer...")
+    cv = CountVectorizer(analyzer='char', ngram_range=(1,9), stop_words = stopwords.words('german'))
+    fixed_params = { #these will be included in the performance report
+        'analyzer': 'char', 
+        'ngram_range': '(1,9)', 
+        'stop_words': 'yes'
+    }
+    X_train = cv.fit_transform(X_train)
+    X_test = cv.transform(X_test)
+    #X_{train|test} are now term count matrices with the num. of columns
+    sprint("Done!")
+    
     input_param_grids = [
-        # {
-        #     'vect__analyzer': ['word'],
-        #     'vect__ngram_range': [(1,3)],
-        #     'vect__stop_words': [[], stopwords.words('german')],
-        # },
-        {
-            'vect__analyzer': ['char'],
-            'vect__ngram_range': [(1,9)],
-            'vect__stop_words': [stopwords.words('german')], #always use stop words when analyzing char ngrams
-        }
+        {'tfidf__use_idf': [True, False]}
     ]
     sgd_param_grids = [
         {
             'sgd__loss': ['squared_loss', 'huber'],
-            'sgd__penalty': ['l1', 'l2', 'elasticnet'],
+            #'sgd__penalty': ['l1', 'l2', 'elasticnet'],
             # 'sgd__alpha': 10.0**(-np.arange(1,7)),
             # 'sgd__learning_rate': ['invscaling', 'constant', 'optimal'],
         }
@@ -37,8 +41,9 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
         {**in_transform, **svr} for svr in sgd_param_grids for in_transform in input_param_grids
     ]
 
+    #vectorizing stage is not part of the pipeline anymore!
     rgr_pipeline = Pipeline([
-        ('vect', CountVectorizer()), # count terms or chars
+        #('vect', CountVectorizer()), # count terms or chars
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
         ('sgd', SGDRegressor()), #SVR
     ])
@@ -53,13 +58,13 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
     performance = regressor.score(X_test, y_test)
     sprint(f"R^2 performance for model after hyperparameter tuning using {score}: {performance:.3f}")
     sprint(f"Best parameters set found on development set: \n{regressor.best_params_}\n")
-    
+
     param_names = []
     for d in gs_params: #d is a dict
         for n in d:
             if n not in param_names:
                 param_names.append(n)
-    save_performance_report('SGDRegression', regressor, param_names, score)
+    save_performance_report('SGDRegression', regressor, param_names, score, fixed_params)
 
     #move this to the other function    
     y_pred = regressor.predict(X_test)

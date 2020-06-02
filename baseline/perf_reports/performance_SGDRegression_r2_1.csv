@@ -1,0 +1,5 @@
+estimator,r2_performance_mean,r2_performance_std,analyzer,ngram_range,stop_words,tfidf__use_idf,sgd__loss
+SGDRegression,0.49375710238890835,0.010080489185272004,char,"(1,9)",yes,True,squared_loss
+SGDRegression,0.49825910188298456,0.007384237147655469,char,"(1,9)",yes,False,squared_loss
+SGDRegression,-0.321198073916759,0.01671407710202895,char,"(1,9)",yes,True,huber
+SGDRegression,-0.2521902105533981,0.01719763735901646,char,"(1,9)",yes,False,huber
