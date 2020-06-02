@@ -1,5 +1,5 @@
 import pandas as pd
-import SVRmodel
+import SVRmodel, SGDmodel
 from utilities import iprint, sprint, wprint, eprint
 
 MAX_SAMPLES = 0 # maximum n of training pairs. Should only be used to speed up testing
@@ -26,7 +26,7 @@ output_varids = [22086158, 20512769][:1]
 scores_regression = ['r2', 'neg_mean_squared_error'] # scores to test the models with (https://scikit-learn.org/stable/modules/model_evaluation.html)
 scores_classification = []
 
-max_time_between = 60*60/3 #20 minutes
+max_time_between = 60*60/2 #20 minutes
 
 note = ""
 
@@ -63,7 +63,8 @@ for i, input_varid in enumerate(input_varids):
                 f"max_minutes={int(max_time_between/60)}, {len(df)} total rows)")
         
         #SVRmodel.search_params_SVR(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
-        SVRmodel.test_SVR(df, df['text'], df['label'])
+        #SVRmodel.test_SVR(df, df['text'], df['label'])
+        SGDmodel.search_params_SGD(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
 
         # acc = 1
         # row = [var_ids[input_varid], var_ids[output_varid], max_time_between, len(df), acc, note]
