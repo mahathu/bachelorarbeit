@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from termcolor import cprint
 
-filenames = ['perf_reports/performance_SGDRegression_r2_1.csv']
+filenames = ['perf_reports/performance_SGDRegression_r2_2.csv']
 perf_metric = "r2"
 perf_col_name = perf_metric+'_performance_mean'
 

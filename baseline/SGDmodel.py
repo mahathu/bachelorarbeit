@@ -32,9 +32,9 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
     sgd_param_grids = [
         {
             'sgd__loss': ['squared_loss', 'huber'],
-            #'sgd__penalty': ['l1', 'l2', 'elasticnet'],
-            # 'sgd__alpha': 10.0**(-np.arange(1,7)),
-            # 'sgd__learning_rate': ['invscaling', 'constant', 'optimal'],
+            'sgd__penalty': ['l1', 'l2', 'elasticnet'],
+            'sgd__alpha': 10.0**(-np.arange(1,7)),
+            'sgd__learning_rate': ['invscaling', 'constant', 'optimal'],
         }
     ]
     gs_params = [
@@ -45,13 +45,13 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
     rgr_pipeline = Pipeline([
         #('vect', CountVectorizer()), # count terms or chars
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('sgd', SGDRegressor()), #SVR
+        ('sgd', SGDRegressor(max_iter=7500)),
     ])
 
     # Automatic parameter tuning using grid search:
     iprint("GridSearchCV running...")
     regressor = GridSearchCV(
-        rgr_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1
+        rgr_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=2
     )
     regressor.fit(X_train, y_train)
 
@@ -66,15 +66,24 @@ def search_params_SGD(df, X_col, y_col, score): #https://scikit-learn.org/stable
                 param_names.append(n)
     save_performance_report('SGDRegression', regressor, param_names, score, fixed_params)
 
-    #move this to the other function    
-    y_pred = regressor.predict(X_test)
+def get_SGD(use_tuned_hyperparameters=True):
+    if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
+        rgr_pipeline = Pipeline([
+            ('vect', CountVectorizer(analyzer='char', ngram_range=(1,9), stop_words = stopwords.words('german'))),
+            ('tfidf', TfidfTransformer(use_idf=False)), # transform to term freq. inverse document freq.
+            ('sgd', SGDRegressor(
+                loss='squared_loss',
+                penalty='l2',
+                alpha=0.0001,
+                learning_rate='constant'
+            )),
+        ])
 
-    mse = mean_squared_error(y_test, y_pred)
-    mae = mean_absolute_error(y_test, y_pred)
-    r2 =  r2_score(y_test, y_pred)
-
-    sprint(f"MSE: {mse:6.3f}")
-    sprint(f"MAE: {mae:6.3f}")
-    sprint(f"R^2: {r2:6.3f}")
+    else: # use a standard SGD Regressor
+        rgr_pipeline = Pipeline([
+            ('vect', CountVectorizer()),
+            ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
+            ('sgd', SGDRegressor()),
+        ])
     
-    return mse, mae, r2
+    return rgr_pipeline

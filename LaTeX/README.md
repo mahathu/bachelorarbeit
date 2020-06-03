@@ -34,6 +34,7 @@ Inhalt
       * featurization der texte
       * was sind R-Value, gamma etc?
       * Tuning von Hyperparametern mit R^2 (siehe "Vgl. vers. Metriken")
+        * Anwendung von Kreuzvalidierung beim finden der besten Hyperparameter
     * Vergleich/Funktionsweise verschiedener Performance-Metriken (R^2, MSE, ...)
     * Ergebnisse
   * Novel model (ANN)
@@ -67,3 +68,4 @@ Literatur
 * https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf
 * https://pubmed.ncbi.nlm.nih.gov/31947237/
 * https://scikit-learn.org/stable/modules/svm.html#mathematical-formulation (Erklärung von SVM)
+* https://www.cs.waikato.ac.nz/~ml/weka/book.html#Contents (Definition von Kreuzvalidierung)

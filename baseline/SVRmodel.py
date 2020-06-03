@@ -9,7 +9,7 @@ from datetime import datetime
 from os.path import isfile
 from utilities import iprint, sprint, wprint, eprint, save_performance_report, clean_text
 
-def search_params_SVR(df, X_col, y_col, score):
+def search_params_SVR(X_col, y_col, score):
     iprint(f"Tuning hyperparameters for SVR model using {score}")
 
     X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.2, random_state=1)
@@ -65,34 +65,20 @@ def search_params_SVR(df, X_col, y_col, score):
                 param_names.append(n)
     save_performance_report('SVR', regressor, param_names, score)
 
-def test_SVR(df, X_col, y_col):
-    iprint("Testing SVR model")
-
+def get_SVR(use_tuned_hyperparameters=True):
     cache_size = 1024
-    X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.2, random_state=1)
 
-    # Create a processing pipeline with the best hyperparameters:
-    clf_pipeline = Pipeline([
-        ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))), # count terms
-        ('tfidf', TfidfTransformer(use_idf=False)), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=cache_size, C=1000)),
-    ])
-    clf_pipeline_default = Pipeline([ # no tuned hyperparameters!
-        ('vect', CountVectorizer()), # count terms
-        ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=cache_size)), 
-    ])
-
-    clf_pipeline.fit(X_train, y_train)
+    if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
+        clf_pipeline = Pipeline([
+            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))), # count terms
+            ('tfidf', TfidfTransformer(use_idf=False)), # transform to term freq. inverse document freq.
+            ('svr', SVR(cache_size=cache_size, C=1000)),
+        ])
+    else: # use a standard SVR
+        clf_pipeline = Pipeline([ # no tuned hyperparameters!
+            ('vect', CountVectorizer()), # count terms
+            ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
+            ('svr', SVR(cache_size=cache_size)), 
+        ])
     
-    y_pred = clf_pipeline.predict(X_test)
-
-    mse = mean_squared_error(y_test, y_pred)
-    mae = mean_absolute_error(y_test, y_pred)
-    r2 =  r2_score(y_test, y_pred)
-
-    sprint(f"MSE: {mse:6.3f}")
-    sprint(f"MAE: {mae:6.3f}")
-    sprint(f"R^2: {r2:6.3f}")
-
-    return mse, mae, r2
+    return clf_pipeline
