@@ -2,6 +2,7 @@ import pandas as pd
 from os.path import isfile
 from nltk.stem import SnowballStemmer
 from termcolor import cprint
+from sklearn.model_selection import cross_val_score, ShuffleSplit
 import re
 
 COLOR_OUTPUT_ENABLE = True
@@ -74,3 +75,13 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
     sprint("Saved performance report to "+fn)
     if len(fixed_params):
         iprint("Included fixed parameters:" + str([k for k in fixed_params]))
+
+def test_estimator(estimator, X_col, y_col, scoring_methods):
+    cross_val = ShuffleSplit(n_splits=5, test_size=.25)
+
+    all_scores = []
+    for scoring_method in scoring_methods:
+        scores = cross_val_score(estimator, X_col, y_col, cv=cross_val, scoring=scoring_method)
+        all_scores.append([scoring_method, scores.mean(), scores.std()])
+
+    return all_scores

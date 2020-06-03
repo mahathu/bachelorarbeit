@@ -1,6 +1,6 @@
 import pandas as pd
 import SVRmodel, SGDmodel
-from utilities import iprint, sprint, wprint, eprint
+from utilities import iprint, sprint, wprint, eprint, test_estimator
 
 MAX_SAMPLES = 0 # maximum n of training pairs. Should only be used to speed up testing
 
@@ -23,24 +23,22 @@ var_ids = {
 input_varids = [22085815, 22085836][:1]
 output_varids = [22086158, 20512769][:1]
 
-scores_regression = ['r2', 'neg_mean_squared_error'] # scores to test the models with (https://scikit-learn.org/stable/modules/model_evaluation.html)
+scores_regression = ['r2', 'neg_mean_squared_error', 'neg_mean_absolute_error'] # scores to test the models with (https://scikit-learn.org/stable/modules/model_evaluation.html)
 scores_classification = []
+scores_max_len = max([len(s) for s in scores_regression+scores_classification])
 
 max_time_between = 60*60/2 #20 minutes
 
-note = ""
-
 df_all = pd.read_csv("../data/clean/labels_nearest.csv")
-perf_rows = []
 
 for i, input_varid in enumerate(input_varids):
     for j, output_varid in enumerate(output_varids):
-        filter = ((df_all['text_varid'] == input_varid) 
+        df_filter = ((df_all['text_varid'] == input_varid) 
                 & (df_all['label_varid'] == output_varid) 
                 & (df_all['label_time'] - df_all['text_time'] <= max_time_between))
 
         # remove unwanted rows:
-        df = df_all[filter]
+        df = df_all[df_filter]
 
         if MAX_SAMPLES:
             df = df[:MAX_SAMPLES]
@@ -58,17 +56,29 @@ for i, input_varid in enumerate(input_varids):
         df['text'] = df['text'].astype('U') #unicode
         df['label'] = df['label'].astype(int)
         
-        print(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
+        sprint(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
                 f"({len(df['label'].unique())} unique labels, "
                 f"max_minutes={int(max_time_between/60)}, {len(df)} total rows)")
         
-        #SVRmodel.search_params_SVR(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
-        #SVRmodel.test_SVR(df, df['text'], df['label'])
-        SGDmodel.search_params_SGD(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
+        #SVRmodel.search_params_SVR(X_col=df['text'], y_col=df['label'], score=scores_regression[0])
+        #SVRmodel.test_SVR(df['text'], df['label'])
+        #SGDmodel.search_params_SGD(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
 
-        # acc = 1
-        # row = [var_ids[input_varid], var_ids[output_varid], max_time_between, len(df), acc, note]
-        # perf_rows.append(row)
 
-# perf_df = pd.DataFrame(perf_rows, columns=['label_varid', 'predict_varid', 'max_time_between', 'n_samples', 'r2', 'note'])
-# perf_df.to_csv(f"baseline_model_performance_{datetime.now().strftime('%Y-%m-%d %H_%M')}.csv", index=False)
+        # Test all baseline models:
+        estimators = [
+            [SVRmodel.get_SVR(use_tuned_hyperparameters=False), False, 'SVR'],
+            [SVRmodel.get_SVR(use_tuned_hyperparameters=True), True, 'SVR'],
+            [SGDmodel.get_SGD(use_tuned_hyperparameters=False), False, 'SGD'],
+            [SGDmodel.get_SGD(use_tuned_hyperparameters=True), True, 'SGD'],
+        ]
+
+        for a in estimators:
+            iprint("{1} performance ({0} hyperparameter tuning):".format("with" if a[1] else "no", a[2]))
+            estimator = a[0]
+
+            scores = test_estimator(estimator, df['text'], df['label'], scores_regression[:1])
+            for score in scores:
+                print("{0:>{1}}: {2:5.3f} (+/- {3:5.3f})".format(score[0], scores_max_len, score[1], score[2]*2))
+                
+            print()
