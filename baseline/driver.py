@@ -1,33 +1,18 @@
 import pandas as pd
-import SVRmodel, SGDmodel
-from utilities import iprint, sprint, wprint, eprint, test_estimator
+import numpy as np
+import SVRmodel, SGDmodel, Lassomodel
+from utilities import iprint, sprint, wprint, eprint, test_estimator, var_ids
 
 MAX_SAMPLES = 0 # maximum n of training pairs. Should only be used to speed up testing
 
-var_ids = {
-    22086067: "Vigilanz",
-    22085897: "Ramsay",
-    22086170: "BPS-Bewertung",
-    20512801: "BPS",
-    22086172: "NRS/VAS Bedingungen",
-    22085911: "NRS/VAS",
-    20512802: "DDS",
-    20512769: "GCS",
-    22086169: "CAM-ICU",
-    22086158: "RASS",
-    22085815: "Visite_ZNS",
-    22085836: "Visite_Pflege",
-    22085820: "Visite_Oberarzt",
-}
-
-input_varids = [22085815, 22085836][:1]
-output_varids = [22086158, 20512769][:1]
+input_varids = [22085815, 22085836]
+output_varids = [22086158, 20512769]
 
 scores_regression = ['r2', 'neg_mean_squared_error', 'neg_mean_absolute_error'] # scores to test the models with (https://scikit-learn.org/stable/modules/model_evaluation.html)
 scores_classification = []
 scores_max_len = max([len(s) for s in scores_regression+scores_classification])
 
-max_time_between = 60*60/2 #20 minutes
+max_time_between = 60*60/2 #30 minutes
 
 df_all = pd.read_csv("../data/clean/labels_nearest.csv")
 
@@ -40,7 +25,7 @@ for i, input_varid in enumerate(input_varids):
         # remove unwanted rows:
         df = df_all[df_filter]
 
-        if MAX_SAMPLES:
+        if MAX_SAMPLES>0:
             df = df[:MAX_SAMPLES]
             eprint(f"Only considering the first {MAX_SAMPLES} samples!")
 
@@ -56,29 +41,42 @@ for i, input_varid in enumerate(input_varids):
         df['text'] = df['text'].astype('U') #unicode
         df['label'] = df['label'].astype(int)
         
+        unique_labels = np.sort(df['label'].unique())
         sprint(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
-                f"({len(df['label'].unique())} unique labels, "
+                f"({len(unique_labels)} unique labels, "
                 f"max_minutes={int(max_time_between/60)}, {len(df)} total rows)")
-        
+        print(f"Labels: {unique_labels}")
+
         #SVRmodel.search_params_SVR(X_col=df['text'], y_col=df['label'], score=scores_regression[0])
         #SVRmodel.test_SVR(df['text'], df['label'])
-        #SGDmodel.search_params_SGD(df=df, X_col=df['text'], y_col=df['label'], score=scores_regression[0])
-
 
         # Test all baseline models:
         estimators = [
-            [SVRmodel.get_SVR(use_tuned_hyperparameters=False), False, 'SVR'],
-            [SVRmodel.get_SVR(use_tuned_hyperparameters=True), True, 'SVR'],
-            [SGDmodel.get_SGD(use_tuned_hyperparameters=False), False, 'SGD'],
-            [SGDmodel.get_SGD(use_tuned_hyperparameters=True), True, 'SGD'],
+            [SVRmodel.get_SVR(use_tuned_hyperparameters=False), False],
+            [SVRmodel.get_SVR(use_tuned_hyperparameters=True), True],
+            [SGDmodel.get_SGD(use_tuned_hyperparameters=False), False],
+            [SGDmodel.get_SGD(use_tuned_hyperparameters=True), True],
+            # [Lassomodel.get_Lasso(use_tuned_hyperparameters=False), False],
+            # [Lassomodel.get_Lasso(use_tuned_hyperparameters=True), True],
         ]
 
         for a in estimators:
-            iprint("{1} performance ({0} hyperparameter tuning):".format("with" if a[1] else "no", a[2]))
             estimator = a[0]
+            estimator_name = type(estimator[-1]).__name__
+            
+            iprint("\n{1} performance ({0} hyperparameter tuning):".format("with" if a[1] else "no", estimator_name))
 
-            scores = test_estimator(estimator, df['text'], df['label'], scores_regression[:1])
-            for score in scores:
-                print("{0:>{1}}: {2:5.3f} (+/- {3:5.3f})".format(score[0], scores_max_len, score[1], score[2]*2))
-                
-            print()
+            mean_scores = test_estimator(estimator, df['text'], df['label'], scores_regression)
+            
+
+            for scoring_method, v in mean_scores.items():
+                if scoring_method in ['score_time', 'fit_time']: #skip these, but maybe useful later
+                    continue
+
+                mean = v[0]
+                std = v[1]
+                if scoring_method.startswith("neg_"):
+                    scoring_method = scoring_method[4:]
+                    mean = mean*-1
+
+                print("{0:>{1}}: {2:6.3f} (+/- {3:5.3f})".format(scoring_method, scores_max_len, mean, std*2))

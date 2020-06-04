@@ -13,6 +13,9 @@ Inhalt
     * Arten von maschinellem lernen (supervised, unsupervised)
     * classification vs regression
     * (numerische optimierung)
+      * numerische optimierung: Lösungsgraum, Bewertungsfunktion
+      * das Gradientenverfahren
+      * stochastic gradient descend
     * Herausforderungen von ML für NLP
     * warum ML f. Bearbeitung der Problematik?
 
@@ -69,3 +72,4 @@ Literatur
 * https://pubmed.ncbi.nlm.nih.gov/31947237/
 * https://scikit-learn.org/stable/modules/svm.html#mathematical-formulation (Erklärung von SVM)
 * https://www.cs.waikato.ac.nz/~ml/weka/book.html#Contents (Definition von Kreuzvalidierung)
+* https://web.stanford.edu/~hastie/ElemStatLearn/

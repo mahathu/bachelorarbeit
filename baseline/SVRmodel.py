@@ -70,13 +70,13 @@ def get_SVR(use_tuned_hyperparameters=True):
 
     if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
         clf_pipeline = Pipeline([
-            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))), # count terms
+            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))),
             ('tfidf', TfidfTransformer(use_idf=False)), # transform to term freq. inverse document freq.
             ('svr', SVR(cache_size=cache_size, C=1000)),
         ])
     else: # use a standard SVR
         clf_pipeline = Pipeline([ # no tuned hyperparameters!
-            ('vect', CountVectorizer()), # count terms
+            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))),
             ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
             ('svr', SVR(cache_size=cache_size)), 
         ])
