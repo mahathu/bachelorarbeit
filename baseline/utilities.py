@@ -2,10 +2,26 @@ import pandas as pd
 from os.path import isfile
 from nltk.stem import SnowballStemmer
 from termcolor import cprint
-from sklearn.model_selection import cross_val_score, ShuffleSplit
+from sklearn.model_selection import cross_val_score, cross_validate, ShuffleSplit
 import re
 
 COLOR_OUTPUT_ENABLE = True
+
+var_ids = {
+    22086067: "Vigilanz",
+    22085897: "Ramsay",
+    22086170: "BPS-Bewertung",
+    20512801: "BPS",
+    22086172: "NRS/VAS Bedingungen",
+    22085911: "NRS/VAS",
+    20512802: "DDS",
+    20512769: "GCS",
+    22086169: "CAM-ICU",
+    22086158: "RASS",
+    22085815: "Visite_ZNS",
+    22085836: "Visite_Pflege",
+    22085820: "Visite_Oberarzt",
+}
 
 # === printing functions ===
 def iprint(s): # print information
@@ -76,12 +92,25 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
     if len(fixed_params):
         iprint("Included fixed parameters:" + str([k for k in fixed_params]))
 
-def test_estimator(estimator, X_col, y_col, scoring_methods):
-    cross_val = ShuffleSplit(n_splits=5, test_size=.25)
+def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
+    cross_val_split = ShuffleSplit(n_splits=n_cv_splits, test_size=.25)
 
-    all_scores = []
-    for scoring_method in scoring_methods:
-        scores = cross_val_score(estimator, X_col, y_col, cv=cross_val, scoring=scoring_method)
-        all_scores.append([scoring_method, scores.mean(), scores.std()])
+    '''this would train a new model for each CV fold and
+    each scoring method and thus can be done much faster!'''
+    # for scoring_method in scoring_methods:
+    #     scores = cross_val_score(estimator, X_col, y_col, cv=cross_val, scoring=scoring_method)
+    #     all_scores.append((scores.mean(), scores.std()))
+    scores = cross_validate(estimator, X_col, y_col,
+        cv=cross_val_split,
+        scoring=scoring_methods
+    )
 
-    return all_scores
+    mean_scores = {
+        key[5:] if key.startswith('test_') else key: (value.mean(), value.std())
+            for key, value in scores.items()
+    }
+    return mean_scores
+
+def plot_performance_by_n_samples():
+    pass
+    #https://scikit-learn.org/stable/auto_examples/model_selection/plot_multi_metric_evaluation.html

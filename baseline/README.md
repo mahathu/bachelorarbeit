@@ -21,16 +21,15 @@ Vergleich von:
 Key-Value Daten-Generierung: most recent Text per Score oder most recent Score per Text?
 
 ### Probleme
-* Texte enthalten z.B "RASS = -4"
+* Texte enthalten z.B "RASS = -4", das wird vermutlich nicht richtig erkannt
+
+### Erkenntnisse
+* rechenintensivster Prozess ist die Featurization der Eingabedaten
+* Featurization der Eingabedaten hat deutlich größeren Einfluss auf predictive performance als die hyperparameter
+* SGD performance steigt ab etwa 3000 samples (?) nicht signifikant weiter an
 
 ### Noch ausprobieren
 * Einfluss von Stemming
-* estimators: https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
-    * SGDRegressor
-    * Lasso
-    * ElasticNet
-    * RidgeRegression
-    * SVR (X)
-    * Ensembleregressors
+* Auf das beste, getunte Modell andere Input-Daten anwenden, d.h. größere oder kleinere char ngram-range ausprobieren.
 
 Anzahl der samples und die meisten Hyperparameter machen scheinbar keinen Unterschied f SVR
