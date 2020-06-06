@@ -45,6 +45,7 @@ Inhalt
 
 ## 4) Fazit
   * Ergebnisse
+  * TODO: Auswertung der Visitentexte: Wo gibt es große Abweichungen von eingetragenem Score/Modell-Vorhersage?
   * **Anwendung in der Zukunft**
     * Vorgänge bei Datenerfassung auf ICU optimieren
     * Erfassung von Qualität der bisher eingetragenen Daten

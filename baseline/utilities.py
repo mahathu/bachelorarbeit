@@ -48,6 +48,16 @@ def eprint(s): # print error
         return
     cprint(s, "red")
 
+def safe_filename(fn_base, ending):
+    file_n = 0
+    fn = f"{fn_base}_{file_n}.{ending}"
+    while isfile(fn):
+        wprint("Skipping file name: "+fn)
+        file_n += 1
+        fn = f"{fn_base}_{file_n}.{ending}"
+    
+    return fn
+
 def clean_text(text):
     stemmer = SnowballStemmer('german')
     pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß \.]', re.UNICODE)
@@ -80,7 +90,6 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
 
     out_file_name_base = f"perf_reports/performance_{estimator_name}_{scoring_method}"
     file_n = 0
-    #change to walrus operator!
     fn = f"{out_file_name_base}_{file_n}.csv"
     while isfile(fn):
         wprint("Skipping file name: "+fn)
@@ -111,6 +120,25 @@ def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
     }
     return mean_scores
 
-def plot_performance_by_n_samples():
-    pass
-    #https://scikit-learn.org/stable/auto_examples/model_selection/plot_multi_metric_evaluation.html
+def get_x_y(df_all, input_varid, output_varid, max_time_between, max_samples=0):
+    df_filter = ((df_all['text_varid'] == input_varid) 
+                & (df_all['label_varid'] == output_varid) 
+                & (df_all['label_time'] - df_all['text_time'] <= max_time_between))
+
+    # remove unwanted rows:
+    df = df_all[df_filter]
+
+    if max_samples>0: # maximum n of training pairs. Should only be used to speed up testing
+        df = df[:max_samples]
+        eprint(f"Only considering the first {max_samples} samples!")
+
+    # remove irrelevant columns:
+    df = df[['text', 'label']]
+    if output_varid == 22086169: # CAM-ICU
+        df = df.replace({'label': {
+            'neg.': 0,
+            'pos.': 1,
+            'unmögl.': 2,
+        }})
+
+    return df['text'].astype('U'), df['label'].astype(int)
