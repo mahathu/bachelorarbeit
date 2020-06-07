@@ -32,7 +32,8 @@ def search_params_SVR(X_col, y_col, score):
     # https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
     # test more gamma values!
     svr_param_grids = [ # svr_gamma is used only for kernel=rbf
-        {'svr__kernel': ['rbf'], 'svr__gamma': ['scale', 'auto'], 'svr__C': [1, 10, 100]},
+        {}
+        #{'svr__kernel': ['rbf'], 'svr__gamma': ['scale', 'auto'], 'svr__C': [1, 10, 100]},
         # {'svr__kernel': ['linear'], 'svr__C': [1, 10, 100]}
     ]
 
@@ -67,18 +68,22 @@ def search_params_SVR(X_col, y_col, score):
 
 def get_SVR(use_tuned_hyperparameters=True):
     cache_size = 1024
+    cv = CountVectorizer(
+        analyzer='char',
+        ngram_range=(1,9),
+        stop_words=stopwords.words('german'),
+    )
 
     if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
-        clf_pipeline = Pipeline([
-            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))),
-            ('tfidf', TfidfTransformer(use_idf=False)), # transform to term freq. inverse document freq.
+        return Pipeline([
+            ('vect', cv),
+            ('tfidf', TfidfTransformer(use_idf=False)),
             ('svr', SVR(cache_size=cache_size, C=1000)),
         ])
-    else: # use a standard SVR
-        clf_pipeline = Pipeline([ # no tuned hyperparameters!
-            ('vect', CountVectorizer(analyzer="char", ngram_range=(1,9), stop_words=stopwords.words('german'))),
-            ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-            ('svr', SVR(cache_size=cache_size)), 
-        ])
     
-    return clf_pipeline
+    # use a standard SVR
+    return Pipeline([ # no tuned hyperparameters!
+        ('vect', cv),
+        ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
+        ('svr', SVR(cache_size=cache_size)), 
+    ])

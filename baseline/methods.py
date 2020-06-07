@@ -3,7 +3,7 @@ import pandas as pd
 import SVRmodel, SGDmodel
 from utilities import iprint, sprint, wprint, eprint, test_estimator, var_ids, safe_filename
 
-def test_estimators(X, y, estimators, scoring_methods):# Test all baseline models:
+def test_estimators(X, y, estimators, scoring_methods):# Test baseline models and print results
     max_score_len = max([len(s) for s in scoring_methods])
 
     for a in estimators:
@@ -15,8 +15,8 @@ def test_estimators(X, y, estimators, scoring_methods):# Test all baseline model
         mean_scores = test_estimator(estimator, X, y, scoring_methods)
 
         for scoring_method, v in mean_scores.items():
-            if scoring_method in ['score_time', 'fit_time']: #skip these, but maybe useful later
-                continue
+            # if scoring_method in ['score_time', 'fit_time']: #skip these, but maybe useful later
+            #     continue
 
             mean = v[0]
             std = v[1]

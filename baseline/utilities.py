@@ -66,9 +66,11 @@ def clean_text(text):
     text = ' '.join( [stemmer.stem(word) for word in text.split()] ) # stem words
     return text
 
-def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method, fixed_params={}):
+def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method, fixed_params=None):
     #fixed params can be used to save hyperparams in columns that aren't actually tuned by GSCV.
-
+    if not fixed_params:
+        fixed_params={}
+        
     means = regressor_obj.cv_results_['mean_test_score']
     stds = regressor_obj.cv_results_['std_test_score']
     df_rows = []
@@ -88,7 +90,7 @@ def save_performance_report(estimator_name, regressor_obj, all_params, scoring_m
 
     df = pd.DataFrame(df_rows, columns=df_colnames)
 
-    out_file_name_base = f"perf_reports/performance_{estimator_name}_{scoring_method}"
+    out_file_name_base = f"perf_reports/new/performance_{estimator_name}_{scoring_method}"
     file_n = 0
     fn = f"{out_file_name_base}_{file_n}.csv"
     while isfile(fn):
@@ -120,13 +122,15 @@ def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
     }
     return mean_scores
 
-def get_x_y(df_all, input_varid, output_varid, max_time_between, max_samples=0):
-    df_filter = ((df_all['text_varid'] == input_varid) 
-                & (df_all['label_varid'] == output_varid) 
-                & (df_all['label_time'] - df_all['text_time'] <= max_time_between))
+def get_x_y(df, input_varid, output_varid, max_time_between, max_samples=0):
+    df['diff'] = (df['label_time'] - df['text_time']).abs()
+
+    df_filter = ((df['text_varid'] == input_varid) 
+                & (df['label_varid'] == output_varid) 
+                & (df['diff'] <= max_time_between))
 
     # remove unwanted rows:
-    df = df_all[df_filter]
+    df = df[df_filter]
 
     if max_samples>0: # maximum n of training pairs. Should only be used to speed up testing
         df = df[:max_samples]

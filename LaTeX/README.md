@@ -39,6 +39,10 @@ Inhalt
       * Tuning von Hyperparametern mit R^2 (siehe "Vgl. vers. Metriken")
         * Anwendung von Kreuzvalidierung beim finden der besten Hyperparameter
     * Vergleich/Funktionsweise verschiedener Performance-Metriken (R^2, MSE, ...)
+      * **Unterschied zwischen RMSE und MAE!**
+        * es gilt immer: MAE <= RMSE
+      * **Mean bias error betrachten!!**
+        * wie MEA, aber ohne absolutbetrag --> indikator für bias des modells
     * Ergebnisse
   * Novel model (ANN)
     * ...
