@@ -18,6 +18,11 @@
 \usepackage[round]{natbib} % scheinbar die beste Wahl für mich https://tex.stackexchange.com/a/25702/217229
 \usepackage{hyperref}
 
+\usepackage{csquotes} % " wird zu Anführungszeichen
+\MakeOuterQuote{"}
+
+\usepackage{amsmath} %z.b align
+
 \bibliographystyle{plainnat}
 
 % \usepackage{fontspec} % custom font (needs compiling via xelatex)
@@ -38,16 +43,14 @@
 	\chapter{Einführung}
 	\input{1-einleitung}
 	
-	
 	\chapter{Übersicht über die Daten}
 	\input{2-daten}
 	
+	% \chapter{Vorgehensweise}
+	% \input{3-vorgehensweise}
 	
-	\chapter{Vorgehensweise}
-	\input{3-vorgehensweise}
-	
-	\chapter{Fazit}
-	\input{4-schluss}
+	% \chapter{Fazit}
+	% \input{4-schluss}
 
 	\newpage
 	\bibliography{literatur}

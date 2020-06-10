@@ -1,18 +1,85 @@
 \section{Datenerfassung auf Intensivstationen}
 
-\lipsum[1-3]
+\subsection{Ziel der Arbeit}
+
+Das Ziel der vorliegenden Arbeit ist es, mit Hilfe von maschinellem Lernen ein statistisches Modell zu entwickeln, um anhand von Freitexten medizinische Scores möglichst akkurat vorherzusagen.
+
 \section{Maschinelles Lernen}
-\lipsum[4]
+
+Der Begriff Maschinelles Lernen bezeichnet einen modernen Ansatz in der Arbeit an künstlicher Intelligenz. (cite).
+
+hat sich im Zeitalter von Big Data und leistungsstarken Rechnern zu einem der Hauptforschungspunkte der Informatik entwicklt (cite). 
+
+(et al) definiert den Vorgang maschinellen Lernens folgendermaßen:
+
 \begin{quote}
     {\foreignlanguage{english}{A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.}}
 \end{quote}
-\lipsum[5]
-\subsection{Klassifikation vs Regression}
-siehe: https://stats.stackexchange.com/a/282890 Handelt es sich um \glqq ordinal classification\grqq{}?
 
-Eigentlich ist es eine Einordnung der Daten in diskrete Klassen/Scores. Aber Argumente für Regression sind:
-\begin{itemize}
-    \item Betrachtet man die Scores als separate Klassen geht verloren, dass z.b. 2 näher an 3 ist als an -4.
-    \item insbesondere bei gängigen performance-metriken wie accuracy gibt es nur "richtig" oder falsch.
-    \item floats können zu integer gerundet werden, anhand der abweichung könnte man sogar eine \glqq confidence\grqq{} ermitteln.
-\end{itemize}
+Im Allgemeinen werden also Algorithmen, die aus großen Datensätzen "lernen" und damit Vorhersagen über unbekannte Daten machen, als maschinelles Lernen bezeichnet.
+
+\subsection{Supervised Learning}
+
+Neben vielen weiteren Methoden stellt Supervised Learning einen zentralen Ansatz im Gebiet des maschinelles Lernen dar.
+
+\subsection{Regression vs Klassifizierung}
+
+Probleme aus dem Bereich des supervised machine learnings lassen sich im Allgemeinen in eine von zwei Kategorien einordnen:
+
+Klassifizierung bezeichnet den Prozess, bei dem ein Datensatz einer oder mehreren Klassen aus einer endlichen Liste möglicher Klassen zugeordnet wird. 
+
+Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-Mails (Spam oder nicht Spam) oder bei der Erkennung von handschriftlichen Texten (welches Symbol aus einem gegebenen Alphabet ist dargestellt?) Anwendung (CITE). Da es sich bei den betrachteten medizinischen Scores um diskrete, ganzzahlige Werte aus einem endlichen Wertebereich handelt, liegt auch hier die Anwendung eines Klassifizierungs-Verfahrens nahe.
+
+Würde man aber die verschiedenen möglichen Werte eines Scores als separate und voneinander unabhängige Klassen betrachten, so ginge eine wichtige Information über deren Anordnung verloren. Im mathematischen Sinne stellen alle hier betrachteten medizinische Scores Totalordnungen dar. Sie erfüllen also die Anforderungen der Reflexivität, Antisymmetrie, Transitivität und Totalität. Bezeichne $M$ die Menge aller möglichen Werte eines beliebigen medizinischen Scores. Folglich gilt für alle $a,b,c \in M$:
+
+\begin{equation*}
+    \begin{aligned}[c]
+        a \leq a\\
+        a \leq b \land b \leq a \; \Rightarrow \; a=b\\
+        a \leq b \land b \leq c \; \Rightarrow \; a \leq c\\
+        a \leq b \lor b \leq a
+    \end{aligned}
+    \qquad
+    \begin{aligned}[c]
+        \text{(Reflexivität)}\\
+        \text{(Antisymmetrie)}\\
+        \text{(Transitivität)}\\
+        \text{(Totalität)}
+    \end{aligned}
+\end{equation*}
+
+% \begin{align}
+%     a \leq a && \text{(Reflexivität)}\\
+%     a \leq b \land b \leq a \; \Rightarrow \; a=b && \text{(Antisymmetrie)}\\
+%     a \leq b \land b \leq c \; \Rightarrow \; a \leq c && \text{(Transitivität)}\\
+%     a \leq b \lor b \leq a && \text{(Totalität)}
+% \end{align}
+
+Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis setzen. So ist ein RASS-Wert\footnote{Richmond Agitation-Sedation Scale} von -4 (Tief sediert) beispielsweise deutlich näher an -3 (mäßig sediert) als an +1 (unruhig). Bei gängigen Verfahren zur Klassifizierung ginge diese Information verloren, da bei Kenngrößen zur Bewertung solcher Modelle nur betrachtet werden kann, ob ein gegebener Eingabetext der richtigen Kategorie (dem richtigen Score) zugeordnet wurde oder nicht. (Da viele der Scores bei der Vergabe zumindest teilweise auch auf dem persönlichen Ermessen des behandelnden Arztes/der behandelnden Ärztin beruht wäre selbst für menschliche Experten eine genaue Zuordnung eines Textes zu einer Punktzahl problematisch.)
+
+Bei dieser Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
+
+%siehe: https://stats.stackexchange.com/a/282890 Handelt es sich um \glqq ordinal classification\grqq{}?
+
+
+% ## 1) Einführung
+%   * worum geht es?
+%   * Thematik
+%     * Problematik der Datenerfassung auf ICUs
+%     * bisherige Ansätze, Forschungsarbeiten, Paper etc.
+%   * was ist maschinelles lernen?
+%     * **Formale Definition von [Mitchell, Tom. (1997). Machine Learning]**
+%       * A machine is said to learn from experience E with respect to some class of tasks T and performance measure P...
+%     * historischer Kontext (big data, processing power Moore's law etc)
+%     * Arten von maschinellem lernen (supervised, unsupervised)
+%     * classification vs regression
+%     * Bewertung von ML-Modellen
+%       * z.b. cross validation
+%       * vermeiden: data leakage
+%     * (numerische optimierung)
+%       * numerische optimierung: Lösungsgraum, Bewertungsfunktion
+%       * das Gradientenverfahren
+%       * stochastic gradient descend
+%     * Herausforderungen von ML für NLP
+%     * Machinelles lernen in der medizin
+%     * warum ML f. Bearbeitung der Problematik?

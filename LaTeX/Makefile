@@ -1,2 +1,5 @@
+compile:
+	latexmk -pdf arbeit.tex
+
 clean:
-	rm -f arbeit.out arbeit.aux arbeit.bbl arbeit.blg arbeit.log arbeit.toc arbeit.fls arbeit.synctex.gz arbeit.xdv
+	rm -f *.out *.aux *.bbl *.blg *.log *.toc *.fls *.synctex.gz *.xdv *.fdb_latexmk

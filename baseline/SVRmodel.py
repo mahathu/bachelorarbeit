@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -7,34 +8,42 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from nltk.corpus import stopwords
 from datetime import datetime
 from os.path import isfile
-from utilities import iprint, sprint, wprint, eprint, save_performance_report, clean_text
+from utilities import iprint, sprint, wprint, eprint, save_performance_report, clean_text, clean_and_stem_text, brief_dict
 
-def search_params_SVR(X_col, y_col, score):
-    iprint(f"Tuning hyperparameters for SVR model using {score}")
-
-    X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.2, random_state=1)
+def search_params_SVR(X_col, y_col, scoring_method):
+    X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.15)
     
-    input_param_grids = [
+    input_param_grids = [ #char consistently beats word, so ignore word
         # {
-        #     'vect__analyzer': ['word'],
-        #     'vect__ngram_range': [(1,i+1) for i in [0,2,5]],
-        #     'vect__stop_words': [None, stopwords.words('german')],
-        #     'tfidf__use_idf': [True, False],
+        #     'vect__analyzer': ['char'],
+        #     'vect__ngram_range': [(1,5), (2,6), (4,7), (4,9), (5,12)],
+        #     'vect__preprocessor': [None, clean_and_stem_text],  
+        #     'vect__stop_words': [[], stopwords.words('german')], # use stop words when analyzing char ngrams
         # },
+        # {
+        #     'vect__analyzer': ['char_wb'],
+        #     'vect__ngram_range': [(2,6), (4,9)],
+        #     'vect__preprocessor': [None, clean_and_stem_text],
+        #     'vect__stop_words': [[], stopwords.words('german')], # use stop words when analyzing char ngrams
+        # }
         {
             'vect__analyzer': ['char'],
-            'vect__ngram_range': [(1,9)],
-            'vect__stop_words': [stopwords.words('german')], # use stop words when analyzing char ngrams
-            'tfidf__use_idf': [True, False],
+            'vect__ngram_range': [(1, 5)],
         }
     ]
 
     # https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
-    # test more gamma values!
+    # Finally also test:
     svr_param_grids = [ # svr_gamma is used only for kernel=rbf
-        {}
-        #{'svr__kernel': ['rbf'], 'svr__gamma': ['scale', 'auto'], 'svr__C': [1, 10, 100]},
-        # {'svr__kernel': ['linear'], 'svr__C': [1, 10, 100]}
+        {
+            'svr__kernel': ['linear'], 
+            'svr__C': [1, 10, .1, .001]
+        },
+        {
+            'svr__kernel': ['rbf', 'poly', 'sigmoid'], 
+            #'svr__gamma': ['scale', 'auto'], 
+            'svr__C': [1, 10, .1, .001]    
+        }
     ]
 
     gs_params = [ # concatenate the dicts to finally save a list of dicts in gs_params
@@ -45,39 +54,49 @@ def search_params_SVR(X_col, y_col, score):
     rgr_pipeline = Pipeline([
         ('vect', CountVectorizer()), # count terms or chars
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=512)), #SVR
+        ('svr', SVR(cache_size=1000)), #SVR
     ])
 
     # Automatic parameter tuning using grid search:
-    iprint("GridSearchCV running...")
+    iprint(f"GridSearchCV running for SVR perf_metric: {scoring_method}...")
     regressor = GridSearchCV(
-        rgr_pipeline, gs_params, scoring=score, n_jobs=-1, verbose=1
+        rgr_pipeline, gs_params, scoring=scoring_method, n_jobs=-1, verbose=1
     )
+    
     regressor.fit(X_train, y_train)
+    y_pred = regressor.predict(X_test)
+    best_params = brief_dict(regressor.best_params_)
 
-    performance = regressor.score(X_test, y_test)
-    sprint(f"R^2 performance for model after hyperparameter tuning using {score}: {performance:.3f}")
-    sprint(f"Best parameters set found on development set: \n{regressor.best_params_}\n")
+    sprint(f"Best parameters set found on development set: \n{best_params}\n")
+
+    scores = {
+        "mae": mean_absolute_error(y_test, y_pred),
+        "rmse": np.sqrt(mean_squared_error(y_test, y_pred)),
+        "r2": regressor.score(X_test, y_test),
+    }
+
+    sprint(f"Performance for model after hyperparameter tuning using {scoring_method}:")
+    for s in scores:
+        print(f"{s:>4}: {scores[s]:.3f}")
 
     param_names = []
     for d in gs_params: #d is a dict
         for n in d:
             if n not in param_names:
                 param_names.append(n)
-    save_performance_report('SVR', regressor, param_names, score)
+    save_performance_report('SVR', regressor, param_names, scoring_method, len(X_col))
 
 def get_SVR(use_tuned_hyperparameters=True):
     cache_size = 1024
     cv = CountVectorizer(
         analyzer='char',
-        ngram_range=(1,9),
-        stop_words=stopwords.words('german'),
+        ngram_range=(1,5),
     )
 
     if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
         return Pipeline([
             ('vect', cv),
-            ('tfidf', TfidfTransformer(use_idf=False)),
+            ('tfidf', TfidfTransformer()),
             ('svr', SVR(cache_size=cache_size, C=1000)),
         ])
     
@@ -85,5 +104,5 @@ def get_SVR(use_tuned_hyperparameters=True):
     return Pipeline([ # no tuned hyperparameters!
         ('vect', cv),
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=cache_size)), 
+        ('svr', SVR(cache_size=cache_size, C=10)), 
     ])

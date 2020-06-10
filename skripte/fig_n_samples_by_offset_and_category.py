@@ -17,14 +17,14 @@ var_id_names = {
     22085836: "Visite_Pflege",
     22085820: "Visite_Oberarzt",
 }
-input_varids = [22085815, 22085836, 22085820][:1]
-output_varids = [22086158, 20512769, 22086169][:1]
+input_varids = [22085815, 22085836]
+output_varids = [22086158, 20512769]
 pairs = []
 
 max_seconds = 60*60*8
 
 #labels_nearest.csv enthält "nur" Daten mit max_offset = 3600 (1h)
-df = pd.read_csv('../data/clean/labels_nearest_all.csv', nrows=1000000)
+df = pd.read_csv('../data/clean/labels_nearest_all.csv', nrows=3000)
 
 for input_varid in input_varids:
     for output_varid in output_varids:
@@ -56,7 +56,7 @@ print(pairs)
 x = np.arange(max_seconds)
 mins = [60*60*(i+1) for i in range(8)]
 
-linestyles = ['-', '--', ':'] # 1 for each input category
+linestyles = ['-', ':'] # 1 for each input category
 colors = ["#E57373", "#4DD0E1", "#AED581", "#FF8A65", "#FFF176"] # 1 for each out category (nur die ersten 3 sind relevant)
 
 for max_seconds in mins:
