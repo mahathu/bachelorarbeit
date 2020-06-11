@@ -190,12 +190,13 @@ def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
     }
     return mean_scores
 
-def get_x_y(df, input_varid, output_varid, max_min_between, max_samples=0):
+def get_x_y(df, input_varid, output_varid, max_min_between, min_min_between=0, max_samples=0):
     df['diff'] = (df['label_time'] - df['text_time']).abs()
 
     df_filter = ((df['text_varid'] == input_varid) 
                 & (df['label_varid'] == output_varid) 
-                & (df['diff'] <= (max_min_between*60)))
+                & (df['diff'] <= (max_min_between*60))
+                & (df['diff'] >= (min_min_between*60)))
 
     # remove unwanted rows:
     df = df[df_filter]

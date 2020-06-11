@@ -15,16 +15,18 @@ SCORING_METHODS = [
     'neg_median_absolute_error'
 ]
 
-MAX_MIN_BETWEEN_EVENTS = 30 #still have > 5k rows per varid pair
+minute_window = 20 #10 minute window
+min_min_arr = np.arange(0,110,minute_window/2)
 df_all = pd.read_csv("../data/clean/labels_nearest_all.csv")
 
-out_rows = []
-n_samples_arr = np.concatenate([np.arange(100,1000,100), np.arange(1000,8000,500)]) #100-7500
 #this is mostly used for some more data cleaning before passing it to the models.
+out_rows = []
 for input_varid in input_varids:
     for output_varid in output_varids:
-        for n_samples in n_samples_arr:
-            X, y = get_x_y(df_all, input_varid, output_varid, max_min_between=MAX_MIN_BETWEEN_EVENTS, max_samples=0)
+        for min_min in min_min_arr:
+            max_min = min_min+minute_window
+            X, y = get_x_y(df_all, input_varid, output_varid, max_min_between=max_min, min_min_between=min_min, max_samples=0)
+
             # unique_labels = np.sort(y.unique())
             # wprint('*'*80)
             # sprint(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
@@ -32,25 +34,28 @@ for input_varid in input_varids:
             #         f"max_minutes={MAX_MIN_BETWEEN_EVENTS}, {len(X)} total rows)")
             # print(f"Labels: {unique_labels}")
             
-            # Calculate performance on tuned models by number of samples:
-            wprint(f"{var_ids[input_varid]} --> {var_ids[output_varid]} n={n_samples}")
-            for estimator, estimator_name in zip([SGDmodel.get_SGD(), SVRmodel.get_SVR()], ['SGDRegressor', 'SVR']):
-                print(f"{estimator_name}...")
-
-                row = methods.get_performance_by_n_samples(X, y, estimator, n_samples)
-                row['max_minutes_between_events'] = MAX_MIN_BETWEEN_EVENTS
-                row['estimator'] = estimator_name
-                row['n_samples'] = n_samples
-                row['input_varid'] = var_ids[input_varid]
-                row['output_varid'] = var_ids[output_varid]
-                out_rows.append(row)
-                sprint("Done!")
-
-            # Predicting some sample data:
-            # model = SVRmodel.get_SVR(use_tuned_hyperparameters=True)
-            # methods.make_predictions(X,y, var_ids[input_varid], var_ids[output_varid], model, n_preds=50, n_total_samples=500)
-            #selbst mit nur 1000 samples erreichen wir MAE von <1 ????
+            # Calculate performance of tuned models by max offset:
+            sprint(f"min: {min_min} max: {max_min} n samples: {len(X)}")
+            
+            #get a random sample:
+            mae = 0
+            mae_std = 0
+            for i in range(3):
+                X = X.sample(1167)
+                y = y[X.index]
+                perf = methods.get_performance_from_sample(X, y, SVRmodel.get_SVR(use_tuned_hyperparameters=True))
+                mae -= 1/3 * perf['neg_mean_absolute_error']
+                mae_std += 1/3 * perf['neg_mean_absolute_error_std']
+                print('.', end='', flush=True)
+            
+            print(f"\n{mae}")
+            out_rows.append({
+                "min": min_min,
+                "max": max_min,
+                "mae": mae,
+                "std": mae_std,
+            })
 
 df = pd.DataFrame(out_rows)
-df.to_csv(f'performances_max_{MAX_MIN_BETWEEN_EVENTS}min_rassonly.csv', index=False)
-print(df.head())
+df.head()
+df.to_csv("performance_by_min_offset.csv", index=False)

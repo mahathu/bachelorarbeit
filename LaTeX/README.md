@@ -1,18 +1,6 @@
 Inhalt
 ===
 
-## 2) Übersicht über die gegebenen Daten
-  * Abb: Liniendiagramm Anzahl key-werte paare pro predicted varid (farbe) und text varid (line typ) sowie max cutoff time
-  * **exemplarische Beschreibung eines Patienten (z.B. 0430)**
-  * **Abb: scatter plot events f. einen Patient (z.B. 0430)**
-  * **Vergleich der verschiedenen Methoden, Wertepaare aus den Daten zu generieren**
-    * nearest value pairs
-    * last text observation carried forward
-    * Vergleich anhand der scatter plots f. **einen** geeigneten Patienten
-  * **Tabelle: VarIDs | Bedeutungen**
-  * **jeweils kurzer Überblick über die einzelnen VarIDs**
-  * **Problem mit Qualität der Daten! Geeignete Trainingspaare?**
-
 ## 3) Vorgehensweise
   * Baseline-Modell
     * Implementierung
@@ -35,15 +23,6 @@ Inhalt
         
   * Novel model (ANN)
     * ...
-
-## 4) Fazit
-  * Ergebnisse
-  * TODO: Auswertung der Visitentexte: Wo gibt es große Abweichungen von eingetragenem Score/Modell-Vorhersage?
-  * **Anwendung in der Zukunft**
-    * Vorgänge bei Datenerfassung auf ICU optimieren
-    * Erfassung von Qualität der bisher eingetragenen Daten
-    * z.b. einbeziehen der scores in clinicial decision support systems
-
 ## 5) Anhänge
   * Anhang A: ausgewählte Listings
 

@@ -76,3 +76,18 @@ def get_performance_by_n_samples(X, y, estimator, n_samples):
         row[col_name+'_std'] = np.mean([r[col_name][1] for r in score_runs])
 
     return row
+
+def get_performance_from_sample(X, y, estimator):
+    n_runs = 3
+
+    score_runs = [] #contains list of 5 dicts, each having tuple values
+    for i in range(n_runs):
+        score_runs.append(test_estimator(estimator, X, y, ['neg_mean_absolute_error'], n_cv_splits=5))
+        #test_estimator returns mean and std for the given scoring methods and fit times
+    
+    row = {}
+    for col_name in score_runs[0]:
+        row[col_name] = np.mean([r[col_name][0] for r in score_runs])
+        row[col_name+'_std'] = np.mean([r[col_name][1] for r in score_runs])
+
+    return row

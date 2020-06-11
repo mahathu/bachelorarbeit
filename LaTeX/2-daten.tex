@@ -1,12 +1,45 @@
-\section{section Daten}
-information über copra %fridtjof ausquetschen
+\section{Datenerfassung an der Charité}
+information über copra (fridtjof ausquetschen). bla bla bla
 
-die daten wurden vor dem export pseudonymisiert
+Die daten wurden vor dem Export pseudonymisiert. Nach dem Export lagen die Daten in Form mehrerer Datendateien vor. \texttt{patienten.csv} enthält Metainformationen über die betrachteten Patienten. Separat gibt \texttt{delir.csv} für jeden Patienten an, ob für diesen während seines Aufenthalts ein Delir diagnostiziert wurde.
 
-information über die daten (was steht in texten, was sagen die scores)
+\section{Übersicht über die vorliegenden Daten}
 
-tabelle scores: name, beschreibung, wertebereich (+ggf varid)
+Der mir für diese Arbeit zur Verfügung stehende Datensatz enthält Informationen über insgesamt 1357 Patienten-Aufenthalte auf den Intensivstationen der Charité Berlin, die allesamt im Zeitraum von Juni 2019 bis Juni 2020 stattfanden. Jeder Aufenthalt wird über eine numerische, inkrementell aufsteigende Nummer\footnote{in den Datensätzen als n\_ID bezeichnet} eindeutig identifiziert. Hierbei gilt es zu beachten, dass ein Patient bzw. eine Patientin, der/die im Laufe seiner/ihrer Behandlung mehrere Male auf eine Intensivstation verlegt wird, für jeden separaten Aufenthalt eine neue Identifikationsnummer erhält. Für jeden Patient/für jede Patientin liegen Informationen über das Geschlecht, BMI\footnote{Body-Mass-Index}, das Alter zum Zeitpunkt der Aufnahme und ob während des Aufenthalts ein Delir\footnote{F05.* gemäß ICD-10} diagnostiziert wurde, vor. Weiterhin ist die Dauer des Aufenthalts auf der Intensivstation vermerkt, sowie ob der Patient/die Patientin während seines/ihres Aufenthalts verstorben ist. Die Mortalität während des Aufenthalts lag bei etwa 17\% ($n=225$). Die beobachteten Aufenthalte hatten eine Dauer zwischen wenigen Stunden und mehreren Monaten. Die mittlere Aufenthaltsdauer während des Beobachtungszeitraums liegt bei x Tagen, der Median beträgt y Tage. Etwas mehr als ein Viertel der Patienten ($n=375$) wurden für eine Woche oder länger auf der Intensivstation behandelt.
 
-%hier auch: exemplarisches beispiel eines patienten-aufenthalts
+Für jeden Patient/jede Patientin werden während der Dauer seines/ihres Aufenthalts medizinische Scores erfasst sowie Visitentexte geschrieben. Die Visitentexte werden digital erfasst und liegen im Unicode-Zeichensatz vor, folgen allerdings im Allgemeinen keinem einheitlichen Muster. Es handelt sich also um Freitexte, und es liegt im Ermessen der behandelnden Ärzte bzw. Pflegekräfte, einen aussagekräftigen Text zu formulieren. Ebenso können sich Faktoren wie Zeitdruck oder Stress auf Umfang und Genauigkeit der eingetragenen Texte auswirken(CITE).
 
-information, wie ich die daten in wertepaare umgewandelt habe
+%Diese Information über med. scores ggf. lieber in die Einleitung!
+Bei den erfassten Scores handelt es sich um medizinische Bewertungssysteme, bei denen die Verfassung des betrachteten Patienten anhand klar definierter Regeln anhand einer Punktzahl bewertet wird(CITE). Häufig beziehen sich die Scores dabei nur auf einen kleinen Teil der Gesamtverfassung des Patienten, beispielsweise auf den Grad der Sedierung oder auf Schmerzempfinden, sofern dieses nicht vom Patienten selber mitgeteilt werden kann. Tabelle 1 gibt einen Übersicht über alle Scores und Freitexte, die in dem gegebenen Datensatz erfasst wurden. Bei der VarID handelt es sich um eine Zahl, mit der jede Art von auf der Intensivstation erfasstem Wert bzw. eingetragenem Text repräsentiert und eindeutig identifiziert wird.\footnote{Fridtjof fragen ob das stimmt} 
+
+%tabelle scores: varid, name, beschreibung, wertebereich
+
+%hier jeweils ein kurzer Überblick über die wichtigsten werte.
+
+%hier histogramme mit den erfassten werten der einzelnen scores.
+
+\subsection{Exemplarische Vorstellung eines Patienten} %z.b. 0430
+Aufenthalt des Patienten hier detailliert beschreiben, und seinen Scatterplot einfügen (aber noch ohne Pfeile).
+
+\subsection{Generierung von Schlüssel-Wert-Paaren}
+Eine besondere Herausforderung stellte dar, dass die verschiedenen Werte und Texte zu unterschiedlichen Zeiten und unabhängig voneinadner eingetragen werden. Die Informationen über Zeitpunkt und Art der Eintragung sowie der eigentliche Wert liegen jeweils als Tripel in Form mehrerer Log-Dateien vor. Bei den Visitentexten entspricht der eingetragene Text dem Wert der Eintragung.
+
+Um ein Machine-Learning Modell aus dem Bereich des supervised learnings zu trainieren ist eine hohe Anzahl von Trainingspaaren notwendig. Jedes Wertepaar enthält einen Text sowie einen medizinischen Score, der den in dem Text angegebenen Informationen über die Verfasssung des Patient/die Patientin möglichst genau entspricht. Zusammen bilden diese Paare die Grundlage der Modelle, selbstständig noch nicht gesehene Texte bewerten zu können.
+Aufgrund der zeitlichen Unterschiede zwischen den Eintragungen von Texten und Scores erwies sich allerdings ebenjene Zuordnung zueinander als nicht trivial.
+
+% Hier Bild mit 4 Patienten-Scatterplots! Bildbeschreibung: "Patient X ist der Patient, dessen Aufenthalt in Sektion 2.2.2 detailliert vorgestellt wurde."
+
+\subsection{Genauigkeit der erfassten Daten}
+Hier beschreiben, dass viele Texte nicht wirklich den Werten entsprechen. Das mache es schwerer, Modelle zu trainieren, und muss berücksichtigt werden. Gründe:
+\begin{enumerate}
+    \item Zeitdruck, Stress bei Ärzten, kann vorkommen dass sie einfach Wert vom letzten mal kopieren
+    \item Werte können sich innerhalb von Minuten ändern (z.B. RASS von 0 auf -5)
+    \item Weitere Gründe?
+\end{enumerate}
+Diese Grüunde sind aber nicht weiter Beobachtungsgegenstand der vorleigenden Arbeit. Dennoch muss das bei der Konzeption, Entwicklung und Bewertung beachtet werden, weil sie ohne weitere Maßnahmen möglicherweise eine obere Schranke für die Performance der Modelle darstellen.
+
+%   * **Vergleich der verschiedenen Methoden, Wertepaare aus den Daten zu generieren**
+%     * nearest value pairs
+%     * last text observation carried forward
+%     * Vergleich anhand der scatter plots f. **einen** geeigneten Patienten
+%   * Abb: Liniendiagramm Anzahl key-werte paare pro predicted varid sowie max cutoff time
