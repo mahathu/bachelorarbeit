@@ -3,7 +3,7 @@
 blabla. 
 
 \subsection{medizinische Scores}
-Was sind medizinische Scores?
+Was sind medizinische Scores? Es handelt sich stets um \textbf{eindimensionale metrische Skalen}!
 
 \subsection{Ziel der Arbeit}
 
@@ -38,6 +38,7 @@ Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-
 Würde man aber die verschiedenen möglichen Werte eines Scores als separate und voneinander unabhängige Klassen betrachten, so ginge eine wichtige Information über deren Anordnung verloren. Im mathematischen Sinne stellen alle hier betrachteten medizinische Scores Totalordnungen dar. Sie erfüllen also die Anforderungen der Reflexivität, Antisymmetrie, Transitivität und Totalität. Bezeichne $M$ die Menge aller möglichen Werte eines beliebigen medizinischen Scores. Folglich gilt für alle $a,b,c \in M$:
 
 \begin{equation*}
+    \centering
     \begin{aligned}[c]
         a \leq a\\
         a \leq b \land b \leq a \; \Rightarrow \; a=b\\
@@ -62,7 +63,7 @@ Würde man aber die verschiedenen möglichen Werte eines Scores als separate und
 
 Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis setzen. So ist ein RASS-Wert\footnote{Richmond Agitation-Sedation Scale} von -4 (Tief sediert) beispielsweise deutlich näher an -3 (mäßig sediert) als an +1 (unruhig). Bei gängigen Verfahren zur Klassifizierung ginge diese Information verloren, da bei Kenngrößen zur Bewertung solcher Modelle nur betrachtet werden kann, ob ein gegebener Eingabetext der richtigen Kategorie (dem richtigen Score) zugeordnet wurde oder nicht. (Da viele der Scores bei der Vergabe zumindest teilweise auch auf dem persönlichen Ermessen des behandelnden Arztes/der behandelnden Ärztin beruht wäre selbst für menschliche Experten eine genaue Zuordnung eines Textes zu einer Punktzahl problematisch.)
 
-Bei dieser Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
+Bei der vorliegenden Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
 
 %siehe: https://stats.stackexchange.com/a/282890 Handelt es sich um \glqq ordinal classification\grqq{}?
 

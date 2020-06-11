@@ -1,3 +1,10 @@
+wichtiges Zeug
+====
+
+für besseres Modell:
+* **NRS/VAS Bedingungen mit einbeziehen**, jeweils 1 Spalte für "ruhe", "intervent", ...
+* **Spell Checker anwenden!** http://norvig.com/spell-correct.html
+
 allgemeine Notizen
 ====
 

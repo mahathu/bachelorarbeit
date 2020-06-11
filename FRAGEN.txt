@@ -1,0 +1,7 @@
+Delirium Detection Score (DDS) hat nur 5 Parameter, richtig? Weil max score laut histogramm 35 ist
+
+Bei Ramsay-Skala wurde oft auch 0 erfasst, heißt das "unbekannt"?
+
+--> Impliziert dass, dass bei RASS auch häufig 0 für "unbekannt" statt für "Aufmerksam und ruhig" eingetragen wurde
+
+GCS laut wikipedia 3-16, aber in unseren Daten nur 3-12?

@@ -1,11 +1,14 @@
 \documentclass[
+	titlepage=false,
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
 	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
 	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
 	fleqn, % flush equations left (--> Formeln linksbündig)
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
-]{report}
+	headinclude, %scheint keinen Unterschied zu machen
+	headsepline
+]{scrreprt}
 
 \usepackage{pdfpages}
 \usepackage{graphicx}
@@ -15,7 +18,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{microtype} % better kerning, word spacing etc
 \usepackage[round]{natbib} % scheinbar die beste Wahl für mich https://tex.stackexchange.com/a/25702/217229
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs} % schönere Tabellen
 
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
@@ -24,19 +28,36 @@
 
 \bibliographystyle{plainnat}
 
+\setlength{\parskip}{.2em} % space between paragraphs
+
 % \usepackage{fontspec} % custom font (needs compiling via xelatex)
 % \setmainfont{Fira Sans}
     
 \begin{document}
+	\renewcommand{\arraystretch}{1.15} %Zeilenabstand innerhalb von Tabellen
 
-	%Deckblatt:
+	% ========================================== %
+	% Am Schluss noch überprüfen:                %
+	% - einheitliche Zeitform                    %
+	% - gendergerechte Sprache (bäh)             % 
+	% ========================================== %
+
+
+	% Deckblatt:
 	\includepdf[pages={1}]{Deckblatt/deckblatt.pdf}
 
-	\begin{abstract}
-		\lipsum[1]
-	\end{abstract}
+	% Oben auf der Seite aktuelles Kapitel hinschreiben
+	\pagestyle{headings}
 
-	%Inhaltsverzeichnis:
+	% Abstract
+	% \begin{abstract}
+	% 	Hier kommt ein toller Abstract
+	% \end{abstract}
+	% Alternative für scrreprt (aus KOMA-Script:)
+	\chapter*{Abstract}
+	Hier kommt ein toller Abstract
+
+	% Inhaltsverzeichnis:
 	\tableofcontents
 
 	\chapter{Einführung}
@@ -54,4 +75,6 @@
 	\newpage
 	\bibliography{literatur}
 
+	% Selbstständigkeitserklärung
+	\includepdf[pages={1}]{Deckblatt/selbstaendigkeitserklaerung.pdf}
 \end{document}

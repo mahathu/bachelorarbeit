@@ -1,0 +1,146 @@
+================================================================================
+Ramsay Sedation Scale - n=7
+[0 1 2 3 4 5 6]
+================================================================================
+BPS-Bewertung - n=7
+ruhe                 18804
+intervent             8490
+ruhe+intervent        3443
+intervent+VW           298
+ruhe+intervent+VW      139
+VW                      50
+ruhe+VW                 14
+Name: wert, dtype: int64
+================================================================================
+Behavior Pain Scale - n=10
+[ 3  4  5  6  7  8  9 10 11 12]
+================================================================================
+NRS/VAS Bedingungen - n=24
+ruhe                                7496
+intervent                           2291
+ruhe+intervent                       803
+belast                               550
+ruhe+belast                          328
+belast+intervent                     322
+ruhe+belast+intervent                178
+intervent+VW                         108
+VW                                    39
+belast+intervent+VW                   31
+ruhe+intervent+VW                     14
+ruhe+belast+intervent+VW              12
+ruhe+schluck                           7
+ruhe+VW                                5
+schluck                                4
+ruhe+belast+intervent+schluck          4
+ruhe+intervent+schluck                 4
+ruhe+belast+intervent+VW+schluck       3
+ruhe+belast+schluck                    3
+belast+VW                              2
+ruhe+belast+VW                         1
+ruhe+VW+schluck                        1
+belast+schluck                         1
+ruhe+intervent+VW+schluck              1
+Name: wert, dtype: int64
+================================================================================
+Visual Analogue Scale - n=11
+[ 0  1  2  3  4  5  6  7  8  9 10]
+================================================================================
+Delirium Detection Score - n=30
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 25 26 28 29 32 35]
+================================================================================
+Glasgow Coma Scale - n=13
+[ 3  4  5  6  7  8  9 10 11 12 13 14 15]
+================================================================================
+CAM-ICU - n=3
+unmögl.    26210
+neg.       15861
+pos.        9440
+Name: wert, dtype: int64
+================================================================================
+Ramsay Sedation Scale - n=10
+0     17617
+-1     9432
+-4     7102
+1      6761
+-3     5471
+-5     5269
+-2     3814
+2      3162
+3      1524
+4       175
+Name: wert, dtype: int64
+martin@martin-mbp score_histograms % mkdir out
+martin@martin-mbp score_histograms % python3 plot_score_histograms.py 
+================================================================================
+Ramsay Sedation Scale - n=7
+[0 1 2 3 4 5 6]
+================================================================================
+BPS-Bewertung - n=7
+ruhe                 18804
+intervent             8490
+ruhe+intervent        3443
+intervent+VW           298
+ruhe+intervent+VW      139
+VW                      50
+ruhe+VW                 14
+Name: wert, dtype: int64
+================================================================================
+Behavior Pain Scale - n=10
+[ 3  4  5  6  7  8  9 10 11 12]
+================================================================================
+NRS/VAS Bedingungen - n=24
+ruhe                                7496
+intervent                           2291
+ruhe+intervent                       803
+belast                               550
+ruhe+belast                          328
+belast+intervent                     322
+ruhe+belast+intervent                178
+intervent+VW                         108
+VW                                    39
+belast+intervent+VW                   31
+ruhe+intervent+VW                     14
+ruhe+belast+intervent+VW              12
+ruhe+schluck                           7
+ruhe+VW                                5
+schluck                                4
+ruhe+belast+intervent+schluck          4
+ruhe+intervent+schluck                 4
+ruhe+belast+intervent+VW+schluck       3
+ruhe+belast+schluck                    3
+belast+VW                              2
+ruhe+intervent+VW+schluck              1
+ruhe+belast+VW                         1
+belast+schluck                         1
+ruhe+VW+schluck                        1
+Name: wert, dtype: int64
+================================================================================
+Visual Analogue Scale - n=11
+[ 0  1  2  3  4  5  6  7  8  9 10]
+================================================================================
+Delirium Detection Score - n=30
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 25 26 28 29 32 35]
+================================================================================
+Glasgow Coma Scale - n=13
+[ 3  4  5  6  7  8  9 10 11 12 13 14 15]
+================================================================================
+CAM-ICU - n=3
+unmögl.    26210
+neg.       15861
+pos.        9440
+Name: wert, dtype: int64
+================================================================================
+Richmond Agitation Sedation Scale - n=10
+0     17617
+-1     9432
+-4     7102
+1      6761
+-3     5471
+-5     5269
+-2     3814
+2      3162
+3      1524
+4       175
+Name: wert, dtype: int64

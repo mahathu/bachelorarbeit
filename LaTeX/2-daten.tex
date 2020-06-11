@@ -5,15 +5,41 @@ Die daten wurden vor dem Export pseudonymisiert. Nach dem Export lagen die Daten
 
 \section{Übersicht über die vorliegenden Daten}
 
-Der mir für diese Arbeit zur Verfügung stehende Datensatz enthält Informationen über insgesamt 1357 Patienten-Aufenthalte auf den Intensivstationen der Charité Berlin, die allesamt im Zeitraum von Juni 2019 bis Juni 2020 stattfanden. Jeder Aufenthalt wird über eine numerische, inkrementell aufsteigende Nummer\footnote{in den Datensätzen als n\_ID bezeichnet} eindeutig identifiziert. Hierbei gilt es zu beachten, dass ein Patient bzw. eine Patientin, der/die im Laufe seiner/ihrer Behandlung mehrere Male auf eine Intensivstation verlegt wird, für jeden separaten Aufenthalt eine neue Identifikationsnummer erhält. Für jeden Patient/für jede Patientin liegen Informationen über das Geschlecht, BMI\footnote{Body-Mass-Index}, das Alter zum Zeitpunkt der Aufnahme und ob während des Aufenthalts ein Delir\footnote{F05.* gemäß ICD-10} diagnostiziert wurde, vor. Weiterhin ist die Dauer des Aufenthalts auf der Intensivstation vermerkt, sowie ob der Patient/die Patientin während seines/ihres Aufenthalts verstorben ist. Die Mortalität während des Aufenthalts lag bei etwa 17\% ($n=225$). Die beobachteten Aufenthalte hatten eine Dauer zwischen wenigen Stunden und mehreren Monaten. Die mittlere Aufenthaltsdauer während des Beobachtungszeitraums liegt bei x Tagen, der Median beträgt y Tage. Etwas mehr als ein Viertel der Patienten ($n=375$) wurden für eine Woche oder länger auf der Intensivstation behandelt.
+Der mir für diese Arbeit zur Verfügung stehende Datensatz enthält Informationen über insgesamt 1357 Patienten-Aufenthalte auf den Intensivstationen der Charité Berlin, die allesamt im Zeitraum von Juni 2019 bis Juni 2020 stattfanden. Jeder Aufenthalt wird über eine numerische, inkrementell aufsteigende Nummer\footnote{in den Datensätzen als n\_ID bezeichnet} eindeutig identifiziert. Hierbei gilt es zu beachten, dass ein Patient bzw. eine Patientin, der/die im Laufe seiner/ihrer Behandlung mehrere Male auf eine Intensivstation verlegt wird, für jeden separaten Aufenthalt eine neue Identifikationsnummer erhält. Für jeden Patient/für jede Patientin liegen Informationen über das Geschlecht, BMI\footnote{Body-Mass-Index}, das Alter zum Zeitpunkt der Aufnahme und ob während des Aufenthalts ein Delir\footnote{F05.* gemäß ICD-10} diagnostiziert wurde, vor. Weiterhin ist die Dauer des Aufenthalts auf der Intensivstation vermerkt, sowie ob der Patient/die Patientin während seines/ihres Aufenthalts verstorben ist. Die Mortalität während des Aufenthalts lag bei etwa 17\% ($n=225$). Die beobachteten Aufenthalte verliefen über Zeiträume von wenigen Stunden bis zu mehreren Monaten. Die mittlere Aufenthaltsdauer während des Beobachtungszeitraums liegt bei etwa 7,2 Tagen, der Median beträgt 3,2 Tage. Fast die Hälfte aller Aufenthalte endete also nach weniger als drei Tagen. Nur etwas mehr als ein Viertel der Patienten ($n=375$) wurden für eine Woche oder länger auf der Intensivstation behandelt.
 
 Für jeden Patient/jede Patientin werden während der Dauer seines/ihres Aufenthalts medizinische Scores erfasst sowie Visitentexte geschrieben. Die Visitentexte werden digital erfasst und liegen im Unicode-Zeichensatz vor, folgen allerdings im Allgemeinen keinem einheitlichen Muster. Es handelt sich also um Freitexte, und es liegt im Ermessen der behandelnden Ärzte bzw. Pflegekräfte, einen aussagekräftigen Text zu formulieren. Ebenso können sich Faktoren wie Zeitdruck oder Stress auf Umfang und Genauigkeit der eingetragenen Texte auswirken(CITE).
 
 %Diese Information über med. scores ggf. lieber in die Einleitung!
-Bei den erfassten Scores handelt es sich um medizinische Bewertungssysteme, bei denen die Verfassung des betrachteten Patienten anhand klar definierter Regeln anhand einer Punktzahl bewertet wird(CITE). Häufig beziehen sich die Scores dabei nur auf einen kleinen Teil der Gesamtverfassung des Patienten, beispielsweise auf den Grad der Sedierung oder auf Schmerzempfinden, sofern dieses nicht vom Patienten selber mitgeteilt werden kann. Tabelle 1 gibt einen Übersicht über alle Scores und Freitexte, die in dem gegebenen Datensatz erfasst wurden. Bei der VarID handelt es sich um eine Zahl, mit der jede Art von auf der Intensivstation erfasstem Wert bzw. eingetragenem Text repräsentiert und eindeutig identifiziert wird.\footnote{Fridtjof fragen ob das stimmt} 
+Bei den erfassten Scores handelt es sich um medizinische Bewertungssysteme, bei denen die Verfassung des betrachteten Patienten anhand klar definierter Regeln anhand einer Punktzahl bewertet wird(CITE). Häufig beziehen sich die Scores dabei nur auf einen kleinen Teil der Gesamtverfassung des Patienten, beispielsweise auf den Grad der Sedierung oder auf Schmerzempfinden, sofern dieses nicht vom Patienten selber mitgeteilt werden kann. Tabelle \ref{table:varids} gibt einen Übersicht über alle Scores und Freitexte, die in dem gegebenen Datensatz erfasst wurden. Bei der VarID handelt es sich um eine Zahl, mit der jede Art von auf der Intensivstation erfasstem Wert bzw. eingetragenem Text repräsentiert und eindeutig identifiziert wird.\footnote{Fridtjof fragen ob das stimmt}
+
+Es folgt eine detailliertere Beschreibung derjenigen Werte, die für den Inhalt dieser Arbeit besonders hohe Relevanz haben:
+
+\paragraph{Glasgow Coma Scale}
+bla bla lba
 
 %tabelle scores: varid, name, beschreibung, wertebereich
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{llr}\toprule
+        \textbf{VarID}	&\textbf{Name} &\textbf{Wertebereich} \\\midrule
+        20512769    & Glasgow Coma Scale (GCS)          & $3 \leq v \leq ?$ \\
+        20512801    & Behavior Pain Scale (BPS)         & $3 \leq v \leq 12$ \\
+        20512802    & Delirium Detection Score (DDS)    & $3 \leq v \leq 35$* \\
+        22085815    & Visite\_ZNS                        & Freitext \\
+        22085820    & Visite\_Oberarzt                   & Freitext \\
+        22085836    & Visite\_Pflege                     & Freitext \\
+        22085897    & Ramsay Sedation Scale             & $1 \leq v \leq 6$ \\
+        22085911    & NRS/VAS (Visual Analogue Scale)   & $0 \leq v \leq 10$ \\
+        22086067    & Vigilanz                          & Freitext* \\
+        22086158    & Richmond Agitation Sedation Scale (RASS) & $-5 \leq v \leq 4$ \\
+        22086169    & CAM-ICU                           & $v \in \{	\text{neg.}, \text{pos.}, \text{unmögl.} \}$ \\
+        22086170    & BPS-Bewertung                     & Freitext* \\
+        22086172    & NRS/VAS Bedingungen               & Freitext* \\\bottomrule
+    \end{tabular}
 
+    \caption{Übersicht aller erfassten Scores und Freitexte}
+    \label{table:varids}
+\end{table}
 %hier jeweils ein kurzer Überblick über die wichtigsten werte.
 
 %hier histogramme mit den erfassten werten der einzelnen scores.
