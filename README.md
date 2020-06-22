@@ -8,6 +8,15 @@ für besseres Modell:
 allgemeine Notizen
 ====
 
+rot: #fb8072
+blau: #80b1d3
+limette: #b3de69
+orange: #fdb462
+lila: #bc80bd
+pink: #fccde5
+hellgelb: #ffffb3
+(siehe colorbrewer)
+
 Datendateien
 ----
 
@@ -23,9 +32,9 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 
 |VarID     |Wert                                    |Inhalt                                         |Tabelle |
 |----------|----------------------------------------|-----------------------------------------------|--------|
-| 20512802 | **DDS** (Delirium Detection Score)         | int, 1-35 (?)                                 | scores |
+| 20512802 | **DDS** (Delirium Detection Score)     | int, 1-35 (?)                                 | scores |
 | 20512769 | **GCS** (Glasgow Coma Scale)           | int, 3-15                                     | scores |
-| 20512801 | BPS (Behavior Pain Scale)          | int, 3-12                                     | scores |
+| 20512801 | BPS (Behavior Pain Scale)              | int, 3-12                                     | scores |
 | 22085815 | **Visite_ZNS**                         | Text, idr kurz                                | daten  |
 | 22085836 | **Visite_Pflege**                      | Text, eher länger                             | daten  |
 | 22085820 | **Visite_Oberarzt**                    | Text, idr lang                                | daten  |

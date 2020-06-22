@@ -7,12 +7,14 @@ from datetime import timedelta
 pd.options.mode.chained_assignment = None  # default='warn'
 
 MARKER_COLOR_DEFAULT = 'lightgrey'
-MARKER_COLOR_LABEL = 'orange'
-MARKER_COLOR_TEXT = 'blue'
+# MARKER_COLOR_LABEL = 'orange'
+# MARKER_COLOR_TEXT = 'blue'
+MARKER_COLOR_LABEL = '#fb8072'
+MARKER_COLOR_TEXT = '#80b1d3'
 
 PAIR_GENERATION_METHOD = "nearest"
-PREDICTION_MAX_DISTANCE = 60*60*8 #8 hours
-DRAW_PLOTS = False
+PREDICTION_MAX_DISTANCE = 60*60*1 #1 hours
+DRAW_PLOTS = True
 
 input_file = "../data/clean/all_scores.csv"
 out_file_name = f"labels_{PAIR_GENERATION_METHOD}.csv"
@@ -58,7 +60,7 @@ for v_id in var_ids:
 df = pd.read_csv(input_file)
 df = df[df['VarID'].isin(var_ids)] # only consider relevant var ids
 
-for patient_n in df['patient'].unique():
+for patient_n in df['patient'].unique()[:5]:
     prev_columns_n = len(training_pairs)
     
     if DRAW_PLOTS:
@@ -139,7 +141,7 @@ for patient_n in df['patient'].unique():
     plt.scatter(patient_df['Zeitpkt_offset'], patient_df['VarIDIndex'], c=patient_df['VarIDColor'], s=25, marker='+', zorder=3)
     
     #Set display properties for the plot
-    plt.title(f"patient #{patient_n:04} (time in ICU: {timedelta(seconds=seconds_in_icu)} / data pairs: {len(training_pairs)-prev_columns_n})")
+    plt.title(f"Patient #{patient_n:04} (Zeit auf ICU: {timedelta(seconds=seconds_in_icu)} / Wertepaarey: {len(training_pairs)-prev_columns_n})")
     plt.setp(ax.xaxis.get_majorticklabels(), rotation=-45, ha="left", rotation_mode="anchor")
     plt.xticks(xtick_pos, xtick_labels)
     plt.yticks(range(len(var_ids)), [var_ids[id]['label'] for id in var_ids])
@@ -157,5 +159,5 @@ out_df = pd.DataFrame(data=training_pairs, columns=['patient_id','text_varid','t
 out_df['text_time'] = out_df['text_time'].astype('int')
 out_df['label_time'] = out_df['label_time'].astype('int')
 
-print(f"Saving dataframe with {len(out_df)} rows to {out_file_name}...")
-out_df.to_csv(out_file_name, index=False)
+#print(f"Saving dataframe with {len(out_df)} rows to {out_file_name}...")
+#out_df.to_csv(out_file_name, index=False)

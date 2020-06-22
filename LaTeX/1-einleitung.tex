@@ -1,25 +1,41 @@
 \section{Datenerfassung auf Intensivstationen}
+%   * worum geht es?
+%   * Thematik
+%     * Problematik der Datenerfassung auf ICUs
+%     * bisherige Ansätze, Forschungsarbeiten, Paper etc.
 
 blabla. 
 
-\subsection{medizinische Scores}
-Was sind medizinische Scores? Es handelt sich stets um \textbf{eindimensionale metrische Skalen}!
+\subsection{medizinische Scores} \label{section:scores}
+
+In \textit{Die Intensivmedizin} \citep{marxIntensivmedizin2015c} ist der Begriff des Scores folgendermaßen definiert:
+
+\begin{itquote}
+    "Ein Score ist der Versuch, eine komplexe klinische Situation auf einen eindimensionalen Punktwert abzubilden. Eine solche Reduktion verfolgt das Ziel, übergreifende Aspekte wie Schweregrad oder Prognose als Kombination einzelner Fakten objektiv zu fassen, um sie dann in unterschiedlichen Kollektiven vergleichend darstellen zu können."
+\end{itquote}
+
+Es handelt sich bei einem Score häufig um die Kombination mehrerer erfassbarer Werte, beispielsweise der Herzfrequenz oder dem Sauerstoffgehalt im Blut. Auch allgemeine Informationen über den Patienten wie das Alter oder bekannte Vorerkrankungen können berücksichtigt werden. Die Bestimmung eines Scores stellt also den Versuch dar, die komplexe, individuelle Situation eines Patienten auf einen numerischen Wert zu reduzieren. Dabei gehen unweigerlich Informationen verloren. Gleichzeitig erlaubt es die Erfassung von derartigen standardisierten Scores aber, auf einen Blick wichtige Informationen über den Zustand des Patienten zu erfassen. Durch eine derartige Reduktion auf das Wesentliche wird ferner ermöglicht, den pathologischen Verlauf eines Patienten über einen längeren Zeitraum zu analysieren, oder die Symptomatik mehrerer Patienten miteinander zu vergleichen. Ein weiterer Vorteil ist es, dass, unter der Voraussetzung der richtigen Anwendung, die Vergabe von Scores weitestgehend unabhängig von der subjektiven Einschätzung des Arztes oder der Pflegekraft erfolgt \citep{marxIntensivmedizin2015c}.
+
+Die Frage, ob es sich bei der Vorhersage der im Rahmen dieser Arbeit behandelten Scores um ein Regressions- oder ein Klassifikationsproblem handelt, wird in Abschnitt \ref{section:regrvsclf} weiter vertieft. Eine Ausnahme bildet der CAM-ICU (siehe Abschnitt \ref{section:vorliegende_daten}). Das Ergebnis fällt hierbei entweder positiv oder negativ aus und stellt damit keinen Score im eigentlichen Sinne dar.
 
 \subsection{Ziel der Arbeit}
 
 Das Ziel der vorliegenden Arbeit ist es, mit Hilfe von maschinellem Lernen ein statistisches Modell zu entwickeln, um anhand von Freitexten medizinische Scores möglichst akkurat vorherzusagen.
 
 \section{Maschinelles Lernen}
+% Hier auf historischen Kontext eingehen! (big data, processing power Moore's law etc)
 
 Der Begriff Maschinelles Lernen bezeichnet einen modernen Ansatz in der Arbeit an künstlicher Intelligenz. (cite).
 
 hat sich im Zeitalter von Big Data und leistungsstarken Rechnern zu einem der Hauptforschungspunkte der Informatik entwicklt (cite). 
 
-(et al) definiert den Vorgang maschinellen Lernens folgendermaßen:
+\citet{mitchellMachineLearning1997} definiert den Vorgang maschinellen Lernens folgendermaßen:
 
-\begin{quote}
-    {\foreignlanguage{english}{A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.}}
-\end{quote}
+\begin{itquote}
+    {\foreignlanguage{english}{"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."}}
+\end{itquote}
+
+%In der vorliegenden Arbeit handelt es sich bei E um bereits gelabelte Wertepaare und bei T um die Aufgabe, einem noch unbekannten Text den richtigen Wert aus dem Wertebereich eines medizinischen Scores zuzuordnen. Für P kommen verschiedene Metriken in Frage, um die Qualität des Modells zu bemessen, beispielsweise das Bestimmtheitsmaß R^2 oder MAE (siehe Abschnitt 1.2.3 performance metrics :))
 
 Im Allgemeinen werden also Algorithmen, die aus großen Datensätzen "lernen" und damit Vorhersagen über unbekannte Daten machen, als maschinelles Lernen bezeichnet.
 
@@ -27,15 +43,15 @@ Im Allgemeinen werden also Algorithmen, die aus großen Datensätzen "lernen" un
 
 Neben vielen weiteren Methoden stellt Supervised Learning einen zentralen Ansatz im Gebiet des maschinelles Lernen dar.
 
-\subsection{Regression vs Klassifizierung}
-
+\subsection{Regression vs Klassifikation}\label{section:regrvsclf}
 Probleme aus dem Bereich des supervised machine learnings lassen sich im Allgemeinen in eine von zwei Kategorien einordnen:
 
 Klassifizierung bezeichnet den Prozess, bei dem ein Datensatz einer oder mehreren Klassen aus einer endlichen Liste möglicher Klassen zugeordnet wird. 
 
-Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-Mails (Spam oder nicht Spam) oder bei der Erkennung von handschriftlichen Texten (welches Symbol aus einem gegebenen Alphabet ist dargestellt?) Anwendung (CITE). Da es sich bei den betrachteten medizinischen Scores um diskrete, ganzzahlige Werte aus einem endlichen Wertebereich handelt, liegt auch hier die Anwendung eines Klassifizierungs-Verfahrens nahe.
+Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-Mails (Spam oder nicht Spam) oder bei der Erkennung von handschriftlichen Texten (welches Symbol aus einem gegebenen Alphabet ist dargestellt?) Anwendung (CITE). 
+Da es sich bei den betrachteten medizinischen Scores um diskrete, ganzzahlige Werte aus einem endlichen Wertebereich handelt, liegt auch hier die Anwendung eines Klassifizierungs-Verfahrens nahe.
 
-Würde man aber die verschiedenen möglichen Werte eines Scores als separate und voneinander unabhängige Klassen betrachten, so ginge eine wichtige Information über deren Anordnung verloren. Im mathematischen Sinne stellen alle hier betrachteten medizinische Scores Totalordnungen dar. Sie erfüllen also die Anforderungen der Reflexivität, Antisymmetrie, Transitivität und Totalität. Bezeichne $M$ die Menge aller möglichen Werte eines beliebigen medizinischen Scores. Folglich gilt für alle $a,b,c \in M$:
+Betrachtet man aber die verschiedenen möglichen Werte eines Scores als separate und voneinander unabhängige Klassen, so ginge eine wichtige Information über deren Anordnung verloren. Bei den im Rahmen dieser Arbeit behandelten Scores handelt es sich stets um eindimensionale, metrische Skalen. Im mathematischen Sinne stellen sie Totalordnungen dar: Sie erfüllen also die Anforderungen der Reflexivität, Antisymmetrie, Transitivität und Totalität. Bezeichne $M$ die Menge aller möglichen Werte eines beliebigen medizinischen Scores. Es gilt also für alle $a,b,c \in M$:
 
 \begin{equation*}
     \centering
@@ -54,38 +70,23 @@ Würde man aber die verschiedenen möglichen Werte eines Scores als separate und
     \end{aligned}
 \end{equation*}
 
-% \begin{align}
-%     a \leq a && \text{(Reflexivität)}\\
-%     a \leq b \land b \leq a \; \Rightarrow \; a=b && \text{(Antisymmetrie)}\\
-%     a \leq b \land b \leq c \; \Rightarrow \; a \leq c && \text{(Transitivität)}\\
-%     a \leq b \lor b \leq a && \text{(Totalität)}
-% \end{align}
+Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis setzen. So ist ein RASS-Wert\footnote{Richmond Agitation-Sedation Scale} von $-4$ (tief sediert) beispielsweise deutlich näher an $-3$ (mäßig sediert) als an $+1$ (unruhig). Bei gängigen Verfahren zur Klassifizierung ginge diese Information verloren, da bei Kenngrößen zur Bewertung solcher Modelle nur betrachtet werden kann, ob ein gegebener Eingabetext genau der richtigen Kategorie (dem richtigen Score) zugeordnet wurde oder nicht. 
 
-Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis setzen. So ist ein RASS-Wert\footnote{Richmond Agitation-Sedation Scale} von -4 (Tief sediert) beispielsweise deutlich näher an -3 (mäßig sediert) als an +1 (unruhig). Bei gängigen Verfahren zur Klassifizierung ginge diese Information verloren, da bei Kenngrößen zur Bewertung solcher Modelle nur betrachtet werden kann, ob ein gegebener Eingabetext der richtigen Kategorie (dem richtigen Score) zugeordnet wurde oder nicht. (Da viele der Scores bei der Vergabe zumindest teilweise auch auf dem persönlichen Ermessen des behandelnden Arztes/der behandelnden Ärztin beruht wäre selbst für menschliche Experten eine genaue Zuordnung eines Textes zu einer Punktzahl problematisch.)
-
+%(Darüber hinaus beruhen viele der Scores bei der Vergabe zumindest teilweise auch auf dem persönlichen Ermessen des behandelnden Arztes/der behandelnden Ärztin bzw. der Pflegekraft. Damit wäre selbst für menschliche Experten eine genaue Zuordnung eines Textes zu einer Punktzahl nicht immer möglich.)\footnote{checken ob das stimmt}
 Bei der vorliegenden Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
+%siehe: https://stats.stackexchange.com/a/282890
 
-%siehe: https://stats.stackexchange.com/a/282890 Handelt es sich um \glqq ordinal classification\grqq{}?
+\subsection{numerische Optimierung}
+bla bla bla
+%       * numerische optimierung: Lösungsraum, Bewertungsfunktion
+%       * das Gradientenverfahren
+%       * stochastic gradient descend
 
-
-% ## 1) Einführung
-%   * worum geht es?
-%   * Thematik
-%     * Problematik der Datenerfassung auf ICUs
-%     * bisherige Ansätze, Forschungsarbeiten, Paper etc.
-%   * was ist maschinelles lernen?
-%     * **Formale Definition von [Mitchell, Tom. (1997). Machine Learning]**
-%       * A machine is said to learn from experience E with respect to some class of tasks T and performance measure P...
-%     * historischer Kontext (big data, processing power Moore's law etc)
-%     * Arten von maschinellem lernen (supervised, unsupervised)
-%     * classification vs regression
+\subsection{Bewertung von Modellen}
+Die Leistung eines Modells beim Lösen eines bestimmten Problems kann anhand von verschiedenen Metriken evaluiert werden.
 %     * Bewertung von ML-Modellen
 %       * z.b. cross validation
 %       * vermeiden: data leakage
-%     * (numerische optimierung)
-%       * numerische optimierung: Lösungsgraum, Bewertungsfunktion
-%       * das Gradientenverfahren
-%       * stochastic gradient descend
-%     * Herausforderungen von ML für NLP
-%     * Machinelles lernen in der medizin
-%     * warum ML f. Bearbeitung der Problematik?
+
+\subsection{Anwendungen von Maschinellem Lernen in der Medizin}
+Lorem Ipsum. Hier andere Einsatzgebiete von ML in Medizin. Und: Warum ML für unsere Problematik?

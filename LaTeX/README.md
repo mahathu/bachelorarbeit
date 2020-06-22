@@ -35,7 +35,6 @@ Literatur
 * https://www.ingentaconnect.com/content/wk/ccm/2018/00000046/00000004/art00031
 * https://www.aclweb.org/anthology/W17-5043/
 * Mitchell, Tom. (1997). Machine Learning
-  * formelle Definition von ML für die Einleitung
 * https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b91400f14e27ec9dacf0a389e72fd0e0fa9c2535.pdf
 * https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf
 * https://pubmed.ncbi.nlm.nih.gov/31947237/

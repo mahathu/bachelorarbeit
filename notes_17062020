@@ -1,0 +1,15 @@
+vorhersage von intensivmedizinischen scores auf basis von visitentexten
+
+patienten scatterplot wert statt orangenem kreuz
+
+(mittelwert der scores bilden)
+
+frühere versionen der visitentexten auch zur prediction verwenden
+
+wenn linearer kern genauso gut f SVR dann den verwenden.
+
+Vergleich mit: RASS=n aus freitext rausfiltern
+training mit allen werten, test mit 2 datensätzen: texte, die RASS=n enthalten und solchen, die es nicht enthalten, performance vergleichen
+
+ggf subgruppenanalyse von texten mit rass=n und ohne
+was ist ground truth? text? RASSwert aus text? ganz anders?

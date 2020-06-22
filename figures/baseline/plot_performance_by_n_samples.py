@@ -15,11 +15,11 @@ df = pd.read_csv('performances_max_30min_rassonly.csv')
 df['mae'] = df['neg_mean_absolute_error']*-1
 df['mae_std'] = df['neg_mean_absolute_error_std']
 
-for estimator_name, c, ls in zip(['SGDRegressor', 'SVR'], ['r', 'b'], ['-','-']):
+for estimator_name, c, ls in zip(['SGDRegressor', 'SVR'], ['#fb8072', '#80b1d3'], ['-','-']):
     e_df = df.loc[df['estimator'] == estimator_name]
 
     plt.plot(e_df['n_samples'], e_df['mae'], linestyle=ls, marker='x', ms=4, color=c, label=estimator_name)
-    plt.fill_between(e_df['n_samples'], e_df['mae']-e_df['mae_std'], e_df['mae']+e_df['mae_std'], alpha=.1, color=c, lw=0)
+    plt.fill_between(e_df['n_samples'], e_df['mae']-e_df['mae_std'], e_df['mae']+e_df['mae_std'], alpha=.15, color=c, lw=0)
 
 plt.grid()
 

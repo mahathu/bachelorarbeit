@@ -1,5 +1,4 @@
 \documentclass[
-	titlepage=false,
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
 	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
@@ -11,24 +10,37 @@
 ]{scrreprt}
 
 \usepackage{pdfpages}
+
+\usepackage{float}
+\usepackage[caption = false]{subfig}
 \usepackage{graphicx}
+\graphicspath{ {fig/} }
+
 \usepackage{xcolor}
-\usepackage[english, main=	ngerman]{babel} % englisch für Zitate auf Englisch
+\usepackage[english, main=ngerman]{babel} % englisch für Zitate auf Englisch
 \usepackage[onehalfspacing]{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype} % better kerning, word spacing etc
-\usepackage[round]{natbib} % scheinbar die beste Wahl für mich https://tex.stackexchange.com/a/25702/217229
-\usepackage[hidelinks]{hyperref}
+
+\usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
 \usepackage{booktabs} % schönere Tabellen
 
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
 
+\newenvironment{itquote} % italics quote and " "
+{\begin{quote}\itshape}
+{\end{quote}}
+
 \usepackage{amsmath} %z.b align
+\usepackage{interval} %für Wertebereiche
 
+\usepackage{footnote} %um fußnoten auch in Tabellen zu ermöglichen
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+\usepackage[square]{natbib} % scheinbar die beste Wahl für mich https://tex.stackexchange.com/a/25702/217229
 \bibliographystyle{plainnat}
-
-\setlength{\parskip}{.2em} % space between paragraphs
 
 % \usepackage{fontspec} % custom font (needs compiling via xelatex)
 % \setmainfont{Fira Sans}
@@ -49,16 +61,15 @@
 	% Oben auf der Seite aktuelles Kapitel hinschreiben
 	\pagestyle{headings}
 
-	% Abstract
-	% \begin{abstract}
-	% 	Hier kommt ein toller Abstract
-	% \end{abstract}
-	% Alternative für scrreprt (aus KOMA-Script:)
+	% Abstract (muss für komascript so gemacht werden)
 	\chapter*{Abstract}
 	Hier kommt ein toller Abstract
 
 	% Inhaltsverzeichnis:
+	%\setlength{\parskip}{-em} % falls das Inhaltsverzeichnis eng wird
 	\tableofcontents
+
+	\setlength{\parskip}{.2em} % space between paragraphs. Erst nach dem Inhaltsverzeichnis:)
 
 	\chapter{Einführung}
 	\input{1-einleitung}
@@ -69,7 +80,7 @@
 	\chapter{Vorgehensweise}
 	% \input{3-vorgehensweise}
 	
-	\chapter{Fazit}
+	\chapter{Auswertung der Ergebnisse}
 	\input{4-schluss}
 
 	\newpage
