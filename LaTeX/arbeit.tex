@@ -1,4 +1,5 @@
 \documentclass[
+	abstracton, %abstract on!
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
 	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
@@ -61,12 +62,13 @@
 	\includepdf[pages={1}]{Deckblatt/deckblatt.pdf}
 
 	% Oben auf der Seite aktuelles Kapitel hinschreiben
-	\pagestyle{headings}
 
 	% Abstract (muss für komascript so gemacht werden)
-	\chapter*{Abstract}
+	\begin{abstract}
 	Hier kommt ein toller Abstract
-
+	\end{abstract}
+	
+	\pagestyle{headings}
 	% Inhaltsverzeichnis:
 	%\setlength{\parskip}{-em} % falls das Inhaltsverzeichnis eng wird
 	\tableofcontents
