@@ -2,11 +2,11 @@ vorhersage von intensivmedizinischen scores auf basis von visitentexten
 
 patienten scatterplot wert statt orangenem kreuz
 
-(mittelwert der scores bilden)
+Alternative zur Key-Value-Generierung:
+* Mittelwert der scores bilden
+* frühere versionen der visitentexten auch zur prediction verwenden
 
-frühere versionen der visitentexten auch zur prediction verwenden
-
-wenn linearer kern genauso gut f SVR dann den verwenden.
+wenn linearer kern genauso gut f SVR dann diesen verwenden.
 
 Vergleich mit: RASS=n aus freitext rausfiltern
 training mit allen werten, test mit 2 datensätzen: texte, die RASS=n enthalten und solchen, die es nicht enthalten, performance vergleichen

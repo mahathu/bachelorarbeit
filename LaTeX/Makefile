@@ -2,4 +2,4 @@ compile:
 	latexmk -pdf arbeit.tex
 
 clean:
-	rm -f *.out *.aux *.bbl *.blg *.log *.toc *.fls *.synctex.gz *.xdv *.fdb_latexmk
+	rm -f build/*.out build/*.aux build/*.bbl build/*.blg build/*.log build/*.toc build/*.fls build/*.synctex.gz build/*.xdv build/*.fdb_latexmk

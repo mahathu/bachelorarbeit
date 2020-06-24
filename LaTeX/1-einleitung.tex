@@ -4,7 +4,7 @@
 %     * Problematik der Datenerfassung auf ICUs
 %     * bisherige Ansätze, Forschungsarbeiten, Paper etc.
 
-blabla. 
+blabla. 50\% der Fehler im Krankenhaus werden auf solche Kommunikationsprobleme zurückgeführt (Bhasale et al. 1998) und gelten als wichtiger Faktor für erhöhte Krankenhausmortalitätsraten (Wilson et al. 1995).
 
 \subsection{medizinische Scores} \label{section:scores}
 
@@ -19,7 +19,7 @@ Es handelt sich bei einem Score häufig um die Kombination mehrerer erfassbarer 
 Die Frage, ob es sich bei der Vorhersage der im Rahmen dieser Arbeit behandelten Scores um ein Regressions- oder ein Klassifikationsproblem handelt, wird in Abschnitt \ref{section:regrvsclf} weiter vertieft. Eine Ausnahme bildet der CAM-ICU (siehe Abschnitt \ref{section:vorliegende_daten}). Das Ergebnis fällt hierbei entweder positiv oder negativ aus und stellt damit keinen Score im eigentlichen Sinne dar.
 
 \subsection{Ziel der Arbeit}
-
+%Formulierung "Gegenstand der Arbeit" irgendwo verwenden
 Das Ziel der vorliegenden Arbeit ist es, mit Hilfe von maschinellem Lernen ein statistisches Modell zu entwickeln, um anhand von Freitexten medizinische Scores möglichst akkurat vorherzusagen.
 
 \section{Maschinelles Lernen}
@@ -39,16 +39,11 @@ hat sich im Zeitalter von Big Data und leistungsstarken Rechnern zu einem der Ha
 
 Im Allgemeinen werden also Algorithmen, die aus großen Datensätzen "lernen" und damit Vorhersagen über unbekannte Daten machen, als maschinelles Lernen bezeichnet.
 
-\subsection{Supervised Learning}
-
-Neben vielen weiteren Methoden stellt Supervised Learning einen zentralen Ansatz im Gebiet des maschinelles Lernen dar.
+Beschreiben: Hier gehts um supervised ML!
 
 \subsection{Regression vs Klassifikation}\label{section:regrvsclf}
-Probleme aus dem Bereich des supervised machine learnings lassen sich im Allgemeinen in eine von zwei Kategorien einordnen:
-
-Klassifizierung bezeichnet den Prozess, bei dem ein Datensatz einer oder mehreren Klassen aus einer endlichen Liste möglicher Klassen zugeordnet wird. 
-
-Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-Mails (Spam oder nicht Spam) oder bei der Erkennung von handschriftlichen Texten (welches Symbol aus einem gegebenen Alphabet ist dargestellt?) Anwendung (CITE). 
+Probleme aus dem Bereich des überwachten maschinellen Lernens lassen sich im Allgemeinen in eine von zwei Kategorien einordnen:
+Klassifizierung bezeichnet den Prozess, bei dem ein Datensatz einer oder mehreren Klassen aus einer endlichen Liste möglicher Klassen zugeordnet wird. Dieser Ansatz findet beispielsweise bei der automatischen Kategorisierung von E-Mails (Spam oder nicht Spam) oder bei der Erkennung von handschriftlichen Texten (welches Symbol aus einem gegebenen Alphabet ist dargestellt?) Anwendung (CITE). 
 Da es sich bei den betrachteten medizinischen Scores um diskrete, ganzzahlige Werte aus einem endlichen Wertebereich handelt, liegt auch hier die Anwendung eines Klassifizierungs-Verfahrens nahe.
 
 Betrachtet man aber die verschiedenen möglichen Werte eines Scores als separate und voneinander unabhängige Klassen, so ginge eine wichtige Information über deren Anordnung verloren. Bei den im Rahmen dieser Arbeit behandelten Scores handelt es sich stets um eindimensionale, metrische Skalen. Im mathematischen Sinne stellen sie Totalordnungen dar: Sie erfüllen also die Anforderungen der Reflexivität, Antisymmetrie, Transitivität und Totalität. Bezeichne $M$ die Menge aller möglichen Werte eines beliebigen medizinischen Scores. Es gilt also für alle $a,b,c \in M$:
@@ -76,17 +71,9 @@ Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis se
 Bei der vorliegenden Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
 %siehe: https://stats.stackexchange.com/a/282890
 
-\subsection{numerische Optimierung}
-bla bla bla
-%       * numerische optimierung: Lösungsraum, Bewertungsfunktion
-%       * das Gradientenverfahren
-%       * stochastic gradient descend
-
-\subsection{Bewertung von Modellen}
-Die Leistung eines Modells beim Lösen eines bestimmten Problems kann anhand von verschiedenen Metriken evaluiert werden.
-%     * Bewertung von ML-Modellen
-%       * z.b. cross validation
-%       * vermeiden: data leakage
+\subsection{Natural Language Processing}
+Die Verarbeitung natürlicher Sprache stellt eine besondere Herausforderung im Gebiet des maschinellen Lernens dar.
+%texte müssen featurized werden, weil ML Modelle nur Zahlen erwartet, keine Texte.
 
 \subsection{Anwendungen von Maschinellem Lernen in der Medizin}
-Lorem Ipsum. Hier andere Einsatzgebiete von ML in Medizin. Und: Warum ML für unsere Problematik?
+Lorem Ipsum. Hier andere Einsatzgebiete von ML in Medizin \citep{krishnanSupervisedLearningApproach2018}. Und: Warum ML für unsere Problematik?

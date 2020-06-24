@@ -40,11 +40,13 @@
 \makesavenoteenv{table}
 
 \usepackage[square]{natbib} % scheinbar die beste Wahl für mich https://tex.stackexchange.com/a/25702/217229
-\bibliographystyle{plainnat}
+\bibliographystyle{bibstyle.bst} % GUI to make bst style: latex makebst
 
 % \usepackage{fontspec} % custom font (needs compiling via xelatex)
 % \setmainfont{Fira Sans}
-    
+
+\RedeclareSectionCommand[beforeskip=0pt,afterindent=false]{chapter} %weniger Abstand nach oben bei Kapitelüberschriften
+
 \begin{document}
 	\renewcommand{\arraystretch}{1.15} %Zeilenabstand innerhalb von Tabellen
 
