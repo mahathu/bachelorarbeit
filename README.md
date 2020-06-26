@@ -17,6 +17,9 @@ pink: #fccde5
 hellgelb: #ffffb3
 (siehe colorbrewer)
 
+ROT: #fb8072
+BLAU: #80b1d3
+
 Datendateien
 ----
 

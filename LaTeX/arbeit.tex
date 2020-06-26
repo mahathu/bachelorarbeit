@@ -7,7 +7,8 @@
 	fleqn, % flush equations left (--> Formeln linksbündig)
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
 	headinclude, %scheint keinen Unterschied zu machen
-	headsepline
+	headsepline,
+	%open=right %Kapitelanfang immer auf rechter Seite, ggf. für pdf-Version weglassen
 ]{scrreprt}
 
 \usepackage{pdfpages}
@@ -49,6 +50,8 @@
 \RedeclareSectionCommand[beforeskip=0pt,afterindent=false]{chapter} %weniger Abstand nach oben bei Kapitelüberschriften
 
 \begin{document}
+	\pagestyle{empty}
+
 	\renewcommand{\arraystretch}{1.15} %Zeilenabstand innerhalb von Tabellen
 
 	% ========================================== %
@@ -61,14 +64,12 @@
 	% Deckblatt:
 	\includepdf[pages={1}]{Deckblatt/deckblatt.pdf}
 
-	% Oben auf der Seite aktuelles Kapitel hinschreiben
-
-	% Abstract (muss für komascript so gemacht werden)
-	\begin{abstract}
+	% Abstract
+	\begin{abstract} \thispagestyle{plain} % Abstract soll auch Seitenzahl haben
 	Hier kommt ein toller Abstract
 	\end{abstract}
-	
-	\pagestyle{headings}
+
+	\pagestyle{headings} % Oben auf der Seite aktuelles Kapitel hinschreiben
 	% Inhaltsverzeichnis:
 	%\setlength{\parskip}{-em} % falls das Inhaltsverzeichnis eng wird
 	\tableofcontents

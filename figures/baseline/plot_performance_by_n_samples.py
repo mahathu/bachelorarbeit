@@ -15,10 +15,12 @@ df = pd.read_csv('performances_max_30min_rassonly.csv')
 df['mae'] = df['neg_mean_absolute_error']*-1
 df['mae_std'] = df['neg_mean_absolute_error_std']
 
-for estimator_name, c, ls in zip(['SGDRegressor', 'SVR'], ['#fb8072', '#80b1d3'], ['-','-']):
+fig,ax = plt.subplots()
+
+for estimator_name, c, ls, marker in zip(['SGDRegressor', 'SVR'], ['#fb8072', '#80b1d3'], ['-','--'], ['x','o']):
     e_df = df.loc[df['estimator'] == estimator_name]
 
-    plt.plot(e_df['n_samples'], e_df['mae'], linestyle=ls, marker='x', ms=4, color=c, label=estimator_name)
+    plt.plot(e_df['n_samples'], e_df['mae'], linestyle=ls, marker=marker, ms=4, color=c, label=estimator_name)
     plt.fill_between(e_df['n_samples'], e_df['mae']-e_df['mae_std'], e_df['mae']+e_df['mae_std'], alpha=.15, color=c, lw=0)
 
 plt.grid()
@@ -27,4 +29,6 @@ plt.title("Baseline model performance by number of training samples")
 plt.ylabel("Mean absolute error")
 plt.xlabel("Number of training samples")
 plt.legend(loc="upper right")
-plt.show()
+#plt.show()
+fig.set_size_inches(10, 6)
+plt.savefig("performance_by_n_samples.png", bbox_inches='tight', dpi=300)
