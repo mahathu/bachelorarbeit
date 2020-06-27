@@ -172,7 +172,7 @@ def save_perf_report_as_md(df, scoring_method, fn, n_samples):
 # =============================================================================
 
 def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
-    cross_val_split = ShuffleSplit(n_splits=n_cv_splits, test_size=.25)
+    cross_val_split = ShuffleSplit(n_splits=n_cv_splits, test_size=.2)
 
     '''this would train a new model for each CV fold and
     each scoring method and thus can be done much faster!'''
@@ -192,18 +192,19 @@ def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
 
 def get_x_y(df, input_varid, output_varid, max_min_between, min_min_between=0, max_samples=0):
     df['diff'] = (df['label_time'] - df['text_time']).abs()
-
+    
     df_filter = ((df['text_varid'] == input_varid) 
                 & (df['label_varid'] == output_varid) 
                 & (df['diff'] <= (max_min_between*60))
                 & (df['diff'] >= (min_min_between*60)))
-
+    #print(df_filter)
     # remove unwanted rows:
     df = df[df_filter]
-
+    
     if max_samples>0: # maximum n of training pairs. Should only be used to speed up testing
-        df = df[:max_samples]
-        eprint(f"Only considering the first {max_samples} samples!")
+        #df = df[:max_samples]
+        df = df.sample(max_samples) #randomly chose max_samples samples
+        #eprint(f"Only considering the first {max_samples} samples!")
 
     # remove irrelevant columns:
     df = df[['text', 'label']]

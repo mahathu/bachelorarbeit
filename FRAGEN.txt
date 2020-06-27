@@ -1,8 +1,0 @@
-Delirium Detection Score (DDS) hat nur 5 Parameter, richtig? Weil max score laut histogramm 35 ist --> Richtig!
-DDS eher zur bestätigung eines vorliegenden Delirs. Wird idR nur von pflegeperson eingetragen
-DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur cam-icu 
-
-
-=== Neue Fragen ===
-
-1) von Wann bis wann fanden Patientenaufenthalte statt?

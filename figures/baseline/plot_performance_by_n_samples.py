@@ -16,8 +16,9 @@ df['mae'] = df['neg_mean_absolute_error']*-1
 df['mae_std'] = df['neg_mean_absolute_error_std']
 
 fig,ax = plt.subplots()
-
-for estimator_name, c, ls, marker in zip(['SGDRegressor', 'SVR'], ['#fb8072', '#80b1d3'], ['-','--'], ['x','o']):
+#colors = ['#fb8072', '#80b1d3']
+colors = ['#3969b1', '#cc2529']
+for estimator_name, c, ls, marker in zip(['SGDRegressor', 'SVR'], colors, ['-','--'], ['x','o']):
     e_df = df.loc[df['estimator'] == estimator_name]
 
     plt.plot(e_df['n_samples'], e_df['mae'], linestyle=ls, marker=marker, ms=4, color=c, label=estimator_name)
@@ -29,6 +30,6 @@ plt.title("Baseline model performance by number of training samples")
 plt.ylabel("Mean absolute error")
 plt.xlabel("Number of training samples")
 plt.legend(loc="upper right")
-#plt.show()
+# plt.show()
 fig.set_size_inches(10, 6)
 plt.savefig("performance_by_n_samples.png", bbox_inches='tight', dpi=300)

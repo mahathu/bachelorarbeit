@@ -5,8 +5,8 @@ df = pd.read_csv('performance_by_min_offset.csv')
 
 fig, ax = plt.subplots()
 
-plt.plot(df['min'], df['mae'], marker='x', ms=4, label="SVR", color="#80b1d3")
-plt.fill_between(df['min'], df['mae']-df['std'], df['mae']+df['std'], alpha=.1, lw=0, color="#80b1d3")
+plt.plot(df['min'], df['mae'], marker='x', ms=4, label="SVR", color="#3969b1")
+plt.fill_between(df['min'], df['mae']-df['std'], df['mae']+df['std'], alpha=.1, lw=0, color="#3969b1")
 
 plt.grid()
 

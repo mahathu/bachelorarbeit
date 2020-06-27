@@ -1,0 +1,4 @@
+estimator,neg_mean_absolute_error_performance_mean,neg_mean_absolute_error_performance_std,svr__kernel,svr__gamma
+SVR_0626,-1.1129974171190393,0.025892886508601668,linear,N/A
+SVR_0626,-1.0102432017567549,0.013755433306360488,rbf,scale
+SVR_0626,-1.7592609359937945,0.02353615507784216,rbf,auto

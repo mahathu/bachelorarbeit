@@ -7,8 +7,13 @@ für besseres Modell:
 
 allgemeine Notizen
 ====
-
-rot: #fb8072
+http://ksrowell.com/blog-visualizing-data/wp-content/uploads/2012/02/optimal-colors-for-graphs.png
+Colors:
+blue: #3969b1
+orange: #da7c30
+green: #3e9651
+red: #cc2529
+<!-- rot: #fb8072
 blau: #80b1d3
 limette: #b3de69
 orange: #fdb462
@@ -18,7 +23,7 @@ hellgelb: #ffffb3
 (siehe colorbrewer)
 
 ROT: #fb8072
-BLAU: #80b1d3
+BLAU: #80b1d3 -->
 
 Datendateien
 ----
@@ -55,24 +60,25 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 
 --------------
 
-Farben: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+Delirium Detection Score (DDS) hat nur 5 Parameter, richtig? Weil max score laut histogramm 35 ist --> Richtig!
+DDS eher zur bestätigung eines vorliegenden Delirs. Wird idR nur von pflegeperson eingetragen
+DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur cam-icu 
 
-Ideen f. BA
+
+=== Neue Fragen ===
+
+1) von Wann bis wann fanden Patientenaufenthalte statt?
+
 ----
 
 * Überblick über die Daten
     * Probleme
         * Scores können sich schnell ändern
         * Daten evtl ungenau, erlauben keine hohe Präzision beim Predicten
-    * VISUALISIERUNG: Bar Charts f. Häufigkeit der verschiedenen Werte von DDS, GCS, BPS
-    * exemplarisch: Eintragungen der Events pro Patient über Zeit, z.b. Patient 1019 
-        * dazu Details zum Patienten, um es anschaulicher zu machen
-        * Hinweis darauf, dass Daten anonymisiert vorlagen
     * Methoden der Generierung von Wertepaaren aus den Daten
         * lassen sich gut durch Pfeile vergleichen
         * latest text
         * latest score
         * nearest value
-        * VISUALISIERUNG: (y) n of data pairs vs (x) max time between (cut off)
 * kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
 * Performance Metriken, und warum diese geeignet sind Performance der Modelle zu beurteilen
