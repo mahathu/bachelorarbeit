@@ -2,6 +2,7 @@
 .Rhistory
 data/*
 ELM/data/*
+ELM/w2v/*
 figures/training_pairs_nearest_3600/*
 skripte/out*
 

@@ -31,9 +31,8 @@ Literatur
 ===
 * Salton, G., Buckley, C.: Term-weighting approaches in automatic text retrieval. Inf. Process. Manag. 24(5), 513–523 (1988)
   * Informationen über TfIdf
-* https://arxiv.org/abs/1301.3781
-  * word2vec paper
-
+* https://arxiv.org/abs/1301.3781 (word2vec)
+* http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.695.4595 (gensim)
 
 **sonstige:**
 

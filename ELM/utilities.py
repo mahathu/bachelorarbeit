@@ -6,12 +6,13 @@ from string import ascii_letters, digits
 from nltk import bigrams
 
 allowed_chars = set(ascii_letters + digits + 'öäüßÖÄÜẞ =-%')
-stop_words = set(['pat', '-pat', 'patient', 'patientin', '-', 'sich', 'zu', 'hat', 'und'])
+stop_words = set("""pat -pat patient patientin - sich zu hat und 
+    weiter weiterhin weitere weiteren weiteres weiterer""".split())
 
 def clean_text(s, remove_stop_words=True):
     """remove special characters and return lowercase text"""
     if type(s) is float: # some elements in Visite_ZNS are "nan"
-        return "NA"
+        return ""
     
     s.replace('4/4', '44')
     s.replace('/', '/ ') # extra leerzeichen, sodass Worte die
@@ -23,7 +24,7 @@ def clean_text(s, remove_stop_words=True):
     if not remove_stop_words:
         return " ".join(tokens) # remove multiple whitespaces in a row
 
-    tokens = [word for word in tokens if not word in stop_words]
+    tokens = [word.replace('=','') for word in tokens if not word in stop_words]
     return " ".join(tokens)
 
 def get_tokens(s):
