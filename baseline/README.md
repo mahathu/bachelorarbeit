@@ -23,12 +23,22 @@ Annahme: **gelabelte, eingetragene Werte als "ground truth". Vermutlich ist so k
 2) performance by offset (n_samples gleich, aber abstand der texte größer)
 
 
-### LETZTE SCHRITTE
-Dafür: Visite_ZNS --> RASS, 45min max offset, genau 10.000 samples.
-SVR verwenden mit folgenden Paramtern:
-`{'svr__C': 10, 'svr__kernel': 'rbf' (gamma=scale), 'vect__analyzer': 'char', 'vect__ngram_range': (1, 5)}`
+### RASS=n filtern?
+Visite_ZNS: 24040 Texte, 8426 enthalten RASS (35.05%)
+Visite_Pflege: 27330 Texte, 284 enthalten RASS (1.04%)
+Visite_Oberarzt: 11674 Texte, 446 enthalten RASS (3.82%)
 
 1) Vergleich mit: RASS=n vorher aus freitext rausfiltern
-Ergebnis: Abweichung nur 1-2%
 
-2) training mit allen werten, test mit 2 datensätzen (komplett separat von trainingsset): texte, die RASS=n enthalten und solchen, die es nicht enthalten, performance vergleichen
+Dafür: Visite_ZNS --> RASS, 45min max offset. da gibt es insgesamt 11022 paare aus diesem Datensatz.
+genau 1000 random samples. normales svr trainiert, sowie ein svr, in dem alle vorkommen der Art "rass=n" aus den datensätzen gefiltert wurden. die performance wurde anhand von MAE mit 5-fold CV bestimmt (test_size=.2). dieser vorgang wurde 10 mal wiederholt, und für beide modelle wurde der mittelwert gebildet.
+SVR verwendet mit folgenden Paramtern:
+`{'svr__C': 10, 'svr__kernel': 'rbf' (gamma=scale), 'vect__analyzer': 'char', 'vect__ngram_range': (1, 5)}`
+
+**Ergebnis:**
+MAE for default SVR: 1.1294237465189472
+MAE for SVR where RASS=n got filtered: 1.1697420881171667
+In keinem der 10 Testläufe schnitt das modell, bei dem RASS=n herausgefiltert wurde, besser ab.
+**Schlussfolgerung:** keine statistisch signifikante abweichung zwischen den ergebnissen -> SVR Modell nutzt vorkommen von rass=n nur bedingt, um daraus eine vorhersage des dem text entsprechenden RASS-Wertes zu bestimmen.
+
+2/optional) training mit allen werten, test mit 2 datensätzen (komplett separat von trainingsset): texte, die RASS=n enthalten und solchen, die es nicht enthalten, performance vergleichen

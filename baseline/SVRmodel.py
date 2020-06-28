@@ -125,11 +125,9 @@ def get_SVR(use_tuned_hyperparameters=True, filter_rass=False):
     ])
 
 def filter_rass_occurences(s):
-    return s[10:13]
-    # l = s.lower()
-    # index = l.find('rass')
-    # if index < 0:
-    #     return l
-    
+    l = s.lower()
+    index = l.find('rass')
+    if index < 0:
+        return l
 
-    # return l[:index] + l[index+7:]
+    return l[:index] + l[index+7:]

@@ -174,11 +174,6 @@ def save_perf_report_as_md(df, scoring_method, fn, n_samples):
 def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
     cross_val_split = ShuffleSplit(n_splits=n_cv_splits, test_size=.2)
 
-    '''this would train a new model for each CV fold and
-    each scoring method and thus can be done much faster!'''
-    # for scoring_method in scoring_methods:
-    #     scores = cross_val_score(estimator, X_col, y_col, cv=cross_val, scoring=scoring_method)
-    #     all_scores.append((scores.mean(), scores.std()))
     scores = cross_validate(estimator, X_col, y_col,
         cv=cross_val_split,
         scoring=scoring_methods

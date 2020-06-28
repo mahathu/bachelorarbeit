@@ -21,23 +21,17 @@ MAX_MIN_BETWEEN_EVENTS = 45
 out_rows = []
 for input_varid in input_varids:
     for output_varid in output_varids:
-            for i in range(10):
-                X, y = get_x_y(df_all, input_varid, output_varid, max_min_between=MAX_MIN_BETWEEN_EVENTS, max_samples=7500)
+            mae_SVR = []
+            mae_norass = []
 
-                unique_labels = np.sort(y.unique())
-                wprint('*'*80)
-                sprint(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
-                        f"({len(unique_labels)} unique labels, "
-                        f"max_minutes={MAX_MIN_BETWEEN_EVENTS}, {len(X)} total rows)")
-                # print(f"Labels: {unique_labels}")
-            
+            X, y = get_x_y(df_all, input_varid, output_varid, max_min_between=MAX_MIN_BETWEEN_EVENTS, max_samples=1000)
 
-
-                print(f"Gucke nur auf erste 5 Zeichen")
-                svr = SVRmodel.get_SVR(True, True)
-
-                scores = test_estimator(svr, X, y, 'neg_mean_absolute_error')
-                for s in scores:
-                    print(f"{s} : {scores[s][0]:.5f}")
-                
-                wprint("******************************")
+            unique_labels = np.sort(y.unique())
+            wprint('*'*80)
+            # sprint(f"INPUT: {var_ids[input_varid]} OUTPUT: {var_ids[output_varid]} "
+            #         f"({len(unique_labels)} unique labels, "
+            #         f"max_minutes={MAX_MIN_BETWEEN_EVENTS}, {len(X)} total rows)")
+            # print(f"Labels: {unique_labels}")
+        
+            svr = SVRmodel.get_SVR(True, False)
+            svr_norass = SVRmodel.get_SVR(True, True)
