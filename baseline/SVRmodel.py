@@ -121,7 +121,7 @@ def get_SVR(use_tuned_hyperparameters=True, filter_rass=False):
     return Pipeline([ # no tuned hyperparameters!
         ('vect', cv),
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=cache_size, C=10)), 
+        ('svr', SVR(cache_size=cache_size, C=10)),
     ])
 
 def filter_rass_occurences(s):

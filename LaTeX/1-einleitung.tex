@@ -39,7 +39,7 @@ hat sich im Zeitalter von Big Data und leistungsstarken Rechnern zu einem der Ha
 
 Im Allgemeinen werden also Algorithmen, die aus großen Datensätzen "lernen" und damit Vorhersagen über unbekannte Daten machen, als maschinelles Lernen bezeichnet.
 
-Beschreiben: Hier gehts um supervised ML!
+Beschreiben: Hier gehts um supervised ML! (neben supervised gibt es noch: unsupervised, wo foo, und Reinforcement learning, wo bar.)
 
 \subsection{Regression vs Klassifikation}\label{section:regrvsclf}
 Probleme aus dem Bereich des überwachten maschinellen Lernens lassen sich im Allgemeinen in eine von zwei Kategorien einordnen:
@@ -71,9 +71,11 @@ Damit lassen sich die verschiedenen Scores vergleichen und in ein Verhältnis se
 Bei der vorliegenden Arbeit habe ich mich demnach dafür entschieden, die Vergabe von Scores anhand von Eingabetexten als klassisches Regressionsproblem zu betrachten, und die Ausgaben der Modelle im Zweifelsfall auf den nächstmöglichen ganzzahligen Wert zu runden. Dieser Ansatz fand auch bei früheren Arbeiten, die sich mit ähnlichen Fragestellungen befassten, Anwendung (CITE). Die Abweichung des vorhergesagten Werts eines Modells von dem nächst möglichen Wert stellt somit sogar einen rudimentären Ansatz zur Bewertung der Konfidenz bei der Vergabe einzelner Werte dar.
 %siehe: https://stats.stackexchange.com/a/282890
 
-\subsection{Natural Language Processing}
-Die Verarbeitung natürlicher Sprache stellt eine besondere Herausforderung im Gebiet des maschinellen Lernens dar.
+% \subsection{Natural Language Processing}
+% Die Verarbeitung natürlicher Sprache stellt eine besondere Herausforderung im Gebiet des maschinellen Lernens dar.
 %texte müssen featurized werden, weil ML Modelle nur Zahlen erwartet, keine Texte.
 
-\subsection{Anwendungen von Maschinellem Lernen in der Medizin}
-Lorem Ipsum. Hier andere Einsatzgebiete von ML in Medizin \citep{krishnanSupervisedLearningApproach2018}. Und: Warum ML für unsere Problematik?
+\subsection{Maschinelles Lernen in der Medizin}
+Hier andere Einsatzgebiete von ML in Medizin \citep{krishnanSupervisedLearningApproach2018}. Und: Warum ML für unsere Problematik?
+
+Problem, insbesondere in der Medizin: Explainable AI. Insbesondere bei ANN: Reihe von entscheidungen die von künstlichen neuronalen Netzwerken getroffen werden und zu einer bestimmten ausgabe führen sind für die Entwicker oft nicht nachvollziehbar (CITE). Das Teilgebiet XAI beschäftigt sich mit methoden, ML besser nachvollziehbar zu machen.

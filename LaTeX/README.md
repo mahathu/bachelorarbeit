@@ -29,12 +29,19 @@ Inhalt
 
 Literatur
 ===
+* Salton, G., Buckley, C.: Term-weighting approaches in automatic text retrieval. Inf. Process. Manag. 24(5), 513–523 (1988)
+  * Informationen über TfIdf
+* https://arxiv.org/abs/1301.3781
+  * word2vec paper
+
+
+**sonstige:**
+
 * https://www.aclweb.org/anthology/W18-2502/
 * https://scikit-learn.org/stable/modules/cross_validation.html
 * https://scikit-learn.org/stable/modules/grid_search.html
 * https://www.ingentaconnect.com/content/wk/ccm/2018/00000046/00000004/art00031
 * https://www.aclweb.org/anthology/W17-5043/
-* Mitchell, Tom. (1997). Machine Learning
 * https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b91400f14e27ec9dacf0a389e72fd0e0fa9c2535.pdf
 * https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf
 * https://pubmed.ncbi.nlm.nih.gov/31947237/
@@ -48,4 +55,3 @@ Literatur
   * An Introduction to Statistical Learning, 2013
   * Artificial Intelligence: A Modern Approach (3rd Edition), 2009
   * Applied Predictive Modeling, 2013
-* aclweb.org/anthology/W18-5914/

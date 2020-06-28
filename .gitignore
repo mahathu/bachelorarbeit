@@ -1,6 +1,7 @@
 .DS_Store
 .Rhistory
 data/*
+ELM/data/*
 figures/training_pairs_nearest_3600/*
 skripte/out*
 
