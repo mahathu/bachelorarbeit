@@ -1,3 +1,5 @@
+SVM performance nach word2vec vectorization: [-0.95293017 -0.93870698 -0.97874304 -0.96000418 -0.96607399]
+
 # Pipeline:
 
 ## Preprocessing: (preprocess_texts.py)

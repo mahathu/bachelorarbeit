@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from string import ascii_letters, digits
 #from nltk import bigrams
@@ -74,3 +75,61 @@ def preprocess_texts(filepath, v_id):
     print(f"Dataframe saved to {out_file}. ({n_pairs} rows in total, {n_pairs-len(df_v)} empty rows were filtered)")
 
     return df_v
+
+def get_x_y(df, input_varid, output_varid, max_min_between, max_samples=0):
+    """Returns X and y columns from dataframe for given
+    input and output varids"""
+    df_filter = ((df['text_varid'] == input_varid) 
+                & (df['label_varid'] == output_varid) 
+                & (df['time_diff'] <= (max_min_between*60)))
+
+    df = df[df_filter] # remove unwanted rows:
+    
+    if max_samples>0: # maximum n of training pairs. Should only be used to speed up testing
+        df = df.sample(max_samples) #randomly chose max_samples samples
+        #print(f"Only considering the first {max_samples} samples!")
+
+    if output_varid == 22086169: # CAM-ICU
+        df = df.replace({'label': {
+            'neg.': 0,
+            'pos.': 1,
+            'unmögl.': 2,
+        }})
+
+    return df['text'].astype('U'), df['label'].astype(int)
+
+def transform_texts(model, texts_series):
+    """Transforms a series of input texts to 
+    their representations as n-dimensional
+    vectors through the w2v model.
+    
+    Return value is a pandas dataframe with
+    1 row per input text, and the number of
+    columns equivalent to the word2vec vector
+    dimensions."""
+
+    # falls ein unbekanntes wort vorkommt, dieses ignorieren, d.h. auch
+    # nicht zur gesamtzahl der worte zählen, durch die am Ende geteilt wird
+    
+    n_dims = model.layer1_size # 100 by default
+    text_vectors = []
+    n_unknown_words = 0
+    
+    for text in texts_series:
+        tokens = text.split()
+        known_words = [w for w in tokens if w in model.wv] # only consider words in the dictionary of the w2v model
+        if len(tokens) != len(known_words):
+            print(f"Text: {text} ({len(tokens)} total, {len(known_words)} known)")
+            n_unknown_words += len(tokens) - len(known_words)
+
+        text_vector = [
+            np.mean([model.wv[word][i] for word in known_words])
+            for i in range(n_dims)
+        ]
+        text_vectors.append(text_vector)
+    
+    df = pd.DataFrame(text_vectors)
+    df.to_csv(f'data/text_features_{n_dims}dim.csv', index=False)
+
+    print(f"{len(texts_series)} texts vectorized in total ({n_unknown_words/len(texts_series):.3f} mean unknown words per text.)")
+    return df
