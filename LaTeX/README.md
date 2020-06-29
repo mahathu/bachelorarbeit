@@ -33,6 +33,7 @@ Literatur
   * Informationen über TfIdf
 * https://arxiv.org/abs/1301.3781 (word2vec)
 * http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.695.4595 (gensim)
+https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html
 
 **sonstige:**
 
