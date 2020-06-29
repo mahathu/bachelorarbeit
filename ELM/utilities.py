@@ -79,15 +79,16 @@ def preprocess_texts(filepath, v_id):
 def get_x_y(df, input_varid, output_varid, max_min_between, max_samples=0):
     """Returns X and y columns from dataframe for given
     input and output varids"""
+
     df_filter = ((df['text_varid'] == input_varid) 
                 & (df['label_varid'] == output_varid) 
                 & (df['time_diff'] <= (max_min_between*60)))
 
-    df = df[df_filter] # remove unwanted rows:
+    df = df[df_filter].reset_index() # remove unwanted rows
     
-    if max_samples>0: # maximum n of training pairs. Should only be used to speed up testing
+    if max_samples > 0: # maximum n of training pairs. Should only be used to speed up testing
         df = df.sample(max_samples) #randomly chose max_samples samples
-        #print(f"Only considering the first {max_samples} samples!")
+        print(f"Only considering the first {max_samples} samples!")
 
     if output_varid == 22086169: # CAM-ICU
         df = df.replace({'label': {
@@ -96,7 +97,10 @@ def get_x_y(df, input_varid, output_varid, max_min_between, max_samples=0):
             'unmögl.': 2,
         }})
 
-    return df['text'].astype('U'), df['label'].astype(int)
+    # reset index for y column. This way, we can more easily filter
+    # y columns out for such rows where the x matrix is empty (due
+    # to the input text containing no known words.)
+    return df['text'], df['label'].astype(int)
 
 def transform_texts(model, texts_series):
     """Transforms a series of input texts to 
@@ -113,15 +117,23 @@ def transform_texts(model, texts_series):
     
     n_dims = model.layer1_size # 100 by default
     text_vectors = []
+    n_broken_rows = 0
     n_unknown_words = 0
     
-    for text in texts_series:
+    for j, text in enumerate(texts_series):
         tokens = text.split()
+    
         known_words = [w for w in tokens if w in model.wv] # only consider words in the dictionary of the w2v model
         if len(tokens) != len(known_words):
-            print(f"Text: {text} ({len(tokens)} total, {len(known_words)} known)")
+            # print(f"Text: {text} ({len(tokens)} total, {len(known_words)} known)")
             n_unknown_words += len(tokens) - len(known_words)
-
+        if len(known_words) == 0:
+            print(colored(f'"{text}" enthält 0 bekannte Wörter!', 'red'))
+            
+            text_vectors.append([np.nan for i in range(n_dims)])
+            n_broken_rows += 1
+            continue # to next text
+        
         text_vector = [
             np.mean([model.wv[word][i] for word in known_words])
             for i in range(n_dims)
@@ -132,4 +144,7 @@ def transform_texts(model, texts_series):
     df.to_csv(f'data/text_features_{n_dims}dim.csv', index=False)
 
     print(f"{len(texts_series)} texts vectorized in total ({n_unknown_words/len(texts_series):.3f} mean unknown words per text.)")
+    c = 'green' if n_broken_rows == 0 else 'red'
+    print(colored(f"{n_broken_rows} invalid input texts!", c))
+
     return df
