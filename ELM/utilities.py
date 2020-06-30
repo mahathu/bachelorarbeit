@@ -3,24 +3,57 @@ import pandas as pd
 from string import ascii_letters, digits
 #from nltk import bigrams
 from termcolor import colored
+from spell_checker import correction
 
 allowed_chars = set(ascii_letters + digits + 'öäüßÖÄÜẞ =-%')
 stop_words = set("""pat -pat patient patientin - sich zu hat und
     weiter weiterhin weitere weiteren weiteres weiterer bitte
     """.split())
 
-def clean_text(s, remove_stop_words=True):
+def clean_text(s, remove_stop_words=True, correct_spelling_mistakes=True):
     """remove special characters and return lowercase text"""
     if type(s) is float: # some elements in Visite_ZNS are "nan"
         return ""
     
-    s.replace('4/4', '44')
-    s.replace('/', '/ ') # extra leerzeichen, sodass Worte die
+    s = s.lower() #s lowercase
+
+    s = s.replace('4/4', '44') # 4/4 [Extremitäten] würde sonst zu 2 separaten tokens werden.
+    s = s.replace('/', '/ ') # extra leerzeichen, sodass Worte die
                          # vorher durch '/' getrennt waren nicht
                          # zu einem gemeinsamen Token werden
 
-    filtered_str = ''.join(filter(lambda ch: ch in allowed_chars, s.lower()))
+    # filter invalid characters from tect:
+    filtered_str = ''.join(filter(lambda ch: ch in allowed_chars, s))
+    
+    # remove common ambiguities through substitutions:
+    replacements = [
+        ('v a', 'va'),
+    ]
+    for to, fro in replacements:
+        filtered_str = filtered_str.replace(f' {to} ', f' {fro} ') # vor allem.
     tokens = filtered_str.split()
+
+    # remove '-' from all tokens, except tokens such as '-n'
+    filter_hyphens_inside_words = lambda t: t.replace('-', '') if not (len(t) > 1 and t.find('-') == 0 and t[1].isdigit()) else t
+    tokens = [filter_hyphens_inside_words(t) for t in tokens]
+    
+    # remove tokens with only 1 character:
+    tokens = [t for t in tokens if len(t) > 1]
+
+    # finally, correct spelling mistakes for tokens longer than 3 chars (ie. no abbreviations):
+    # takes reaally long
+    if correct_spelling_mistakes:
+        for tested_token in filter(lambda token: len(token)>3, tokens):
+            if not tested_token.isalpha(): # consider only tokens with only letters!
+                continue
+
+            cor = correction(tested_token)
+            if tested_token == cor:
+                continue
+            
+            # spelling mistake found! replace all occurences in the text.
+            tokens = [cor if t == tested_token else t for t in tokens]
+            # print(f"'{token}' > {colored(cor, 'red')}")
 
     if not remove_stop_words:
         return " ".join(tokens) # remove multiple whitespaces in a row
@@ -56,7 +89,6 @@ def preprocess_texts(filepath, v_id):
     df = pd.read_csv(filepath)
 
     df_v = df[df['label_varid'] == v_id]
-
     df_v['time_diff'] = (df_v['text_time'] - df_v['label_time']).abs()
 
     # tokenization:

@@ -7,6 +7,18 @@ bla bla bla. wie viele wörter in den jeweiligen texten, wie viele unique? welch
 \subsection{Modell}
 \subsection{Ergebnisse}
 \section{Extreme Learning Machine}
+% bei spell checker eher für einen naiven ansatz entschieden:
+% wörter, die öfter als (3) mal vorkommen werden schon als
+% richtig angesehen, auch wenn da viele falsch geschriebene
+% wörter mit dabei sind. würde man aber nur wörter ansehen
+% die noch öfters vorkommen, würde man auch wörter korriegieren
+% die eigentlich richtig sind, nur weil sie nicht oft genug
+% vorkamen, um als richtig angesehen zu werden:
+% 'spannung' > spaltung
+% 'verformung' > versorgung
+Beschreiben: Verbesserung der featurization der eingabedaten durch word2vec. verbesserung auch durch spell correction, weil es viele falsch geschriebene wörter gibt, die dann in word2vec gar nicht auftauchen. (zeigen, wie sich die anzahl der unbekannten wörter durch spell correction verringert!)
+
+Vergleich unbekannte/bekannte wörter mit spell correction, substitutions etc und ohne.
 Baut auf einer Architektur auf, die von \cite{huangExtremeLearningMachine2006} eingeführt wurde.
 % * numerische optimierung: Lösungsraum, Bewertungsfunktion
 %   * das Gradientenverfahren

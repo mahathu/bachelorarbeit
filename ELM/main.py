@@ -21,7 +21,9 @@ Visite_ZNS_VAR_ID = 22085815
 Visite_Pflege_VAR_ID = 22085836
 
 # df = preprocess_texts(PAIRS_FILE_PATH, RASS_VAR_ID)
-df = pd.read_csv('data/pairs_RASS.csv') # Alternative, wenn Eingabedaten schon bereinigt wurden
+df = pd.read_csv('data/pairs_RASS_spellcorrected.csv') # Alternative, wenn Eingabedaten schon bereinigt wurden
+
+# The texts in the dataframe above are already preprocessed/cleaned (see utiliites.py)
 
 w2v_model = build_w2v_model(df,
                             window_size=5,

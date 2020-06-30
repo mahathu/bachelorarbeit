@@ -5,6 +5,10 @@ je größer word_min_count (minimale vorkommen von wort, um von w2v berücksicht
 dass es texte gibt, die ausschließlich unbekannte worte enthalten. insbesondere der fall, wenn text nur ein wort enthält,
 und dieses auch noch falsch geschrieben ist.
 
+Beim spell check ist ein "naiver" Ansatz sicherer. nur fehler der entfernung 1 korrigieren
+'pipillen' > pupillen
+'dadruch' > dadurch
+
 # Pipeline:
 
 ## Preprocessing: (preprocess_texts.py)
