@@ -5,6 +5,9 @@ from string import ascii_letters, digits
 from termcolor import colored
 from spell_checker import correction
 
+from sklearn.svm import SVR
+from sklearn.model_selection import cross_validate, ShuffleSplit
+
 allowed_chars = set(ascii_letters + digits + 'öäüßÖÄÜẞ =-%')
 stop_words = set("""pat -pat patient patientin - sich zu hat und
     weiter weiterhin weitere weiteren weiteres weiterer bitte
@@ -180,3 +183,21 @@ def transform_texts(model, texts_series):
     print(colored(f"{n_broken_rows} invalid input texts!", c))
 
     return df
+
+def test_with_SVM(X_matrix, y, C):
+    # ========================= SVR (just for testing) ========================= #
+    scores = cross_validate(SVR(cache_size=1024, C=C),
+        X_matrix.head(3000),
+        y.head(3000),
+        cv=ShuffleSplit(n_splits=5, test_size=.2),
+        scoring=['neg_mean_absolute_error']
+    )
+    mae = -1*np.mean(scores['test_neg_mean_absolute_error'])
+    return mae
+
+def get_MAE(prediction, actual_values):
+    """Calculate mean absolute error between two np arrays"""
+    prediction_vector = prediction.flatten()
+    diffs = np.abs(prediction_vector - actual_values)
+
+    return np.mean(diffs)
