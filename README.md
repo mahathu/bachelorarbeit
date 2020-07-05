@@ -1,9 +1,11 @@
 wichtiges Zeug
 ====
 
+**neuer Titel**: Vorhersage medizinischer Scores auf Intensivstationen mittels maschinellem Lernen
+
 für besseres Modell:
 * **NRS/VAS Bedingungen mit einbeziehen**, jeweils 1 Spalte für "ruhe", "intervent", ...
-* **Spell Checker anwenden!** http://norvig.com/spell-correct.html
+* **Spell Checker anwenden!** http://norvig.com/spell-correct.html *done*
 
 allgemeine Notizen
 ====
@@ -68,7 +70,8 @@ DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur ca
 === Neue Fragen ===
 
 1) von Wann bis wann fanden Patientenaufenthalte statt?
-
+2) "Es handelt sich also um unstrukturierte Freitexte, und es liegt im Ermessen der behandelnden Ärzte bzw. Pflegekräfte, einen aussagekräftigen Text zu formulieren." Stimmt das?
+3) DER oder DIE RASS?
 ----
 
 * Überblick über die Daten
@@ -80,5 +83,4 @@ DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur ca
         * latest text
         * latest score
         * nearest value
-* kurze Beschreibungen von DDS,GCS,BPS,CAM-ICU etc.
 * Performance Metriken, und warum diese geeignet sind Performance der Modelle zu beurteilen

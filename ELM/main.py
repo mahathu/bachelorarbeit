@@ -34,8 +34,8 @@ for dimensions in dims:
         for word_min_count in wmcs:
             w2v_params = {
                 'window_size': window_size,
-                'dimensions': 100,
-                'word_min_count': 1,
+                'dimensions': dimensions,
+                'word_min_count': word_min_count,
                 'training_epochs': 15,
             }
 
@@ -48,25 +48,24 @@ for dimensions in dims:
 
             # The texts in the dataframe above are already preprocessed/cleaned (see utiliites.py)
 
-            # w2v_model = build_w2v_model(df,
-                                        # window_size=w2v_params['WINDOW_SIZE'], #5 is default
-                                        # dimensions=w2v_params['DIMENSIONS'],
-                                        # word_min_count=w2v_params['WORD_MIN_COUNT'], #5 is default
-                                        # epochs=w2v_params['TRAINING_EPOCHS'],
-                                        # use_skipgrams=1)
-            w2v_model = Word2Vec.load(W2V_MODEL_PATH) # Alternative, wenn Modell schon gebaut wurde
+            w2v_model = build_w2v_model(df,
+                                        window_size=w2v_params['window_size'], #5 is default
+                                        dimensions=w2v_params['dimensions'],
+                                        word_min_count=w2v_params['word_min_count'], #5 is default
+                                        epochs=w2v_params['training_epochs'],
+                                        use_skipgrams=1)
+            # w2v_model = Word2Vec.load(W2V_MODEL_PATH) # Alternative, wenn Modell schon gebaut wurde
 
             X_texts, y = get_x_y(df, Visite_ZNS_VAR_ID, RASS_VAR_ID, 90)
-
-            # X_matrix = transform_texts(w2v_model, X_texts)
-            X_matrix = pd.read_csv(X_MATRIX_PATH) # Alternative, wenn Eingabetexte schon vektorisiert wurden
+            X_matrix = transform_texts(w2v_model, X_texts)
+            # X_matrix = pd.read_csv(X_MATRIX_PATH) # Alternative, wenn Eingabetexte schon vektorisiert wurden
 
             # Filter out rows that had invalid input data in the X matrix:
             n_rows_before = len(y)
             broken_rows_mask = X_matrix[X_matrix.columns[0]].notnull()
             X_matrix = X_matrix[broken_rows_mask]
             y = y[broken_rows_mask].squeeze()
-            # print(f"{n_rows_before-len(y)} rows were filtered because the X matrix contained no data (empty text or text with no known words)")
+            print(f"{n_rows_before-len(y)} rows were filtered because the X matrix contained no data (empty text or text with no known words)")
 
             # SVR
             for c in [1, 10]:
@@ -91,6 +90,6 @@ for dimensions in dims:
 
 print('done')
 #this is stupid
-pd.concat(ELM_out_dfs).to_csv('perf/ELM_performance.csv', index=False)
-pd.concat(SVR_out_dfs).to_csv('perf/SVR_performance.csv', index=False)
+pd.concat(ELM_out_dfs).to_csv('perf/ELM_performance_new.csv', index=False)
+pd.concat(SVR_out_dfs).to_csv('perf/SVR_performance_new.csv', index=False)
 print('saved to dfs')

@@ -1,5 +1,5 @@
 \documentclass[
-	abstracton, %abstract on!
+	abstract=true, %abstract on!
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
 	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
@@ -14,19 +14,16 @@
 \usepackage{pdfpages}
 
 \usepackage{float}
-\usepackage[caption = false]{subfig}
+\usepackage[]{subfig}
 \usepackage{graphicx}
 \graphicspath{ {fig/} }
-
 \usepackage{xcolor}
 \usepackage[english, main=ngerman]{babel} % englisch für Zitate auf Englisch
 \usepackage[onehalfspacing]{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype} % better kerning, word spacing etc
-
 \usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
 \usepackage{booktabs} % schönere Tabellen
-
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
 
@@ -47,13 +44,16 @@
 % \usepackage{fontspec} % custom font (needs compiling via xelatex)
 % \setmainfont{Fira Sans}
 
+\newcommand{\refsec}[1]{{(siehe Abschnitt \ref{#1})}} %Referenz in Klammern auf Section
+\newcommand{\reftbl}[1]{{(siehe Tabelle \ref{#1})}} %Referenz in Klammern auf Tabelle
+
 \RedeclareSectionCommand[beforeskip=0pt,afterindent=false]{chapter} %weniger Abstand nach oben bei Kapitelüberschriften
+% \interfootnotelinepenalty=10000 % keine Fußnoten über mehrere Seiten!
 
 \begin{document}
 	\pagestyle{empty}
 
 	\renewcommand{\arraystretch}{1.15} %Zeilenabstand innerhalb von Tabellen
-
 	% ========================================== %
 	% Am Schluss noch überprüfen:                %
 	% - einheitliche Zeitform                    %
@@ -82,7 +82,7 @@
 	\chapter{Übersicht über die Daten}
 	\input{2-daten}
 	
-	\chapter{Vorgehensweise}
+	\chapter{Vorgehensweise}\label{chap-vorgehensweise}
 	\input{3-vorgehensweise}
 	
 	\chapter{Auswertung der Ergebnisse}

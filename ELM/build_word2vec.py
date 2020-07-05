@@ -34,7 +34,7 @@ def build_w2v_model(df, window_size=5, dimensions=100, word_min_count=2, epochs=
 
     date_str = datetime.now().strftime("%m%d%y")
     fn = f'data/w2v_models/w2v_{date_str}_{window_size}w_{dimensions}d_{word_min_count}min_{epochs}e_{use_skipgrams}sg.model'
-    model.save(fn)
-    print(colored("Saved model to "+fn, 'green'))
+    #model.save(fn)
+    #print(colored("Saved model to "+fn, 'green'))
 
     return model

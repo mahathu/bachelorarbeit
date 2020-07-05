@@ -1,1 +1,0 @@
-Das hier soll ein kleines Online-Interface werden, das es dem Nutzer erlaubt, einen Text einzugeben, ein Modell auszuwählen, und dieses wird dann auf Knopfdruck gescored.

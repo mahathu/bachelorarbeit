@@ -9,6 +9,9 @@ Beim spell check ist ein "naiver" Ansatz sicherer. nur fehler der entfernung 1 k
 'pipillen' > pupillen
 'dadruch' > dadurch
 
+# Ergebnis mit ELM:
+
+
 # Pipeline:
 
 ## Preprocessing: (preprocess_texts.py)

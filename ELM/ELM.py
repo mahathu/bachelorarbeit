@@ -11,8 +11,8 @@ def create_model(X_df, y):
     y = y.to_numpy()
 
     rows = []
-    for n_mult in [1/3, .5, .75, 1, 1.25, 1.5, 1.75, 2]:
-        for func in ['sigm', 'lin', 'tanh', 'rbf_l2', 'rbf_linf']:
+    for n_mult in [.5, .75, 1, 1.5, 1.75, 2]:
+        for func in ['lin', 'tanh', 'rbf_l2']:
             n_neurons = int(n_mult * n_input_columns)
             print(n_neurons, end=' ', flush=True)
             model = hpelm.HPELM(n_input_columns, 1)

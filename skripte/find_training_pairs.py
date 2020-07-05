@@ -7,18 +7,18 @@ from datetime import timedelta
 pd.options.mode.chained_assignment = None  # default='warn'
 
 MARKER_COLOR_DEFAULT = 'lightgrey'
-# MARKER_COLOR_LABEL = 'orange'
 # MARKER_COLOR_TEXT = 'blue'
-MARKER_COLOR_LABEL = '#fb8072'
-MARKER_COLOR_TEXT = '#80b1d3'
+# MARKER_COLOR_LABEL = 'orange'
+MARKER_COLOR_TEXT = '#3969b1' #'#80b1d3'
+MARKER_COLOR_LABEL = '#da7c30' #'#fb8072'
 
 PAIR_GENERATION_METHOD = "nearest"
-PREDICTION_MAX_DISTANCE = 60*60*1 #1 hours
+PREDICTION_MAX_DISTANCE = 60*60*2 #2 hours
 DRAW_PLOTS = True
 
 input_file = "../data/clean/all_scores.csv"
-out_file_name = f"labels_{PAIR_GENERATION_METHOD}.csv"
-plot_out_folder = f"out_{PAIR_GENERATION_METHOD}_{PREDICTION_MAX_DISTANCE}"
+#out_file_name = f"labels_{PAIR_GENERATION_METHOD}.csv"
+plot_out_folder = f"out_ba_figs"
 
 if DRAW_PLOTS and not os.path.isdir(plot_out_folder):
     os.makedirs(plot_out_folder)
@@ -42,6 +42,8 @@ var_ids = {
     22085820: {"label": "Visite_Oberarzt"},
 }
 
+#draw patient 40 without arrows for latex
+
 text_varids = [22085815,22085836,22085820]
 label_varids = [20512801,20512802,20512769,22086169,22086158]
 
@@ -60,7 +62,8 @@ for v_id in var_ids:
 df = pd.read_csv(input_file)
 df = df[df['VarID'].isin(var_ids)] # only consider relevant var ids
 
-for patient_n in df['patient'].unique()[:5]:
+#for patient_n in df['patient'].unique():
+for patient_n in [40, 182, 316, 364]:
     prev_columns_n = len(training_pairs)
     
     if DRAW_PLOTS:
@@ -138,10 +141,10 @@ for patient_n in df['patient'].unique()[:5]:
         plt.axvline(x=xpos, color='#ededed', linewidth='1', zorder=1)
 
     #Draw markers on the plot
-    plt.scatter(patient_df['Zeitpkt_offset'], patient_df['VarIDIndex'], c=patient_df['VarIDColor'], s=25, marker='+', zorder=3)
+    plt.scatter(patient_df['Zeitpkt_offset'], patient_df['VarIDIndex'], c=patient_df['VarIDColor'], s=60, marker='+', zorder=3)
     
     #Set display properties for the plot
-    plt.title(f"Patient #{patient_n:04} (Zeit auf ICU: {timedelta(seconds=seconds_in_icu)} / Wertepaarey: {len(training_pairs)-prev_columns_n})")
+    plt.title(f"Patient #{patient_n:04} (Zeit auf ICU: {timedelta(seconds=seconds_in_icu)} / Wertepaare: {len(training_pairs)-prev_columns_n})")
     plt.setp(ax.xaxis.get_majorticklabels(), rotation=-45, ha="left", rotation_mode="anchor")
     plt.xticks(xtick_pos, xtick_labels)
     plt.yticks(range(len(var_ids)), [var_ids[id]['label'] for id in var_ids])
