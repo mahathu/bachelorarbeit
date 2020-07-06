@@ -9,12 +9,12 @@ def abbreviate(s):
     return s
 
 var_id_names = {
-    22085897: "Ramsay Sedation Scale",
-    22086170: "BPS-Bewertung",
+    # 22085897: "Ramsay Sedation Scale",
+    # 22086170: "BPS-Bewertung",
     20512801: "Behavior Pain Scale",
-    22086172: "NRS/VAS Bedingungen",
-    22085911: "Visual Analogue Scale",
-    20512802: "Delirium Detection Score",
+    # 22086172: "NRS/VAS Bedingungen",
+    # 22085911: "Visual Analogue Scale",
+    # 20512802: "Delirium Detection Score",
     20512769: "Glasgow Coma Scale",
     22086169: "CAM-ICU",
     22086158: "Richmond Agitation Sedation Scale",
@@ -55,16 +55,16 @@ for v_id in var_id_names:
     y = bar_vals.to_numpy()
 
     
-    plt.bar(x, y)
+    plt.bar(x, y, color='#3969b1')
     
     #plt.ylabel('Anzahl eingetragener Werte')
-    plt.title(v_id_name)
+    #plt.title(v_id_name)
     #plt.xlabel(v_id_name)
     
     #plt.show()
     
-    fn = f"hist_{v_id_name}.png".replace('/','-').replace(' ','_')
-    plt.savefig("out/"+fn, bbox_inches='tight', dpi=300)
+    fn = f"hist_{v_id_name}.png".replace('/','-').replace(' ', '_')
+    plt.savefig("out2/"+fn, bbox_inches='tight', pad_inches=.01, dpi=300)
     plt.clf() #clear figure
     plt.close() #close plot and release memory (in theory?)
     #break

@@ -5,7 +5,7 @@ Die Datensätze wurden vor dem Export pseudonymisiert, indem patientenbezogene D
 
 Nach dem Export lagen die Daten in Form mehrerer Datendateien vor. \texttt{patienten.csv} enthält Metainformationen über die betrachteten Patienten. Separat gibt \texttt{delir.csv} für jeden Patienten an, ob für diesen während seines Aufenthalts ein Delir\footnote{F05.* gemäß ICD-10} diagnostiziert wurde. Letztendlich geben die beiden Dateien \texttt{scores1.csv} und \texttt{scores2.xlsx} Aufschluss über die erfassten Scores und eingetragenen Freitexte. Jede Zeile enthält hierbei jeweils die VarID, den betreffenden Patienten, den Zeitpunkt sowie den eigentlichen erfassten Wert. Bei der VarID handelt es sich um einen ganzzahligen Wert, mit der jede Art von auf der Intensivstation erfasstem Wert bzw. eingetragenem Text Charité-intern repräsentiert und eindeutig identifiziert wird \reftbl{table:varids}.
 
-\section{Übersicht über die vorliegenden Daten} \label{section:vorliegende_daten}
+\section{Überblick über die vorliegenden Datensätze} \label{section:vorliegende_daten}
 
 Der mir für diese Arbeit zur Verfügung stehende Datensatz umfasst insgesamt 1357 Patienten-Aufenthalte auf den Intensivstationen der Charité Berlin, die allesamt im Zeitraum von XXX 2019 bis XXX 2020 stattfanden. Jeder Aufenthalt wird über eine numerische, inkrementell aufsteigende Nummer\footnote{in den exportierten Datensätzen als n\_ID bezeichnet} eindeutig identifiziert. Hierbei gilt es zu beachten, dass ein Patient, der im Laufe seiner Behandlung mehrere Male auf eine Intensivstation verlegt wird, für jeden separaten Aufenthalt eine neue Identifikationsnummer erhält. Für jeden Patient liegen Informationen über Geschlecht, BMI\footnote{Body-Mass-Index}, Alter zum Zeitpunkt der Aufnahme und ob während des Aufenthalts ein Delir diagnostiziert wurde, vor. Weiterhin ist die Gesamtdauer des Aufenthalts auf der Intensivstation vermerkt, sowie ob der Patient während seines Aufenthalts verstorben ist. Bei den vorliegenden Patienten lag die Mortalität während des Aufenthalts bei etwa 17\% ($n=225$). Die beobachteten Aufenthalte verliefen über Zeiträume von wenigen Stunden bis zu mehreren Monaten. Die mittlere Aufenthaltsdauer während des Beobachtungszeitraums liegt bei etwa 7,2 Tagen, der Median beträgt 3,2 Tage. Fast die Hälfte aller Aufenthalte endete also nach weniger als drei Tagen. Nur etwas mehr als ein Viertel der Patienten ($n=375$) wurden für eine Woche oder länger auf der Intensivstation behandelt.
 
@@ -46,6 +46,7 @@ Die Richmond Agitation Sedation Scale (RASS) ist eine zehnstufige Messzahl, die 
 
 \paragraph{CAM-ICU}
 bla bla bla %https://www.ai-online.info/images/ai-ausgabe/2009/10-2009/2009_10_592-600_Confusion%20Assessment%20Method%20for%20Intensive%20Care%20Unit%20zur%20routine-maessigen%20Kontrolle%20.pdf
+Eine Besonderheit des CAM-ICU unter den vorliegenden Daten ist, dass es sich hierbei um einen binären Wert handelt:)
 
 \paragraph{NRS/VAS (Visual Analogue Scale)}
 bla bla bla
@@ -53,7 +54,20 @@ bla bla bla
 \paragraph{Visite\_ZNS, Visite\_Oberarzt und Visite\_Pflege}
 bla bla bla (Fridtjof fragen)
 
-%hier histogramme mit den erfassten werten der einzelnen scores.
+\textbf{HIER HISTOGRAMME DER SCORES :)}
+\begin{figure}[htb]
+    \captionsetup[subfigure]{labelformat=empty, justification=centering}
+
+    \centering
+    \subfloat[Behavior Pain Scale]{\includegraphics[width=0.35\textwidth]{score_histograms/hist_Behavior_Pain_Scale}} \qquad
+    \subfloat[CAM-ICU]{\includegraphics[width=0.35\textwidth]{score_histograms/hist_CAM-ICU}} \\ % linebreak here
+    % \subfloat[Delirium Detection Score]{\includegraphics[width=4.75cm]{score_histograms/hist_Delirium_Detection_Score}} \\ % linebreak here
+    \subfloat[Glasgow Coma Scale]{\includegraphics[width=0.35\textwidth]{score_histograms/hist_Glasgow_Coma_Scale}} \qquad
+    \subfloat[Richmond Agitation Sedation Scale]{\includegraphics[width=0.35\textwidth]{score_histograms/hist_Richmond_Agitation_Sedation_Scale}}
+    % \subfloat[Visual Analogue Scale]{\includegraphics[width=4.75cm]{score_histograms/hist_Visual_Analogue_Scale}} \\
+    \caption{Histogramme der erfassten Scores}
+    \label{fig:score_histograms}
+\end{figure}
 
 % \subsection{Exemplarische Vorstellung eines Patienten} %z.b. 0430
 % Aufenthalt des Patienten hier detailliert beschreiben, und seinen Scatterplot einfügen (aber noch ohne Pfeile).
@@ -63,7 +77,7 @@ bla bla bla (Fridtjof fragen)
 
 Eine besondere Herausforderung stellte dar, dass die verschiedenen Scores und Texte zu unterschiedlichen Zeiten und unabhängig voneinander eingetragen werden (siehe Abbildung \ref{fig:pat40_scatter}).
 %Die Informationen über Zeitpunkt, Art der Eintragung (VarID) sowie der eigentliche Wert liegen jeweils in Form von Tripeln in den entsprechenden Log-Dateien vor. Bei den Visitentexten enthalten die Tripel den entsprechenden Text als Wert der Eintragung.
-Um ein Machine-Learning Modell aus dem Bereich des supervised learnings \refsec{section:supervised_learning} zu trainieren ist eine hohe Anzahl von Trainingspaaren notwendig (CITE). Im konkreten Fall dieser Arbeit enthält jedes Wertepaar einen Visitentext sowie einen medizinischen Score, der den in dem Text angegebenen Informationen über die Verfasssung des Patienten möglichst genau entspricht. Zusammen bilden diese Paare die Grundlage der Modelle, selbstständig noch nicht gesehene Texte bewerten zu können. Aufgrund der zeitlichen Unterschiede zwischen den Eintragungen von Texten und Scores erwies sich allerdings ebenjene Zuordnung zueinander als nicht trivial. 
+Um ein Machine-Learning Modell mit einer hohen Dimensionalität der Eingabevektoren zu trainieren ist eine hohe Anzahl von Trainingspaaren notwendig. Im konkreten Fall dieser Arbeit enthält jedes Wertepaar einen Visitentext sowie einen medizinischen Score, der den in dem Text angegebenen Informationen über die Verfasssung des Patienten möglichst genau entspricht. Zusammen bilden diese Paare die Grundlage der Modelle, selbstständig noch nicht gesehene Texte bewerten zu können. Aufgrund der zeitlichen Unterschiede zwischen den Eintragungen von Texten und Scores erwies sich allerdings ebenjene Zuordnung zueinander als nicht trivial. 
 
 \begin{figure}[htb]
     \captionsetup{justification=centering}
@@ -104,9 +118,6 @@ Zur Generierung der Wertepaare habe ich mich demnach für eine andere Methodik e
 \section{Genauigkeit der erfassten Daten}
 Neben einer möglichst genauen, automatischen Vergabe von medizinischen Scores anhand von Visitentexten stellt sich weiterhin die Frage, welche der gegebenen Eingabewerte überhaupt der Wahrheit entsprechen, beziehungsweise diese am genauesten abbilden. Die Modelle, die in Abschnitt \ref{chap-vorgehensweise} beschrieben werden, nehmen die eingetragenen Scores als "absolute Wahrheit"\footnote{Im maschinellen Lernen und in verwandten Bereichen auch als "ground truth" bezeichnet} an. Wir gehen also davon aus, dass diese Eintragungen die Kondition eines Patienten im Zweifelsfall genauer beschreiben als die Visitentexte, die zu einem ähnlichen Zeitpunkt verfasst wurden. Dies stellt allerdings eine Vereinfachung der Situation dar. Im Allgemeinen ist es fast unmöglich, nachträglich zu bestimmen, welcher Wert der Realität entspricht, wenn Score und Text voneinander abweichen. 
 
-Diese Art von Widerspruch tritt in den betrachteten Datensätzen häufig auf und kann mehrere Gründe haben. Zum einen kann es vorkommen, dass Ärzte oder Pflegekräfte aufgrund von Zeitmangel oder Stress einen Text nicht mit der nötigen Gewissenhaftigkeit oder im nötigen Umfang verfassen, um aus den gegebenen Informationen einen Score herzuleiten. Im Extremfall kann es sogar vorkommen, dass Texte oder Scores aus der vorhergehenden Erhebung unverändert übernommen werden. Wird aber gleichzeitig der andere Wert aktualisiert, so 
+Diese Art von Widerspruch tritt in den betrachteten Datensätzen häufig auf und kann mehrere Gründe haben. Zum einen kann es vorkommen, dass Ärzte oder Pflegekräfte aufgrund von Zeitmangel oder Stress einen Text nicht mit der nötigen Gewissenhaftigkeit oder im nötigen Umfang verfassen, um aus den gegebenen Informationen einen Score herzuleiten. Im Extremfall kann es sogar vorkommen, dass Texte oder Scores aus der vorhergehenden Erhebung unverändert übernommen werden, auch wenn sich der Zustand des betreffenden Patienten verändert hat. Wird aber gleichzeitig ein entsprechender Score bzw. Text aktualisiert kommt es zu einem Widerspruch. Ferner ist es selbst ohne menschlichen Fehler möglich, dass Score und Visitentext unterschiedliche Werte indizieren, auch wenn diese zeitlich nah beieinander liegen. Da sich insbesondere auf einer Intensivstation der Zustand eines Patienten sehr schnell ändern kann, kann es durchaus vorkommen, dass sich zwei zeitlich sehr nah beieinanderliegende Texte bzw. Scores inhaltlich stark unterscheiden, obwohl beide Werte zum Zeitpunkt ihrer Eintragung als realitätsgetreu angesehen werden können.
 
-Ferner ist es selbst ohne menschlichen Fehler möglich, dass Score und Visitentext unterschiedliche Werte indizieren, auch wenn diese zeitlich nah beieinander liegen. Da sich insbesondere auf einer Intensivstation der Zustand eines Patienten sehr schnell ändern kann, kann es durch
-
-
-Diese Gründe sind nicht weiter Beobachtungsgegenstand der vorliegenden Arbeit. Dennoch muss das bei der Konzeption, Entwicklung und Bewertung beachtet werden, weil sie ohne weitere Maßnahmen möglicherweise eine obere Schranke für die Performance der Modelle darstellen.
+Diese Gründe sind nicht weiter Beobachtungsgegenstand der vorliegenden Arbeit. Dennoch muss diese Art von möglichen Unstimmigkeiten in den vorliegenden Daten bei der Konzeption, Entwicklung und Bewertung der Modelle beachtet werden. Insbesondere stellt die Qualität der Eingabedaten, ohne weitere Maßnahmen zur Datenbereinigung, womöglich eine obere Schranke für die Performance der Modelle dar.
