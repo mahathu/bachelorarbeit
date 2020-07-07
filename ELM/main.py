@@ -19,77 +19,46 @@ RASS_VAR_ID = 22086158
 Visite_ZNS_VAR_ID = 22085815
 Visite_Pflege_VAR_ID = 22085836
 
+w2v_params = {
+    'window_size': 5,
+    'dimensions': 100,
+    'word_min_count': 1,
+    'training_epochs': 30,
+}
 
-ELM_out_dfs = []
-SVR_out_dfs = []
+# df = preprocess_texts(PAIRS_FILE_PATH, RASS_VAR_ID)
+df = pd.read_csv('data/pairs_RASS_spellcorrected.csv') # Alternative, wenn Eingabedaten schon bereinigt wurden
 
-dims = [10,30,50,80,100,130,150,200,300]
-win_sizes = [2,5,7]
-wmcs = [1,3,5]
-total_runs = len(dims)*len(win_sizes)*len(wmcs)
-runs_done = 0
+# The texts in the dataframe above are already preprocessed/cleaned (see utiliites.py)
 
-for dimensions in dims:
-    for window_size in win_sizes:
-        for word_min_count in wmcs:
-            w2v_params = {
-                'window_size': window_size,
-                'dimensions': dimensions,
-                'word_min_count': word_min_count,
-                'training_epochs': 15,
-            }
+w2v_model = build_w2v_model(df,
+                            window_size=w2v_params['window_size'], #5 is default
+                            dimensions=w2v_params['dimensions'],
+                            word_min_count=w2v_params['word_min_count'], #5 is default
+                            epochs=w2v_params['training_epochs'],
+                            use_skipgrams=1)
+# w2v_model = Word2Vec.load(W2V_MODEL_PATH) # Alternative, wenn Modell schon gebaut wurde
 
-            print()
-            print(colored(w2v_params,'cyan'))
-            print('*'*80)
+X_texts, y = get_x_y(df, Visite_ZNS_VAR_ID, RASS_VAR_ID, 90)
+X_matrix = transform_texts(w2v_model, X_texts)
+# X_matrix = pd.read_csv(X_MATRIX_PATH) # Alternative, wenn Eingabetexte schon vektorisiert wurden
 
-            # df = preprocess_texts(PAIRS_FILE_PATH, RASS_VAR_ID)
-            df = pd.read_csv('data/pairs_RASS_spellcorrected.csv') # Alternative, wenn Eingabedaten schon bereinigt wurden
+# Filter out rows that had invalid input data in the X matrix:
+n_rows_before = len(y)
+broken_rows_mask = X_matrix[X_matrix.columns[0]].notnull()
+X_matrix = X_matrix[broken_rows_mask]
+y = y[broken_rows_mask].squeeze()
+print(f"{n_rows_before-len(y)} rows were filtered because the X matrix contained no data (empty text or text with no known words)")
 
-            # The texts in the dataframe above are already preprocessed/cleaned (see utiliites.py)
+# SVR
+for c in [.05, .1, .5, 1, 10, 20, 30]:
+    print(f"Building SVM with C={c}...", end=' ', flush=True)
+    svr_mae = test_with_SVM(X_matrix, y, c)
+    svr_df = pd.DataFrame([svr_mae], columns=["SVR_MAE"])
+    for param in w2v_params:
+        svr_df["w2v"+param] = w2v_params[param]
+    
+    print(colored(f'Done (mae={svr_mae:.3f})', 'green'))
 
-            w2v_model = build_w2v_model(df,
-                                        window_size=w2v_params['window_size'], #5 is default
-                                        dimensions=w2v_params['dimensions'],
-                                        word_min_count=w2v_params['word_min_count'], #5 is default
-                                        epochs=w2v_params['training_epochs'],
-                                        use_skipgrams=1)
-            # w2v_model = Word2Vec.load(W2V_MODEL_PATH) # Alternative, wenn Modell schon gebaut wurde
-
-            X_texts, y = get_x_y(df, Visite_ZNS_VAR_ID, RASS_VAR_ID, 90)
-            X_matrix = transform_texts(w2v_model, X_texts)
-            # X_matrix = pd.read_csv(X_MATRIX_PATH) # Alternative, wenn Eingabetexte schon vektorisiert wurden
-
-            # Filter out rows that had invalid input data in the X matrix:
-            n_rows_before = len(y)
-            broken_rows_mask = X_matrix[X_matrix.columns[0]].notnull()
-            X_matrix = X_matrix[broken_rows_mask]
-            y = y[broken_rows_mask].squeeze()
-            print(f"{n_rows_before-len(y)} rows were filtered because the X matrix contained no data (empty text or text with no known words)")
-
-            # SVR
-            for c in [1, 10]:
-                print(f"Building SVM with C={c}...", end=' ', flush=True)
-                svr_mae = test_with_SVM(X_matrix, y, c)
-                svr_df = pd.DataFrame([svr_mae], columns=["SVR_MAE"])
-                for param in w2v_params:
-                    svr_df["w2v"+param] = w2v_params[param]
-                
-                SVR_out_dfs.append(svr_df)
-                print(colored(f'Done (mae={svr_mae:.3f})', 'green'))
-
-            # ELM
-            ELM_perf_df = create_model(X_matrix, y)
-            for param in w2v_params:
-                ELM_perf_df["w2v"+param] = w2v_params[param]
-            
-            ELM_out_dfs.append(ELM_perf_df)
-
-            runs_done += 1
-            print(colored(f'{runs_done}/{total_runs} runs done ({runs_done/total_runs*100:.1f}%)', 'magenta'))
-
-print('done')
-#this is stupid
-pd.concat(ELM_out_dfs).to_csv('perf/ELM_performance_new.csv', index=False)
-pd.concat(SVR_out_dfs).to_csv('perf/SVR_performance_new.csv', index=False)
-print('saved to dfs')
+# ELM
+# ELM_perf_df = create_model(X_matrix, y)

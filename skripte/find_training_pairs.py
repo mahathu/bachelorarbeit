@@ -101,7 +101,7 @@ for patient_n in [40, 182, 316, 364]:
 
             elif PAIR_GENERATION_METHOD == 'nearest':
                 # only consider scores recorded within 2h of the text, before or after:
-                corresponding_labels = patient_df[(patient_df['VarID'] == v_id) & 
+                corresponding_labels = patient_df[(patient_df['VarID'] == v_id) &
                         (abs(patient_df['Zeitpkt_offset']-tr_x) <= PREDICTION_MAX_DISTANCE)
                 ]
 

@@ -72,7 +72,7 @@ def get_ngrams(s, ngram_range=1):
     words = s.split()
     return [' '.join(words[i:i+ngram_range]) for i in range(len(words)-1)]
 
-def preprocess_texts(filepath, v_id):
+def preprocess_texts(filepath, v_id, out_file=None):
     """
     filepath should be a csv file containing the relevant columns:
     text_varid, text_time, text, label_varid, label_time, label
@@ -103,7 +103,9 @@ def preprocess_texts(filepath, v_id):
     df_v = df_v[df_v['text'] != ''] # remove rows with empty texts
     df_v = df_v[df_v['text'] != 'nan'] 
 
-    out_file = f'data/pairs_{v_id_name}.csv'
+    if not out_file:
+        out_file = f'data/pairs_{v_id_name}.csv'
+    
     df_v.to_csv(out_file, index=False)
 
     print(colored('Done', 'green'))
@@ -176,11 +178,11 @@ def transform_texts(model, texts_series):
         text_vectors.append(text_vector)
     
     df = pd.DataFrame(text_vectors)
-    df.to_csv(f'data/text_features_{n_dims}dim.csv', index=False)
+    #df.to_csv(f'data/text_features_{n_dims}dim.csv', index=False)
 
-    print(f"{len(texts_series)} texts vectorized in total ({n_unknown_words/len(texts_series):.3f} mean unknown words per text.)")
+    #print(f"{len(texts_series)} texts vectorized in total ({n_unknown_words/len(texts_series):.3f} mean unknown words per text.)")
     c = 'green' if n_broken_rows == 0 else 'red'
-    print(colored(f"{n_broken_rows} invalid input texts!", c))
+    #print(colored(f"{n_broken_rows} invalid input texts!", c))
 
     return df
 
