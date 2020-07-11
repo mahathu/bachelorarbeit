@@ -1,14 +1,18 @@
-bla bla bla. "das modell wurde anhand des in Abschnitt 3.2.1 beschriebenen kreuzvalidierungsverfahren getestet."
+Bei der Konzeption eines geeigneten Modells zur Vorhersage medizinischer Scores habe ich mich dafür entschieden, zwei separate, voneinander unabhängige Ansätze zu verfolgen. In Abschnitt \ref{section:baseline} wird die Entwicklung eines einfachen Regressionsmodells auf Basis der sog. Support Vector Machine beschrieben. Abschnitt \ref{section:ELM} beinhaltet die Entwicklung eines Modells basierend auf der Extreme Learning Machine, einem Verfahren, das es ermöglicht, künstliche neuronale Netze mit nur einem hidden layer effizient zu trainieren \citep{huangExtremeLearningMachine2006}. Weiterhin werden in Abschnitt \ref{section:ELM} weitere Methoden zur Vorverarbeitung der Eingabedaten vorgestellt sowie deren Wirkung bewertet. 
 
-wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die häufigsten?
-\section{Baseline-Modell}
+\section{Baseline-Modell}\label{section:baseline}
 \subsection{Datenaufbereitung}
+
 1) vectorization
 
 2) tfidf transformiert jeden eingabetext in einen vector mit gleicher länge. länge=anzahl der unique words.
 \subsection{Modell}
 \subsection{Ergebnisse}
-\section{Extreme Learning Machine}
+\section{Extreme Learning Machine}\label{section:ELM}
+
+\subsection{Rechtschreibprüfung}
+wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die häufigsten? Bla
+
 % bei spell checker eher für einen naiven ansatz entschieden:
 % wörter, die öfter als (3) mal vorkommen werden schon als
 % richtig angesehen, auch wenn da viele falsch geschriebene
@@ -21,10 +25,11 @@ wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die h
 Beschreiben: Verbesserung der featurization der eingabedaten durch word2vec. verbesserung auch durch spell correction, weil es viele falsch geschriebene wörter gibt, die dann in word2vec gar nicht auftauchen. (zeigen, wie sich die anzahl der unbekannten wörter durch spell correction verringert!)
 
 Vergleich unbekannte/bekannte wörter mit spell correction, substitutions etc und ohne.
-Baut auf einer Architektur auf, die von \cite{huangExtremeLearningMachine2006} eingeführt wurde.
 % * numerische optimierung: Lösungsraum, Bewertungsfunktion
 %   * das Gradientenverfahren
 %   * stochastic gradient descend
 % * Evaluation von ML-Modellen
 %       * z.b. cross validation
 %       * vermeiden: data leakage
+
+%bla bla bla. "das modell wurde anhand des in Abschnitt 3.2.1 beschriebenen kreuzvalidierungsverfahren getestet."

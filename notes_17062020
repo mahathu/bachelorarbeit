@@ -1,9 +1,3 @@
 patienten scatterplot wert statt orangenem kreuz
-
-Alternative zur Key-Value-Generierung:
-* Mittelwert der scores bilden
-* frühere versionen der visitentexten auch zur prediction verwenden
-
+frühere versionen der visitentexten auch zur prediction verwenden
 wenn linearer kern genauso gut f SVR dann diesen verwenden.
-
-was ist ground truth? text? RASSwert aus text? ganz anders?

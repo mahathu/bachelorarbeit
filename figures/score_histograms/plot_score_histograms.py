@@ -11,7 +11,7 @@ def abbreviate(s):
 var_id_names = {
     # 22085897: "Ramsay Sedation Scale",
     # 22086170: "BPS-Bewertung",
-    20512801: "Behavior Pain Scale",
+    # 20512801: "Behavior Pain Scale",
     # 22086172: "NRS/VAS Bedingungen",
     # 22085911: "Visual Analogue Scale",
     # 20512802: "Delirium Detection Score",
@@ -34,22 +34,30 @@ for v_id in var_id_names:
     
     bar_vals = df_v['wert'].value_counts()
 
-    print(f"{'='*80}\n{v_id_name} - n={len(bar_vals)}")    
-    
-    if all(x.isdigit() for x in bar_vals.index):
+    print(f"{'='*80}\n{v_id_name} - {len(bar_vals)} unique vals")    
+
+    try:
+        indices = bar_vals.index.astype(int)
+    except TypeError:
+        indices = bar_vals.index
+        print("Could not convert indices to integer")
+
+    if isinstance(indices, pd.Int64Index):
+        print("all digits")
         u = df_v['wert'].unique().astype(int)
         u.sort()
         print(u)
-        bar_vals.index = bar_vals.index.astype(int)
-        mi = min(bar_vals.index)
-        ma = max(bar_vals.index) + 1
+        bar_vals.index = indices
+        mi = min(indices)
+        ma = max(indices) + 1
         plt.xlim(mi-1,ma)
         if ma - mi < 15:
             plt.xticks(np.arange(mi,ma), np.arange(mi,ma))
 
     else:
         print(bar_vals)
-    bar_vals = bar_vals.sort_index()
+    
+    bar_vals = bar_vals.sort_index() # only makes a difference for non numerical indices (i.e neg/pos/unmögl for CAM-ICU)
 
     x = bar_vals.index
     y = bar_vals.to_numpy()
@@ -57,11 +65,11 @@ for v_id in var_id_names:
     
     plt.bar(x, y, color='#3969b1')
     
-    #plt.ylabel('Anzahl eingetragener Werte')
-    #plt.title(v_id_name)
-    #plt.xlabel(v_id_name)
+    # plt.ylabel('Anzahl eingetragener Werte')
+    # plt.title(v_id_name)
+    # plt.xlabel(v_id_name)
     
-    #plt.show()
+    # plt.show()
     
     fn = f"hist_{v_id_name}.png".replace('/','-').replace(' ', '_')
     plt.savefig("out2/"+fn, bbox_inches='tight', pad_inches=.01, dpi=300)

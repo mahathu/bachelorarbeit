@@ -2,8 +2,8 @@
 	abstract=true, %abstract on!
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
-	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
-	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
+	% twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
+	BCOR=5mm, %6mm für hardcover, sonst 0. Durch twoside ist der innere rand kleiner, damit das Buch, falls es aufgeschlagen ist, 
 	%fleqn, % flush equations left (--> Formeln linksbündig)
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
 	headinclude, %scheint keinen Unterschied zu machen
@@ -22,7 +22,8 @@
 \usepackage[onehalfspacing]{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype} % better kerning, word spacing etc
-\usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
+% \usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
+\usepackage[hidelinks]{hyperref}
 \usepackage{booktabs} % schönere Tabellen
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
@@ -48,7 +49,25 @@
 \newcommand{\reftbl}[1]{{(siehe Tabelle \ref{#1})}} %Referenz in Klammern auf Tabelle
 
 \RedeclareSectionCommand[beforeskip=0pt,afterindent=false]{chapter} %weniger Abstand nach oben bei Kapitelüberschriften
-% \interfootnotelinepenalty=10000 % keine Fußnoten über mehrere Seiten!
+
+% \usepackage{fontspec}
+% \setmainfont{SourceSerifPro}[
+%   Extension=.otf,
+%   Path=./fonts/,
+%   UprightFont=*-Regular,
+%   BoldFont=*-Bold,
+%   ItalicFont=*-It,
+%   BoldItalicFont=*-BoldIt
+% ]
+% \setsansfont{FiraSans}[
+%   Extension=.otf,
+%   Path=./fonts/,
+%   UprightFont=*-Regular,
+%   BoldFont=*-Bold,
+%   ItalicFont=*-Italic,
+%   BoldItalicFont=*-BoldItalic,
+%   FontFace={sb}{n}{FiraSans-SemiBold}
+% ]
 
 \begin{document}
 	\pagestyle{empty}
@@ -85,7 +104,7 @@
 	\chapter{Vorgehensweise}\label{chap-vorgehensweise}
 	\input{3-vorgehensweise}
 	
-	\chapter{Auswertung der Ergebnisse}
+	\chapter{Fazit}
 	\input{4-schluss}
 
 	\newpage
