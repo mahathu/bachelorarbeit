@@ -3,8 +3,8 @@
 	pagesize,
 	pdftex,
 	12pt,
-	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
-	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
+	% twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
+	% BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
 	ngerman,
 	fleqn,
 	final,
@@ -20,6 +20,7 @@
 \usepackage[draft=false,babel,tracking=true,kerning=true,spacing=true]{microtype} % optischer Randausgleich etc.
 
 \begin{document}
+\pagenumbering{gobble} % keine Seitenzahlen
 
 \input{Institutsvorlage}
 % \titel{Analyse von Visitentexten mittels maschinellem Lernen zur Optimierung der Leitlinienadhärenz auf einer Intensivstation} % Titel der Arbeit

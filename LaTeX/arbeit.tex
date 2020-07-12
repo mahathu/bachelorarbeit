@@ -2,13 +2,14 @@
 	abstract=true, %abstract on!
 	a4paper, % Papierformat A4
 	12pt, % Schriftgröße 12pt
-	% twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
-	BCOR=5mm, %6mm für hardcover, sonst 0. Durch twoside ist der innere rand kleiner, damit das Buch, falls es aufgeschlagen ist, 
-	%fleqn, % flush equations left (--> Formeln linksbündig)
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
 	headinclude, %scheint keinen Unterschied zu machen
 	headsepline,
-	%open=right %Kapitelanfang immer auf rechter Seite, ggf. für pdf-Version weglassen
+	% draft, % replace me with final or comment out
+	% Diese Optionen für digitale Version auskommentieren:
+	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
+	BCOR=5mm, %6mm für hardcover, sonst 0. Durch twoside ist der innere rand kleiner, damit das Buch, falls es aufgeschlagen ist, 
+	open=right %Kapitelanfang immer auf rechter Seite, ggf. für pdf-Version weglassen
 ]{scrreprt}
 
 \usepackage{pdfpages}
@@ -25,6 +26,7 @@
 % \usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
 \usepackage[hidelinks]{hyperref}
 \usepackage{booktabs} % schönere Tabellen
+\usepackage[htt]{hyphenat} % hyphenate teletype text, z.b. "patienten.csv"
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
 
@@ -47,6 +49,7 @@
 
 \newcommand{\refsec}[1]{{(siehe Abschnitt \ref{#1})}} %Referenz in Klammern auf Section
 \newcommand{\reftbl}[1]{{(siehe Tabelle \ref{#1})}} %Referenz in Klammern auf Tabelle
+\newcommand{\reffig}[1]{{(siehe Abbildung \ref{#1})}} %Referenz in Klammern auf Abbildung
 
 \RedeclareSectionCommand[beforeskip=0pt,afterindent=false]{chapter} %weniger Abstand nach oben bei Kapitelüberschriften
 
@@ -74,9 +77,10 @@
 
 	\renewcommand{\arraystretch}{1.15} %Zeilenabstand innerhalb von Tabellen
 	% ========================================== %
-	% Am Schluss noch überprüfen:                %
-	% - einheitliche Zeitform                    %
-	% - gendergerechte Sprache (bäh)             % 
+	% Am Schluss noch überprüfen:
+	% - einheitliche Zeitform
+	% - Rechtschreibung
+	% - Fußnoten alle groß, außer nur 1-2 Wörter
 	% ========================================== %
 
 
