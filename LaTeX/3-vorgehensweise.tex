@@ -1,20 +1,29 @@
-Bei der Konzeption eines geeigneten Modells zur Vorhersage medizinischer Scores habe ich mich dafür entschieden, zwei separate, voneinander unabhängige Ansätze zu verfolgen. In Abschnitt \ref{section:baseline} wird die Entwicklung eines einfachen Regressionsmodells auf Basis der sog. Support Vector Machine beschrieben. Abschnitt \ref{section:ELM} beinhaltet die Entwicklung eines Modells basierend auf der Extreme Learning Machine, einem Verfahren, das es ermöglicht, künstliche neuronale Netze mit nur einem hidden layer effizient zu trainieren \citep{huangExtremeLearningMachine2006}. Weiterhin werden in Abschnitt \ref{section:ELM} weitere Methoden zur Vorverarbeitung der Eingabedaten vorgestellt sowie deren Wirkung bewertet. 
+Bei der Konzeption eines geeigneten Modells zur Vorhersage medizinischer Scores habe ich mich dafür entschieden, zwei separate, voneinander unabhängige Ansätze zu verfolgen. In Abschnitt \ref{section:baseline} wird die Entwicklung eines einfachen Regressionsmodells auf Basis einer sogenannten Support Vector Machine beschrieben. Abschnitt \ref{section:ELM} beinhaltet die Entwicklung eines Modells basierend auf der Extreme Learning Machine, einem Verfahren, das es ermöglicht, künstliche neuronale Netze mit nur einem hidden layer effizient zu trainieren \citep{huangExtremeLearningMachine2006}. Weiterhin werden in Abschnitt \ref{section:ELM} weitere Methoden zur Vorverarbeitung der Eingabedaten vorgestellt sowie deren Wirkung bewertet. 
 
 \section{Baseline-Modell}\label{section:baseline}
+
 \subsection{Datenaufbereitung}
 Die Verarbeitung natürlicher Sprache stellt eine besondere Herausforderung für das maschinelle Lernen dar.
-Bevor ein Modell trainiert werden kann muss eine angemessene numerische Repräsentation der Eingabetexte gefunden werden. 
+Bevor ein Modell trainiert werden kann muss eine angemessene numerische Repräsentation der Eingabetexte gefunden werden. (featurization)
 
+einfaches beispiel: bag of words. erweiterung: tf. erweiterung davon: tfidf
 1) vectorization
-
 2) tfidf transformiert jeden eingabetext in einen vector mit gleicher länge. länge=anzahl der unique words.
 \subsection{Modell}
-scikit learn \citep{JMLR:v12:pedregosa11a}
-\subsection{Ergebnisse}
-\section{Extreme Learning Machine}\label{section:ELM}
 
-\subsection{Rechtschreibprüfung}
-wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die häufigsten? Bla
+Was ist ein SVR?
+scikit learn \citep{JMLR:v12:pedregosa11a}.
+finden der besten hyperparameter mit hilfe von GridSearchCV.
+
+\subsection{Ergebnisse}
+Bla, hier ergebnisse. erkenntnis: besonders wichtig war verarbeitung der eingabedaten, nicht modell an sich.
+
+\section{künstliches neuronales Netzwerk}\label{section:ELM}
+\subsection{Vorverarbeitung der Eingabedaten}
+hier fokus darauf, wie ich eingabedaten verbessert habe. sonderzeichen entfernt, stopwörter entfernt. dabei darauf geachtet: keine vorgefertigte liste von stopwörtern benutzt, weil diese auf gestemmten text ausgelegt sind und auch wörter wie "kein" enthalten, die für meinen text relevant sind.
+
+
+Rechtschreibprüfung: wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die häufigsten? Bla
 
 % bei spell checker eher für einen naiven ansatz entschieden:
 % wörter, die öfter als (3) mal vorkommen werden schon als
@@ -25,14 +34,16 @@ wie viele wörter in den jeweiligen texten, wie viele unique? welches sind die h
 % vorkamen, um als richtig angesehen zu werden:
 % 'spannung' > spaltung
 % 'verformung' > versorgung
+Nur offensichtliche tippfehler korrigiert.
 Beschreiben: Verbesserung der featurization der eingabedaten durch word2vec. verbesserung auch durch spell correction, weil es viele falsch geschriebene wörter gibt, die dann in word2vec gar nicht auftauchen. (zeigen, wie sich die anzahl der unbekannten wörter durch spell correction verringert!)
 
 Vergleich unbekannte/bekannte wörter mit spell correction, substitutions etc und ohne.
-% * numerische optimierung: Lösungsraum, Bewertungsfunktion
-%   * das Gradientenverfahren
-%   * stochastic gradient descend
-% * Evaluation von ML-Modellen
-%       * z.b. cross validation
-%       * vermeiden: data leakage
 
-%bla bla bla. "das modell wurde anhand des in Abschnitt 3.2.1 beschriebenen kreuzvalidierungsverfahren getestet."
+\subsection{Vektorisierung mittels word2vec}
+hier: wie funktioniert w2v, was ist performance von svm aus abschnitt 3.1 mit word2vec?
+
+\subsection{Extreme Learning Machine}
+was ist eine ELM \citep{huangExtremeLearningMachine2006}, was für ne toolbox hab ich verwendet \citep{akusokHighPerformanceExtremeLearning2015}
+
+\subsection{Ergebnisse}
+Das modell wurde anhand des in Abschnitt 3.2.1 beschriebenen kreuzvalidierungsverfahren getestet. bla.

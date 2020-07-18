@@ -1,31 +1,14 @@
-wichtiges Zeug
-====
-
-**neuer Titel**: Vorhersage medizinischer Scores auf Intensivstationen mittels maschinellem Lernen
+**Der Ordner /data/ ist .gitignored, sodass keine patientenbezogenen Daten im öftl. git-repo vorliegen. Ohne diese funktioniert aber der Großteil des Codes nicht. Bei Bedarf also manuell Daten aus COPRA exportieren oder mich fragen**
 
 für besseres Modell:
-* **NRS/VAS Bedingungen mit einbeziehen**, jeweils 1 Spalte für "ruhe", "intervent", ...
-* **Spell Checker anwenden!** http://norvig.com/spell-correct.html *done*
+* **NRS/VAS Bedingungen mit einbeziehen**, jeweils 1 Spalte für "ruhe", "intervent" (one hot encoding)
 
-allgemeine Notizen
-====
 http://ksrowell.com/blog-visualizing-data/wp-content/uploads/2012/02/optimal-colors-for-graphs.png
 Colors:
 blue: #3969b1
 orange: #da7c30
 green: #3e9651
 red: #cc2529
-<!-- rot: #fb8072
-blau: #80b1d3
-limette: #b3de69
-orange: #fdb462
-lila: #bc80bd
-pink: #fccde5
-hellgelb: #ffffb3
-(siehe colorbrewer)
-
-ROT: #fb8072
-BLAU: #80b1d3 -->
 
 Datendateien
 ----
@@ -56,31 +39,8 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 | 22085911 | NRS/VAS (Schmerz?)                     | int (0-9)                                     | daten  |
 | 22086172 | NRS/VAS Bedingungen                    | Freitext, 1-2 Worte (sehr ähnlich zu BPS)     | daten  |
 
-**Input:** Visite_ZNS, Visite_Pflege, Visite_Oberarzt (ggf. später z.B. auch Zeit auf ICU)
-
-**Predict:** (DDS), GCS, (BPS), CAM-ICU, RASS
-
 --------------
 
 Delirium Detection Score (DDS) hat nur 5 Parameter, richtig? Weil max score laut histogramm 35 ist --> Richtig!
 DDS eher zur bestätigung eines vorliegenden Delirs. Wird idR nur von pflegeperson eingetragen
-DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur cam-icu 
-
-
-=== Neue Fragen ===
-
-1) von Wann bis wann fanden Patientenaufenthalte statt?
-2) "Es handelt sich also um unstrukturierte Freitexte, und es liegt im Ermessen der behandelnden Ärzte bzw. Pflegekräfte, einen aussagekräftigen Text zu formulieren." Stimmt das?
-3) DER oder DIE RASS?
-----
-
-* Überblick über die Daten
-    * Probleme
-        * Scores können sich schnell ändern
-        * Daten evtl ungenau, erlauben keine hohe Präzision beim Predicten
-    * Methoden der Generierung von Wertepaaren aus den Daten
-        * lassen sich gut durch Pfeile vergleichen
-        * latest text
-        * latest score
-        * nearest value
-* Performance Metriken, und warum diese geeignet sind Performance der Modelle zu beurteilen
+DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur cam-icu
