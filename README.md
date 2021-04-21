@@ -1,4 +1,4 @@
-**Der Ordner /data/ ist .gitignored, sodass keine patientenbezogenen Daten im öftl. git-repo vorliegen. Ohne diese funktioniert aber der Großteil des Codes nicht. Bei Bedarf also manuell Daten aus COPRA exportieren oder mich fragen**
+**Das Verzeichnis /data/ ist .gitignored, sodass keine patientenbezogenen Daten im öftl. git-repo vorliegen. Ohne diese funktioniert aber der Großteil des Codes nicht. Bei Bedarf also manuell Daten aus COPRA exportieren oder mich fragen**
 
 für besseres Modell:
 * **NRS/VAS Bedingungen mit einbeziehen**, jeweils 1 Spalte für "ruhe", "intervent" (one hot encoding)

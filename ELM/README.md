@@ -22,11 +22,8 @@ Beim spell check ist ein "naiver" Ansatz sicherer. nur fehler der entfernung 1 k
 ## Text Modeling:
 2.1) Vectorization **(done)**
     * mithilfe von word2vec skip-gram, 100 dimensionen (50 dim genauso gut scheinbar) **(done)**
-2.2) (Data Cleansing)
-    * samples in verschiedene cluster einordnen. samples, die im falschen cluster landen, aus trainingsdaten rausnehmen
 
 ## Prediction Model:
 3.1) ELM bauen
     * 50 knoten in input layer, so viele wie word2vec dimensionen ausgibt
-    * 25 knoten in hidden layer?
-    * 1 knoten output layer: linear activation function zwischen -5 und 4?
+    * 25 knoten in hidden layer (?)

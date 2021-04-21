@@ -1,11 +1,6 @@
 Baseline Model
 ====
 
-Annahme: **gelabelte, eingetragene Werte als "ground truth". Vermutlich ist so keine hohe predictive Genauigkeit möglich, weil die eingetragenen Werte im Datensatz oft von denen im Text abweichen. Das zu bestimmen ist ja genau der Punkt der Arbeit.**
-
-### Probleme
-* Texte enthalten z.B "RASS = -4", das wird vermutlich nicht richtig erkannt
-
 ### Erkenntnisse
 * rechenintensivster Prozess ist die Featurization der Eingabedaten
 * Featurization der Eingabedaten hat deutlich größeren Einfluss auf predictive performance als die hyperparameter

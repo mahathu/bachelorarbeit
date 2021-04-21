@@ -1,6 +1,10 @@
 Inhalt
 ===
 
+
+NLP Sepsis: https://pubmed.ncbi.nlm.nih.gov/31947237/
+
+
 ## 3) Vorgehensweise
   * Baseline-Modell
     * Implementierung
@@ -23,8 +27,6 @@ Inhalt
         
   * Novel model (ANN)
     * ...
-## 5) Anhänge
-  * Anhang A: ausgewählte Listings
 
 
 Literatur
@@ -44,14 +46,9 @@ https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html
 * https://www.aclweb.org/anthology/W17-5043/
 * https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b91400f14e27ec9dacf0a389e72fd0e0fa9c2535.pdf
 * https://www.cs.waikato.ac.nz/~eibe/pubs/ordinal_tech_report.pdf
-* https://pubmed.ncbi.nlm.nih.gov/31947237/
 * https://scikit-learn.org/stable/modules/svm.html#mathematical-formulation (Erklärung von SVM)
 * https://www.cs.waikato.ac.nz/~ml/weka/book.html#Contents (Definition von Kreuzvalidierung)
 * https://web.stanford.edu/~hastie/ElemStatLearn/
 * https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
 * https://peekaboo-vision.blogspot.com/2012/09/recap-of-my-first-kaggle-competition.html
 * https://machinelearningmastery.com/k-fold-cross-validation/
-  * enthält links zu diesen Büchern über cross validation:
-  * An Introduction to Statistical Learning, 2013
-  * Artificial Intelligence: A Modern Approach (3rd Edition), 2009
-  * Applied Predictive Modeling, 2013
