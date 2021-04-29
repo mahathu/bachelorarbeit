@@ -18,8 +18,8 @@ var_id_names = {
     22085820: "Visite_Oberarzt",
 }
 
-output_varid = 20512769
-output_varid = 22086158 #RASS
+
+output_varid = 20512769 #GCS
 input_varids = [22085815, 22085836, 22085820]
 pairs = []
 
@@ -31,17 +31,25 @@ for input_varid in input_varids:
     # remove unwanted rows:
     df_filter = ((df['text_varid'] == input_varid) & (df['label_varid'] == output_varid))
     df_filtered = df[df_filter]
-    offsets = (df_filtered['text_time'] - df_filtered['label_time']).abs().sort_values(ascending=False)
+    df_filtered['offset'] = (df_filtered['text_time'] - df_filtered['label_time']).abs()
     
-    print(offsets)
+    # offsets = (df_filtered['text_time'] - df_filtered['label_time']).abs().sort_values(ascending=False)
+    # print(offsets)
 
-    print(f"{var_id_names[input_varid]} --> {var_id_names[output_varid]} (n={len(df_filtered)}, max offset={offsets.max()})")
+    #print(f"{var_id_names[input_varid]} --> {var_id_names[output_varid]} (n={len(df_filtered)}, max offset={df_filtered['offset'].max()})")
 
     buckets = np.empty(max_seconds)
     buckets.fill(0)
 
-    for offset in offsets: # this is slow
-        buckets[-offset:] = [x+1 for x in buckets[-offset:]]
+    # for offset in offsets: # this is slow
+    #     # für jedes Wertepaar nimm den offset. 
+    #     # für alle buckets darüber, erhöhe den Zähler um 1
+    #     buckets[-offset:] = [x+1 for x in buckets[-offset:]]
+
+    # für jeden bucket, gucke wie viele der offsets darüber sind:
+    for i in range(max_seconds):
+        n_of_pairs_below_offset_thresh = len(df_filtered[df_filtered['offset'] <= i])
+        buckets[i] = n_of_pairs_below_offset_thresh
 
     pairs.append({
         'in': input_varid,
@@ -66,7 +74,6 @@ fig, ax = plt.subplots()
 
 for i, pair in enumerate(pairs):
     b = pair['buckets']
-    ls_index = input_varids.index(pair['in'])
     line, = plt.plot(x, b, linewidth=1.33, c=colors[i], label=var_id_names[pair['in']])
 
 plt.legend(loc="upper left")
@@ -80,7 +87,7 @@ ax.set_ylim(0, max(b[:max_seconds])*1.1)
 # plt.show()
 # exit()
 
-filename = f'pairs_by_max_min{var_id_names[output_varid]}.png'
+filename = f'pairs_by_max_min_{var_id_names[output_varid]}_FIXED.png'
 plt.savefig(filename, bbox_inches='tight', dpi=280)
 plt.clf() #clear figure
 plt.close()

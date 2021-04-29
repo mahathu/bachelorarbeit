@@ -1,4 +1,4 @@
-"""split an input file of data fairs
+"""split an input file of data pairs
 into a training set and a set to make
 predictions on."""
 

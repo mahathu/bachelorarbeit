@@ -1,3 +1,8 @@
+data/clean/all_scores.csv: Enthält alle VarID:Wert-Paare, sortiert nach Patient und Zeitpunkt
+data/clean/labels_nearest_all.csv: ?
+data/clean/labels_nearest.csv: ?
+data/clean/labels.csv: ?
+
 **Das Verzeichnis /data/ ist .gitignored, sodass keine patientenbezogenen Daten im öftl. git-repo vorliegen. Ohne diese funktioniert aber der Großteil des Codes nicht. Bei Bedarf also manuell Daten aus COPRA exportieren oder mich fragen**
 
 für besseres Modell:
@@ -38,6 +43,28 @@ Die Spalte "Zeitpkt" in den scores-Dateien bezieht sich auf "**für wann** die E
 | 22086170 | BPS-Bewertung                          | Freitext, 1-2 Worte (fast immer "ruhe")       | daten  |
 | 22085911 | NRS/VAS (Schmerz?)                     | int (0-9)                                     | daten  |
 | 22086172 | NRS/VAS Bedingungen                    | Freitext, 1-2 Worte (sehr ähnlich zu BPS)     | daten  |
+
+
+-----------
+
+Häufigkeiten von Text-Wert-Paaren, die 45 Min oder weniger entfernt zueinander sind:
+text_varid  label_varid     n
+22085815    20512769    13208
+22085815    20512801     5761
+22085815    20512802     4380
+22085815    22086158    11022
+22085815    22086169    10307
+22085820    20512769     3284
+22085820    20512801      694
+22085820    20512802      646
+22085820    22086158     1744
+22085820    22086169     1562
+22085836    20512769    14653
+22085836    20512801     5851
+22085836    20512802     4707
+22085836    22086158    11637
+22085836    22086169    10712
+
 
 --------------
 

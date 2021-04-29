@@ -1,10 +1,3 @@
-'''
-Desired output: a dataframe with columns:
-
-patientID, patientAge, patientSex, patientICUDuration, patientDied, eventTime
-VarID (eigene Spalte für jede varID?)
-'''
-
 import os
 import pandas as pd
 
