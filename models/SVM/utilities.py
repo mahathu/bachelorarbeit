@@ -171,19 +171,18 @@ def save_perf_report_as_md(df, scoring_method, fn, n_samples):
 
 # =============================================================================
 
-def test_estimator(estimator, X_col, y_col, scoring_methods, n_cv_splits=5):
-    cross_val_split = ShuffleSplit(n_splits=n_cv_splits, test_size=.2)
-
+def test_estimator(estimator, X_col, y_col, test_size, scoring_methods):
     scores = cross_validate(estimator, X_col, y_col,
-        cv=cross_val_split,
-        scoring=scoring_methods
+        cv=ShuffleSplit(n_splits=1, test_size=test_size),
+        scoring=scoring_methods,
+        #n_jobs = -1
     )
 
-    mean_scores = {
+    return {
         key[5:] if key.startswith('test_') else key: (value.mean(), value.std())
             for key, value in scores.items()
     }
-    return mean_scores
+
 
 def get_x_y(df, input_varid, output_varid, max_min_between, min_min_between=0, max_samples=0):
     df['diff'] = (df['label_time'] - df['text_time']).abs()
@@ -201,12 +200,18 @@ def get_x_y(df, input_varid, output_varid, max_min_between, min_min_between=0, m
         #eprint(f"Only considering the first {max_samples} samples!")
 
     # remove irrelevant columns:
-    df = df[['text', 'label']]
-    if output_varid == 22086169: # CAM-ICU
-        df = df.replace({'label': {
-            'neg.': 0,
-            'pos.': 1,
-            'unmögl.': 2,
-        }})
+    # df = df[['text', 'label']]
+    # if output_varid == 22086169: # CAM-ICU
+    #     df = df.replace({'label': {
+    #         'neg.': 0,
+    #         'pos.': 1,
+    #         'unmögl.': 2,
+    #     }})
 
     return df['text'].astype('U'), df['label'].astype(int)
+
+
+if __name__ == '__main__':
+    # test clean_and_stem_text()
+    text = "dieseröü täxtß sollte 9 898 (:):)) gecleaned sein und gestemmt laufen ruft schreit X*)'"
+    print(clean_and_stem_text(text))

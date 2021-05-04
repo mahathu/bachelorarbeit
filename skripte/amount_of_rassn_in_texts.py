@@ -15,10 +15,8 @@ def count_rass_mentions(series):
             continue
 
         idx = text.find('rass')
-        if idx < 0: # "RASS" not found in text
-            continue
-    
-        rass_n += 1
+        if idx >= 0: # "RASS"  found in text
+            rass_n += 1
         
     return rass_n
 

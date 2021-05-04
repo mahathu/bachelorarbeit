@@ -66,8 +66,20 @@ text_varid  label_varid     n
 22085836    22086169    10712
 
 
+--------------------
+
+
+     VarID n_rass percentage
+     <int>  <int>      <dbl>
+1 22085815   8426      35.0 
+2 22085820    446       3.82
+3 22085836    284       1.03
+
+
 --------------
 
 Delirium Detection Score (DDS) hat nur 5 Parameter, richtig? Weil max score laut histogramm 35 ist --> Richtig!
 DDS eher zur bestätigung eines vorliegenden Delirs. Wird idR nur von pflegeperson eingetragen
 DDS besser geeignet, verlauf eines bestehenden delirs zu beschreiben, als nur cam-icu
+
+"wichtiger schritt, die eingabetexte in numerische vektoren fester länge zu überführen." --> wird als embedding bezeichnet.

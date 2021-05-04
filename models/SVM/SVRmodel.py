@@ -8,66 +8,35 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from nltk.corpus import stopwords
 from datetime import datetime
 from os.path import isfile
-from utilities import iprint, sprint, wprint, eprint, save_performance_report, clean_text, clean_and_stem_text, brief_dict
+from utilities import iprint, sprint, wprint, eprint, save_performance_report, clean_text, clean_and_stem_text, brief_dict, get_x_y
+from nltk.stem import SnowballStemmer
 
 def search_params_SVR(X_col, y_col, scoring_method):
     X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.15)
     
-    input_param_grids = [ #char consistently beats word, so ignore word
-        # {
-        #     'vect__analyzer': ['char'],
-        #     'vect__ngram_range': [(1,5), (2,6), (4,7), (4,9), (5,12)],
-        #     'vect__preprocessor': [None, clean_and_stem_text],  
-        #     'vect__stop_words': [[], stopwords.words('german')], # use stop words when analyzing char ngrams
-        # },
-        # {
-        #     'vect__analyzer': ['char_wb'],
-        #     'vect__ngram_range': [(2,6), (4,9)],
-        #     'vect__preprocessor': [None, clean_and_stem_text],
-        #     'vect__stop_words': [[], stopwords.words('german')], # use stop words when analyzing char ngrams
-        # }
-        # {
-        #     'vect__analyzer': ['char'],
-        #     'vect__ngram_range': [(1, 5)],
-        # }
-    ]
-
-    # https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
-    # Finally also test:
-    # svr_param_grids = [ # svr_gamma is used only for kernel=rbf
-    #     {
-    #         'svr__kernel': ['linear'], 
-    #         'svr__C': [1, 10, .1, .001]
-    #     },
-    #     {
-    #         'svr__kernel': ['rbf', 'poly', 'sigmoid'], 
-    #         #'svr__gamma': ['scale', 'auto'], 
-    #         'svr__C': [1, 10, .1, .001]    
-    #     }
-    # ]
-
-    gs_params = [ # concatenate the dicts to finally save a list of dicts in gs_params
-        # {**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
-        {
-            'svr__kernel': ['linear'],
-        },
-        {
-            'svr__kernel': ['rbf'], 
-            'svr__gamma': ['scale', 'auto'],
-        }
-    ]
+    gs_params = { # concatenate the dicts to finally save a list of dicts in gs_params
+        #{**in_transform, **svr} for svr in svr_param_grids for in_transform in input_param_grids
+        'vect__analyzer': ['char', 'char_wb', 'word'],
+        'vect__ngram_range': [(1,5), (2,6), (4,7), (4,9), (5,12)],
+        'vect__preprocessor': [None, clean_and_stem_text],  
+        'vect__stop_words': [[], stopwords.words('german')], # use stop words when analyzing char ngrams
+        'svr__kernel': ['linear', 'rbf', 'poly', 'sigmoid'], 
+        'svr__C': [10**-i for i in range(4)]  # [1, 0.1, 0.01, 0.001] 
+    }
 
     # Create a processing pipeline containing preprocessing and the model:
     rgr_pipeline = Pipeline([
-        ('vect', CountVectorizer(analyzer='char', ngram_range=(1,5))), # count terms or chars
+        ('vect', CountVectorizer()), # count terms or chars
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=1000, C=10)), #SVR
+        ('svr', SVR(cache_size=1000)), #SVR
     ])
 
     # Automatic parameter tuning using grid search:
     iprint(f"GridSearchCV running for SVR perf_metric: {scoring_method}...")
+
+    # will run 5-fold cross validation!
     regressor = GridSearchCV(
-        rgr_pipeline, gs_params, scoring=scoring_method, n_jobs=-1, verbose=1
+        rgr_pipeline, gs_params, scoring=scoring_method, n_jobs=-1, verbose=1, cv=5
     )
     
     regressor.fit(X_train, y_train)
@@ -131,3 +100,15 @@ def filter_rass_occurences(s):
         return l
 
     return l[:index] + l[index+7:]
+
+if __name__ == '__main__':
+    print("Initializing gridsearch cv.")
+
+    df_all = pd.read_csv("../../data/clean/labels_nearest_all.csv")
+    
+    X, y = get_x_y(df_all, 22085815, 22086158, 
+        max_min_between=45, 
+        max_samples=1000
+    )
+
+    search_params_SVR(X, y, 'neg_root_mean_squared_error')
