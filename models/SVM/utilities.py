@@ -2,9 +2,14 @@ import pandas as pd
 import numpy as np
 from os.path import isfile
 from nltk.stem import SnowballStemmer
+from nltk.corpus import stopwords
 from termcolor import cprint
 from sklearn.model_selection import cross_val_score, cross_validate, ShuffleSplit
 import re
+
+
+not_stopwords = ['kein', 'keine', 'keinem', 'keinen', 'keiner', 'keines', 'nicht', 'nichts', 'nur', 'ohne', 'weg', 'will']
+stopwords_ger = [w for w in stopwords.words('german') if w not in not_stopwords]
 
 COLOR_OUTPUT_ENABLE = True
 
@@ -66,18 +71,21 @@ def brief_dict(d): #make dict look nicer in text output
     return d
 
 def clean_text(text):
-    pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß \.]', re.UNICODE)
+    pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß ]+', re.UNICODE)
 
     text = pattern.sub(' ', text) # remove special characters
-    return text
+    return ' '.join([word for word in text.split()]).lower() # mehrere Leerzeichen hintereinander entfernen
 
 def clean_and_stem_text(text):
     stemmer = SnowballStemmer('german')
-    pattern = re.compile('[^a-zA-Z0-9äöüÄÖÜß \.]', re.UNICODE)
-
-    text = pattern.sub(' ', text) # remove special characters
+    text = clean_text(text)
     text = ' '.join( [stemmer.stem(word) for word in text.split()] ) # stem words
     return text
+
+def rmstop_clean_stem(text):
+
+    text = ' '.join( [word for word in text.split() if word.lower() not in stopwords_ger] )
+    return clean_and_stem_text(text)
 
 def save_performance_report(estimator_name, regressor_obj, all_params, scoring_method, n_samples, fixed_params=None):
     #fixed params can be used to save hyperparams in columns that aren't actually tuned by GSCV.
@@ -213,5 +221,9 @@ def get_x_y(df, input_varid, output_varid, max_min_between, min_min_between=0, m
 
 if __name__ == '__main__':
     # test clean_and_stem_text()
-    text = "dieseröü täxtß sollte 9 898 (:):)) gecleaned sein und gestemmt laufen ruft schreit X*)'"
-    print(clean_and_stem_text(text))
+    text = "Pat ist koop. und adäquat, mobi ohne Probleme, ECMO ohne Probleme, Pat hat gegessen und getrunken"
+    print(f"[    ]: {text}")
+    print(f"[l   ]: {text.lower()}")
+    print(f"[l c ]: {clean_text(text)}")
+    print(f"[l cs]: {clean_and_stem_text(text)}")
+    print(f"[lrcs]: {rmstop_clean_stem(text)}")
