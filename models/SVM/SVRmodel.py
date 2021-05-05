@@ -14,6 +14,19 @@ from nltk.stem import SnowballStemmer
 def search_params_SVR(X_col, y_col, scoring_method):
     #X_train, X_test, y_train, y_test = train_test_split(X_col, y_col, test_size=.15)
     
+    """
+
+    GSCV-Ergebnisse
+    ===============
+    vect__analyzer     char und char_wb etwa gleich gut, word etwas schlechter 
+    vect__ngram_range  (1, x) ist schlecht, die anderen etwa gleich gut
+    vect__preprocessor alle etwa gleich gut? wie kann das sein?
+    svr__kernel        linear und sigmoid etwa gleich gut, poly, rbf schlecht
+    svr__C             1 viel besser als 0.1, 0.01 --> höhere Werte testen
+    svr__epsilon       0.05, 0.1, 0.15 alle gleich gut
+
+
+    """
     # gs_params = [
     #     { # concatenate the dicts to finally save a list of dicts in gs_params
     #         'vect__analyzer': ['word'],
@@ -33,14 +46,19 @@ def search_params_SVR(X_col, y_col, scoring_method):
     #     },
     # ]
     
-    gs_params = {   
-        'vect__analyzer': ['char'],
-        'vect__ngram_range': [(1,5), (2,6), (4,12), (6,8)],
-        'vect__preprocessor': [rmstop_clean_stem],
-        'svr__kernel': ['linear', 'rbf', 'poly'], 
-        'svr__C': [10, 1, 0.1, 0.01, 0.001, 0.0003],
-        'svr__epsilon': [0.01, 0.025, 0.05, 0.1, 0.15, 0.25, 0.4, 1],
-    },
+    gs_params = {
+            'vect__analyzer': ['char', 'char_wb'],
+            'vect__ngram_range': [
+                ( 2, 4), ( 2, 8), ( 2,12), ( 2,16),
+                ( 4, 4), ( 4, 8), ( 4,12), ( 4,16),
+                ( 6, 8), ( 6,12), ( 6,12), ( 6,16),
+                ( 8, 8), ( 8,12), ( 8,12), ( 8,16),            
+            ],
+            'vect__preprocessor': [lambda s: s.lower(), rmstop_clean_stem],
+            'svr__kernel': ['linear', 'sigmoid'], 
+            'svr__C': [0.1, 1, 5, 10, 15],
+            #'svr__epsilon': [0.05, 0.1, 0.15],
+    }
 
 
     # Create a processing pipeline containing preprocessing and the model:
@@ -66,7 +84,6 @@ def search_params_SVR(X_col, y_col, scoring_method):
     gs_rgr.fit(X_col, y_col)
     
     params = gs_rgr.cv_results_['params'] # eine Liste (n=n param-kombis "candidates") von dicts mit den parametern und deren entsprechenden Werten.
-    print(len(params))
 
     out_rows = []
     for i, param_dict in enumerate(params):
@@ -82,7 +99,7 @@ def search_params_SVR(X_col, y_col, scoring_method):
         out_rows.append(param_dict)
     
     df = pd.DataFrame(out_rows)
-    df.to_csv('GridsearchCV_results_char_e_C.csv', index=False)
+    df.to_csv('GridsearchCV_results_ngrams_mae.csv', index=False)
 
     best_params = brief_dict(gs_rgr.best_params_)
     print(best_params)
@@ -131,7 +148,7 @@ if __name__ == '__main__':
     
     X, y = get_x_y(df_all, 22085815, 22086158, 
         max_min_between=45, 
-        max_samples=1250
+        max_samples=2250
     )
 
-    search_params_SVR(X, y, 'neg_root_mean_squared_error')
+    search_params_SVR(X, y, 'neg_mean_absolute_error')
