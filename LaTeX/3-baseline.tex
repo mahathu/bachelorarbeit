@@ -1,0 +1,144 @@
+Für die Konzeption eines geeigneten Modells zur Vorhersage medizinischer Scores habe ich mich dafür entschieden, zwei separate, voneinander unabhängige Ansätze zu verfolgen. In diesem Kapitel wird die Entwicklung eines einfachen Regressionsmodells anhand einer sogenannten Support Vector Machine beschrieben. \refsec{chapter:ELM} beinhaltet die Entwicklung eines Modells basierend auf der Extreme Learning Machine, einem Verfahren, das es ermöglicht, künstliche neuronale Netze mit nur einem hidden layer effizient zu trainieren \citep{huangExtremeLearningMachine2006}. Weiterhin werden dort weitere Methoden zur Vorverarbeitung der Eingabedaten vorgestellt sowie deren Wirkung bewertet. 
+
+\section{Datenaufbereitung}
+
+Die Verarbeitung natürlicher Sprache stellt eine besondere Herausforderung für das maschinelle Lernen dar. Im Allgemeinen sind Texte, also Aneinanderreihungen von Buchstaben und Symbolen variabler Länge, keine geeigneten Eingabedaten für die Modelle des überwachten maschinellen Lernens. Daher müssen sie zuerst in eine angemessene numerische Repräsentation überführt werden. Dabei ist es wichtig dass der für die Vorhersage relevante Inhalt des Textes so gut wie möglich erhalten bleibt. Dieser Prozess, bei dem jeweils ein Eingabetext auf einen abstrakten Vektor reeller Zahlen abgebildet wird (den sog. \textit{feature vector}), wird als \textit{word embedding} bezeichnet. 
+
+\subsection{Tokenisierung}
+
+\subsubsection{Bag-of-Words}
+Ein trivialer Ansatz ist das sogenannte Bag-of-Words-Modell. Hierbei wird zunächst jeder Eingabetext in eine Liste seiner \textit{tokens} umgewandelt (Tokenisierung). Im einfachsten Fall ist jedes Wort, getrennt durch eines oder mehrere Leerzeichen, ein solches Token:
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance = 5em, auto]
+        % Place nodes
+        \node [block] (in) {\texttt{'Der Patient schläft tief und fest.'}};
+        \node [block, right = of in] (out) {\texttt{['Der', 'Patient', 'schläft', 'tief', 'und', 'fest.']}};
+        % Draw edges
+        \path [line] (in) -- (out);
+    \end{tikzpicture}
+    \caption{}
+    \label{fig:tokenize_words}
+\end{figure}
+
+Anschließend wird jedem Wort, das in einem oder mehreren der Eingabetexte auftritt, eine feste Position in den feature-Vektoren zugeordnet. Die Länge der Vektoren entspricht somit der Anzahl einzigartiger Worte in allen Eingabetexten.
+Zuletzt werden die Vorkommnisse der Worte in jedem Text gezählt und ihre Summe an der entsprechenden Stelle des dazugehörigen Vektors eingetragen:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccccccccc}
+    & \rot[90]{Der}
+    & \rot[90]{Patient}
+    & \rot[90]{schläft}
+    & \rot[90]{tief}
+    & \rot[90]{und}
+    & \rot[90]{fest}
+    & \rot[90]{ist}
+    & \rot[90]{nicht}
+    & \rot[90]{agitiert}
+    & \rot[90]{sediert}\\
+    \midrule
+    Der Patient schläft tief und fest      & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+    Patient ist nicht agitiert und schläft & 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 \\
+    Der Patient ist tief sediert           & 1 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+    \bottomrule
+\end{tabular}
+\end{table}
+
+Die Eingabedaten bestehen somit aus einer Matrix, deren Zeilen die Eingabetexte und deren Spalten die Anzahl der Vorkommnisse eines bestimmten Wortes enthalten. 
+
+\subsubsection{N-Gramme}
+Ein Nachteil dieser Art der Repräsentation ist, dass die Information über die Reihenfolge der Wörter innerhalb eines Textes verloren geht: Zwei Texte mit den gleichen Worten in einer unterschiedlichen Reihenfolge werden somit auf den gleichen Vektor abgebildet. Dieses Problem wird durch die Einführung sogenannter Bigramme vermindert: Hierbei werden jeweils zwei aufeinanderfolgende Worte zusammen als ein Token aufgefasst:
+
+\begin{center}\begin{tikzpicture}[node distance = 5em, auto]
+    % Place nodes
+    \node [block] (in) {\texttt{'Der Patient schläft tief und fest.'}};
+    \node [block, right = of in] (out) {\texttt{['Der Patient', 'Patient schläft', 'schläft tief', 'tief und', 'und fest.']}};
+    % Draw edges
+    \path [line] (in) -- (out);
+\end{tikzpicture}\end{center}
+
+Das Bigramm ist eine spezielle Form des allgemeinen N-Gramms, bei dem n die Anzahl der aufeinanderfolgenden Wörter angibt, die zu einem Token zusammengesetzt werden. Die Verwendung von N-Grammen bei der Tokenisierung ermöglicht es somit, einige der semantischen Informationen des Ausgangstextes zu erhalten, die bei einem einfachen Bag-of-Words-Modell verloren gehen würden. Gleichzeitig wird die Dimensionalität der Eingabevektoren drastisch erhöht, was zu höheren Anforderungen an Rechenkapazität und Speicherplatz beim Trainieren des Modells führt. 
+
+Statt auf Wortebene lässt sich die Tokenisierung der Eingabetexte auch auf Zeichenebene durchführen. Die Repräsentation des Textes wird somit deutlich granularer und höherdimensionierter, indem bei einem N-Gramm statt n Worten n aufeinanderfolgende Zeichen (d.h. Buchstaben oder Zahlen) zu einem Token zusammengesetzt werden. Bei einer Sonderform dieser sogenannten \textit{character n-grams} werden nur solche Zeichenfolgen von Länge n betrachtet, die Teil eines einzelnen Wortes sind und nicht über Wortgrenzen hinausgehen. Die Auswirkungen der Wahl von n sowie des Verfahrens zur Tokenisierung werden im Abschnitt GridSearchCV genauer erläutert.
+
+\subsubsection{tfidf}
+\dots
+
+\subsection{weitere Datenbereinigung}
+Abbildung \ref{fig:tokenize_words} zeigt exemplarisch die Überführung eines Eingabetexts in seine Tokens und verdeutlicht ein weiteres häufiges Problem der Textverarbeitung: Die Eingabedaten enthalten Satz- und Sonderzeichen, die eine sinnvolle Tokenisierung weiter erschweren. Der Beispieltext endet, wie viele der realen Eingabedaten, mit einem Punkt. Somit wird "fest." als neues Token erkannt, welches aus Sicht des Modells komplett unabhängig zu dem womöglich ebenfalls auftretenden "fest" ist. Dies erhöht nicht nur die Dimensionalität der Eingabedaten unnötig, sondern erschwert es dem Modell auch, die Bedeutung betroffener Worte bei der Vorhersage der medizinischen Scores zu ermitteln\footnote{Die Abkürzung "pat" für Patient tritt in den bereitgestellten Eingabedaten ebenfalls häufig (n = 37.103) und mit unterschiedlicher Großschreibung auf, wird aber in nur etwa 66.8 \% (n = 24.810) der Fälle mit einem Punkt ("pat.") geschrieben. Ohne weitere Schritte zur Datenbereinigung würden diese beiden Worte komplett separat behandelt werden, obwohl sie semantisch identisch sind.}.
+
+Bevor ein Eingabetext für die Verarbeitung durch das Baseline-Modell tokenisiert wird, wird er in vier Schritten sukzessive vereinfacht und auf seine semantischen Kerninhalte reduziert (siehe Abschnitt X). Ziel ist es, statistisches Rauschen zu minimieren, sodass die Texte eine maximal hohe Aussagekraft bei der Bestimmung der medizinischen Scores haben.
+
+Im ersten Schritt wird jedes großgeschriebene Satzzeichen durch den entsprechenden Kleinbuchstaben ersetzt. Somit spielt die Großschreibung bei der Unterscheidung der Tokens keine Rolle mehr. 
+Danach werden sämtliche Sonderzeichen, d.h. solche, die nicht Teil des deutschen Alphabets und keine Zahl sind, aus dem Text entfernt, da diese ebenfalls keine Bedeutung bei der Bestimmung des passenden Score-Werts haben.
+
+In Schritt drei wird jedes verbleibende Wort auf seinen Wortstamm zurückgeführt, da die verschiedenen syntaktischen Formen eines Wortes ebenfalls unerheblich sind. Hierbei findet eine Python-Implementierung des Algorithmus\footnote{http://snowball.tartarus.org/algorithms/german/stemmer.html} von Dr. Martin Porter Anwendung. Dieser entfernt Suffixe deutscher Worte anhand einer Folge wohldefinierter Regeln und benötigt somit kein Wörterbuch, um die Worte auf ihre Wortstämme zu reduzieren.
+
+Schlussendlich werden sogenannte Stoppwörter entfernt. Dies sind Wörter, die in der deutschen Sprache häufig vorkommen und somit nur eine syntaktische Bedeutung haben, bei der Deutung des Inhalts eines Textes aber unerheblich sind. Grundlage hierfür bildet eine Liste von 232 deutschen Stoppwörtern aus dem Korpus des Open-Source-Projekts NLTK\footnote{Natural Language Toolkit: https://www.nltk.org/}. Da die Stammformreduktion bereits im vorherigen Schritt stattfand, muss die Liste der Stoppwörter entsprechend angepasst werden, um im Text die richtigen Worte zu entfernen. Insgesamt zwölf Worte wie "nicht", "ohne" und "keine" wurden manuell aus der NLTK-Liste entfernt, da diese eine inhaltlich relevante Bedeutung in den Texten haben können. 
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance = 4em, auto]
+        % Place nodes
+        \node [pipelinetext]               (1) {\texttt{Pat ist koop. und adäquat, mobi ohne Probleme, ECMO ohne Probleme, Pat hat gegessen und getrunken}};
+        \node [pipelinetext, below = of 1] (2) {\texttt{pat ist koop. und adäquat, mobi ohne probleme, ecmo ohne probleme, pat hat gegessen und getrunken}};
+        \node [pipelinetext, below = of 2] (3) {\texttt{pat ist koop und adäquat mobi ohne probleme ecmo ohne probleme pat hat gegessen und getrunken}};
+        \node [pipelinetext, below = of 3] (4) {\texttt{pat ist koop und adaquat mobi ohn problem ecmo ohn problem pat hat gegess und getrunk}};
+        \node [pipelinetext, below = of 4] (5) {\texttt{pat koop adaquat mobi ohn problem ecmo ohn problem pat gegess getrunk}};
+        
+        % Draw edges
+        \draw[thick,->] (1) -- (2) node[midway,right] {Kleinschreibung};
+        \draw[thick,->] (2) -- (3) node[midway,right] {Sonderzeichen entfernen};
+        \draw[thick,->] (3) -- (4) node[midway,right] {Stammformreduktion};
+        \draw[thick,->] (4) -- (5) node[midway,right] {Stoppwörter entfernen};
+    \end{tikzpicture}
+    \caption{}
+    \label{fig:text_pipeline}
+\end{figure}
+
+Einige der Stammformreduktionen im letzten Schritt wirken auf den ersten Blick nicht zielführend, da sie den Text für menschliche Leser unter Umständen schwerer verständlich machen. 
+% Worte wie gegessen haben für den computer keine inhernänte bedeutung, sondern erhalten ihre bedeutung durch die trainingspaare, die ebenfalls gestemmt sind. mag für uns komisch wirken, ist aber kein problem. genauere betrachtung der ergebnisse/performance im abschnitt gridsearchcv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Hierbei wird zunächst jeder Eingabetext in die einzelnen Wörter unterteilt. Jedes Wort, das in dem gesamten Datensatz mindestens ein mal vorkommt, wird mit einer individuellen Nummer versehen. Die Länge der feature-Vektoren der einzelnen Eingabetexte entspricht der Gesamtanzahl
+
+% einfaches beispiel: bag of words. (spezialfall: bag of ngrams, indem der begriff "wort"/"token" verallgemeinert wird.)
+% erweiterung: tf. erweiterung davon: tfidf
+% 1) vectorization
+% 2) tfidf transformiert jeden eingabetext in einen vector mit gleicher länge. länge=anzahl der unique words.
+% \section{Modell}
+
+% Was ist ein SVR?
+% scikit learn \citep{JMLR:v12:pedregosa11a}.
+% finden der besten hyperparameter mit hilfe von GridSearchCV.
+
+% \section{Ergebnisse}
+% Bla, hier ergebnisse. erkenntnis: besonders wichtig war verarbeitung der eingabedaten, nicht modell an sich.

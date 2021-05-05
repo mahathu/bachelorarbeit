@@ -5,7 +5,7 @@
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
 	headinclude, %scheint keinen Unterschied zu machen
 	headsepline,
-	% draft, % replace me with final or comment out
+	draft, % replace me with final or comment out
 	% Diese Optionen für digitale Version auskommentieren:
 	twoside,
 	BCOR=1mm, % 1mm sollte reichen für aufgeschlagenes Buch in Klebebindung
@@ -14,7 +14,9 @@
 
 \usepackage{pdfpages}
 
+% \usepackage[titletoc]{appendix}
 \usepackage{float}
+\usepackage{caption}
 \usepackage[]{subfig}
 \usepackage{graphicx}
 \graphicspath{ {fig/} }
@@ -24,8 +26,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage{microtype} % better kerning, word spacing etc
 % \usepackage[colorlinks=true,allcolors=blue]{hyperref} %change options to [hidelinks] for printing!!
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\tikzset{
+block/.style = {rectangle, draw, text width=11em, text centered},
+pipelinetext/.style = {rectangle, draw, text width=24em, text centered},
+line/.style = {draw, -latex'},
+}
+
 \usepackage[hidelinks]{hyperref}
 \usepackage{booktabs} % schönere Tabellen
+\usepackage{xparse} % needed for \NewDocumentCommand
 \usepackage[htt]{hyphenat} % hyphenate teletype text, z.b. "patienten.csv"
 \usepackage{csquotes} % " wird zu Anführungszeichen
 \MakeOuterQuote{"}
@@ -33,6 +45,9 @@
 \newenvironment{itquote} % italics quote and " "
 {\begin{quote}\itshape}
 {\end{quote}}
+
+% Rotation: \rot[<angle>][<width>]{<stuff>}
+\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
 
 \usepackage{amsmath} %z.b align
 \usepackage{interval} %für Wertebereiche
@@ -105,11 +120,24 @@
 	\chapter{Übersicht über die Daten} % DONE %
 	\input{2-daten}
 	
-	\chapter{Vorgehensweise}\label{chap-vorgehensweise}
-	\input{3-vorgehensweise}
+	\chapter{Baseline-Modell}\label{chap-vorgehensweise}
+	\input{3-baseline}
+	
+	\chapter{Extreme Learning Machine}\label{chapter:ELM}
+	\input{4-elm}
 	
 	\chapter{Fazit}
-	\input{4-schluss}
+	\input{5-schluss}
+
+	% \begin{appendices}
+	% 	\chapter{Stoppwörter}
+	% 	\begin{verbatim}
+	% 		>>> from nltk.corpus import stopwords
+	% 		>>> len(stopwords.words('german'))
+	% 		232
+	% 		>>> stopwords.words('german')		
+	% 	\end{verbatim}
+	% \end{appendices}
 
 	\newpage
 	\bibliography{literatur}
