@@ -105,32 +105,22 @@ def search_params_SVR(X_col, y_col, scoring_method):
     print(best_params)
 
 def get_SVR(use_tuned_hyperparameters=True, filter_rass=False):
-    cache_size = 1024
+    # die hierfür verwendeten hyperparameter wurden durch GridsearchCV ermittelt.
     cv = CountVectorizer(
         analyzer='char',
-        ngram_range=(1,5),
-        preprocessor=lambda s: s.lower()
+        ngram_range=(2, 12),
+        preprocessor=filter_rass ? filter_rass_occurences : clean_and_stem_text
     )
-    
-    if filter_rass:
-        cv = CountVectorizer(
-            analyzer='char',
-            ngram_range=(1,5),
-            preprocessor=filter_rass_occurences
-        )
 
-    if use_tuned_hyperparameters: # Create a processing pipeline with the best hyperparameters:
-        return Pipeline([
-            ('vect', cv),
-            ('tfidf', TfidfTransformer()),
-            ('svr', SVR(cache_size=cache_size, C=10)), #das sind wirklich die besten Hyperparameter!
-        ])
-    
-    # else use a standard SVR
-    return Pipeline([ # no tuned hyperparameters!
+    return Pipeline([
         ('vect', cv),
         ('tfidf', TfidfTransformer()), # transform to term freq. inverse document freq.
-        ('svr', SVR(cache_size=cache_size, C=10)),
+        ('svr', SVR(
+            kernel = 'linear',
+            cache_size = 1024,
+            C = 1,
+            epsilon = 0.1
+        )),
     ])
 
 def filter_rass_occurences(s):
