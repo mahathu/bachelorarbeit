@@ -68,7 +68,7 @@ bla bla bla (Fridtjof fragen)
 % \subsection{Exemplarische Vorstellung eines Patienten} %z.b. 0430
 % Aufenthalt des Patienten hier detailliert beschreiben, und seinen Scatterplot einfügen (aber noch ohne Pfeile).
 
-\section{Generierung von Schlüssel-Wert-Paaren}
+\section{Generierung von Schlüssel-Wert-Paaren}\label{sec:pairgen}
 Eine besondere Herausforderung stellte dar, dass die verschiedenen Scores und Texte zu unterschiedlichen Zeiten und unabhängig voneinander eingetragen werden (siehe Abbildung \ref{fig:pat40_scatter}).
 %Die Informationen über Zeitpunkt, Art der Eintragung (VarID) sowie der eigentliche Wert liegen jeweils in Form von Tripeln in den entsprechenden Log-Dateien vor. Bei den Visitentexten enthalten die Tripel den entsprechenden Text als Wert der Eintragung.
 Um ein Machine-Learning Modell mit einer hohen Dimensionalität der Eingabevektoren zu trainieren ist eine hohe Anzahl von Trainingspaaren notwendig. Im konkreten Fall dieser Arbeit enthält jedes Wertepaar einen Visitentext sowie einen medizinischen Score, der den in dem Text angegebenen Informationen über die Verfasssung des Patienten möglichst genau entspricht. Zusammen bilden diese Paare die Grundlage der Modelle, selbstständig noch nicht gesehene Texte bewerten zu können. Aufgrund der zeitlichen Unterschiede zwischen den Eintragungen von Texten und Scores erwies sich allerdings ebenjene Zuordnung zueinander als nicht trivial. 

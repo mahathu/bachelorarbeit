@@ -1,13 +1,23 @@
-Hier: Histogram (bar plot) vergleich: jeweils für RASS/GCS:
-tatsächliche Verteilung der scores
-Verteilung der preds von ELM
-Verteilung der preds von SVR
+Im Rahmen der vorliegenden Arbeit wurde die Konzeption, Entwicklung und Bewertung eines Machine Learning-Modells zur Vorhersage medizinischer Score-Werte auf Basis von Visitentexten behandelt. Die Anwendung der Support Vector Regression wurde am Beispiel der Scores RASS und GCS sowie der Eingabetexte \texttt{Visite\_ZNS} und \texttt{Visite\_Pflege} vorgestellt. Das gleiche Konzept lässt sich mit nur kleinen Anpassungen auf andere Scores oder Eingabetexte übertragen.
 
+Unter Verwendung der besten Hyperparameter \refsec{sec:hyperparams} und jeweils 9000 Trainingspaaren wurden folgende Ergebnisse bei der Vorhersage der Score-Werte ermittelt:
 
-% ## 4) Fazit
-%   * Ergebnisse
-%   * TODO: Auswertung der Visitentexte: Wo gibt es große Abweichungen von eingetragenem Score/Modell-Vorhersage?
-%   * **Anwendung in der Zukunft**
-%     * Vorgänge bei Datenerfassung auf ICU optimieren
-%     * Erfassung von Qualität der bisher eingetragenen Daten
-%     * z.b. einbeziehen der scores in clinicial decision support systems
+\begin{table}[h]
+    \centering
+    \begin{tabular}{rcc}
+        Eingabetext
+        & Score
+        & MAE\\
+        \midrule
+        \texttt{Visite\_ZNS}    & RASS & 0,979 \\
+        \texttt{Visite\_Pflege} & RASS & 1,09 \\
+        \texttt{Visite\_ZNS}    & GCS  & 1,66 \\
+        \texttt{Visite\_Pflege} & GCS  & 2,12 \\
+        \bottomrule
+    \end{tabular}
+    \caption{mittlere absolute Abweichung der Vorhersagen}
+\end{table}
+
+Zukünftig können die Ausgaben des Modells beispielsweise genutzt werden, um sie mit den tatsächlich eingetragenen Werten zu vergleichen. Derartige Untersuchungen könnten Rückschlüsse über die bisherige Qualität der Datenerfassung auf den Intensivstationen der Charité ermöglichen und dazu beitragen, Vorgänge der Datenerfassung zu optimieren. Weiterhin kann analysiert werden, bei welchen Texten besonders große Abweichungen zwischen eingetragenem Wert und Vorhersage des Modells auftreten. Derartige Abweichungen könnten ein Indiz dafür sein, zu welchen Zeiten die Qualität der Datenerfassung ein besonders hohes Potenzial zur Verbesserung bietet.
+
+Der vollständige Quelltext zur Datenaufbereitung, dem Machine Learning-Modell sowie zu der Arbeit selbst ist frei unter GitHub verfügbar: \url{https://github.com/mahathu/bachelorarbeit}. Insbesondere bietet das Python-Skript \texttt{predict.py} im Verzeichnis \texttt{models/SVM/} die Möglichkeit, anhand vortrainierter Modelle mit je 12500 Trainingspaaren GCS- und RASS-Werte von beliebigen Eingabetexten zu bestimmen.

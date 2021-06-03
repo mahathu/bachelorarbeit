@@ -109,7 +109,7 @@ def get_SVR(use_tuned_hyperparameters=True, filter_rass=False):
     cv = CountVectorizer(
         analyzer='char',
         ngram_range=(2, 12),
-        preprocessor=filter_rass ? filter_rass_occurences : clean_and_stem_text
+        preprocessor=filter_rass_occurences if filter_rass else clean_and_stem_text
     )
 
     return Pipeline([

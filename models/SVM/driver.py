@@ -28,7 +28,7 @@ sample_sizes.extend([i for i in range(1000, 10000, 1000)])
 total_runs = len(input_varids) * len(output_varids) * len(sample_sizes) * N_RUNS_PER_SAMPLE
 current_run = 0
 
-for input_varid in input_varids:
+for input_varid in input_varids[1:]:
     for output_varid in output_varids:
         for max_samples in sample_sizes:
             for i in range(N_RUNS_PER_SAMPLE):
@@ -41,7 +41,7 @@ for input_varid in input_varids:
                     max_samples=max_samples + TEST_SET_SIZE
                 )
 
-                svr = SVRmodel.get_SVR(True, False)
+                svr = SVRmodel.get_SVR()
                 # svr_norass = SVRmodel.get_SVR(True, True)
 
                 scores = test_estimator(svr, X, y, TEST_SET_SIZE, SCORING_METHODS)

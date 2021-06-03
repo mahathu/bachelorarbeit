@@ -1,8 +1,10 @@
 .DS_Store
 .vscode/
 *.Rhistory
+*/__pycache__
 data/*
 models/ELM/data/*
+models/SVM/baked_models/*
 figures/training_pairs_nearest_3600/*
 skripte/out*
 

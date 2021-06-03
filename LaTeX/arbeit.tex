@@ -5,7 +5,7 @@
 	bibliography=totoc, %bibliographie im Inhaltsverzeichnis
 	headinclude, %scheint keinen Unterschied zu machen
 	headsepline,
-	draft, % replace me with final or comment out
+	% draft, % replace me with final or comment out
 	% Diese Optionen für digitale Version auskommentieren:
 	twoside,
 	BCOR=1mm, % 1mm sollte reichen für aufgeschlagenes Buch in Klebebindung
@@ -18,6 +18,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage[]{subfig}
+\usepackage{array, multirow}
 \usepackage{graphicx}
 \graphicspath{ {fig/} }
 \usepackage{xcolor}
@@ -50,7 +51,12 @@ line/.style = {draw, -latex'},
 \NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
 
 \usepackage{amsmath} %z.b align
+\usepackage{amsfonts} % for "\mathbb" macro
 \usepackage{interval} %für Wertebereiche
+
+
+\usepackage{makecell} % zeilenumbruch in tabelle
+\renewcommand{\cellalign}{l}
 
 \usepackage{footnote} %um fußnoten auch in Tabellen zu ermöglichen
 \makesavenoteenv{tabular}
@@ -96,6 +102,7 @@ line/.style = {draw, -latex'},
 	% - einheitliche Zeitform
 	% - Rechtschreibung
 	% - Fußnoten alle groß, außer nur 1-2 Wörter
+	% - Quellenangaben vor oder hinter punkt?
 	% ========================================== %
 
 
@@ -123,8 +130,8 @@ line/.style = {draw, -latex'},
 	\chapter{Baseline-Modell}\label{chap-vorgehensweise}
 	\input{3-baseline}
 	
-	\chapter{Extreme Learning Machine}\label{chapter:ELM}
-	\input{4-elm}
+	% \chapter{Extreme Learning Machine}\label{chapter:ELM}
+	% \input{4-elm}
 	
 	\chapter{Fazit}
 	\input{5-schluss}
