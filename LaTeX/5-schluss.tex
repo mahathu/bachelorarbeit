@@ -18,6 +18,22 @@ Unter Verwendung der besten Hyperparameter \refsec{sec:hyperparams} und jeweils 
     \caption{mittlere absolute Abweichung der Vorhersagen}
 \end{table}
 
-Zukünftig können die Ausgaben des Modells beispielsweise genutzt werden, um sie mit den tatsächlich eingetragenen Werten zu vergleichen. Derartige Untersuchungen könnten Rückschlüsse über die bisherige Qualität der Datenerfassung auf den Intensivstationen der Charité ermöglichen und dazu beitragen, Vorgänge der Datenerfassung zu optimieren. Weiterhin kann analysiert werden, bei welchen Texten besonders große Abweichungen zwischen eingetragenem Wert und Vorhersage des Modells auftreten. Derartige Abweichungen könnten ein Indiz dafür sein, zu welchen Zeiten die Qualität der Datenerfassung ein besonders hohes Potenzial zur Verbesserung bietet.
+Zukünftig können die Ausgaben des Modells beispielsweise genutzt werden, um sie mit den tatsächlich eingetragenen Werten zu vergleichen. Derartige Untersuchungen könnten Rückschlüsse über die bisherige Qualität der Datenerfassung auf den Intensivstationen der Charité ermöglichen und dazu beitragen, Vorgänge der Datenerfassung zu optimieren. Weiterhin ist die Implementierung eines Systems denkbar, welches bei der Eintragung neuer Score-Werte diese automatisch mit dem anhand der letzten Texteintragung erwarteten Wert vergleicht und bei einer großen Differenz eine Warnung ausgibt.
 
-Der vollständige Quelltext zur Datenaufbereitung, dem Machine Learning-Modell sowie zu der Arbeit selbst ist frei unter GitHub verfügbar: \url{https://github.com/mahathu/bachelorarbeit}. Insbesondere bietet das Python-Skript \texttt{predict.py} im Verzeichnis \texttt{models/SVM/} die Möglichkeit, anhand vortrainierter Modelle mit je 12500 Trainingspaaren GCS- und RASS-Werte von beliebigen Eingabetexten zu bestimmen.
+Darüber hinaus kann analysiert werden, bei welchen Texten besonders große Abweichungen zwischen eingetragenem Wert und Vorhersage des Modells auftreten. Derartige Abweichungen könnten ein Indiz dafür sein, zu welchen Zeiten die Qualität der Datenerfassung ein besonders hohes Potenzial zur Verbesserung bietet.
+
+Der vollständige Quelltext zur Datenaufbereitung, Generierung der Trainingspare, dem SVM-Modell sowie zu der Arbeit selbst ist frei auf GitHub verfügbar: \url{https://github.com/mahathu/bachelorarbeit}. Insbesondere bietet das Python-Skript \texttt{predict.py} im Verzeichnis \texttt{models/SVM/} die Möglichkeit, anhand vortrainierter Modelle mit je 12500 Trainingspaaren GCS- und RASS-Werte von beliebigen Eingabetexten zu bestimmen:
+
+\begin{lstlisting}[
+        language=bash,
+        extendedchars=false,
+        escapeinside='',
+        breaklines=true,
+        showstringspaces=false,
+        title=Benutzung von predict.py]
+    $ python3 predict.py "Pat wach, orientiert und scheinbar ad'ä'quat 'ü'bernommen"
+    Eingabetext interpretiert als Visite_ZNS:
+    RASS:  0 GCS: 14
+    Eingabetext interpretiert als Visite_Pflege:
+    RASS:  0 GCS: 15
+\end{lstlisting}

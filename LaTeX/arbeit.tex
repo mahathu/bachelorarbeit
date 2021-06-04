@@ -16,12 +16,16 @@
 
 % \usepackage[titletoc]{appendix}
 \usepackage{float}
+\usepackage{placeins}
+
 \usepackage{caption}
 \usepackage[]{subfig}
 \usepackage{array, multirow}
 \usepackage{graphicx}
 \graphicspath{ {fig/} }
 \usepackage{xcolor}
+\usepackage{listings}
+
 \usepackage[english, main=ngerman]{babel} % englisch für Zitate auf Englisch
 \usepackage[onehalfspacing]{setspace}
 \usepackage[utf8]{inputenc}
@@ -127,7 +131,7 @@ line/.style = {draw, -latex'},
 	\chapter{Übersicht über die Daten} % DONE %
 	\input{2-daten}
 	
-	\chapter{Baseline-Modell}\label{chap-vorgehensweise}
+	\chapter{Vorgehensweise}\label{chap-vorgehensweise}
 	\input{3-baseline}
 	
 	% \chapter{Extreme Learning Machine}\label{chapter:ELM}
@@ -150,5 +154,5 @@ line/.style = {draw, -latex'},
 	\bibliography{literatur}
 
 	% Selbstständigkeitserklärung (ist auf Seite 3 von deckblatt.pdf)
-	\includepdf[pages={3}]{Deckblatt/deckblatt.pdf}
+	\includepdf[pages={2}]{Deckblatt/deckblatt.pdf}
 \end{document}

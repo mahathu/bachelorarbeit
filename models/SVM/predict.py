@@ -16,9 +16,7 @@ with open(os.path.join(model_path, 'svr-22085836-20512769.est'), 'rb') as f:
 with open(os.path.join(model_path, 'svr-22085836-22086158.est'), 'rb') as f:
     model_Pflege_RASS = pickle.load(f)
 
-print(f"""
-Eingabetext interpretiert als Visite_ZNS:
+print(f"""Eingabetext interpretiert als Visite_ZNS:
 RASS: {round(model_ZNS_RASS.predict([text])[0]):2} GCS: {round(model_ZNS_GCS.predict([text])[0]):2}
 Eingabetext interpretiert als Visite_Pflege:
-RASS: {round(model_Pflege_RASS.predict([text])[0]):2} GCS: {round(model_Pflege_GCS.predict([text])[0]):2}
-""")
+RASS: {round(model_Pflege_RASS.predict([text])[0]):2} GCS: {round(model_Pflege_GCS.predict([text])[0]):2}""")

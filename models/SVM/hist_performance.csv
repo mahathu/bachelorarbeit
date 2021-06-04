@@ -1,0 +1,2001 @@
+out_varid,x,y,ypred
+GCS,"wach, fixiert zeitweise, teilweise adäquat, versucht mittels Gesten zu kommunizieren, PERRL, bekannte Hemiparese links",11,11
+GCS,"wach, befolgt Aufforderungen, teilorientiert (Krankenhaus, ""ich sterbe"", ""Sie sind die Ärztin""), heisere Stimme",13,13
+GCS,"Pat ruhig und entspannt, MSI 29mg/h",5,9
+GCS,"RASS -4, Pupillen mittelweit, isokor, lichtreagibel",3,6
+GCS,"wach, PERRL, bewegt 4/4, befolgt Aufforderungen",11,12
+GCS,"sediert RASS-4, Pupillen isocor mw lichtreagibel",3,3
+GCS,"komatös, GCS 3, Pupillen mittelweit bds nicht lr",7,4
+GCS,"Pat. wach, befolgte keine Aufforderungen, PERRL, bewegt li Hand, RASS 0   keine Orienterung zu ZOSP",11,11
+GCS,"tief analgosediert; keine Rkt. auf Ansprache oder Schmerzreiz, Uhrglasverband",3,3
+GCS,"wach, GCS 10, RAAS -1. PERRL 2/2mm, prompt, Hemiparese links 1/5 KG, Spontanbewegeung rechts in vollem Unfang",8,10
+GCS,"Sedierung beendet, adäquat kontaktierbar, bewegt 4/4",11,9
+GCS,"GCS 15, freundlich zugewanft, kommunikativ PERRL",15,14
+GCS,"wach, fixiert nicht, etwas unruhig am Tubus, ",8,9
+GCS,"wach, kontaktierbar, PERRL, befolgt einfache Aufforderungen ",14,10
+GCS,"Staus idem: FOUR-Scale: E3 (hat Augen spontan offen, fixiert nicht), M0 (keine Reaktion auf Schmerzreiz), BS3 (linke Pupille weit ohne LR, hier kein Kornealreflex), I 1.",8,6
+GCS,"wach, RASS 0, CAM-ICU neg., PERRL mw., kein Anhalt für FND, bewegt 4/4 spontan",10,14
+GCS,"schläft, erweckbar, sehr verlangsamt, RASS -2, CAM ICU positiv, bewegt 4/4, befolgt einfache Aufforderungen, BPS 4",6,11
+GCS,"intub.+beatmet, gute Tubustoleranz ohne Sedierung, bewegt ALLE Extremitäten spontan und auf SR, befolgt keine Auff, ",5,7
+GCS,"Patient wach kontaktierbar, hebt Arm und Bein auf Ansprache mit KG 4/5 re, Hemiparese links",9,11
+GCS,"wach, voll orientiert, bewegt 4/4, kein FND",15,15
+GCS,"schläfrig aber gut erweckbar, GCS 9 (A3V1M5), Hemiparese rechts Armbetont (unverändert) PGRRL",9,10
+GCS,"GCS 14 (a3, s5, m6), RASS 0, CAM ICU pos, Pat. wach, nicht orientiert zu ZSO, orienterit zur Peron. ",12,12
+GCS,"sedierungsfrei, PEERL 2/2mm, Augenöffen fixiert nicht, keine motorische Rx auf SzReiz ICP und CPP kompensiert",5,5
+GCS,"wach, orientiert, bewegt seitengleich 4/4, ",15,15
+GCS,"GCS 3, unter Sufenta 0,2, RASS -5, keine Reaktion auf SR bds, Pupillen 1,5li re2mm LR, Cornealreflex-, kein Husten auf Tubusmanipulation",3,3
+GCS,"RASS-5 EEG burst supression, ICP8 bei 2-fach Sedierung und pCO2 39, 30°OK hoch",3,5
+GCS,"Pat nach Extubation wach, adäquat, gibt Sz im Abdomen und Übelkeit an",6,10
+GCS,"Wach, zu allen Qualitäten orientiert. GCS 15. Pupillen mw, rund, isokor. Bewegt alle E. seitengleich.",15,15
+GCS,"neurologisch idem, zeitweise aggressiv",12,10
+GCS,"GCS9, RASS0, PERRL 3mm prompt",9,9
+GCS,"keine Reaktion auf Ansprache/Schmerzreiz, Pupillen mittelweit, li etwas>re, bds lichtreagibel",3,5
+GCS,"wach, voll orientiert, kein FND, Cephalgien, Nackenschmerz, Visus intakt, PERRL",15,15
+GCS,"wach, freundlich-kooperativ, PERRL, bewegt alle Extremitäten",15,15
+GCS,"kein adäquater Kontakt, PERRL, Augen geöffnet, fixiert nicht reproduz., keine AS, kein Mo bisher, Tavor ",6,7
+GCS,"spontanes Augenöffnen, Kontaktaufnahme fragl., ungezieltes Bewegen der linken Extremität",9,8
+GCS,"Öffnet Augen auf Ansprache, PERRL, befolgt vereinzelt Auffordeungen, Sediert, Sufenta, Propofol",3,4
+GCS,"RASS -3, Pupillen mw schwach lr",3,7
+GCS,"soporös, öffnet glg Augen, bewegt Bulbi. GCS: 5-6, RASS:-3. T:37.5, shivered leicht, CRP: 38.6mg/l(24), Leuk: 14.3/nl (10)",7,7
+GCS,"AÖ und Blickwendung zur Stimme möglich, drückt linke Hand fragl. reflektorisch, bewegt li Bein auf Schmerzreiz,  HP rechts, PERRL, Aphasie",9,9
+GCS,"Pat wach, zur Person und zur Zeit grob orientiert, deutliche Verbesserung des AZs im Vergleich zum Vortag, PERRL, bewegt 4/4, folgt einfachen Aufforderungen, adäquate Antwort auf einfache Fragen",13,13
+GCS,"schläfrig, teilw. kooperativ und teilorientiert, teilw. CAM-ICU pos., bewegt 4/4, grob kein fokal-neurolog. Defizit",14,15
+GCS,"wach, nicht örientiert, befolgt Aufforderung bewegt seitengleich OEX 3/5, UE 1-2/5",8,12
+GCS,"RASS 0, GCS 15, voll orientiert und kooperativ, PERRL, kein Schwindel/keine Sehstörungen, kein neues FND, pDMS voll intakt ",15,15
+GCS,"GCS 15, CAM-ICU neg., PERRLA",15,15
+GCS,"RAAS -5, GCS 3, Sufentanyl 0,1 µ, zur Sedierungdreeduktion jetzt: Midazolam von 15ml auf 7,5 ml reduziert. neue Licox um 25 PtO2,  PEERL, 2/2mm, rund, träge, keine PBZ",3,5
+GCS,"RASS -3, PERRL, keine Adäquanz",5,6
+GCS,"wach, orientiert, aufgeregt, kein fnD",15,15
+GCS,unverändert,13,12
+GCS,"wach, GCS 11, PERRL träge, fixiert, spricht zusammenhangslose Laute. Tetraparese allseits 0/5, keine PBZ",12,12
+GCS,"Öffnet Augen leicht auf Apsrache sonst keine Reaktion auf Schmerzreiz, PERRL, ICP kompensiert ~8 mmHg, intermt. Anstiege,bewegt beide Beine bei Manipulation, Strecken und Beugen",5,3
+GCS,"wach, adäquat, kein FND, PERRL, aktuell mit PDK schmerzzufrieden",14,14
+GCS,"RASS -2, befolgt keine Aufforderungen, Hustenreflex, Pupillen isokor und lichtreagibel, Fieber 39,4",7,7
+GCS,"schläft, erweckbar, kooperativ, verneint Schmerzen. RASS -1",13,12
+GCS,"tief sediert, RASS-5, PERRL",4,3
+GCS,"wach, adäquat, ruhiger, momentan keine Übelkeit, voll orientiert, entspannt, schmerzfrei",14,14
+GCS,"RAAS -3, GCS 5, Augenfolgebewegunggen intakt, Heben der Unterarme nur nach mehrfacher Aufforderung, kein Schulterheben, keine Kopfschütteln (ggf motivationsbedingt). PEERL prompt. hochgradige Teraparese 0/5 KG, keinePBZ",5,9
+GCS,"tief sediert, RASS-4, PERRL",3,3
+GCS,"Sedierungsfrei, wach, öffnet auf Ansprache die Augen, befolgt bedingt Aufforderungen. Bewegt alle Extremitäten spontan , kein FND.",10,11
+GCS,"wach, kontaktierbar, keine adäqaute Reaktion, drückt die linke Hand,befolgt keine Aufforderungen, PERRL, normotherm",11,8
+GCS,"schläft, erweckbar, befolgt Aufforderungen",10,13
+GCS,"RASS -3; Pupillen mw, isokor, lichtreagibel; folgt Aufforderungen nicht; Spontanbewegung der oberen Extremität, der unteren nicht",10,7
+GCS,"wach, adäquat, kein FND, bewegt 4/4, PERRL",15,15
+GCS,"Perrl, RASS -5, Sufenta, Prop, GCS 3",3,3
+GCS,"wach, orientiert, gering Clonidin kontinuierlich, RASS 0, bewegt 4/4",15,11
+GCS,"Prop. 13, Sufnta 1.3, RASS -5, Pupillen bds mw, schwch lichtreagibel, keine Reaktion auf Schmerzreiz, Babinski -/- ICP 10",3,3
+GCS,"RASS 0, wach, adäquat,. PERRL, bewegt alle Extremitäten ",15,15
+GCS,"Cloniin, spontane AÖ, diskrete Bewegungen 4/4, Pup. mw/ik, LR prompt",9,8
+GCS,"Pat. schläfrig, prompt erweck und kontaktierbar; orientiert, adäquat; bewegt 4/4; Sensibilität opB, PERRL",10,15
+GCS,"wach, nicht orientiert, teilweis nestlig, CAM-ICU pos. bewegt seitengeich 4/4",11,11
+GCS,"schläft, erweckbar, orientiert, kooperativ, adäquat. bwgt 4/4, bekannte Polyneuropathie, kein neues FND",14,14
+GCS,"öffnet auf Ansprache die Augen, Pupillen isokor, mw, LR +/+, drückt kräftig beide Hände auf  Aufforderung",5,8
+GCS,"Vigilanzminderung, Schutzreflexe nicht suffizient vorhanden. ",10,10
+GCS,"RASS 0, PERRL, koop., adäquat, bewegt alle Extr., li Bein schlechter als re nach OP",14,14
+GCS,"wach, vollkommen desorientiert, ruhig, verneint Schmerzen/Stress/Angst, bewegt Beine überhaupt nicht",12,12
+GCS,"wach, freundlich, weitgehend adaequat, zieht dennoch Drainagen/Zugänge -> eigengefährdend!",14,13
+GCS,"RASS -3/+1, PERRL, Ø Adäquanz, befolgt keine Aufforderungen, Ziel-RASS -3!",4,6
+GCS,"RASS -5; Pupillen isocor, ",3,3
+GCS,"wach, befolgt verlangsamt Aufforderungen, re Seite Spontan besser mobil, weiter führend motor. Aphasie post-OP idem, gutes Erwachen. Lagert sich selbstständig.",12,13
+GCS,"schläft, jederzeit erweckbar, voll orientiert, GCS 15, RASS -1/0, CAM-ICU neg., bekannte Anisokorie re>li., links blind, bewegt 4/4, beinbetonte HP links",14,14
+GCS,"Wunde Hinterkopf durch NCH heute begutachtet, nässt weiter leicht, Touhy Drainage belassen, Sedierungsfrei, PERRL, ÄÖ auf taktilen Reiz",6,7
+GCS,"Sedierungsfrei, wach. Mobilisierung in den Stuhl. Kein FND. Bewegt spontan alle Extremitäten.",13,13
+GCS,"wach orientiert, bewegt seitengleich 4/4, ",15,15
+GCS,"wach, orientiert, kein Hinweis auf FND, nachmittags Mobi in Stuhl suff",11,13
+GCS,analgosediert Propofol/Sufenta,10,3
+GCS,Neurologisches Fenster erfolgt. Pat. greift gezielt nach dem Tubus rechte HAnd und bewegt spontan linken Arm und Beine. In Sedierungspause mäßig kontaktfähig.,5,7
+GCS,"Postoperativ noch schläfrig, Sufenta reduziert, PERRL",10,10
+GCS,"wach, adaequat, freundlich, zugewandt.",11,13
+GCS,"wach, freundlich, antwortet auf Fragen, dabei aber der Dysarthrophonie ohe Gebiss wegen nahezu unverständlich. Motorik i.R.d. jetzt gut eingestellten Parkinson-Syndroms unauffällig, keine Hinweise für Psychose",13,13
+GCS,"wach, orientiert RASS0, CAM-ICU neg, kein FND",15,15
+GCS,"neuro idem , Touhy 10/h, sedierungsfrei, Cloni gestoppt bei HF 55",7,8
+GCS,"RASS +1, Pup mw/ik/lr, bewegt 4/4 mit KG 4/5 nJ, Pup eng/ik/lr, pDMS intakt, desorientiert, paranoid",14,13
+GCS,"Sedierungumstellung: S-Keta/MSI/Dormicum/Propofol; Nimbex-P. - Sed-Line: PSI:50-60, suppressionrate: 8-10",3,5
+GCS,"nach Diazepam schläfrig, Pupillen isokor, mw, LR +/+, interm. teilorientiert, prompt erweckbar, befolgt adäquat Aufforderungen, KG 4/4",10,13
+GCS,"GCS 15, kein FND",15,15
+GCS,"sediert, RASS-2 bis +2, PERRL, befolgt Auufforderungen, CIP/CIM, kein Fieber unter PCM",7,8
+GCS,postop etwas verhangen; ,15,12
+GCS,"wach, adäquat, mobilisiert, PERRL, 2 Runden über Station",15,15
+GCS,"GCS 7 (A1V1M5), ungezielte Antwort auf Schmerzreiz, bewegt 4/4 bei Reiz , Pupillen isocor kaum lr",5,6
+GCS,"RASS -1, wieder sehr agil, schlägt nach der Mutter, bewegt alle Extremitäten, PERRL,",10,10
+GCS,"RASS -3, Pup. bds. mw, keine LR, keine Adäquanz",4,4
+GCS,"Augenöffnen auf Manipul., befolgt keine Auff., fixiert nicht, RASS -4, PERRL, mw, keine Spontanbew. außer Augenzusammenkneifen",6,5
+GCS,"mono sediert Sufenta, GCS 3, PEERL 2mm",3,3
+GCS,"RASS -1, kein Sedierung, bekommt LevoMethadon b.B, bewegt 4/4",11,10
+GCS,"wach, adäquat, sieht nichts, PERRL mw, Neglect nach links, bewegt re>li, rechts KG 5/5, orientiert",14,13
+GCS,"PERRL mw, auf Szreiz: Bew. re Arm auf Szreiz, re minimale Bewegung Zehen auf Szreiz, Bab -/+",6,6
+GCS,"wach, kontaktierbar, bewegt oE gut, weiter bekannte Fußheberschwäche links, versucht zu vokabulieren, antidelirante Therapie mit Quetiapin, Haldol ex, Cloni+ Mo",10,11
+GCS,"2fach sediert mit Propofol und Sufenta - heute RASS-3, PERRL, bewegt alle Extremitäten",7,6
+GCS,"schlafend, kontaktierbar, blickfixiert, schmerzzufireden,  GCS 13, PEERL 3mm  ",14,11
+GCS,"Wach, voll orientiert, kooperativ, CAM-ICU neg, PERRL",11,15
+GCS,"wach, ruhig, adäquat, HP links, PERRL, Lithiumspie",14,14
+GCS,"RASS -5, PERRL, Lidschwellung li, ICP 17, CPP 71, BSR 78, PSR 4",3,4
+GCS,"in Apnoephasen ICP bis 20mmHg  RASS -1, mehr Spontanmotorik",10,9
+GCS,"wach, adäquat, NRS in Ruhe 5, heute Oralizierungsanfang",15,14
+GCS,"wach, agitiert, RASS +3, desorientiert",11,11
+GCS,"erweckbar, kontaktierbar, teilweise unruhig",10,10
+GCS,"RASS 0, orientiert, kooperativ, PERRL",15,15
+GCS,"keine Sedierung, TK, RASS -4, nicht kontaktierbar, Pat. schluckt und bewegt Augen",3,6
+GCS,"Pat. erweckbar, zum größten Teil orientiert, Pupillen isocor, spontanes Bewegen aller Extremitäten",9,11
+GCS,"RASS -2/-3, GCS 8 (E3M4V1); bewegt intermittierend die Arme; befolgt teilweise Aufforderung (Handheben); Pupillen beidseits mittelweit, rechts m.E. Ø lr, links lichtreagibel, Blickachsendeviation nach lateral RA",8,8
+GCS,"Pat. unter leichter Propofol Sedierung, shivert, RASS -4, GCS 5, Pupillen isokor, li träge LR, re keine LR",5,5
+GCS,"wach, RASS -1-(+1), CAM-ICU +, PERRL, CIP/CIM",10,10
+GCS,"Prop/Mida/Sufenta, PERRL mw, kein Meningismus, ICP<20, RASS-5",3,5
+GCS,"schläft, sonst adäquat kontaktierbar",15,13
+GCS,"wach, kontaktierbar, Sprachbarriere, entspannt, RASS 0, PERRL, sediert",10,10
+GCS,"sedierungsfrei, weiterhin komatös mit schwacher, heute evtl. etwas ausgeprägterer ungerichteter Abwehrreaktion auf SzReize, keine grundlegende Veränderung",5,7
+GCS,"RASS 0, bewegt 4/4 spontan, ",15,13
+GCS,"RASS 0 bis -1, antwortet auf einfache Fragen adäquat, PERRL, bewegt alle Extremitäten",9,11
+GCS,"schläft, ist erweckbar, PERRL, GCS 15, kein FND, Nimotop 6x60, keine Übelkeit, kein Kopfschmerz",15,14
+GCS,"Somnolent, GCS 13, befolgt Aufforderungen, desorientiert, CAM-ICU neg. PERRL, orientiertend kein weiteres FND. EVD neu",8,12
+GCS,"Pat. wach, RASS -1/0, heute deutlicher desorientiert, delirant; befolgt Aufforderungen, bewegt 4/4, PEARLL",7,13
+GCS,"wach, zunächst orientiert, adäquat, später nestelig",15,14
+GCS,"schläft, auf Stimulus erweckbar, Pup iso, mw, LR +/+",8,9
+GCS,"wach, kontaktierbar, wirkt angstlich/panisch, weniger delirant, bewegt alles auf Aufforderung, PERRL mw",11,12
+GCS,"wach, zugewandt, befolgt Aufforderungen, PERRL",11,11
+GCS,"RASS 0, antwortet einfache Fragen adäquat (j/n), befolgt Aufforderungen, Hemiparese li., Pupille Anisokorie, li weit, re mw, LR re +, LR li verzögert",14,10
+GCS,"RASS -3, Pup mw/ik/lr, auf Auff: drückt Hände bds, auf lokalen Szreiz: KG 2/5 UE bds, Bab+/+, spricht zT Worte, Schutzreflexe intakt, kein Blickkontakt  RASS -2, beantwortet j/n Fragen, sz zufr ",8,8
+GCS,"Sedierungsfrei, wach, beinbetonte Hemiparese rechts, PERRL. RASS 0",12,12
+GCS,"RASS -4, PERRL, hohe Sed.dosen notwendig",7,7
+GCS,"schläfrig, prompt erweckbar, GCS 11, Pup. mw/ik, LR prompt, bewegt 4/4 adäquat auf Aufforderung",10,12
+GCS,"sediert, RASS-5, Pupillen isocor, EEG Theta Wellen, PSI 25",3,5
+GCS,"Pat. schläft, erweckbar, RASS -1, PERRL 2mm prompt, bewegt 4/4 auf Auff",10,12
+GCS,"Zweifachsedierung mit Propofol und Sufenta. Darunter RASS -5. ICP 5. CPP 69. Bisher 30 ml Drainage über EVD seit Aufnahme. Pupillen isocor, mittelweit, lichtreagibel.",3,3
+GCS,"schaut im Zimmer umher, reagiert adäquat auf Ansprache, Pupillen mittelweit, lichtreagibel",4,6
+GCS,"Pat somnolent, erweckbar, bewegt 4/4 spontan, unverständliche Laute, bek Demenz, PERRL",9,10
+GCS,"wach, adäquat, RASS 0, CAM-ICU neg, kein Anhalt auf FND, PERRL",15,15
+GCS,"sediert, RASS -5 - heute 125ml EVD drainiert Pupillen bds. rund, sg, mit langsamem LR+,  synchron am Respirator",3,7
+GCS,"wach, adäquat, freundlich zugewandt, sehr kooperativ, kein FND, ",15,15
+GCS,"somnolent, erweckbar, öffnet auf Ansprache die Augen. GCS 10, RASS -2",10,9
+GCS,"wach, befolgt adäquat Aufforderungen, teiladäquat + gut führbar, orientiert, grob kein FND",14,15
+GCS,"Pat. wach, befolgt mit rechts einfache Aufforderungen, Lidheberapraxie, Kommunikation über Kopfnicken und -schütteln, HP links KG 3/5",9,10
+GCS,schläft,10,15
+GCS,"RASS -4 unter Sufenta mono, PGRRL, keine Aufwachreaktion",3,3
+GCS,"wacher als gestern, Sitzwache am Bett, hyperaktives Delir, bewegt 4/4, nicht voll orientiert, PERRL",12,12
+GCS,"RASS -5, PERRL, mw",4,3
+GCS,"Rass -5, keine Reaktion auf Ansprache, Pupillen eng und lichtreagibel",3,4
+GCS,"2fach sediert mit Propof und Sufenta, RASS-5, Pupillen in Bauchlage nicht beurteilbar",3,3
+GCS,"wach, orientiert",15,15
+GCS,"öffnet verlangsamt Augen auf Ansprache, PERRL, Sklerenikterus, fixiert nicht befolgt keine Aufforderungen",6,7
+GCS,"wach, jedoch Augen geschlossen, bewegt re und li auf Aufforderung, beidsseits träge und wenig, jedoch reproduzierbare Bewegung, Fuss, Arm, Hand, Knie nur rechts, Augen kneiffen beidseits, Stirn runzeln re mehr als links,",10,9
+GCS,"schläft, erweckbar, keine gezielte Rkt. ",5,10
+GCS,wach,11,15
+GCS,"GCS 9, Pat. befolgt keine Aufforderungen, Pupillen isokor, LR prompt seitengleich, konsensuell",12,10
+GCS,"Dexdor heute red., wechselnd ruhig-agitiert, shivert, bewegt 4/4, delirant",8,11
+GCS,"Sufenta 0,2 spontane Aufgenöffnung Motorik als Abwehr, GCS 8, PEERL 2mm träge, RASS -2, ICPs kompensiert, Liquoraspekt blutig, EVD-Drainage gestern 30",8,7
+GCS,"weiterhin komatös, Pupillen idem, subfebril",3,6
+GCS,"Monosedierung mit Sufenta, darunter soporös. RASS -4/-3. Pupillen mittelweit, isocor und lichtreagibel.",5,5
+GCS,"wach, adäquat, GCS 15, CAM-ICU negativ, PGRRL, kein Block bei PDK 6 ml/h (Ropi 0,2%), NRS 0/4",15,14
+GCS,"GSC13, RASS 0, CAM-ICU neg., wach, orientiert zu allen Q, retrograde Amnesie, PERRL, kein FND, keine Schmerzen am Kopf, Motorik seitengleich OE + UE 5/5",13,13
+GCS,"Sufenta mono. GCS (e1v1vm2), RASS -4, Pupillen isokor 1,5mm, areagibel. keine Rx auf Sz",6,5
+GCS,"RASS -1 bis -2, Pup mw/ik/lr, keine Bewegung OE, verneint Angst/Sz, bejaht Durst",11,11
+GCS,"RASS -2/-1, GCS wechselnd 12-14, Hemiparese links KG 0/5, Stecksynergismen links, Fazialisparese li, rechts 5/5, kein Meningismus, verwaschene Sprache, befolgt Aufforderungen, PERRL mw., unruhig",13,12
+GCS,"Schläfrig aber gut erweckbar, adäquat und orientiert, kein FND",9,14
+GCS,"RASS 0, CAM ICu pos., bewegt 4/4, geordnetes Gespräch unmöglich, redet über Vodka",12,12
+GCS,"wach bzw. schlafend/promt erweckbar, orientiert, schmerzzufrieden; im Verlauf Übelkeit und leichtes Erbrechen",14,15
+GCS,"wach, orientiert, guter AZ, schmerzfrei, sonst zufrieden, kein Fieber",15,15
+GCS,"Diskrete Hemiparese links, sitzt, steht und geht mit Physio, wacher als am Vortag, bekannte Demenz",14,12
+GCS,GCS 3 Pupillen idem.,3,3
+GCS,"soporös, PEARL, Schmerzabwehr mit linkem Arm, rechter Arm schlaff,",5,10
+GCS,"schläft, sonst nicht voll orientiert, bewegt 4/4",11,14
+GCS,"RASS -5 unter Sufenta 1,5ug/kg/h+ Mida 0,3mg/kg/h, keine Reaktion auf Ansprache oder Schmerzreiz, PERRL, Temp. 37,3°C ohne Kühlung",3,3
+GCS,"nach Lorazepaam schläfrig, hypotoon, schwer rweckbar, macht Augen auf nach wideerholten Reizen",15,11
+GCS,"RASS - 5, vierfach sediert, Propofol reduziert, ICPs 18-21 bei Manipulation, Pupille weiter dezent re>li, Konjunktiven bds. Injektionen, AUG Konsil gestern gelaufen",3,3
+GCS,"Drainagebedarf weiterhin 5-10 ml/h, Tendenz sinkend, Liquor blutig, ",3,7
+GCS,"komatös, GCS 3, keine Reaktion auf Schmerzreize, Pup. bds. miotisch, LR bds. allerbestenfalls extrem träge, wenn überhaupt vorhanden, VOR-/-, CR schwach +/+; cMRT gelaufen, Befund ausstehend, erster Eindruck siehe unten",3,6
+GCS,"Patientin wach, orientiert, kooperativ und verneint Schmerzen",15,14
+GCS,"wach, AÖ spontan, Rass 0, PERRL, bewegt 4/4 spontan, MSI, Dex, Haldol bei Delir +, befolgt keine Aufforderungen, teils agitiert",11,11
+GCS,"wach, orientiert, Tetraparese: re Arm 3/5, li Arm nur minimale Hand-Flexion; Hüft/Kniebeugung pos; re Bein 3/5, linkes Bein 2/5, nur Plantarflexion möglich",15,12
+GCS,"wach, kein FND, schmerzzufrieden, PDK ex bei intakter Gerinnung, PERRL, bewegt 4/4 mit voller Kraft, Sensibilität am Rumpf und Extremitäten intakt, keine Parästhesien, AHV und BHV ohne Absinken,  kein A. f. EDH",15,15
+GCS,"wach, fixiert, phasenweise sehr unruhig",11,11
+GCS,"sediert mit Propofol/Sufenta, daruner RASS-4, Pupillen eng isokor, bds LR",5,4
+GCS,"GCS 9, regaiert auf Reize , bewegt 4/4, POGRRL",7,9
+GCS,"RASS -4, Pupillen isokor, Miosis, LR +/+, Sklerenikterus",4,6
+GCS,"nestelig, unruhig, aber grob zu Person, Zeit, teil zu Ort orientiert, kein Hinweis auf FND",13,13
+GCS,"wechselhafte Vigilanz zwischen wehrhaft ungerichteten Bewegungen und Schläfrigkeit. Pat ist nicht gerichtet kontaktierbar, keine Augenöffnen auf Ansprache, kein Befolgen von Aufforderungen, bewegt 4/4 ungerichtet",5,9
+GCS,"RASS-2, PERRL, keine Spontanbewegung oder Bewegung auf Aufforderung,",9,7
+GCS,"wach, ruhig, CAM-ICU negativ unter Risperidon 2x1mg, kein FND, PGRRL",11,14
+GCS,"analgosediert mit Propofol/Remifentanil, cPP aktuell ca. 55 (unter Ziel) Anisokorie minimal rechts größer links",3,4
+GCS,"wach, teilorientiert; ruhig, gut führbar (nicht fixiert); bewegt 4/4",11,13
+GCS,"GCS 4, RAAS -4, PEERL, prompt, teilw Fixation zu Licht, Gähnen.  Wunde über linkem Ohr weiter oberflächl nekrotisch, gering nässend Touhy-Drain aktuell geklemmt, ICP 6, CCP 67",4,8
+GCS,"Pat wach, wirkst adäquat, bewegt 4/4, reduzierter AZ, Mobin im Stuhl, PERRL bds, FNV opB, Hirnnervenstatus opB",11,13
+GCS,"RASS -3, PERRL, Lidschwellung li stark zuück gehend, ICP <10",6,6
+GCS,"Sedierung deutlich reduziert, Propofol seit 7h aus, Sufenta 0,7µg/kg/h RASS -5, EEG PSI 15 nach burst suppression der letzten Tage, ICP weiter kompensiert bei 7mmHg ",3,4
+GCS,"Sedeirung aus, RASS-5, PERRL mw",3,4
+GCS,"Pup anisocor, unter Licht schnell spielend, gut kontrahierend, dann isocor, ICP kompensiert, niedrig, Mannitol-Schema läuft",3,7
+GCS,"GCS 15, RASS 0, CAM-ICU neg und voll orientiert. NRS 0",15,15
+GCS,"RASS 0, GCS fluktuierend, erweckbar, begfolgt keine Aufforderungen, PERRL ",10,10
+GCS,"wach und orientiert, kein FND",15,15
+GCS,"RASS -4 - -5, PERRL, BPS 3-5, spontane Bewegung der linken Schulter bei Husten",3,8
+GCS,"wach, orientiert, bewegt seitengleich 4/4, keine Paresen",14,15
+GCS,"wach, scheint adäquat, befolgt Aufforderung, deuliche Kraftgradminderung aller Extremitäten K2/5 a.e. CIP/CIM",11,11
+GCS,"wach, bewegt 4/4, ",15,14
+GCS,"sedierungfrei,  bewegt die linke Hand auf Ansprache, Hemiparese links beinbetont, OE 3/5 UE 1/5, PGRLR, schluckt selten spontan, bei Tubusmanip kein Husten/Schlucken",9,9
+GCS,"bewegt linken Arm spontan, Pupillen isocor mw lr, sonst keine adäqute Reakton",9,8
+GCS,wach; Augen teils spontan geöffnet; bewegt 4/4 in geringem Maße; auf Ansprache/Schmerzreiz Versuch der Vokalisation/verbalen Antwort,10,9
+GCS,"wach, ansprechbar, desorientiert CAM-ICU positiv",14,13
+GCS,"RASS -4, hustet bei Manipulation im Gesicht, PERRL mw",4,5
+GCS,"RASS 0, CAM-ICU neg., orientiert und compliant, PERRL, KG Hand/Fuß li 3/5, Kniestrecker links 2/5, Daumen rechts 2/5, Dysarthrie leicht gebessert, Temp. 37,6°C",10,12
+GCS,"kontaktierbar, will mitarbeiten, absolute Sprachbarriere",9,10
+GCS,"RASS 0, GCS 15 und voll orientiert, PERRL, kein FND, pDMS intakt",15,15
+GCS," 2fch sediet: RASS -5, Pupillen isokor, mw, LR bds. träge, unvollständiger Lidschluss bds.",3,5
+GCS,"GCS 3, RASS -5, PEERL 3/3mm prompt, CR +/+",3,6
+GCS,"schlafend, erweckbar, antwortet einzelne Worte, GCS 10 (e2,v3, m5), RASS -2, PEERL 2/2mm, prompt. bewegt 4/4 auf Sz",10,11
+GCS,"GCS 9 unter Sufenta 0,2, erweckbar, fixiert, befolgt keine Aufforderungen, PERRL bds.",9,6
+GCS,"RASS -5 ohne Sedierung, Pupillen rund/isokor/bds verzögert lr",6,6
+GCS,"GCS 12, RASS -1, kontaktierbar, fixiert kurz, versucht zu sprechen, hat Angehörige erkannt, PERRL, V.a. CIP/CIM armbetont",9,10
+GCS,"schläft, prompt erweckbar, bewegt 4/4; ",13,12
+GCS,"3fach sediert, PERRL eng, RASS -5, ICP kompensiert unter moderater Drainage",3,3
+GCS,"Pat. schläft, ist auf Ansprache erweckbar, keine Sprachproduktion, PERRL, weiterhin Drainageregime 5ml wenn ICP>5cmH2O",9,9
+GCS,"RASS -2, PERRL, eng, ICP 8, keine Adäquanz",6,6
+GCS,"2fach sediert, Prop/Sufenta weiter, Pup bds eng, LR langsam, schmatzende Mundbewegungen,sonst keine Reaktion",3,4
+GCS,"Pupillen isochor eng, sediert",3,4
+GCS,"wach, verneint Angst; RASS 0",10,10
+GCS,"Patientin wach, orientiert, bewegt alles",15,14
+GCS,"RASS -1 (schläft), PERRL, mw",11,11
+GCS,"wirkt schmerzzufrieden unter MSI, aktuell 3ml/h = 12mg/h",5,10
+GCS,"Vigilanz weiter in kleinen Schritten besser werdend, Augen häufiger spontan offen, wendet sich auf Ansprche zu, aber noch keine Komm., kein lateralisiertes FND erkennbar",12,10
+GCS,"somnbolent, erweckbar, kein FND, PGRRL",12,12
+GCS,schläft,15,15
+GCS,"wach, orientiert, Pupillen isokor, mw",14,14
+GCS,"RASS 0, GCS 15, CAM-ICU neg., PERRL, voll orientiert und compliant, kein FND, pDMS intakt bei ubiquitär leichter KG-Minderung 4/5 nach Janda bei CIP/CIM, wieder Fieber 38°C",15,14
+GCS,"Patient unter 3fach Sedierung mit Prop/Suf/Mida, RASS-5, GCS 3, Pupillen bds eng isokor.",3,3
+GCS,"somnolent, gut erweckbar, nicht orientiert, wackelt mit Zehen rechts und bewegt Arme",12,12
+GCS,"RASS -5 bei Sedierung unter Sufentanyl 0,1ug/kg/h, Pupillen bds. eng, PERRL, keine Sponattnbewegung odre auf Ansprache, dann spontane Extubation GCS 15",4,4
+GCS,"wach, wirkt agitiert aber adäquat, PERRL bds, bewegt Extremitäten mit reduzierter Kraft, kann Arme und Beine nicht gg Schwerkraft anheben (KG 2-3/5)",10,10
+GCS,"GCS 3, Pupillen mittelweit, LR seitengleich prompt; ",3,7
+GCS,"unruhig, erweckbar, befolgt Aufforderungen teilweise, bewegt 4/4, wirkt schmerzgeplagt, kein Fieber",9,12
+GCS,"RASS0, Pat. fixiert heute nicht, kein Versuch der Kommunikation seitens des Patienten, bewegt 4/4 spontan, befolgt keine Aufforderungen",11,10
+GCS,"RASS -1, freundlich zugewandt, orientiert, befolgt Aufforderungen adäquat, PERRL",15,15
+GCS,CAM ICU negativ. bwgt 4/4 spontan,14,13
+GCS,"GCS 12-13, somnolent aber gut erweckbar, desorientiert, befolgt Aufforderungen, KG 4/5 in allen Extremitäten, PERLR",12,12
+GCS,"3fach sediert, RASS-4 Pupillen eng, isokor LR vorhanden",7,5
+GCS,"wach, unruhig",11,12
+GCS,"RASS 0 , GCS 15, voll orientiert, PERRL, kein FND, pDMS voll intakt, kein Fieber,NAS 0, ikterisch",15,15
+GCS,"schläft ruhig, leicht erweckbar, schmerzzufrieden, bei Erwecken aus Schlaf zur Situation nur inscharf orientiert",15,15
+GCS,"Clonidin, Morphin, GCS 10, RASS 0, CAM-ICU neg, PERRL 2mm prompt, kein FND, ",10,11
+GCS,"Pat. reagiert auf Ansprache mit Augenöffnen, befolgt keine Aufforderungen, Pupillen mittelweit, isokor, LR seitengleich prompt",9,8
+GCS,"Sedierungsfrei, nicht kontakfähig. RASS -5. EVD geklemmt. ICP 37 mmHg.",5,4
+GCS,"wach, Pupille re deutlich >li; befolgt keine Aufforderungen, kein spontanes Bewegen der Extremitäten",6,7
+GCS,"RASS -1, PERRL, mw, bewegt alle Extr. spontan, teilweise nicht orientiert zur Situation, insgesamt müder als gestern (nach Haloperidol und Lormetazepam nachts)",11,12
+GCS,"wach, adäquat, kein FND, morgens intermitt Tachypnoe und zur Stressabschirmung MSI, Mobi 1 Runde um Station",15,12
+GCS,"wach, adäquat, orientiert, kein Hinweis auf FND",14,15
+GCS,"schwankender Verlauf von RASS +2 bis -2, CAM ICU positiv, PERRL, bewegt rechte Seite spontan",11,11
+GCS,"schläft, prompt erweckbar, bewegt seitengleich 4/4",11,12
+GCS,"RASS -4, 3fach sediert Pupille links eng, lichtreagibel Pupille rechts mittelweit, minimale Lichtreaktion, konsensuelle Lichtreaktion ",3,4
+GCS,"schläft, jederzeit erweckbar und dann orientiert. Neurol. idem - gegenüber Pflege wohl nicht klar orientiert und versucht 1x aus Bett zu steigen.",15,13
+GCS,"wach und adäquat, weiterhin blind, bewegt 4/4",15,14
+GCS,"RASS +1 unter pflegerischen Maßnahmen, PERRL, dann Sedalamboli, bewegt alle 4 Extremitäten mit reduzierter Kraft",10,9
+GCS,"Ausgeprägte Extremitätenschwäche DD CIP/CIM, ansonsten unauffällig. Depression.",15,11
+GCS,"stets erweckbar, kein FND, orientiert, PERRL, Schmerzen",15,15
+GCS,Delir weiterhin ausgeprägt,13,11
+GCS,"Pupillen minimale Anisokorie li>re., LR+/+, bewegt linke Hand",6,8
+GCS,"RASS-5, Prop/Sufenta, PERRL",3,3
+GCS,"aktuell RASS -4 unter 1 mg/kg/h Propofol und 120 Clonidin; PERRL unter 0,5 Propofol RASS +3/+4",9,5
+GCS,"RASS -1/0, PERRL, mw, orientierter/adäquater, bewegt alle Extr., Fixierung bislang nicht erforderlich",10,12
+GCS,"RASS -5, PERRL, Einblutung in die Skleren",3,7
+GCS,"am Abend agitiert, panisch, desorientiert, schreit oft, Versuch MSI; nach Sitzwache deutlich ruhiger, gibt Durst an, Volumen erhalten, bewgt 4/4",12,13
+GCS,"GCS6, sedierungsfrei, keine adäquate Reaktion auf Ansprache bis auf nicht sicher reproduzierbares Beugen der Extremitäten, kein Augenöffnen, PERRL, LR prompt",6,6
+GCS,"schläft, erweckbar, Blickwendung n. re, befolgt einfache Auff., zieht an Kabeln und Schläuchen",10,11
+GCS,"Siehe FSD, keine neuen Aspekte",6,9
+GCS,"wach, kontaktierbar, voll orientiert, PERRL, bewegt 4/4, kein FND",15,15
+GCS,"erweckbar, scheint zu fixieren, befolgt keine Aufforderung, keine Spontanbewegung",5,7
+GCS,"wach, orientiert, adäquat, grobk. kein fnD;",15,15
+GCS,"intermitt. Augenöffnen auf Ansprache, keine weitere adäquate Rkt.",4,8
+GCS,"Wach, Kommunikation gut möglich",10,11
+GCS,"schläft, orientiert, GCS: 15, bewegt 4/4, Sensibilität intakt. Kein Meningismus, PERRL",15,14
+GCS,"sediert, intubiert, Pupillen links 1,5mm, re 2mm bds. rund. lr träge. bds.  ",3,6
+GCS,"Pat. ohne Sedierung, keine Reaktion auf Ansprache oder Schmerzreiz, Lid- und Cornealreflex erhalten, Pupillen mittelweit isokor, LR seitengleich prompt",4,4
+GCS,"Analgosediert Lormetazepam/Morphin/Clonidin, darunter RASS -5, PERRL, mw",3,4
+GCS,"wach, teil-adäquat, örtlich nicht orientiert, weiterhin Paraparese der Beine 1-2/5 auf Schmerzreiz, OEX 3/5 bds",13,12
+GCS,"schläfrig, erweckbar, grob orientiert, befolgt Aufforderungen,antriebsgemindert, kein sensomotorisches Defizit. Pupille links trübe und amaurotisch, bds. keine LR. bei Blindheit",13,13
+GCS,"wach, RASS 0, erst ruhig, freundlich zugewand, dann aufgebracht, unkooperativ (CAM ICU wird nicht mitgemacht), PERRL, bewegt 4/4 spontan",15,13
+GCS,"Patn. gerade nach Sufenta-Bolus zum Lagern - nicht erweckbar, PERRL, bsiher keine Exctremität bewegt",5,8
+GCS,"wach, orientiert, kooperativ",15,15
+GCS,"wach, orientiert, kooperativ, kein FND, PERRL",15,15
+GCS,"wach, ruhig, PERRL, Hemiparese rechts, bewegt li Seite spontan",10,10
+GCS,"Pat. wach, kontaktierbar, expressiv aphasisch, Hemiparese re., weiterhin orale Nahrungskarenz bei hochgradiger Dysphagie (neurologisch unverändert)",10,11
+GCS,"GCS 9 (a4s1m4), Pat fixiert je nach Lagerung eine Seite, PERRL 4/4mm, RASS 0",7,9
+GCS,"etwas wacher,öffnet die Augen und bewegt den Kopf auf Ansprache, keine Extremitätenbewegungen, an ECMO kein Fieber, PERRL, Hyposphagma re, beide Augen extrem gerötet",7,7
+GCS,"wach, kooperativ, ruhig, CAM-ICU negativ, PGRRL",11,14
+GCS,"RASS-4, PERRL, BPS 5, Sedierung mit Propofol/Sufenta",4,4
+GCS,"wach, befolgt Aufforderungen, an der TK, GCS12  (A4V2M6) Hemiparese rechts armbetont, PGRRL",9,11
+GCS,"PERRL, befolgt alle Auff adäquat, bewegt alle Extremitäten auf Auff. RASS 0, CAM iCU negativ",11,11
+GCS,"wach, adäquat, RASS 0;  bewegt auf Aufforderung 4/4; Kraftgrad 3/5; PERRL mw; ",3,12
+GCS,"wach, reagiert bei offenen Fragen nicht auf Ansprache, bewegt alle Extremitäten, PERRL",10,9
+GCS,"sedierungsfrei, keine Reaktion, keine mot. Reaktion, ICP stets komp",5,5
+GCS,"erweckbar, befolgt keine Aufforderung, reagiert auf Schmerzreiz nur mit Grimassieren, Pupilen weit isokor lichtreagibel",5,8
+GCS,"wach, orientiert, PERRL, bewegt 4/4, ",15,15
+GCS,"RASS-5, BPS 3, enge Pupillen, PERRL, keine Spontanbewegung oder Bewegung auf Ansprache ",3,4
+GCS,"wach, fixiert, bewegt OEX seitengleich 3/5, UEX seitengleich 1/5",8,10
+GCS,"Sedierungsfrei, öffnet spontan Augen, befolgt bedingt Aufforderungen, Blick fixierend",10,10
+GCS,"auf Ansprache Versuch, die Augen zu öffnen, folgt mit den Augen der Anspracherichtung, PERRL, Fieber",5,7
+GCS,"keinen neuen Befunde, wach, schlaffe (periph.) Biparese mit V.a. traumat. Plexusläsionen dd: bds. Polyradikulopathien zervikal; Pat. wirkt durchaus ""hospistalisiert"", aber nicht desorientiert/delirant im engeren Sinne",14,14
+GCS,"somnolent, AÖ auf Ansprache,",10,10
+GCS,"RASS -4 unter 3fach-Sedierung, Pupillen isocor, lichtreagibel ICP kompensiert",3,3
+GCS,"wach, wirkt verlangsamt; grobkursorisch Ø fnD; verneint Angst und kreisende Gedanken.",14,13
+GCS,"P/S, GCS 3, PERRL eng",3,4
+GCS,"wach, ruhig, verwaschene Sprache, unscharf orientiert, CAM-ICU positiv",14,14
+GCS,"wach, adäquat, GCS 15, Pup. mw/ik, LR prompt, kein FND",15,15
+GCS,"unter Sufenta 0,5 Augenöffnen beim Umlagern, PERRL bds 2mm",4,6
+GCS,"Tuohy-Drain mit 10ml/h, Hemikraniektomieregion eingefallen",11,8
+GCS,"wach, kontaktierbar, aber meist nur unverständliche Laute, keine Schmerzangabe",10,10
+GCS,"Sedierung mit Prop/Suf., RASS -5, GCS 3, minimale Spontanbewegungen berichtet, ICP 8 kompensiert nach einmalig NaCl 10%",3,3
+GCS,"sedierungsfrei, GCS 3, RASS -5, Pupillen gering anisokor (3mm/2mm), rund, areagibel. kein Reaktion auf Schmerzreiz, PBZ bds negativ",3,3
+GCS,"RASS 0, Hemianopsie re. idem, keine weiteren FND",15,10
+GCS,"Augen spontan geöffnet. keine verbale Kommunikation, a.e. hypoaktives Delir. ",13,10
+GCS,neuro idem,15,10
+GCS,"sehr viel wacher, sucht mit den Augen, kein Blcikkontakt, scheint weder Worte noch Situation zu verstehen, befolgt keine Aufforderungen",8,8
+GCS,"kam heute früh wohl schwer in die Gänge (ggf. morgens mehr Madopar LT? kann ruhig mal ausprobiert werden); ansonsten heute wacher, ruhiger als gestern, beantwortet Fragen durchaus adäquat",12,12
+GCS,"RASS 0, PERRL, weiter deutlich aphasisch aber versucht zu vokalisieren, wieter hochgr. armbetonte Parese rechts, bewegt Bein auf Schmerzreiz (KG Arm/Bein 0/5 auf Aufforderung), befolgt Anwesungen links ",12,12
+GCS,"RASS -1, gerichtete Spontanbew. OE bds",9,9
+GCS,"Sufenta mono auf 0,3 reduziert, dabei heftiges Gegenatmen und beißen auf dem Tubus, für BroKo und CT daher Propofol hinzugenommen",3,5
+GCS,"schläft, prompt erweckbar, orientiert, unter PDK schmerzzufrieden, kein FND",15,15
+GCS,schläft,8,15
+GCS,"schläft, prompt erweckbar",15,14
+GCS,"zunhemnde Aufwachreaktion, PERRL, befolgt aber keine Aufforderungen",3,7
+GCS,"Pat. schläft, reagiert auf Ansprache mit Augenöffnen, kein sicheres Fixieren; Wunde/Verband trocken, Pupillen mittelweit, isokor, LR seitengleich prompt",9,9
+GCS,"RASS 0, adäquat, bewegt 4/4 mti KG 4/5 nJ, pDMS allseits intakt sz zufr",15,15
+GCS,"wach, ansprechbar, teilsesorientiert, aber kooperativ, GCS 13, PRPLR, keine Kraftminderung, kein Anhalt für FND",13,15
+GCS,"Propofol/Sufenta, PERRL eng, RASS-5",3,3
+GCS,"wach, adäquat, PERRL, kei FND",15,14
+GCS,idem,14,10
+GCS,"wach, orientiert, sieht TV, hat Besuch",15,14
+GCS,"sedierungsfrei, GCS 15, RASS 0, CAM-ICU neg, orientiert ZPOS. PEERL 2/2mm, prompt. HN intakt, keine manifesten Paresen, Sensibilität intakt, gering Ptose linkes Auge (bekannt)",14,14
+GCS,"wach, kontaktierbar, befolgt Aufforderungen prompt, PERRL, bewegt 4/4",8,12
+GCS,Schläfrig,10,14
+GCS,"wach,adäquat,orientiert,kooperativ,grob kein FND",15,14
+GCS,"GCS 10-11, beim Absaugen kaum Würgreflex/Hustenreiz, bewegt 4/4 auf Aufforderung, mäßiggradiger Rigor",8,8
+GCS,"wach, adäquat, PERRL, kein Hinweis auf FND, CAM-ICU neg, RASS0 schmerzzufrieden",15,15
+GCS,"RASS 0, GCS 15 und voll orientiert, pDMS voll inakt, PERRL, Visus idem",15,14
+GCS,"wach, adäquat, PERRL",11,15
+GCS,"schläft, erweckbar, bewegt OE KG 4/5 nJ, Pup mw/ik/lr, befolgt Auff",11,13
+GCS,"Pti. wach, GCS3, RASS0, CAM-ICU, PERRL 2mm, ",15,11
+GCS,"sediert, RASS -5, Pupillen isokor, eng, LR nicht überprüfbar. ICP bei 5, CPP gen 80mmHg",3,4
+GCS,"wach, orientiert, kein FND",15,15
+GCS,"RASS 0, promt erweckbar, adäquat, bekannte beinbetonte Paraplegie, Arme können gebeugt jedoch nicht gestreckt werden, PERRL",5,13
+GCS,"schläft, phasenweise wach, dann ruhig, mit Sitzwache am Bett kooperativ.  ",15,13
+GCS,"wach und schlafend im Wechsel, bewegt 4/4, träumt schlimm, voll orientiert,",15,14
+GCS,"ruhig, einmalige Panikattacke  ",3,8
+GCS,"RASS -1, PERRL, teiladäquat und koop., bewegt alle Extr., CIP/CIM, keine Luftnot, keine Schmerzen",11,11
+GCS,"3fach sediert GCS 13, gezielte verbale Reaktion unter SA, PEERL 2mm prompt, CAM-ICU pos, bewegt alle Extr. mit Armparesen bds, ",11,10
+GCS,schläft,10,15
+GCS,"GCS 14, Vigilanz unverändert, zur Nacht unruhig unter Melperon",11,11
+GCS,"GCS 8 A2V1M5 (unter Sufenta 0,2 !!!) , gezelte Reaktion auf Schmerzreize aller Extremitäteten, Arm rechts schwächer",10,8
+GCS,"schläft, prompt erweckbar, orientiert, allerdings teilweise abwesend, morgens wieder deutlich delirant",14,13
+GCS,"schläft, PERRL, pDMS intakt, keine Wahnhaften Äußerungen, Schmerzzufrieden",14,14
+GCS,"wach, ansprechbar, kooperativ",15,13
+GCS,"RASS -1, PERRL, Blickzuwendung, drückt nach Aufforderung nicht reproduzierbar Hände, bewegt Beine nach Manipulation",9,9
+GCS,"schläft, prompt erweckbar, weiterhin starke Tetraparese i R der CIP/CIM",11,11
+GCS,"wach, schläfrig unter Clonidin und Tavor-Schema, wurde nachts nicht geweckt",11,12
+GCS,"RASS 0, GCS 15 und voll orientiert, PERRL, Bewegt Beine und Arme spontan und auf aufforderung nach Sufentareduktion auf 0,2",11,12
+GCS,"komatös, keine Reaktion auf unangenehme Reize, auch bei Schmerzreiz noch kein Öffnen der Augen, Sediert mit Sufenta, bei Hyperthermie wieder Propofol dazugenommen, Pupillen isokor, eng, keine erkennbare LR",4,4
+GCS,"heute deutlich ruhiger nach Umstellung der Analgosedierung, bewegt 4/4, kein FND",11,11
+GCS,"soporös, unter Schmerzreiz erweckbar, wirkt dann gestresst; GCS4, Rass -3; PERRL, bewegt 0/4; Sedierung mit Sufenta/Propofol",6,4
+GCS,"wach, adäquat, bewegt 4/4 bek. Fußheberschwäche links ",14,13
+GCS,"Pat wach, Spontanbewegung Kopf + Extremitäten, PERRL, befolgt keine Aufforderungen",9,9
+GCS,"RASS 0, GCS 15 und voll orientiert, kein FND, pDMS voll intakt, NAS 3, bekannte Anisokorie vorbekannt, Hyposphagma links ",15,12
+GCS,"Wach, nicht orientiert, sieht Menschen in Zimmer, mit denen er schimpft, ansonsten neurologisch idem mit KG-Minderung der UE",14,13
+GCS,"cCT erfolgt, hier tendenziell regrediente Reperfusionsblutung temporal links, Demarkierung deutlicher, keine neuen Läsionen",11,11
+GCS,"RASS-1, Kommunikation gut möglich",14,10
+GCS,"Neurologisch idem, wach und adäquat, befolgt Aufforderungen und bewegt spontan 4/4, kein FND. Mobilisation in den Stuhl.",11,13
+GCS,"RASS-4, teils vegetativ stark agitiert, daher Erhöhung des Suf. auf 1,0µg/kg/min, Clonidin auf 90µg/h erhöht, ICPs kompensiert, bewegt 4/4",6,6
+GCS,"GCS 13, RAAS 0, ruhig. PEERL 2/2mm, prompt. OE bds 4/5 spontanbewegung, UE 1/5 bds",12,11
+GCS,"wach, orientiert, kooperativ, hemiparese re weiter, keine andere neurol. Defizite",14,14
+GCS,"schläft, erweckbar, Pup mw/ik/lr, drückt bds Hände auf Auff, streckt Zunge auf Auff. raus, zur Person orientiert, bewegt UE nicht auf Szreiz, Bab-/-, Schutzreflexe intakt sz zufr",13,11
+GCS,"RASS -5, Pupillen PEARL",3,3
+GCS,"RASS -3, nicht fixierend, fraglich Händedrücken auf Aufforderung, Wunde nässt ",10,10
+GCS,"sediert, intubiert. Propofol ex, bewegt linke Arm spontan KrGr 3/5 Öffnet Augen auf Ansprache, fixiert, PERRL 3mm",8,6
+GCS,"RASS-1, wach, bewegt 4/4 auf AUfforderung, MRC 2/5",11,11
+GCS,"erweckbar, schläfrig, RASS:-3, sediert mit Clonidin, Morphin, ",11,9
+GCS,"wach, RASS 0, CAM-ICU neg., PERRL mw., bewegt 4/4",15,15
+GCS,"AÖ auf Ansprache, kein gezieltes Befolgen von Auff., Nickt tlw",3,6
+GCS,"RASS 0, gibt Müdigkeit an, Pup mw/ik/lr",15,11
+GCS,ICPs kompensiert ohne viel Drainge (bislang netto 5 ml),4,7
+GCS,s. Befund im SD,15,12
+GCS,"Sedierung mit Dex/Mo, RASS unverändert, kurze AWR bei Manipulation, ungerichtet, Anisokorie R>l bekannt",5,6
+GCS,"Patient tief sediert, mit Suf/Prop, RASS -4, Pupillen eng bds",5,3
+GCS,"Sufenta mono, darunter keine Aufwachreaktion, Koma ohne Abwehrreaktion. Liquor heute sauber. Redon wurde in Heparinpause gezogen, einmalige Entleerung von gestautem Wundsekret, Übernähung",3,6
+GCS,"wach, adäquat, orientiert, kooperativ",15,15
+GCS,"sedierungsfrei, komatös, GCS 4 (e1,v,1,m1) RASS -4, PEERL 1,5/1,5mm, prompt. ICP  kompensiert, CPP zt gering unter Ziel",4,4
+GCS,Monosedierung mit Sufenta,4,5
+GCS,"ruhiger als gestern unter MCPAP, redet aber ab und zu unter der Maske, Risperdal, Melperon/Melatonin,Haldol ex, bewegt 4/4 spontan",12,12
+GCS,"schläft, re Auge offen bei FP, (Auge links muss weiterhin mit Uhrglasverband geschützt werden)",15,10
+GCS,"RASS -3, bewegt 4/4, sitzt, befolgt keine Aufforderungen, CAM-ICU pos",9,9
+GCS,Licox 12. ICP 2. GCS 3,3,6
+GCS,"wach, AÖ spontan, bewegt 4/4, wirkt adäquat, RASS -1, befolgt Aufforderungen",13,12
+GCS,schläft,9,15
+GCS,"wach, voll orientiert; adäquat; kein fnD",15,15
+GCS,"GCS 14, RASS 0, orientiert, gut kontaktierbar, PERRL",13,14
+GCS,"RASS -4, PERRL, keine Adäquanz",4,4
+GCS,"schläft erweckbar, nicht orientiert, jedoch kooperativ bewegt seitengleich 4/4, bekannte Faszilaisparese rechts",13,14
+GCS,"wach, GCS 14 (A4V4M6) auf Ansprache reagiert etwas verlangsamt, dann klare Sätze , CAM-ICU podsitiv, bewegt 4/4, gibt Schmerzn an (NRS nicht eruirbar)",11,12
+GCS,"RASS -4, Prop, Suf, Dexdor. Lormetazepan %",3,7
+GCS,"Proximal betonte Hemiparese rechts, aktuell KG 4/5 distal, proximal 2/5, ansonsten wie vorbekannt Bulbui in Konvergenzstellung, verlangsamt, ansonsten adäquat, wenig Sprachproduktion, Dysarthrie, befolgt Aufforderungen",12,12
+GCS,"wach, orientiert, bewegt seitengleich 4/4",15,15
+GCS,"sediert Sufenta mono, keine spontane Augenöffnug bewegt 3/3 auf SR, GCS 9, PERRL 2mm lr,",9,6
+GCS,"CGS 15, RASS 0, PERRl, gut kontaktierbar, voll orientiert, weiter Plegie beider Beine",13,14
+GCS,"wach, erscheint adäquat, gute Tubustoleranz, befolgt Aufforderungen, OE 4/5, UE ohne Bewegung und Sensorik, PERRL. leicht sediert, kein Fieber",11,11
+GCS,"4fach sediert: RASS -4, Pupillen isokor, mw, LR +/+, keine Spontanbewegung",3,3
+GCS,"wach, orientiert, adäquat, PERRL, linksseitig Missempfindungen, sensorisches Defizit",15,14
+GCS,"RASS-4, PERRL mw, tachypnoisch, wirkt gestresst, Propofol/Mo",3,4
+GCS,"wach, nicht orientiert, kein FND, PERRL.",14,13
+GCS,"Sufentanil, RASS 0, adäquat, PERRL, keine FND, bewegt 4/4",11,12
+GCS,"idem, Touhy weiter mit 10ml/h",4,8
+GCS,"RASS 0, CAM ICU negativ, bewegt 4/4 spontan, PERRL, NRS 2",15,15
+GCS,"Wach, ruhig, freundlich, aber produktiv halluzinierend, teilorientiert, Parese des linken Beins, PERLL",14,14
+GCS,"wach, teilkooperartiv. orientiert, RASS 0, GCS 15, kein FND",15,15
+GCS,"wach, befolgt Aufforderungen, wendet Kopf zu ",9,10
+GCS,"RASS 0, befolgt zT Auff. durch Angehörige, adäquat bei angehörigen",9,10
+GCS,"GCS 15, RASS 0, orientiert, adäquat, schmerzzufrieden",15,15
+GCS,"wach,adqäuat,bewegt seitengleich OEX 3/5,UEX 2/5, CAM ICU neg",13,13
+GCS,"bds. Miosis, Lichtreaktion schwer zu beurteilen, nicht kontaktierbar, aktuell Remi 0,1 und Clonidin 90microg/h, GCS 3, ICP 35",4,6
+GCS,"RASS -5, Bauchlage s. 3:30 heute nacht, Pup nicht beurteilbar, Propofol/Sufenta",3,4
+GCS,"GCS 10(a4s1m5), PERRL, wach , sediert, nicht kontaktierbar, RASS -2, bewegt alle Extremitäten",10,9
+GCS,"3fach sediert, öffnet auf Ansprechen die Augen, befolgt keine Aufforderungen, RASS-1, PERRL, weiterhin agitierte Phasen",5,6
+GCS,"RASS +2, PERRL, ICP 12, bewegt Beine",9,9
+GCS,"unter 4fach Sedierung RASS -5, Pupillen bds eng, re gering >li, ICPs stets kompensiert unter 20, langsame Sedierungsreduktion anstreben",3,3
+GCS,"GCS 3, bewegt nichts spontan, keine Reaktion auf Schmerzreiz, geringes würgen beim Absaugen, ICPs kompensiert",3,3
+GCS,"wach+freundlich und koop., befolgt Auff. PERRL, teilorientiert (Person+), armbetonte HP rechts, rechtes Bein 3-4/5, Arm rechts KG 2/5, zentrale FP rechts",13,13
+GCS,"Sedierungsfrei, somnolent, aber erweckbar, befolgt bedingt Aufforderungen (drückt beide Hände), kein FND. PDK mit 5 ml/h",12,12
+GCS,"wach, adäquat, kooperativ, orientiert, PERRL, bewegt 4/4,",14,15
+GCS,"schläft, ist erweckbar, aktuell schmerzzufrieden, kein FND",14,14
+GCS,"Pat. wacher, scheint kontaktierbar, versucht zu sprechen, allerdings nur unverständlich, befolgt keine Aufforderungen, bewegt spontan alle Extremitäten, Pupillen eng+isokor",9,9
+GCS,"schläft aber erweckbar, kontaktierbar, bewegt 4/4, nicht voll orientiert",11,13
+GCS,"wach,orientiert, bewegt seitengleich 4/4, CIP/CIM",11,13
+GCS,"Pat wach, adäquat, schmerzzufrieden unter PDK, schläft im Verlauf, kein Hinweis auf FND",15,15
+GCS,"wach, delirant, hyperventiliert sich",10,11
+GCS,"RASS 0, GCS 15 und voll orientiert, PERRL, kein FND, pDMS intakt",15,15
+GCS,schläft,11,15
+GCS,"Wach, voll orientiert",15,15
+GCS,"Pat ist wach, toleriert Tamponaden gut, verneint Schmerzen und wirkt adäquat",13,12
+GCS,"wach, kooperativ, CAM-ICU positiv, kin FND",14,13
+GCS,"RASS 0 ,GCS 15, CAM-ICU neg., Pat. wirkt weiter niedergeschlagen/erschöpft, PERRL, CIP/CIM weiter KG 4/5 ubiquitär, kein Fieber ",14,14
+GCS,"Sufenta reduziert, RASS -5, PERRL eng",3,5
+GCS,"ICP ~50, alle Hirnstammreflexe vorhanden bis auf VOR",4,5
+GCS,"wach, GCS 15. RAAS 0, voll orientiert, keine manifestes FND. ",15,15
+GCS,"wach, beantwortet Fragen verlangsamt aber adäquat, kein FND",11,12
+GCS,"wach, teilorientiert zu Ort nicht zu Situation, GCS 13, RASS 0, sedieurngsfrei, PERRL, ICPs kompensiert, EVD-Regime 10-15",13,10
+GCS,"RASS -4 unter Sedierung, PERRL, mw, ICP 12, CPP 74, Raumedic in situ",5,5
+GCS,"einfach sediert Morphin, GCS 10 (e4,m5,v1), RASS 0, PEERL 2mm prompt, CAM-ICU neg, linke Hempilegie",10,10
+GCS,"Augen geöffnet, keine Reaktion auf Ansprache, Pupillen bds weit, lichtreagibel, Herdblick nach rechts, Dysphagie",7,6
+GCS,"wach, teilorientiert, GCS 15, RASS 0. PERRL 2/2mm, prompt, OE 4+/5 KG, UE bds 2/5 KG und Fußerberparese 2/5, keine PBZ",15,14
+GCS,"wach, adäquat, bewegt 4/4 Extremitäten 4/5, nickt adäquat auf einfache Fragen",12,13
+GCS,"Rückenlage, 2fach sediert, RASS-5, RERRL eng",3,3
+GCS,"wach, kooperativ, orientiert, RASS 0, kein FND, befolgt Aufforderungen",14,15
+GCS,"RASS 0, GCS 15, CAM-ICU neg. PERRL, bewegt 4/4 spontan und befolgt Aufforderungen ",15,15
+GCS,"wach, zu Ort + Person orientiert, zu Zeit nicht orientiert, Hemiparese links, Neglect nach links, Blickpräferenz nach rechts, N. facialis Parese li",14,14
+GCS,"wach, orientiert, nicht delirant, sorgt sich um ihre Zeit nach der REHA",11,12
+GCS,"RASS -5 unter Proporol 2mg/kg/h und Sufentanyl 0,505 ug/kg/h, PERRL, keine Spontanbewegung/keine Reaktion auf Ansprache oder Manipulation",5,4
+GCS,Zweifachsedierung mit Propofol und Sufenta. Zur Abschirmung Clonidin. Bewegt rechten Arm und reagiert auf Ansprache. PERRL. Hemiparese rechts. Drainage 70 ml über EVD.,6,6
+GCS,"wach, adäquat, kein FND",15,15
+GCS,"Wach, befolgt teilweise einfache Aufforderungen, motorisch führende Aphasie, nur unverständliche Laute, armbetonte HP links. Bewegt re ARm spontan, KG 3-4/5",12,12
+GCS,"wach, orientiert, ohne fokalneurologisches Defizit, PERRL",15,14
+GCS,RASS 0,11,12
+GCS,"wach, GCS 15, orientiert,CAM-ICU neg. PERRL 2/2mm, prompt, keine Paresen, HN intakt. ",15,15
+GCS,"wach, adäquat, orientiert, PERRL,  Kein FND, bewegt 4/4 im, KrGr 5n Janda.",15,15
+GCS,idem zum FD,6,10
+GCS,"wach, scheint orientiert, rechts oE Hemiparese 1-2/5; uE 3; ",15,12
+GCS,"Pupillen isocor, Myosis, fragliche Lichtrkt, Pat. öffnet Augen auf Berührung, bewegt re Seite spontan, li nicht, keine gezielte Rkt auf Ansprache",7,6
+GCS,"RASS 0, PERRL, mw, adäquat, kooperativ, bew. alle Extr. stgl.",15,15
+GCS,"Sedierungsfrei, öffnet spontan Augen, befolgt bedingt Aufforderungen, Blick fixierend",10,10
+GCS,"Schläft, spontan erweckbar, voll orientiert, adäquate Kommunikation möglich, kein FND, PERRL",15,15
+GCS,"RASS -5, Pup eng/ik/nicht lr, Bab-/-",3,4
+GCS,"schläft, gut erweckbar, GCS 13 (a3s4m6), nicht orientiert zu ZOPS, befolgt Aufforderungen, PERRL 2/2mm, Händedruck re. schw., Hüftheber, Kniebeuger re. schw., li. obEx u. uEx frei, RASS -1",13,13
+GCS,"Wach, gut kontaktierbar. Teilorientiert. Bewegt alle Extremitäten. Wunde gerötet aber trocken. Drainage mit 10 ml/h über Tuohy.",14,12
+GCS,"GCS 10, Wunde Kopf reizlos, noch nicht tr., RASS 0",7,9
+GCS,"RAAS -4, GCS 7, folgt keiner Auforderung, PEERL träge, gezielte Abwehr mit linker Hand, Hemiparese rechts 0/5 KG, keine PBZ bds",10,9
+GCS,"GCS 5, RASS -4, PERRL ",5,5
+GCS,"sedierungsfrei, zeigt eine verzögerte motorische Reaktion auf Auforderung mit den li. Mitgliedern, hustet auf Manipulation, GCS 6, RASS -2, PGRRL 2mm, ICPs kompensiert",4,5
+GCS,"Schläft, prompt erweckbar. Gut kontaktierbar, befolgt Aufforderungen, Hemiplegie links, diskrete Dysarthrie.",13,14
+GCS,"schläft, erweckbar, orientiert",13,14
+GCS,"wach, fragt nach Cola",15,12
+GCS,"Wach, voll orientiert, kein FND",14,15
+GCS,"öffnet Augen auf Ansprache, fixiert, befolgt keine Aufforderungen",6,6
+GCS,"somnolent, prompt erweckbar, orientiert, schmerzzufrieden, zerebelläres Syndrom wie vorbestehend, weiterhin Dysarthrie und Dysphagie, darüber hinaus kein sensomot. (Extremitäten-)Defizit; Wachheit im Vg. zu gestern besser!",14,14
+GCS,"tief sediert, RASS-5, PERRL eng träge LR,subfebril",3,4
+GCS,"Suf 0.35 schläft, erweckbar zT Spontanatmung",7,9
+GCS,unauffällig,15,12
+GCS,"noch verhangen RASS-1, CAM ICU negativ, bewegt 4/4 spontan, kein sensomotorisches Defizit, PERRL",15,15
+GCS,"wach, orientiert, keine FND, Halsschmerzen",3,14
+GCS,"wach, orientiert, keine FND, Temp 38,1, Schmerzen linksthorakal",15,14
+GCS,"wach, orientiert, kooperativ , keine Fokalneurologie, zeitweise leichter Tremor ",15,14
+GCS,"Sedierung reduziert, weiter RASS-5 unter Sufenta 0,5 + Clonidin, PEARL, ",3,3
+GCS,RASS-4,4,3
+GCS,"2-fach sediert mit Propofol/Sufenta, RASS -5, ICPs unter moderater Drainage kompensiert, PERRL",3,3
+GCS,"Suf/Clon, RASS-4, Pup iso, eng 1-2mm, LR verzögert, keine Ex beweg",5,6
+GCS,"RASS -5 (Prop/Suf/Mid) , keine Aufwachrektion, ICP kompensiert , kein Hirnstammreflex, Anisokorie li>re, Pupillen weit, keine Lichtreaktion",3,3
+GCS,schläft,15,15
+GCS,"keine grundsätzlichen Verädnerungen, stabile Befunde; Schluckakt laut Logopädie stetig besser, wenngleich noch nicht suffizient - Schluckinsuffizienz möglicherw. durch Muskeldystrophie mitbedingt, Sichtung der Unterlagen nötig",10,10
+GCS,"schläft größtenteils, stets erweckbar, PERRL, RASS 0",15,12
+GCS,"GCS 14, RASS 0, delirant, nicht orientiert, ",11,14
+GCS,"RASS 0, GCS 11 , PERRL, Zoster facial/cervical weiter trocken, öffnet Augen spontan, fixiert bewegt 4/4 auf Aufforderung, NAS 0, versuch der Kommunikation, noch schwach  ",10,12
+GCS,"RASS -5, BPS3, PERRL, getrübte Konjunktive re, keine Reaktion auf ansprache oder Manipulation, Pat. verkrampft Hände in Faustschluss, aber lösbar",5,7
+GCS,"RASS-1, CAM ICU positiv, befolgt keine Aufforderungen, PERRL, BPS 3",8,9
+GCS,"wach, adäquat, scheint orientiert, bewegt 4/4",11,14
+GCS,"wach, kooperativ, orientiert, kein Delir, OE KG li 2-3/5, re 3-4/5 nJ, UE KG li 3/5nJ , re 4/5 nJ",15,15
+GCS,"öffnet auf Manipulation und auf Ansprache die Augen, fixiert teilweise. Motorik fraglich gerichtet, hat während des VB Wx erstmals die Füße bewegt.",7,8
+GCS,"RASS-1, adäquate Kommunikation mögich, aber sehr verlangsamt, teilorientiert",15,12
+GCS,"RASS -5 (post Propofol-Bolus); Pupillen klein, isokor, lichtreagibel beids.; ",6,6
+GCS,"GCS 14, PERRL, sehr aktiv und nestelig, faselt",13,12
+GCS,"Siediert, RASS-3, Pupillen eng isocor lr, ICP kompensiert 15",5,3
+GCS,"verlangsamt, Wachphase < 10 Sek, befolgt einfache Aufforderungen, untere Extremitäteen",12,11
+GCS,"wach, adäquat, ",11,15
+GCS,"somnolent, erweckbar, 4/4 frei beweglich",12,12
+GCS,"RASS -1, CAM ICU negativ, befolgt Aufforderungen, bewegt OE, geminderter Kraftgrad in den Händen bds, keine Bewegung der Beine, PERRL, Sedierung mit Propofol/Remi, NRS 1",10,11
+GCS,"wach, unrihig, nicht orientiert, kein FND, CAM-ICU positiv",10,12
+GCS,"wach bzw. prompt erweckbar, soweit nachts durch mich beurteilbar keine Orientierungsstörung, adäquate Antworten, aktuell moderate Kopfschmerzen, kein fokal-neurologisches Defizit",14,14
+GCS,"PERRL, mw, RASS -4 unter Midazolam",3,4
+GCS,"vor Broko Propofolfrei RASS -5. zur Broko Propofol Boli erhalten.  Pupillen isokor, eng. LR++",6,6
+GCS,neuro idem,11,10
+GCS,"Pat somnolent, orientiert aber sehr geschächt, gibt keine Sz an, ",14,14
+GCS,"Wach, orientiert, RASS 0. Bewegt alles spontan. Mobilisation in den Stuhl.",15,15
+GCS,"Pat wach, ruhig, kein FND, wirkt grob orientiert, PERRL, ",15,15
+GCS,"Pat. wach, heute orientiert zu allen Qualitäten, freundlich, kein FND. Kein Parkinsonsysndrom.",15,15
+GCS,"öffnet Augen auf Ansprache, bewegt Hände und Füße auf Aufforderung mit reduzierter Kraft. CIP/CIM?",10,9
+GCS,"ruhig, öffnet Augen nicht, befolgt keine Aufforderung, bewegt Extremitäten spontan",9,8
+GCS,"sediert mit Propofol und Morphin, auf Schmerzreiz erweckbar",6,6
+GCS,"Sufenta+Cloni, weiter nur AÖ auf Manipulation, noch keine Aufwachreaktion, PERRL",5,5
+GCS,"wach, RASS2, GCS12, unruhig, nicht kooperativ, mit  Ja/Nein beantwortet, bewegt 4/4",12,12
+GCS,"Sedierung x 2 (Sufenta, Propofol), GCS 3, PEERL ",3,4
+GCS,"Sufenta und Clonidin, darunter wach, reagiert auf Ansprache, Kommunikation über Kopfnicken und -schütteln, neurologisch idem. PERRL.",14,9
+GCS,"wach, adäquat, bek. Hemiparese links KG re 5/5, li 3/5, Pupillen mw, minimal li>re",14,12
+GCS,"RASS-4, PERRL",3,3
+GCS,"wach, kontaktierbar, fixiert, befolgt keine Aufforderungen",4,9
+GCS,"GCS 6 (a1 a1, m4), keine Aufwachreaktion, RASS-4, Pupille re. lichtststarr, li. 2mm prompt, Spontanbewegung re. Körperhälfte, Hemiplegie li., ICPs gut kompensiert. ",8,6
+GCS,"erweckbar, befolt Aufforderung, fixiert, bewegt seitengleich 4/4, Pupillen isokor eng lr",7,9
+GCS,"wach, allseits orientiert, adäquat, CAM ICU negativ bewegt 4/4 spontan",15,15
+GCS,"idem, S erhöht",8,9
+GCS,schläft,12,15
+GCS,"Sedierungsfrei, RASS 0, orientiert. Kein FND soweit mit Fixateur externa zu eruieren. Weiterhin Schmerzen (NRS 8), liegt jedoch relativ entspannt im Bett.",15,13
+GCS,"schäfrig-delirant, PERRL, bewegt alle Extremitäten",13,12
+GCS,"wach, kooperativ, adäquat, orientiert. RASS 0, bwgt 4/4 spontan",15,15
+GCS,"Cloni+ Morphin, AÖ auf Ansprache, aber kein Blickfixieren oder Befolgen von Aufforderungen, PERRL, linkes Augenlid/Gesicht stark verschwollen/Hautemphysem",5,7
+GCS,"RASS 0, wach, befolgt keine Aufforderungen, fixiert teils aber den Blick,HP rechts armbetont, sonst idem",11,11
+GCS,"wach, kooperativ, orientiert, RASS 0, GCS 15, GCS fluktuierend zwischen, Pupillen isokor, mw, re prompt LR, links verlangsamt LR",12,12
+GCS,"2fach sediert, RASS -.3, öffnet spontan die Augen, fixiert nicht, kneift Augen zus. bei Manip. Extr. werden nicht bewegt, Pupillen mw, rund bds., PR nicht provozierbar",7,5
+GCS,"GCS: 3 , RASS: -5, minimale Reaktion auf Schmerzreiz, Zucken der Lider, aber kein AÖ, PERRL",3,4
+GCS,"wacher, AÖ spontan, bewegt viel die rechte Seite spontan, teils auch Aufforderungen mgl.,HP links, PERRL, Cloni ex heute früh, damit Sedierungsfrei, EVD ex durch NCH",10,10
+GCS,"RAAS 0, GCS 11 (e4,v1 ET,m6 zunge), CAM-ICU neg, folgt Aufforderung, kommunikaion via Augen ja/nein, Tetraparese (Plegie Beine +Hand und Arm rechts, Hand links 2/5) keine PBZ",11,11
+GCS,"Zweifachsedierung mit Propofol und Sufenta, ICP kompensiert, gestern 188 ml über EVD",3,3
+GCS,"wach, Augen spontan geöffnet, nicht sediert, fraglich kontaktierbar, fixiert teilweise, befolgt keine Aufforderungen, Schluckbewegung und Tubuskauen idem, PERRL",8,6
+GCS,"RASS -4, Bewegung ( Beugen) bei Manipulation, kein AÖ, Prop 1, Sufenta 0,05 zum Abschirmen über Nacht, Pup bds eng, LR langsam",6,6
+GCS,"Pat wach, adäquat, bewegt 4/4, befolgt alle Aufforderungen, verneint Schmerzen, beklagt Dyspnoe",11,13
+GCS,"wach, keine sichere Kontaktaufnahme, Hände fixiert bei teils egengefährdendem Verh. (Zugänge); Versuch der Tuohy-Anlage mehrfach frustran, Wunde nach Übernähung gestern aber bislang trocken",9,9
+GCS,"RSS-4, Pupillen mw, isocoer, licht bds. ++",4,6
+GCS,"wach, teilweise orientiert, GCS: 15, RASS:0, CAM-ICU:neg. Kein Meningismus, PERRL, Dysarthrie. MRC 5/5 an allen Extremitäten, Sensibilität intakt. Derzzeit schmerzzufrieden.",14,14
+GCS,"wach, vocalisiert anhaltend. Öffnet auf laute Ansprache linkes Auge. re > li, , rechte Cornea trübe - vorbekannt. bewegt ungerichtet 4/4 Risperdal erhöht",8,9
+GCS,"Delir, hyperaktiv, kei neues FND",14,12
+GCS,"RASS -2, bewegt alle 4Ex auf Auff. KG2-3/5 links schwächer (KG 1), PERRL  Suf 0.3>0.15, Cloni 60, Phosph.-Subst",5,10
+GCS,"Pat. zunehmend vigilanter, freundlich, gut führbar, bewegt 4/4 auf Aufforderung",14,14
+GCS,"ruhig, RASS 0, CAM-ICU neg, bewegt 4/4, KG 5/5 alle Extremitäten, PGRRL",14,14
+GCS,"auf Ansprache Augen + fixiert, keine adäquate Reaktion auf Ansprache, 8ml/h Liquor über Touhy",5,7
+GCS,"RASS -5, Pup re>li, re entrundet, LR-, ICP 10, Babinski neg., CPP 70",3,3
+GCS,"sediert, beatmet, PERRL, RASS -5",3,3
+GCS,"GCS 14 (a3s5m6), deutlich orientierter zu ZOPS, PERRL 2/2mm, CAM ICU neg, RASS -2, Pat. entwickelt Lid-Ödme li>re",11,11
+GCS,"2-fach sediert mit Remi und Propofol, Pupillen mw, isokor, keine erkennbare LR, keine motorische Reaktion",3,4
+GCS,"RASS -5, GCS 3, keine Reaktion auf Schmerzreiz, Pupillen mittelweit entrundet bds li>re ohne Lichtreaktion, kein Fieber",3,3
+GCS,"RASS-4, Pup iso, mw, LR+/+",3,4
+GCS,"wach, adäqaut, befolgt Aufforderungen, guter AZ, keine FND; eingeschränkte Krat,normotherm",11,12
+GCS,"RASS-4, PERRL bewegt OE auf Auffoderung laut Angehörigen, BPS 3 ",5,7
+GCS,"RASS -3, bewegt nichts, kaut auf Tubus, kein AÖ, PERRL, Sufenta mono, PERRL",6,3
+GCS,"GCS 14, RASS 0, freundlich, teiladäquat und teilorientiert",14,14
+GCS,"nicht orientiert zu Ort, Sit. Zeit, unruhig, aber kooperativ, bewegt 4/4 spontan, PERRL mw, halluziniert ,CAM-ICU +",11,13
+GCS,"sedierungsfrei, RASS -1, GCS 6, PEERL 2mm, keine Augenöffnung, bewegt 4/4, untere Extr. auf Aufforderung",7,7
+GCS,"Suf 0.5/Cloni 120, RASS 0 bis +3, Fixierung OE nötig bei Selbstgefährdung, adäquate Beantwortung j/n Fragen, bewegt Extr. auf Auff, Pup mw/ik/lr",11,10
+GCS,"Schläft, prompt erweckbar, orientiert, kein FND, PERRL",15,15
+GCS,"wach, adäquat, voll orientiert, kein Hinweis auf FND, keine Kopfschmerzen, szzufrieden",15,15
+GCS,"wach, adäquat, orientiert",15,15
+GCS,"Pat. wach, orientiert, adäquat, kein FND, PERRL",15,15
+GCS,"seit 9:00 Sedierungsreduktin (Propofol und Midazolam aus), RAAS:-5, EVD: 35ml (27ml), ICP:18mmHg, Matthias",3,3
+GCS,"2favh sediert, GCS 7, RASS 0, PERRL 3mm verzögert, ICP 15 mit Pitzen bis 23 und Husten auf Mainpulation an Tubus, ",6,7
+GCS,"wach, adäquzat, kein FND, geringe Schmerzen (mogri 23:54); linke Pupille mit geringer Ausziehung nach unten, gering grösser als rechts, jedoch LR+ und völlig wach /adäquat  (mogri 04:10)",15,12
+GCS,"erweckbar, sehr kraftlos, befolgt Aufforderungen, öffnet Augen auf Ansprache, PERRL, normotherm",6,9
+GCS,"RASS -4 unter Sufenta 0,1ug/kg/h , BPS 3, PERRL mit langsamer Reaktion ",5,5
+GCS,"GSC 14, RASS -1, kein FND festzustellen, Augen unverändert. nicht orientiert.",13,13
+GCS,"Pat wach, adäquat, kein FND, bewegt 4/4",15,15
+GCS,"wach, unverständliche Wörter, nicht kooperativ, CAM-ICU positiv, kein FND, PGRRL, NRS nicht beurteilabr",8,11
+GCS,"wach, sedierungfrei, GCS 14, RASS 0, CAM-ICU, Dysarthrisch, bewegt re. KrGr 5/5, li 3/5, Neeglekt li. Pup. li 3mm",14,12
+GCS,"Pat. unter Haldol Therapie RASS-1/0, FND: Hemiparese li. OE>UE bekannt, Dysarthrie und weiterhin Dysphagie, ",7,12
+GCS,"öffenet Augen bei Manipulation, bewegt beide Arme",11,9
+GCS,"RASS -2, zwischendurch wacher mit Augenöffnen. linker Arm Spontanbewegung. Clonidin 75µg/h",8,8
+GCS,"wach, Pupillen eng + isokor + lichtreagibel, bewegt 4/4, kooperativ, RASS 0",15,12
+GCS,"GCS 3, PERRL 2/2mm prompt (nach Lyse um 19:30 Uhr), 2-fach sed. Propofol/ Sufenta, keine Aufwachreaktion, Delta durchweg <5, ICP komp. ",3,4
+GCS,"RASS 0, GCS 15, promt erweckbar,  teilorienteirt, CAM-ICU pos., keine Schmerzen, Dysarthrie, PERRL, kein FND, kein Fieber ",13,14
+GCS,"zweifach sediert mit Propofol 2.99 und Sufentanil 0.72, Anisokorie re(3)>li(2), nicht lichtreagibel, keine motorische Reaktion auf Aufforderung/Schmerzreiz",3,3
+GCS,"RASS 0, GCS 7, öffnet Augen auf ansprache fixiert kurz Bewegt linke Hand auf Aufforderung, re Hemiparese mit Bewegung auf Schmerzreiz im Fuß, PERRL,  ",7,9
+GCS,"GCS 15, PGRRL, kein FND, bewegt 4/4",15,14
+GCS,"RASS 0, CAM ICU negativ, befolgt Aufforderungen, verminderter Kraftgrad beim Händedrücken, PERRL, nachts wieder vermehrt gestresst",8,12
+GCS,"wach, teil-orientiert, kooperativ",10,14
+GCS,"RASS 0 unter Sufenta 0,53, BPS 3, PERRL, keine Fixierung, keine Bewegungauf Ansprache oder Manipulation ",10,6
+GCS,"aktuell ruhig, gut führbar, keine Schmerzen, keine Panik seit Palexia-Dosiserhöhung",15,13
+GCS,"RASS -1, sediert mit Sufenta u Clonidin, befolgt keine Anweisungen, bewegt Arme spontan, PERRL, bei Manipulation RR >200",8,7
+GCS,"Wach, teilorientiert, Kommunikation gut möglich",14,12
+GCS,"Sufenta mono zur Abschirmung, darunter gute Tubustoleranz, befolgt keine Aufforderungen. PERRL.",10,9
+GCS,"schläft, erweckbar, teilorientiert, bewegt 4/4, ruhig und gut führbar",13,14
+GCS,"schläft, prompt erweckbar, dann RASS 0, CAM ICU negativ, PERRL, bewegt 4/4 spontan, NRS 3",15,15
+GCS,"1-fach Sedierung Sufenta, Pup. mw/ik, LR prompt, öffnet bei SzReiz die Augen, befolgt mot Aufforderungen li o/u Ex KG 2/5, re keine mot. Antwort, RASS -4",5,6
+GCS,"wach, teilorientiert, verlangsamt, kein FND, PERRL, bewegt 4/4 seitengleich ohne KG-Minderung",15,15
+GCS,"wach, adäquat, bewegt 4/4, FP rechts, klinisch alles idem",15,14
+GCS,"RASS 0, GCS 12 , Pupillen re>>li und träger, Zoster facial/cervical weiter trocken, öffnet Augen spontan, fixiert bewegt 4/4 auf Aufforderung ",12,10
+GCS,"GCS 14, RASS 0, gut kontaktierbar, CPAP nur nach zäher Verhandlung",13,13
+GCS,"noch sediert Propofol 3, Suf 0.5, RASS -5, nach TT Sedierungsreduktion geplant, PERRL RASS -5",3,3
+GCS,"wach, orientiert, keine mot. und sens. Defizite, PERRL, kein Fieber",15,14
+GCS,"RASS 0, CAM ICU positiv, bewegt 4/4 spontan, PERRL, befolgt kurze Aufforderungen",9,12
+GCS,"wach, weitgehend orientiert, RASS 0",14,15
+GCS,"GCS 13, Pupillen mittelweit, isokor, LR seitengleich prompt, aufgrund Dysarthrie keine adäquate Kommunikation zu etablieren, unter pausiertem Haldol bislang gut führbar und ohne zeichen eines hyperaktiven Delirs",13,13
+GCS,"wach, adäquat, bewegt OEX seitengleich 3/5, UEX 2/5",11,11
+GCS,"wach, orientiert, keine FND, kein Fieber, Schmerzen linksthorakal",15,14
+GCS,"PERRL, somnolent, RASS -3 unter Clonidin 90µg/h. nach Reduktion von Clonidin RASS +4. ",9,6
+GCS,"wach, scheint zu fixieren",10,10
+GCS,"RASS -3 (Suzfenta 0,5 + Clonidin 30), BPS 3, PERRL bei mittelweiten Pupillen, links leicht entrundet, Augenspontan offen fixiert nicht, keine Spontanbewegungen Hemiparese links",7,5
+GCS,"RASS 0, GCS 15, CAM-ICU neg., PERRL, voll orientiert und compliant, kein FND, pDMS intakt bei ubiquitär leichter KG-Minderung 4/5 nach Janda, kein Fieber",14,14
+GCS,"wach, scharf orientiert, Stimmung eher gedämpft, schmerzzufrieden, kein FND",15,15
+GCS,"sediert, keine Reaktion, nur leichte AUgenbewegungen, CPAP nicht möglich",3,6
+GCS,"somnolent, leicht erweckbar, PERRL",11,11
+GCS,"RASS-1, CAM ICU positiv, befolgt keine Aufforderungen, PERRL, BPS 3",9,9
+GCS,"RASS 0 ,GCS 15, CAM-ICU neg., Pat. wirkt niedergeschlagen/erschöpft, PERRL, CIP/CIM weiter KG 4/5 ubiquitär, kein Fieber ",15,14
+GCS,"wach, teilorientiert, Neurologie idem",14,14
+GCS,"sedierungsfrei, verzögerte Fixi <2sek, RASS-5, PERRL 2mm, EVD 10 ml/h",8,8
+GCS,"RASS0, befolgt Aufforderungen, wirkt nicht adäquat, Haldoltherapie läuft, PEARL, ",10,10
+GCS,"GCS 15, kein FND, PERRL",15,15
+GCS,"somnolent, erweckbar, befolgt dann keine Aufforderungen, teiladäquat und verzögert. bewegt 3/4 spontan. linker Arm paretisch. PERRL",11,10
+GCS,"wach, orientiert, schmerzzufrieden, fokal-neurologisch unauffällig. Nach Inhalationsnarkose heute ausgeprägte Übelkeit und 1x Erbrechen, symptomatische Behandlung gelingt noch nicht zur vollen Zufriedenheit",15,14
+GCS,"wach, RASS 0, adäquat, Pupillen mw + isokor + lichtreagibel, sz-zufr., bewegt 4/4, pDMS intakt",11,14
+GCS,"wach, RASS -1, bekannte Amaurosis,teiladäquat, teilorientiert. ",14,14
+GCS,Sedierung: Mida/Mo/Keta/Prop; Sedline: PSI ~70 PERRL mw,4,6
+GCS,"RASS-5 dreifach sediert, PERRL mw bis weit; ICP knapp komp. 17-19, CPP 56 ->Start NA; Sedline: 25",4,5
+GCS,"RASS 0, GCS 15, Pupillen mw, sg, lr+ bds. Übelkeit, Kopfschmerz ",15,13
+GCS,"Augen werden auf Ansprache geöffnet, Herdblick links, versucht zu sprechen, kaum Lautbildung, spontane Bewegungen linke OE und UE",8,9
+GCS,"schläft, PAt. sonst compliant und adäquat, GCS 15",15,14
+GCS,"RASS -3, Pup mw/ik/lr, Bulbusdeviation idem, bewegt gezielt li Seite",7,7
+GCS,"Pat. wach, adäquat, zu allen Qualitäten orientiert, Pupillen mittelweit, isokor, LR seitengelich prompt, kein FND",15,15
+GCS,"RASS -5 unter AS mit Sufenta, Pupillen eng, isokor, lichtreagibel",3,5
+GCS,"Wach, orientiert, kein FND, bewegt 4/4, PERRL, subjektiv kein Schwindel",14,14
+GCS,"wach.orientiert,keine FND, kein Fieber",15,14
+GCS,"Pat. erweckbar, adäquat kontaktierbar, befolgt Aufforderungen, klinisch ausgeprägte CIP/CIM",9,10
+GCS,"Sufenta mono zur leichten Abschirmung, wach, PERRL.",10,9
+GCS,"GCS 15, Pupillen mittelweit isokor, LR seitengleich prompt, kein FND, bewegt 4/4, CAM-ICU neg.",14,14
+GCS,"Schläft, prompt erweckbar, kein FND",6,15
+GCS,"wach, erscheint adäquat, bewegt seitengleich OEX 2-3/5, UEX 1-2/5",3,10
+GCS,"RASS -1 bis -2 unter Sedalam und Mo, PERRL, bewegt alle Extremitäten",10,10
+GCS,"Brillenhämatom, Pat. sediert (Propofol/Sufenta) intubiert, RASS-4, Pupillen nicht beurteilbar (re. Linsentrübung, li. Z.n. OP und entsprechend scharf entrundet),",5,5
+GCS,"wach, kontaktfähig, befolgt einfache Aufforderungen, ängstlich KG uE bds. 4/5; oE rechts prox. 3/5, links 4/5, distal wird die rechte Hand mehr bewegt als die linke",11,12
+GCS,s. Verlegungsbrief,15,11
+GCS,"Patn schläft, erweckbar dann wach, adäquat, PERRL, bewegt 4/4, In Ruhe NAS 1-2, Bei Belastung bis NAS 4",13,14
+GCS,"wach und adäquat, schmerzfrei, PERRL mw, kein FND, Beine werden kraftvoll bewegt ohne Sens.verlust, Tuohy-Drainage bei Bed. geöffnet, LD akt 14",15,12
+GCS,"Wach, hyperaktives Delir, phasenweise aber auch adäquat, Hemiplegie links",13,13
+GCS,"schläfrig, prompt erweckbar; teilorientiert (s.u.); linke Pupille weit und lichtstarr, Okulomotorik opB; rechts mw und lr; AHV opB",15,12
+GCS,"Pup mw/ik/lr, bewegt zT li Seite auf Auff, kein Husten/Schlucken auf Auff, mot. Aphasie, HP re, Bab+/-  im Verlauf Aufklaren: Husten + Schlucken auf AUff.",10,10
+GCS,"RASS 0, CAM ICU negativ, bewegt 4/4 spontan, PERRL, NRS 1",14,15
+GCS,"Pupillen re getrübte Linse, links entrundet (bekannt), bd Pupillen nach links-kranial gerichtet. sediert mit Prop. 2mg/kg/h",4,7
+GCS,"weiterhin inadäquat, agressiv, spuckt, schlägt, nur mit Sedierung führbar und mobilisierbar, PERRL",10,10
+GCS,"schläft intermittierend, wirkt entspannt und fröhlich; kein fnD",15,11
+GCS,"RASS -5, PERRL, ICP initial kompensiert im Verlauf zunehmende ICP-Problematik mit Drainageindikation und Beginn 3-Fachsedierung",3,5
+GCS,"GCS 11 (m6,v1,e4), befolgt Aufforderungen inkonstant, hochgradige Hemiparese links (KG0-1), re Arm + Bein KG 3/5",10,12
+GCS,"GCS 3, Cornealreflex rechts vorhanden, sonst keine Aufwachreaktion, seit 18 Stunden sedierungsfrei, ICP kompensiert , Pupillen mittelweit bds lr, leichte bek.ANisokorie li>re",3,3
+GCS,"RASS-2, Dysarthrie, Hemiparese links, Skleren (rechts betont) gerötet, PERRL, BPS 3",14,11
+GCS,"Pat wach, adäquat, intermitt. sz geplagt unter linkem RiBo",15,13
+GCS,"AÖ auf Ansprache, geringe Sedierung mit Sufenta -> Reduktion, PERRL",6,5
+GCS,"RASS -4, pupillen bei Bulbusdeviation links nach kaudal nur langsam und gering lichtreagibel --> RS Salih, Drainage 10ml/h erhöht, Spontanbewegung der Arme, Füße auf Schmerzreiz ",9,8
+GCS,"sediert, RASS-4, Pupillen eng isocor lichtreagibel",3,3
+GCS,"GCS 11, PERRL, Neglect nach rechts, rechte Extremitäten werden maximal mit KG2/5, links mit KG 4",9,11
+GCS,"3fach AS: RAS -2 bis -3, Pupillen isokor, mw, LR +/+",9,8
+GCS,"wach, fixiert, befolgt keine Aufforderungen, bewegt 4/4 seitengleich ",9,10
+GCS,"wach, PERRL, teilorientiert, fordert häufig Sz-Med ab, bewegt alle Ex auf Auff., bewegt 4/4, obere Extremitäten mit voller Kraft",14,14
+GCS,"reagiert auf Ansprache, folgt den Blick (wechselhaft), GCS10 bei TK in situ (A4V1M5),Hemiparese links Armbetont, PGRRL",9,10
+GCS,"sediert, RASS-4, PERRL eng",3,3
+GCS,"wach, spontane Augenöffnung, Blickfix. verzögert,keine gezielte Reaktion, PERRL 2mm prompt, Tuouhy 10ml/h ",9,7
+GCS,"Öffnet auf SZ-Reiz die Augen, bekannte Anisocorie re > li, linke Pupille lichtreagibel. Befolgt keine Aufforderungen.",6,6
+GCS,"Prop/Sufenta weiter, Pup bds eng, LR langsam, schmatzende Mundbewegungen, ab 21:30 Bauchlage",3,5
+GCS,"wach, dement, GCS 13, spontane AÖ, gezielte SzAbw, Pup. mw/ik, LR prompt, bewegt 4/4",10,10
+GCS,"Blickkontakt, verbal keine Kontaktaufnahm möglich, Pup mw/ik/lr, keine Nackenstefie, bewegt Extremitäten bei lokaler Manipulation",11,8
+GCS,"traurig, hat riesige Angst zu sterben, weint, Stress, Doppelbilder, Schmerzen",11,11
+GCS,"Sufenta mono, GCS3, PERRL träge, RASS -5",3,4
+GCS,"schläft, erweckbar auf Ansprache, dann nicht sicher orientiert (örtlich/zeitlich), schläfrig",14,14
+GCS,"Aufwachreaktion: spontanes Augenöffnen, auf Auff: Zunge rausstrecken, re Hand drücken, j/n Fragen beantworten, dabei ICP bis 30",5,7
+GCS,"GCS 3, ICPs nicht kompensiert und Drainage der EVD stündl. mit 5ml, PERRL 2/2mm",3,5
+GCS,"2fach sediert: RASS -3, Augen spontan offen, interm. unruhig",11,8
+GCS,"RASS 0, CAM ICU negativ, PERRL, bewegt 4/4 spontan, NRS 1",15,15
+GCS,"re Pupille weit, teilentrundet, nicht LR, links eng, RASS -4. Nach Sedierungsweaning bwgt Pat rechten Arm spontan. links keine Reaktion.  ICPs stets  kompensiert",3,3
+GCS,"Pat. schläfrig, prompt erweckbar, freundlich zugewandt ohne FND, am Abend ablehnend gegenüber Medikation ",13,13
+GCS,"wach, kontaktierbar, gebesserter AZ, keine Schmerzen, bewegt alle Extrem. CIP/CIM, kein Fieber",14,13
+GCS,"PERRL eng, re Auge extrem geschwollen, ohne Sedierung keine Aufwachreaktion, ICP 5, Fieber!",3,4
+GCS,"sedierungsfrei, GCS8 bei TK in situ  (A2V1M5) reagiert nicht auf Ansprache aber prompt nach phys.Stimulation (bewegt Augelidern, die linke Seite spontan, rechts nur bei Reize, re deutlich steifer), PGRRL",6,8
+GCS,"wach, kontakierbar, fixiert, beantwortet durch Nicken und Kopfschütteln einfache Fragen. peripher keine motorische Reaktion. Temp fallend 37,3°C",6,7
+GCS,"schläft aber Erweckbar, HP links (fraglich leicht rückläufig), PERRL, leicht verlangsamt und verwaschene Sprache, weitgehend orientiert, befolgt Aufforderungen prompt",15,15
+GCS,Vigilanz fluktierend mit GCS 8-10 je nach CO2 Niveau. ,7,10
+GCS,"wach, befolgt Auffroderung, CIP/CIM KG OEX 2-3/5, UEX 2-3/5 seitengleich",11,11
+GCS,"Pat sediert, nicht erweckbar, bewegt Extremitäten bei Schmerzreiz. RASS -3 Pupillen klein isokor R/L +/+.",7,6
+GCS,Neurolog. idem ,7,9
+GCS,"Jeden Tag etwas differnzierter in der Kommunikation, obwohl nach wie vor viel perseverierendes Schreien, Pat. habe gegenüber der Mutter im FD Lebensüberdruss geäußert",12,11
+GCS,"dreifach sediert, daruner ICPs kompensiert, PERRL",4,4
+GCS,"RASS-4, AÖ auf Ansprache leicht, PERRL, rechts Bulbusdeviation nach rechts oben außen",3,7
+GCS,"Sufenta 0,5, kontaktuerbar, öffnet augen auf Ansprache streckt die Zunge heraus, PERRL mw",6,7
+GCS,"wach, bewegt 4/4, befolgt Auffforderungen, PERRL, kein FND, zur Person orientiert, PERRL",15,14
+GCS,"nachts schlafend, erweckbar, nicht orientiert, bewegt 4/4",11,13
+GCS,"Pat. somnolent, erweckbar, scheint kontaktierbar, befolgt Aufforderungen (allerdings sehr inkostant), globale Aphasie, hochgradige Hemiparese re, Pupillen o.B., ICP 15",8,9
+GCS,"wach, adäquat, teil-weise agitiert, teil-orientiert, bewegt seitengleich 4/4, kein KG Minderung",11,13
+GCS,"RASS0, CAM-ICU und NRS nicht beurteilbar, befolgt keine Anweisungen, PERRL, bewegt 0/4, Sufenta 1,5, Clonidin 2, ",7,8
+GCS,"wach, adäquat, befolgt Aufforderungen",3,12
+GCS,"wach, fixiert, nicht adäquat kontaktierbar, PERRL eng, bewegt 4/4, keine Sprachproduktion, nestelig/unruhig, Schleimhäute trocken",8,10
+GCS,Somnolent,14,12
+GCS,"komatös, GCS 4, Pup. mw/ik, LR prompt, RASS -4, keine mot Bewegung Suf mono",5,4
+GCS,"Wach, orientiert, alerter als in den Tagen zuvor, fragt viel nach, schmerzzufriden, keine Angabe von Unruhe",14,14
+GCS,öffnet Augen auf Ansprache,4,6
+GCS,"intub, AS mit Sufenta 0.2, dezente Anisokorie li>re, LR+, RASS -4",6,4
+GCS,"sediert mit Suf/Clon, RASS -4, PERRL eng, träge LR bds.",5,5
+GCS,"Wach, kommuniziert adäquat, ist psychomotorisch sehr unruhig unter der mehrfach angepassten antipsychotischen Therapie, empfindet HighFlow angenehmer als CPAP, scheint so etwas ruhiger",10,13
+GCS,idem,10,10
+GCS,"wach, extrem unruhig, nestelig, nicht führbar, kein Fieber",13,13
+GCS,"wach, adäquat, kooperativ, RASS 0, GCS 15. Pupillen, mw, isokor.",15,14
+GCS,"unter Cloni/Sufenta RASS -4, PERRL",4,6
+GCS,"2fach sediert, PERRL, RASS-5",3,3
+GCS,"wach, adäquat, voll orientiert, kein FND, Sz kontrolliert",15,14
+GCS,"RASS-1, PERRL, bewegt 4/4",6,12
+GCS,"RASS 0, PERRL, CAM ICU positiv, dabei ruhig, befolgt Aufforderungenbewegt 4/4 auf Aufforderung mit gemindertem Kraftgrad, BPS 3",11,12
+GCS,"GCS 3 ohne Sedierung. Auf Schmerzreiz wenig blinzeln.  PERRL, ",3,5
+GCS,"schläft viel, gut erweckbar, orientiert",10,13
+GCS,"Pat. analgosediert: Propofol, Sufenta, Midazolam, die vorbeschriebene Pupillendifferenz re.>li. weniger ausgepägt, ICP zwischen 18-22, ",3,5
+GCS,"somnolent, erweckbar, CAM-ICU pos., GCS 14, Haloperidol Schema,  bewegt 4/4 im KrGr 5n.Janda. kein sens. Defizit.",14,14
+GCS,"schläft, sonst adäquat",15,14
+GCS,"RASS 0, GCS 3 unter Propolfol 3mg/h/kg und Sufenta 0,5ml/h, PERRL, keine Bewegung/Augenöffnung auf Schmerzreiz, Kaut auf Tubus --> Propofol auf 3 erhöht, bei Temp um 37 --> externe Kühlung ",3,4
+GCS,"wach, kein FND, schmerzzufrieden, PDK red., PERRL, bewegt 4/4",15,14
+GCS,"Wach bzw. erweckbar, versucht zu sprechen, greift gezielt mit links, befolgt mit linker Hand einfache Aufforderungen Kopfwunde trocken, aber nochmal Liquorfleck unter Touhyaustrittstelle",8,10
+GCS,"AÖ links spontan, sonst noch keine Kommunikation möglich",7,7
+GCS,"weiterhin GCS 7, öffnet Augen nur auf stärkere SzReize, bewegt alle Extr. gering spontan",7,8
+GCS,"Pat lässt sich wecken, adäquat, befolgt Aufforderungen",15,12
+GCS,"wach, orientiert, kein neues FND, Stimmungslage heute etwas besser, wird mobilisiert, aktuell schmerzzufrieden unter MSI bzw. Schmerzpumpe",15,15
+GCS,schläft zur Nacht; Morphin b. Bed.,14,10
+GCS,"Vierfachsedierung mit Ketamin, Morphin, Midazolam und Dexdor. Öffnet spontan die Augen und reagiert auf Ansprache, befolgt keine Aufforderungen. PERRL.",8,7
+GCS,"Sedierung mit Propofol, Midazolam und Sufentanil weiter. PSI 28, SR 46, ICP 13, CPP 60, Pupillen rund, eng, minimal lichtreagibel. RASS -4, Grimassiert beim Lagern. EVD bis 03:00 168ml entlastet.",3,3
+GCS,"GCS 15, freundliche zugewandt, kein FND, PERRL",15,15
+GCS,nach 30 min. Propofolauslass Öffnen der Augen auf Schmerzreiz,4,7
+GCS,"4-fach sediert, ICPs kompensiert, PERRL",3,3
+GCS,"wach, nicht orientiert.",12,12
+GCS,RASS -4,3,3
+GCS,"Pat wach+freundlich zugewandt, PERRL, bewegt alle Extremitäten KG 3/5 symmetrisch, RASS 0",11,14
+GCS,"Pat adäquat, bewegt 4/4, kein FND, PDK in situ, sz-zufrieden",15,14
+GCS,"Vigilanz weiter stabil, Händedruck rechts = links, bds. gute Kraft, Patient reagiert mit gerichtetem Blick auf Ansprache, keine adäquate Kommunikation aufgrund Dysarthrie möglich, einfache Ja/Nein-Fragen werden jedoch beantwortet",14,11
+GCS,wacher,7,15
+GCS,"PERRL/mw+v, kein Hinweis auf FND, weinerlich/verlangsamt, zum Ort und Person orientiert, nicht zu Zeit und Situation, ",15,14
+GCS,"schläft, prompt erweckbar. RASS -1. ",14,13
+GCS,"RASS -3, offene Augen, keine Blickfixierung, Auf Schmerzreiz re Arm wegziehen.Pupillen träger lr bds, rund sg.  CPP 70, ICP 10, ",6,6
+GCS,schläft,14,15
+GCS,"RASS0, GCS 15, bewegt 4/4 spontan, verbale Reaktion auf Ansprache, jedoch verlangsamt, klagend, nicht willig Auffoderungen zu befolgen",14,12
+GCS,"schläft, schwer erweckbar, fixiert,ruhig, PERRL, befolgt keine Aufforderungen, bewegt 4/4 spontan, KG 4/5 allseits",10,10
+GCS,"Midazolam 0,1, Morphin, RASS -2, bewegt 4/4, Pupillen eng, LR +/+, bewegt 4/4keine FND",10,10
+GCS,"wach, kooperativ, Pupillen isocor, LR +",13,13
+GCS,"wach, bewegt 4/4, PERRL, kontaktierbar, fixiert den Blick, gut führbar und weitgehend  adäquat, schwer verständliche Sprache ohne Gebiss, nicht voll orientiert, kein Delir",14,14
+GCS,"sedierungsfrei, RAAS:0, zeitlich nicht sicher, sonst orientiert, Konzentrationstest fehlerfrei, nestelig, PERRL, Matthias",15,12
+GCS,"Rass-3, CAM ICU unmöglich, befolgt keine Aufforderungen, bewegt OE spontan, PERRL UE keine Bewegung ",10,9
+GCS,"ruhige NAcht, schläft durch",10,12
+GCS,"Suf ex,enspannt, nicht kontakbar, Pupiso, mw, LR +/+, Spontanbewegung Arme. li Fall+Krallenhand",10,8
+GCS,"Unruhig, desorientiert, ",10,13
+GCS,"Patientin unter leichter Propofolsedierung wach kontaktierbar, macht die Augen auf Ansprache auf, befolgt einfache Aufforderungen, RASS-1, GCS 9, PGRLR",7,7
+GCS,"wach und adäquat, PERRL, bewegt 4/4",15,15
+GCS,"GCS 11, RASS 0, neurol. Idem, PERRL, BPS ok. Schwellung Hinterkopf zu gestern größer, Wunde trocken.  ",10,10
+GCS,"wach, klonmtzaktierbar, befolgt Aufforderungen, PERRL, CIP/CIm",11,10
+GCS,schläft,15,15
+GCS,"wach, orientiert",15,15
+GCS,"Sedierung mit Propofol+Remifentanyl. GCS 3, RASS -4. PEERL ICP 12, CCP 69, 112/52 (MAD 74)",5,3
+GCS,"wach, kontaktierbar, befolgt Aufforderungen, keine Schmerzen, keine Beschwerden, subj. wohlbefinden, kann nachts schlafen, PERRL mw",11,14
+GCS,"Vigilanz unvrändert GCS 10 (a4s1m5), RASS -1, fixiert, befolgt Aufforderungen nicht gezielt",9,9
+GCS,"stets GCS 15  initial gestresst, ängstlich, verzweifelt unter MCAP, kein fnD zur Nacht am Highflow mit CO2 60 - 63 mmHg schlafend, prompt erweckbar, erkennt Primzahlen prompt und richtig",15,13
+GCS,"GCS 13 (a4s4m5), RASS 0, nicht orientert zu ZOPS, PERRL 2/2mm",10,10
+GCS,"GCS 14 teilorientiert, PERLR, Kraftminderung im Vergleich zu morgens gleichgeblieben",14,13
+GCS,"RASS -4; Pupillen klein, iskor, lichtreagibel; grimassiert auf Schmerzreiz, keine Spontanbewegung der Extremitäten",4,5
+GCS,"Sedierungsfrei, öffnet die Augen auf Ansprache halb, befolgt keine Aufforderungen, Pupillen isocor, mittelweit, rund und lichtreagibel",7,7
+GCS,"wach, adäquat, PERRL mw; bewegt 4/4; Kraftgrad 2-3/5; ",11,13
+GCS,"schläft, promt erweckbar, CAM-ICU pos. bei bekannter Demenz, PERRL, kein FND, pDMS intakt, kein Fieber, bewegt 4/4 spontan, kein Fieber, kine Schemrzen ",13,13
+GCS,"wach, spricht an Sprechaufsatz, auf Türkisch voll orientiert, kein fokal-neurologisches senso-motorisches Defizit; endgültige logopäd. Beurteilung des (sich bessernden) Schluckakts steht weiterhin aus",12,12
+GCS,"Ketamin + Sufenta, darunter GCS 3 Pup. mw/ik, LR prompt",3,4
+GCS,"Patientin wach weiterhin delirant, Vigilanz fluktuierend, fixiert mit dem Blick, wirkt hyporeaktiv PGRLR",12,12
+GCS,"wach, ruhig, kontaktierbar",5,10
+GCS,Schläft,13,15
+GCS,"wach, keine Parese, bewegt 4/4, Dysarthrie weiterhin und Dysmetrie (beides mit pos. Tendenz), orientiert, befolgt Aufforderungen, PERRL",15,15
+GCS,"wach, fixiert, teiladäquat, RASS 0, PERRL mw., bewegt spontan 4/4",5,13
+GCS,"runzelt die Stirn, wird wacher, aber noch kein AÖ, 2fach sediert, ICP komp einstellig",3,5
+GCS,"RASS-2, drückt re vHand mit vemindertem KG auf Aufforderung, PERRL, BPS 1",6,9
+GCS,"GCS 13, RASS0/+1, CAM-ICU pos., PERRL, Dexdor erhöht bei zunehmender Unruhe",13,12
+GCS,"RASS +1, unruhig, dann weinend, nestelig, bewegt 4/4, Demenz/Delir, keine Orientierung",13,14
+GCS,"wach, adäquat, teilkooperativ, befolgt Aufforderungen, kein FND, bwgt 4/4 spontan",11,15
+GCS,"im AWV nach 20 min. Propofolpause und Sufentahalbierung: GCS 9 (E4M4V1), RASS +2; ungerichtete Wachheit. Bewegt 4/4; Pupillen stets perrl.",3,8
+GCS,"RASS: -5 in Bauchlage, nach Umlagerung 9Uhr Sedierung % -> erneute neurologische Beurteilung, Pupillen bei Schwellung nicht beurteilbar",3,4
+GCS,"wach, adäquat, entpsannt, keine SHcmerzen, PERRL, kein FND",15,12
+GCS,"Augenöffnen auf Ansprache; keine Rkt. auf Aufforderung, keine Spontanbewegung",6,5
+GCS,"wach, teilorientiert, freundlich, keine Schmerzen, bewegt 4/4, trinkt selbstständig, verschluckt sich!",13,13
+GCS,"RASS-5, PERRL, Skleren unverändert eingeblutet",3,8
+GCS,"Sufenta mono, RASS-4, PERRL",5,4
+GCS,"RAAS 0, GCS 14, teilorientiert. PEERL 3/3mm, rund, prompt. HN intakt, Tetraparese (proximale Arme 2/5, distaler Arm 3/5, FingerFlex/Ext 3-4/5, Beine Proximal 2/5, FußEXt/Flex 4/5), keine PBZ",15,14
+GCS,"wach, orientiert, adäquat, sz zufr, bewegt 4/4, PERRL",15,15
+GCS,"RASS - 2, reagiert fragl. auf Anprache mit Kopfbewegung ja/nein, teiladäquat, befolgt sonst keine Aufforderungen, ICP 7, unter Sedierungsfenster",6,6
+GCS,"RASS-1, nicht kontaktfährig, öffnet Augen spontan, wurmartige Bewegungen re OEX, teilweise Strecksynergismen. u EX auf Schmerzreiz rechts teilweise strecken, linke EX beugt ",11,9
+GCS,"wach, GCS 13, spricht deutsch/englisch; bewegt 4/4, Ü/E, PERRL eng",15,13
+GCS,"RASS -3/-4, AÖ nur kurz auf starken Sz Reiz, sonst keine Reaktion, Sedalam, Cloni, Mo, PERRL",3,6
+GCS,"wach, orientiert, adäquat, kein FND, PERRL",15,15
+GCS,"Sedierungsfrei, hat spontan die Augen geöffnet, Blick kurzzeitig fixierend, aber nicht dem Finger folgend, wackelt auf Aufforderung mit dem linken Fuß und bewegt den linken Arm spontan. PERRL. Kaubewegungen.",10,9
+GCS,"idem, Kopfwunde reizlos, schluckt + hustet + kuat auf Tubus",7,8
+GCS,"RASS -5, PERRL, eng, dezente Lichtreaktion",3,4
+GCS,"Sedierung x2 (Sufenta, Propofol), GCS 3, RASS -5, PEERL 1,5/1,5mm prompt, zT ICP-Spitzen , EVD 15 ml  (kakle 06:20)",3,3
+GCS,"wach, kooperativ, orientiert, RASS 0",15,15
+GCS,"unter 2fach Sedierung RASS -5, PERRL",4,4
+GCS,"GCS 15, CAM ICU neg, RASS 0, Pat bewegt alle Extr. frei, pDMS and d. unt. Extr. bds. intakt",15,15
+GCS,"wach, adäquat, PerRL, kein FND",15,15
+GCS,"wach, kooperativ, orientiert, RASS 0, GCS 15. ",15,15
+GCS,"GCS 15, RASS 0, wirkt teilweise halluzinierend, riecht verbranntes Pflaster - objektiv nicht nachvollziehbar",14,13
+GCS,"Sufenta 1µg/h, Propofol 0,5mg/h, GCS 3, PERRL 3/3mm prompt, kine Aufwacheaktion, ICP 15",3,4
+GCS,"Rass- 3, Sedierung mit Sufenta, CAM positiv, befolgt keine Aufforderungen, bewegt re Arm spontan, Pupillen eng, LR, isokor, BPS 5",8,6
+GCS,"intubiert beatmet, PERLR, RASS-4",3,4
+GCS,unverändert,11,12
+GCS,"schläfrig, befolgt Aufforderungen, hypoaktives Delir, kein FND beurteilbar, PGRRL",9,11
+GCS,"Zweifachsedierung mit Propofol und Sufenta. Nach Sedierungsreduktion spontanes Augenöffnen, befolgt keine Aufforderungen.",5,3
+GCS,"sediert für überdrehte Lagerung, RASS -3 bis -4",3,5
+GCS,"delirant, nicht orientiert, Sprachbarriere, kein Hinweis auf FND",14,14
+GCS,"schläft, RASS -1, kein FND",14,14
+GCS,"wach, orientiert, sz-zufr., Pupillen mw + isokor + lichtreagibel",15,13
+GCS,"Visueller und taktiler Neglect nach links, armbetonte HP links, Arm KG 0/5, Bein KG 2/5",13,13
+GCS,"2fach sediert und on top Cloni begonnen, AÖ spontan und auf Ansprache, Blickwendung in Richtung der Stimme, kein Befolgen von Aufforderungen, PERRL, Osmotherapie ex, Touhy 5/h, ICP 16",8,6
+GCS,"RASS-2, CAM ICU unmöglich wegen Sprachbarriere, befolgt keine Aufforderungen, bewegt 4/4 spontan, PERRL, reagiert vegetativ auf Stress",8,8
+GCS,"Wach, voll orientiert",15,15
+GCS,"wach, orientiert, kein FND",11,15
+GCS,"GCS 8, e4v1m3, fixiert nicht, befolgt keine Aufforderung, keine Reaktion auf phys. Reiz",8,7
+GCS,"RASS-2, CAM ICU bei Sprachbarriere unmöglich, bewegt 4/4 spontan, PERRL",10,10
+GCS,"sedierungsfrei, AÖ spontan, keine Reaktion auf Ansprache, Tubustoleranz hoch, PERRL, keine Extubation mgl",5,5
+GCS,"Sufenta/Cloni, Paraplegie, AÖ spontan, fixiert nichtb durchgehend, befolgt keine Aufforderungen, wirkt gestresst/atemnötig, oft abzusaugen",7,6
+GCS,"wach, Rass -1, fixiert nicht, nicht kontaktierbar, bewegt 0/4",5,8
+GCS,"wach, etwa sunruhig, erweckbar, teilweise kontaktierbar",13,11
+GCS,"wach, orientiert, RASS 0, bewegt 4/4, sz-zufr., Pupillen eng + isokor + lichtreagibel",15,14
+GCS,"Pat freundlich zugewandt, nicht adäquat, befolgt Aufforderungen, kooperativ",14,12
+GCS,"Somnolent, antwortet wortweise desorientiert.  ",12,12
+GCS,"RASS 0 , GCS 14, weitestgehend orientiert und compliant, CAM-ICU negativ, PERRL, kein FND, pDMS voll intatkt, leichte Schmerzen ohne PDK, kein Fieber",15,15
+GCS,"weiterhin komatös unter Sufenta mono (morgens red.), ICPraumedic kompensiert, Phenytoin-Spiegel 18",3,4
+GCS,"analgosediert, GCS 3, Pup. mw/ik, LR prompt",3,3
+GCS,"Wach, redet vor sich hin, nicht orientiert, freundlich, kein FND.",13,13
+GCS,"etwas ruhiger in der Nacht, Sitzwache am Bett",11,11
+GCS,"wach, orientiert, GCS: 15, RASS:0. Kein Meningismus, HN orientierend intakt, distal-symmetrische Tetraparese. Schmerz NRS:4/10",15,15
+GCS,"Pat. erweckbar, adäquat kontaktierbar, befolgt Aufforderungen, bewegt alle Extremitäten seitengleich",14,12
+GCS,Zweifachsedierung mit Propofol und Sufenta. RASS-5. PERRL. ,3,3
+GCS,"wach, orientiert, Pupillen mw + isokor + lichtreagibel, Kommunikation via Schreiben adäquat",11,11
+GCS,"ICP < 10, Pup mw/Ik/lr",6,7
+GCS,"Sufentanil, GCS 3,Keine  motorische Antwort auf Schmerzreiz,  RASS -5, Pupillen: re. 3,5mm li. 2mm beide lichtstarr, ICP bei Kraniketomie gut kompensiert ",3,3
+GCS,"wach, orientiert, bewegt seitengleich 4/4",15,15
+GCS,"wach, kooperativ, teiladäquat, orientiert",15,15
+GCS,"lumbale Drainage nicht möglich bei Delta >5 (eher konstant 10), Propofol und Midazolam erhöht bei sonst kaum kompensierbarem ICP, hypertone NaCl-Gaben intermittierend bei Bedarf",3,5
+GCS,"wach, orientiert, GCS 15, RASS 0, KG 3/5",14,14
+GCS,"S/P/Sed/Dex, darunter RASS-5, ICP kompensiert, PERRL mw-eng",5,5
+GCS,"Pat. ohne Analgosedierung, RASS-5, gelegentlich vereinzelte Bewegungen des linken Fußes, Pupille re. mittwelt lichtstarr, Pupille links maximal eng lichtstarr",3,4
+GCS,"wach, gut kontaktierbar, teilorientiert, etwas unflätig, bewegt 4/4, lagert sich selbst, gibt viel Übelkeit an, ICP kommpensiert, Dranageregiem 10ml/h.",14,13
+GCS,"wach, kooperativ, PERRL, bewegt 4/4",15,15
+GCS,"PERRL, sedierungsfrei,  öffnet Augen bei Manipulation, keine Blickfixierung, RASS -4, hohe Tubustoleranz, druckt rechte Hand auf Aufforderung, HP armbetont links, Beine werden bewegt auf Aufforderung",9,8
+GCS,"Wach, adäquat, kein Hinweis auf Delir, kein FND",15,15
+GCS,"unter wenig Sedierung wach und kontaktierbar, erscheint orientiert, schmerzzufreiden",11,11
+GCS,"wach, kooperativ, teilorientiert, kein FND",13,15
+GCS,"Pat. analgosediert, PERRL, auf Schmerzreiz leichte Bewegung der rechten Extermitäten eruierbar, ICP bei 19/20, Licox um 20-30",8,5
+GCS,"wach, orientiert, CIP CIM, kein Fieber",15,12
+GCS,Pat. schläft,8,14
+GCS,"wach, fabuliert, nicht orientiert, CAM-ICU pos, bewegt 4/4,",13,12
+GCS,"RASS -1, Pup mw/ik/lr, bewegt UE bds + li OE auf Manipulation, bewegt re OE nicht auf Szreiz, Stiffneck in situ, keine Spontanatmung",8,8
+GCS,"prompt erweckbar, nonverbal suff., PERRL mw, bewegt 4/4, sweit eruierbar kein Delir, Transplantat d. MKG suff., Zunge ödematös geschwollen, Hb 8",10,11
+GCS,"Sedierung: Clonidin 30µg. GCS 3, RASS -5, PERRL 2/2mm. keine Reaktion auf Schmerzreiz, keine PBZ. EVD wurde bei Lagerung akzidentell entfernt. keine neue nötig. ICP kompensiert., CPP stabil.",3,4
+GCS,"schläft, prompt erweckbar, CAM ICU positiv, bewegt 4/4 spontan, PERRL, BPS 3, RASS +1 (wenn wach)",11,12
+GCS,"wach, orientiert, kein FND",15,15
+GCS,"wach, voll orientiert, PERRL, kein FND, leichte Cephalgien und Nackenschmerzen",15,15
+GCS,"Neurologisch unverändert: wach, aber schwach bei CIP/CIM, kein Hinweis auf Delir.",13,12
+GCS,"schläft, prompt erweckbar, RASS -1, bwgt 4/4 mit KG 4/5 nJ. kein FND. Pupillen isokor. kein Delir. befolgt Aufforderungen, kooperativ, orientiert",15,15
+GCS,"wach, ruhig, kein neues FND, unverändert",14,13
+GCS,"wach, adäquat, bewegt 4/4, kein FND, PDK in situ, sz zufrieden",15,15
+GCS,"RASS -1, PERRL, bew. alle Extr. stgl. n. Auff., weniger schreckhaft",11,11
+GCS,"wach , bewegt 4/4, Beine aber weiterhin sehr kraftlos (li>re), befolgt Aufforderungen, PERRL, sedierungsfrei, adäquat, spricht, ist aber nicht immer gut zu verstehen, kein Delir aktuell",14,14
+GCS,"Schläft, prompt erweckbar, voll orientiert, bekannte Fallfand, PERRL",15,15
+GCS,"schläfrig, öffnet Augen auf Ansprache ohne zu fixieren, nicht adäquat, befolgt keine Aufforderungen, bewegt 4/4, weiterhin erhöhter Muskeltonus, RASS -2",7,7
+GCS,"Sedierungsfrei, wach, gibt immer wieder Angst wegen der Dyspnoe an, kein FND.",14,13
+GCS,"soporös, GCS 5-6",4,7
+GCS,"Augenöffnen spontan auf Manipulation; offensichtich Wahrnehmng der Umgebung, Reaktion auf  Ansprache",7,7
+GCS,"schläft nach Piritramid. RASS -3. zuvor, wach, bwgt 4/4 spontan. ",10,12
+GCS,"wach, adäquat, kooperativ, bewegt 4/4, PERRL, sz-zufr.",15,15
+GCS,Propofol/Sufenta; RASS -5,3,3
+GCS,"RASS 0, CAM ICU negativ, PERRL, bewegt 4/4 spontan, NRS in Ruhe 4-5 (LR PDK erhöht)",15,14
+GCS,"GCS 13-14, kein Hinweis auf FND, PERRL",13,13
+GCS,"Pat mono-sediert, leicht erweckbar, nicht sicher kontaktierbar, RASS 0 bis -1",5,8
+GCS,"schläft, bzw. prompt erweckbar; grobk. kein fnD; schmerzzufrieden unter PDK; wirkt fröhlicher als am Nachmittag",15,15
+GCS,"wach, adäquat, voll orientiert, deutlich entzügig mit zittern, innerer Unruhe, Tachykardie, PERRL",11,11
+GCS,"RASS -5, sediert, PERRL",3,3
+GCS,"wach, orientiert. GCS: 15, RASS: 0, CAM-ICU: neg, kein Meningismus, kein FND, schmerzzufrieden (NRS: 0) Glucose bei 184mg/dl",15,15
+GCS,Sufenta mono %,6,5
+GCS,"leichte Augenbewegung bei Manipulation, keine spontanes Bewegen der Extremitäten",5,6
+GCS,"stündliche Tuohy-Drain mit 5 /h, zus. EVD ab 15 offen Sufenta red., dafür Beginn Dexdor und Cloni ex. zur veg. Abschirmung bei Erhaltung des Atemantriebs",3,8
+GCS,"wach, adäquat, gut führbar, bewegt 4/4 mit KG 5/5, Pup. mw/ik, LR prompt, kein FND, CAM-ICU neg.",15,15
+GCS,"wach, orientiert, adäquat auf Aufforderung, müde, kein Hinweis auf FND",13,13
+GCS,"wach, kooperativ, hält Blickkontakt, rechts Hemiparese",10,11
+GCS,"Sedierungx1 Clonidin (haldol, Melperon), GCS 9, RASS -1, PEERL 2/2mm,",10,10
+GCS,"wach, kooperativ, adäquat, kein Anhalt für ein FND",15,14
+GCS,"Pat. wach, kooperativ, befolgt Aufforderungen, orientiert; selbstständige Mobi in Toilettenstuhl, RASS 0",15,14
+GCS,"Sufenta red., MST erhöht // Pupille re bekannt leicht entrundet, mw, LR +/+, wach, fixiert, kontaktierbar, drückt beide Hände auf Aufforderung, bewegt aktuell li UE > re",11,9
+GCS,"GCS stabil 10, gezielte Schmerzabwehr, PERRL,Sprachbarriere, AÖ aber bei Manipulation vorhanden, HP re",8,8
+GCS,"wach,GCS 11 (A4V1M6), RASS +1 (Cloni mono), folgt den Blick, globale Aphasie, Hemiplegie rechts, bewegt spontan die linke Seite, Pupillen li>re , li kaum lr, provozierbare Schutzreflexe (Husten/Schlucken) vorhanden beim absau",9,9
+GCS,"wechselnde Vigilanz, aktuell somnolent, befolgt keine Auffoderung bewegt seitengleich 4/4 spontan",14,10
+GCS,RASS-4; GCS 3; 2fach sediert; ,5,5
+GCS,"RASS 0, GCS 15, bewegt 4/4 mit KG 4/5 nJ, grob kurs. Sens. intakt, CAM-ICU neg, NRS 4 OP-Bereich, ESS PDK opB",15,15
+GCS,"Pat. erweckbar, zu Situation und Ort orientiert, beinbetonte Hemiparese li",14,14
+GCS,"RASS -3, spontane BEwgungen der Extrtemitäten bei Berührung, kneift die Augen bei dem Versuch sie zu öffnn, PUPILLEn stecknadlkopf klein",3,7
+GCS,"RASS 0, GCS 14 (A4/M6/S4), PERRL, Bewegung 4/4 spontan und auf Auffrorderung KG OE prox/dist 4-/5 und UE distal 3/5 bds. prox 0/5, kein Fieber ",14,14
+GCS,"Sedierungsfrei, bewegt spontan alle Extremitäten. Befolgt nur gelegentlich Aufforderungen. Insgesamt somnolent.",11,11
+GCS,"sediert, RASS -5, SEdierungsreduktion bis Tubustoleranzgrenze, PERRL eng, ",3,4
+GCS,"schläft, erweckbar, teilorientiert, RASS -1 ",14,14
+GCS,"4fach Sed, Pup iso, mw, LR +/+, ICP aktuell kompensiert",3,5
+GCS,"keine Sedierung, Pat. nicht erweckbar, leichtes Grimassieren und Strecken der Extremitäten auf Sz Reiz, Pupillen MW, isokor, bds. LR, RASS -4, GCS 5",5,5
+GCS,"verlangsamt erweckbar, öffnet Augen auf Ansprache, fixiert fraglich, leichte Blickwendung nach rechts, PERRL, wenig Spontanbewegung",7,8
+GCS,"wach, Kopfverband, AÖ spontan, spricht nicht, bewegt 4/4 spontan, verlangsamt, Trisomie 21",9,10
+GCS,"wach, adäquat auf Ansprache, weiter nicht orientiert, RASS 0, compliant, suff Mobi an Bettkante",12,13
+GCS,"2fach sediert: RASS -4, Pupillen isokor, mw, LR +/+, keine adäquate Aufwachreaktion",3,3
+GCS,"RASS 0, GCS 15, Pupillen isokor, KG deutlich besser werdend. RE Hand KG 3/4, li 2/5, Beine aktive Beugung und Flexion in Fuß KG 4/5 bds. links diskret schwächer. ",15,13
+GCS,"RAAS-3, Gähen , Kauen Grimassen, fixiert nicht sicher. PEERL 4/4, träge. ICP 5,  CCP 78, MAD 89",9,9
+GCS,"RASS 0, CAM-ICU neg., bei Apahsie weiter scheinbar orientiert und compliant, PERRL, Neurologie idem zum SD ",11,13
+GCS,"RASS -1, verneint Schmerzen oder Angst, bewgt alle 4 Extremitäten",12,10
+GCS,"GCS 13 (a2, s5, m6), schläfrig , CAM ICU neg, PERRL 2/2mm, bewegt 4/4",12,12
+GCS,"ICP 8 über EVD, bekannte Anisokorie Li>re, RASS -5, Sedierung Prop/Suf wird schrittweise red. für AWV",3,4
+GCS,Neuro idem,11,10
+GCS,"wach, an FN, befolgt einfache Aufforderungen, Kopf + Blickwendung rechts, spastische HP wie vorbekannt. ",10,10
+GCS,"ruhiger, klinisch sonst idem, aber diskrete Anisokorie R>li, darunter wach, im CCT vorhin keine neuen Befunde",13,12
+GCS,"PERRL, keine adäquate Aufwach  ",3,8
+GCS,"RASS -2, PERRL, keine Adäquanz, nur Augenöffnen, keine Bew. der Extr.",4,7
+GCS,"AS mit Suf+Cloni, darunter erweckbar und teilweise adäquat, befolgt Auff, PERRL",11,10
+GCS,"Wach, orientiert und freundlich zugewandt, kein FND, bewegt spontan 4/4. PDK  in situ, darunter schmerzzufrieden. PERRL.",15,15
+GCS,"RASS 0, GCS 15, Pat. wach, und ruhig, weniger aggitiert, CAM-ICU noch leicht pos., mit Sitzwache aber führbar, PERRL, kein neues FND, kein Fieber",14,14
+GCS,"Dexdor akt. nicht zu red. bei dutl Stressrakt., Pupillen isokor, mw, LR +/+, fixiert, drückt linke Hand auf Aufforderrung, ",8,9
+GCS,idem,5,10
+GCS,"RASS -4, 2fach-Sedierung mit Propofol + Sufenta, Pupillen eng + anisokor li > re",3,3
+GCS,"Schläft, PERRL",15,13
+GCS,"RASS 0, GCS 14, scheinbar orientiert, compilant, PERRL, OE bds. 4/5 KG, UE Bewegung Fuß links, keine Bewegung rechts spontan oder auf Aufforderung, kein Fieber ",11,11
+GCS,"somnolent (erschöpft) nach Weaning, kein FND",11,11
+GCS,"wach, teilorientiert, befolgt Aufforderungen, äußert Schwankschwindel nach Blutdruckabfall, Pupillen isokor, eng, leichte Dysarthrie, Kraftgrad Arme 4/5; Beine 2/5 ",14,13
+GCS,schläft,14,15
+GCS,"Spontan erweckbar, voll orientiert, nicht gestresst, bewegt 4/4",15,13
+GCS,"GCS 14, RASS 0, teilorientiert, PEERL 3/3mm propmt, keine manifesten Paresen",14,14
+GCS,"post-extubationem somnolent; Dexdor reduziert; bewegt 3,5/4; Sufenta 0,1",7,7
+GCS,"2-fach sedier mt Propofol und Sulfenta, RAAS:0, PERRL, ICP kompensiert um die 12, EVD gestern 45ml abgelassen",4,5
+GCS,"RASS 0, GCS 15 und voll orientiert, PERRL, keine FND, pDMS voll intakt, keine Schmerzen --> heute PDK ex ",15,15
+GCS,"tief sediert, RASS-4, PERRL, ",6,3
+GCS,"erweck- und kontaktierbar, PERRL, bewegt alles, li Arm über Schulter, hat Durst, Dexdor",13,11
+GCS,"klinisch wacher, befolgt Aufforderungen teilweise",8,11
+GCS,Neuro idem,13,10
+GCS,"Pat. wach, zu allen Qualitäten orientiert; bewegt 4/4; aktuell unter Olanzapin sehr gut führbar, kein Hinweis für formale Denkstörungen",15,15
+GCS,"RASS -1, reagiert prompt bei phys.Stimulation, Augen auf spontan, PGRRL, gezielte Reaktion auf Schmerzen links, befolgt keine Aufforderungen, ICp kompensiert",8,7
+GCS,"schläft, erweckbar; teilorientiert, teiladäquat, Hemiparese links",14,14
+GCS,"schläft, erweckbar, wenn wach unkooperativ, delirant, bewegt 4/4",13,13
+GCS,"Wach, orientiert, gute Sprachproduktion unter Sprechaufsatz, kooperativ, CAM-ICU neg., PERRL",11,13
+GCS,"sedierungsfrei, darunter wach, freundlich zugewandt, nicht voll orientiert, kein FND.",14,14
+GCS,"sedierungsfrei, anfallsfrei, befolgt Aufforderungen, bewegt die Arme,versucht zu fixieren",6,9
+GCS,"GCS 3, Sediert, keine Reaktion auf SR.  Pupillen mw isokor LR +/+",3,3
+GCS,nicht untersuchbar im FD da im OP,13,11
+GCS,"Wach, kommuniziert adäquat mit sehr diskretem Kopfnicken und -schütteln, gibt weiterhin innere Unruhe an. Händedruck rechts abgesschwächt, Arm hier in Schiene, links 4/5, Beine werden bds. proximal bewegt",7,9
+GCS,"wach, orientiert, keine FND, kein Fieber",14,14
+GCS,"Sedierungsfrei, bewegt spontan die rechten Extremitäten, befolgt keine Aufforderungen, öffnet nicht die Augen, bekannte Anisocorie (re > li), rechts weit, lichtstarr und entrundet. ICP 9, CPP 73 mmHg",6,6
+GCS,"wach, nicht vollständig orientiert. wach, desorientiert, GCS 15, Pup. mw/ik, LR prompt, , bewegt 4/4, CAM-ICU pos.",14,15
+GCS,"Pat. wach uns ansprechbar; befolgt Aufforderungen; PERRL, weit;",10,10
+GCS,"RASS 0, orientiert, bewegt 4/4",11,14
+GCS,"schläfrig, gut erweckbar, GCS 12 (A3V345)PGRRL, rückläufig Hemiparese rechts armbetont => weiterhin sehr wechselhaft mit der Vigilanz, delirant",12,12
+GCS,"wach, fixiert, eingeschränkt kommunierzen möglcih ",13,12
+GCS,"wach, orientiert, CAM-ICU neg. PERRL, RASS 0 bis +1,  ",14,14
+GCS,"deutliche Verbesserung der Vigilanz, schläfrig, aber leicht erweckbar, Öffnen und Schließen der Augen auf Aufforderung, Drücken der Hand re. auf Aufforderung, weiterhin Hemiparese li.",5,9
+GCS,"Patient wach, kooperativ, teilorientiert.  Dysarthrie weiter bestehend. Kommuniziert lebhaft. ",14,15
+GCS,"Pat. schläft, sedierungsfrei, keine Myoklonien",9,9
+GCS,"wach, kontaktierbar, PERRL, RASS:-1",10,9
+GCS,"RASS wechselnd zwischen 0 und 4+, CAM ICU negativ, aggressiv, unkooperativ, bewegt 4/4 spontan, PERRL, BPS 3",14,13
+GCS,"GCS 9, Spontanmotorik, erweckbar",9,10
+GCS,Pat. zur Trepanation ,7,10
+GCS,"wach, fraglich adäquat, befolgt keine Aufforderungen ",11,9
+GCS,"somnolent/wach, geschwächt, neurologisch prinzipiell unverändert zum Aufnahmezustand mit schwerer Dysarthrie, Dysphagie, zerebell. Augenbewegungsstörung, Extremitätenataxie/-Dysmetrie",13,13
+GCS,"2fach sediert: RASS -3, Pupillen isokor, mw, LR +/+",7,4
+GCS,"schläft, erweckbar, kooperativ, PERRL,  bewegt 4/4",14,15
+GCS,"wach, adäquat, KG Minderung OEX 4/5, UEX3-4/5 i.R. CIP/CIM, orientiert",11,12
+GCS,"Patientin somnolent, grimassiert, Augen spontan ohne Öffnung, spontane Bewegung 4/4",10,9
+GCS,"wach, adäquat, neurol. unverändert, PGRRL , zunehmende Kopfschmerz (NRS 6)",15,15
+GCS,"wach, RASS -3, GCS 9 (4,3,4), PERRL träge, greift nach Untersucherhand, fixiert",10,10
+GCS,"RASS -1, PERRL, mw, spontanes Augenöffnen, keine Adäquanz, keine Fixierung",6,6
+GCS,"schläft, fixiert am Bauchgurt",15,11
+GCS,"Kneift bei der Untersuchung die Augen zusammen, befolgt keine Aufforderungen, Pupillen isocor, mittelweit, rund und prompt lichtreagibel.",3,8
+GCS,"Pat wacher, darunter agitierter, in der Muttersprache verbal sedierbar. aber zügig wieder agitiert, als Angehörige nicht mehr am Bett. Pupillen isokor und LR. ",9,10
+GCS,"Wach, nicht orientiert, in fluktuierender Ausprägung werden wahnhaft Inhalte geäußert, an den Armen distal KG 5/5",14,13
+GCS,"RASS -4, Pupillen eng, bds. LR +/+",3,3
+RASS,"Grimassiert leicht+ungerichtet auf Ansprache, PERRL, Mida 0.08+Mo 10+Cloni 30; dann plötzlich max. Agitation ohne vorhergehenden Reiz --> reversibel auf Bolus Morphin, Cloni 30>120, und 1mg Haloperidol",0,-1
+RASS,"anfangs somnolent, nach reichlich Opiat, dann wieder erweckbar, teiladäquat, PERRL, HP li",1,-1
+RASS,"GCS 5, PEERL 3mm, bewegt Extremitäten spontan, befolgt keine Aufforderungen, Kraftgrad 3/5",-3,-2
+RASS,"RASS -5, 2-fach Sediert mit Prop / Suf., ",-1,-4
+RASS,"Sufenta mono, noch prolongierte Aufwachphase, beginnt zu schlucken, keine Bewegung auf  Schmerzreiz",-3,-3
+RASS,"wach, teilorientiert, teiladäquat, nestelig, bewegt 4/4 spontan",1,1
+RASS,"wach, adäquat, orientiert",0,0
+RASS,"wach, adäquat, orientiert, bewegt 4/4, Wundverband trocken, 1 Redon, bei Schmerz Bed. med erhalten",0,0
+RASS,"Augen offen, kein Kontakt, RASS -4, PERRL, trockene Bindehäute --> Uhrglasverband",0,-3
+RASS,"RASS 0, Sprachbarriere, bewegt 4/4 sietegeich, Sz re ue, adäquat",0,0
+RASS,"wach bzw. prompt erweckbar, weiterhin kein FND außer der periph. Tetraparese bei CIP/CIM, Z.n. Dekanülierung heute",0,0
+RASS,"RASS -4, PERRL, eng",-4,-4
+RASS,schläft,1,0
+RASS,"wach, kein FND, orientiert, PERRL",0,0
+RASS,"schläft, erweckbar, Pup eng/iK/lr, bewegt 4/4 seitengleich",0,0
+RASS,"somnolent, ",0,-2
+RASS,"RASS -1/0, PERRL, wirkt erschöpft, saß lang im Stuhl, mw, frgl. adäquat, bewegt Extr. nach Aufforderung , V. a. hypoaktives Delir",0,0
+RASS,"Pat. wach, adäquat und kooperativ, PERRL",0,0
+RASS,"sediert, erweckbar, Pupillen isokor mw lichtreagibel, keine gezielten Bewegungen",-4,-4
+RASS,BL gegen 21h,-4,-3
+RASS,"Pat sediert, Pupillen eng+lr",-4,-5
+RASS,"GCS 15, PGRRL, kein FND, bewegt 4/4",0,0
+RASS,"wach, desorientiert, bewegt 4/4, Pupillen eng + isokor + lichtreagibel, kooperativ",0,0
+RASS,"wach, fixiert nicht, niht kontaktierbar, bewegt nix, normotherm, nicht sediert",-2,-2
+RASS,"PERRL, GCS 3, Propofol/Sufenta",0,-5
+RASS,"schläfrig, bei manipulation Agitation",2,-1
+RASS,"Pat öffnet Augen spontan, reagiert ungezielt auf Ansprache, befolgt keine Aufforderungen, HP links armbetont, UE und rechter Arm spontan, ",-1,-1
+RASS,"wach, adäquat, PERRL, CAM-ICU neg, RASS 0",0,0
+RASS,"GCS 11, spontan Augen auf, bewegt alle Extremitäten",2,-1
+RASS,"Somnolent, keine Eigenatmung, Sedierungsreduktion auf bis 0.25 --> darunter dann entzügig, PERRL, CIP/CIM",-3,-3
+RASS,"PERRL eng, vegetativ unruhig, normotherm",-5,-3
+RASS,"wach, teilorientiert, PERRL, kein FND, gute Sprachproduktion, kein Fieber, ICP komp unter Drainageregime, EVD ab 5 (bisher 95ml), Hadolschema b Bed.",-1,-1
+RASS,"wach, kontaktierbar, nicht orientiert. PERRL.",2,0
+RASS,"somnolent, erweckbar, verzögert, PERRL mw, bewegt 4/4, befolgt Aufforderungen, teilorientiert",0,-1
+RASS,"RASS -5, ICP max. 13, PSI 9, burst suppresion, 4xSed, Pup mw/ik/nicht lr",-5,-5
+RASS,"wach/erweckbar, wirkt adäquat, schwitzt viel, kein Fieber",0,0
+RASS,"aus OP, RASS-5, im Verlauf wieder -4, PERRL mw, ICP komp, CPP >70, Sufenta/Propofol, öffnet Augen, kein Kontakt",-5,-5
+RASS,"3 fach sediert, Pup anisocor, Re>li, EVD öffnet ab ICP 15 (gestern 120ml), Wunde trocken, RASS -5",-5,-5
+RASS,"Augen spontan, zuckt auf Stim mit Schultern, kneift Augen zu, sonst keine Exbewegungenm Pup iso, mw, LR+/+",0,-1
+RASS,"wach, wechselnd kontaktfähig; scheint nicht orientiert, ist nicht adäquat; bewegt 4/4",2,1
+RASS,"wach, agitiert, ängstlich, unruhig.",0,2
+RASS,"sedierungfrei,  bewegt die linke Hand auf Ansprache, Hemiparese links beinbetont, OE 3/5 UE 1/5, PGRLR, schluckt selten spontan, bei Tubusmanip kein Husten/Schlucken",-3,-2
+RASS,"Schläft, prompt erweckbar, orientiert, kein FND, PERRL",0,0
+RASS,"wach, orientiert. GCS: 15, RASS: 0, CAM-ICU: neg, kein Meningismus, kein FND, schmerzzufrieden (NRS: 0) Glucose bei 184mg/dl",0,0
+RASS,"GCS 15, RASS 0, orientiert, adäquat, eher gedämpfte Stimmung, antriebsarm",0,0
+RASS,"2-fach sediert mit Propofol/Sufenta, RASS -5, ICPs unter moderater Drainage kompensiert, PERRL",-4,-4
+RASS,"zwinkert, RASS-4, Pup nicht beurteilbar (re trüb, li entrundet, bekannt), Monokelhämatom",-4,-4
+RASS,somnolent. erweckbar befolgt Aufforderungen verzögert. kein FND. PERRL Z.n. Phako bds. NAS 1,0,0
+RASS,"wach, adäquat, orientiert, kein FNd",0,0
+RASS,"wach, kontaktierbar, zur Person sicher, sonst teilorientiert, insgesamt unflätiges Verhalten, bek. Hemiparese links.",0,0
+RASS,"2-fach sediert, darunter RASS -1 Pup. mw/ik, LR prompt",-3,-3
+RASS,"RASS-5, GCS 3-4; PERRL, Sedierung: Cloni/MSI/Midazolam",-3,-4
+RASS,"RASS -4, Pupillen isocor, lichtreagibel",-5,-5
+RASS,"wach, Cloni mono bei vegetativem Stress, an den Sprechkanüle fällt weiterhin Delir auf,eher hypoaktiv, CAM-ICU pos, bewegt 4/4, PERRL, Risperdal weiter, etwas fahrig, greift zu Schläuchen --> Clonidin 30 µg/h;  CIP/CIM",0,0
+RASS,"wach, kontaktierbar, befolgt Anweisungen, bewegt li Seite, re Hemiparese 8Bein keine Bewegung, Hand min. Händedruck), PERRL",0,0
+RASS,"schläft, RASS -1",-4,-1
+RASS,"wach, RASS +1 unter Sufenta mono, PGRRL, bewegt spontan und frei die rechte HAnd und die untere Extremitäten, hemiparese linker Arm konstant, ICP kompensiert",-3,-2
+RASS,schläft,0,0
+RASS,"Sedierung beendet, öffnet bei Ansprache die Augen, keine Spontanbewegung, keine Bewegung auf SR",-5,-5
+RASS,"Pat. wacher, adäquat, streckt Zunge auf Aufforderung, keine Kraft in den Armen, ist daher nicht in der Lage die Hände zu drücken, verneint Schmerzen",-1,-1
+RASS,"Pat öffnet Augen auf Ansprache, drückt Hände fraglich auf Aufforderung, atmet fraglich auf Aufforderung tief ein, verneint vermeintlich Schmerzen? bewegt UE spontan, armbetonte HP rechts",3,-1
+RASS,"bewegt linken Arm spontan, Pupillen isocor mw lr, sonst keine adäqute Reakton",-2,-2
+RASS,"wach, adäquat, GCS 15, CAM-ICU negativ, bewegt 4/4 , bek.Anisokorie li>re, beide Puppilen gleich lr, kein FND",0,-1
+RASS,"Pat sediert mit Propofol 2mg/kg/h, Remifentanil 0,1µg/kg/min, RASS-2, Pup bds mw und lr ",-5,-5
+RASS,"Pat. weiterhin mit gelegentlich Unruhe aber weniger stark ausgeprägt, kooperativ und Aufforderungen beffolgend, kein FND, PERRL",0,0
+RASS,"Sufenta mono, ICP stabil >20, Licox neu positioniert: Werte >20, minimal handling bei fragiler Licox-Konstruktion und aufgr. bei Lagerung schwankendem ICP, geringe ungerichtete Reaktion bei Tubusmanipulation",-4,-4
+RASS,"Sedierungx1 (Morphin), GCS 9 (e4,v1,m4), RASS 0, PEERL 3/3mm, prompt. fixiert, folgt keine Aufforderung",0,0
+RASS,"reagiert auf Angehörige mit Augenöffnen, keine Rkt. auf Ansprache/ Manipulation; Pupillen mw, re>li",-4,-4
+RASS,"RASS -3/+2, Pup. bds. mw, keine LR, keine Adäquanz",-4,-4
+RASS,"RASS +2, Pup re mw, wenig LR, li Katarakt; Abduzensparese re, bewegt 4/4, unruhig und unkooperativ",-3,-1
+RASS,"Wach, unruhig, zieht an allem was er zu greifen bekommt, lässt sich auch durch Ansprache nicht beruhigen, Sprachbarriere",3,1
+RASS,"wach, Kommunikation und vigilanz idem.  ",0,0
+RASS,"wach, fixiert, befolgt keine Anweisungen, bewegt alle Extr. CIP/CIM, re>li, PERRL",1,0
+RASS,"wach, freundlich zugewandt, befolgt AUff.",0,0
+RASS,"Cloni ex, Pat. öffnet Augen spontan und auf laute Ansprache, fixiert nicht, wacher als gestern, HP rechts, befolgt keine Aufforderungen, PERRL, Sprachbarriere, bewegt li spontan",-4,-3
+RASS,"wach, Pupillen mw + isokor + lichtreagibel, bewegt 4/4, kooperativ, RASS 0, sz-zufr.",-1,0
+RASS,"Augenöffnen auf Ansprache; keine Rkt. auf Aufforderung, keine Spontanbewegung",0,-3
+RASS,"Sedierungsfrei, öffnet spontan die Augen, Blick fixierend, befolgt fagl. Aufforderungen. Hemiparese rechts. PERRL.",-1,-1
+RASS,"RASS 0-1, GCS 15, Pat. wach, noch nesterlig und nicht oreitentiert, weniger aggitiert, CAM-ICU pos,, mit Sitzwache aber führbar, PERRL, kein neues FND, kein Fieber",2,1
+RASS,"nach Extub: gut erweckbar, folgt den Blick, bewegt den Kopf, versucht zu sprechen, keine Reaktion der Extremitäten auf Sx-Reize,bewegt nur den re Fuß auf Reiz, PGRRL",-4,-3
+RASS,"wach, Kopfverband, AÖ spontan, spricht nicht, bewegt 4/4 spontan, verlangsamt, Trisomie 21",-1,-1
+RASS,"wach, teilorientiert, kein FND",-1,0
+RASS,"RASS -1/0, Pupillen isokor mw, bds. LR +, bewegt 4/4, keine FND",-3,-2
+RASS,"wach, fixiert nicht, kontaktierbar, kann Aufforderungen nicht umsetzen, bewegt OE und UE nicht",-1,-1
+RASS,"wach, orientiert, bewegt seitengleich 4/4 OEX 3-4/5, UEX 3-4/5, Mobilisierung bis zur Tür gestern",0,0
+RASS,"wach, nestelig, kontaktierbar, nicht orientiert, im Verlauf eher ruhiger werdend",-1,0
+RASS,"RASS-5 Pupillen PEARL, Zeil Sedierungsreduktion",-5,-5
+RASS,"RASS0, Pat. befolgt weder Auffoderungen noch ist eine Kommunikation möglich, bewegt 4/4, Pupillen mittelweit, isokor, LR seitengleich prompt",0,-1
+RASS,GCS 4,-4,-4
+RASS,"schläft, PERRL, Cloni mono",-1,-1
+RASS,"wach, adquat, ängstlich, panisch, PERRL, bewegt alles",0,0
+RASS,"unter Ketanest, Sufenta und Cloni ruhig und schmerzzufrieden, gut führbar, will nach Hause, bewegt 4/4, US/Beine mit offenen Stellen und am Gesäß Ulcera",1,0
+RASS,"schläft, erweckbar, kein FND, bewegt 4/4, unter PDK schmerzzufrieden",0,0
+RASS,"wach, adäquat aber verlangsamt, HP linksseitig, Hier KG 1/ 5 obere und untere Extr., PERRL bds, kein neu aufgetretenes FND",0,-1
+RASS,"Pat. bewegt 4/4 spontan, keine adäquate Reaktion auf Ansprache und bei körperlicher Untersuchung",2,-2
+RASS,"wach, kontaktierbar, CIP/CIM,bewegt alle 4, fieberfrei, schmerzfrei",1,0
+RASS,"wach, orientiert, PERRL, Schmerzen NAS 3 Bewegt 4/4 kräftig",0,0
+RASS,"RASS -3, PERRL, nicht koopertiav - Extremitätenbewegung nicht prüfbar",-2,-2
+RASS,"RASS -4, PERRL eng",-4,-4
+RASS,"sediert Suf/Prop., RASS -5, ICP 17 komp., Pupille links max. eng, keine LR, rechts Uhrglasverband, in der Nacht keine ICP-Anstiege",-5,-5
+RASS,"erweckbar, teilorientiert, keine FND, dyspnoeisch, fieberfrei, PERRL",-1,-1
+RASS,"schläft, prompt erweckbar, kein FND",0,0
+RASS,"wach, orientiert, Pupillen mw + isokor + lichtreagibel, Kommunikation via Schreiben adäquat",2,0
+RASS,"Patientin unter Propofol tief sediert RASS -3, zwichendurch die Augen aufgemacht, aber kein Kontakt, PERLR// Prop red, Sufenta start, PERRL, RASS -5",-5,-5
+RASS,"wach, lt. Angehörigen adäquat kontaktierbar, gibt abd. Schmerzen an, PERRL, wirkt unruhig, sediert mit Mo/Dex",-1,-1
+RASS,"wach, GCS 13 (e4,v3,m6), motorisch betonte Aphasie, PEERL 2/2mm, prompt, gering Bulbusdivergenz, armbetonte Heimparese rechts (Parese RE Hand 3/5 und gering Absink re AHV, Bein 4/5), keine faziale Parese, LI Arm+Bein 5/5",-2,-1
+RASS,"schläft, sonst schmerzzufrieden",0,0
+RASS,"Zeitweise geschlafen, gut führbar",0,0
+RASS,"Vigilanz wie vorbeschrieben, Pupillen unverändert, leichte Schleimhautrötung",0,-1
+RASS,"kein Sedierung RASS-5, Pupillen isochor mw lichtreagibel,bwegt spontan UEX, re OEX",-4,-4
+RASS,"wach, etwas träger  zum Vormittag",-1,-1
+RASS,"Sedierungsfrei, wach, orientiert, keine FND, bewegt spontan 4/4, PDK in situ (LR 4 ml/h), schmerzzufrieden",0,0
+RASS,"erweckbar, dann adäquat und orientiert",0,0
+RASS,"wach, orientiert, keine Schmerzen, keine FND, kein Fieber",0,0
+RASS,"wach unter 3 Fach Sedierung mit Sufenta Sedalam und Cloni, RASS 0, desorientiert aber ruhig kein FND",0,-1
+RASS,"beginnt grimmassieren seit Prop.stopp vor 34h und Sufenta stopp seit 12h, Sponatnbewegung Hände, Korneaarrosion rechts, rechts keine LR, links prompte LR",-4,-4
+RASS,"wach, RASS 0, CAM-ICU pos., bewegt 4/4, befolgt Aufforderungen, PERRL mw.",0,1
+RASS,"keine Sedierung, PERRL, langsam wacher werdend, bewegt den Kopf, befolgt noch keine Aufforderungen",-4,-2
+RASS,"RASS-5, sediert Sufenta mono Pupillen isoor, LR träge, mw",-5,-5
+RASS,idem,-1,-1
+RASS,"sediert, Pupillen isokor mw lichtreagibel",-4,-5
+RASS,"Schläft, spontan erweckbar, voll orientiert, adäquate Kommunikation möglich, kein FND, PERRL",-1,1
+RASS,"RASS -1, PERRL, bewegt alle Extr., teilorientiert, koop.",0,0
+RASS,"wach, adäquat, aber verlangsamt, schmerzgeplagt, ",-2,-1
+RASS,"Anisokorie re>lio, keine LR, ICP unter 4-fach Sedierung ~22m, RASS -5",-5,-5
+RASS,"somnolent, reagiert ungezielt, leichte Spontanbewegungen OEX KG 1/5, UEX minimale Bewegung 1/5, Pupillen isokor mw lichtreagibel",-3,-3
+RASS,"RASS +1, PERRL, keine Adäquanz, nicht kooperativ, drückt verzögert beide Hände (re>li), teils gestresst wirkend, grimassiert, fixiert ",2,-1
+RASS,"wach, fixiert, wirkt gestresst, befolgt keine aufforderungen, bewegt 4/4 spontan, PERRL, nicht adäquat",-1,0
+RASS,"Wach, kooperativt, bewegt 4/4, PERRL",3,0
+RASS,"wach, orientiert",0,0
+RASS,"Eher etwas schläfriger, ev. korrespondierend zu beginnendem Hydrocepahlus malresorptivus, außerdem neue Perfusionsdefizite, s.u.",0,0
+RASS,"Schläft lange mit Clonidin => Dosis reduziert, ansonsten kein FND",-1,-1
+RASS,"AÖ auf Berührung, spoinbtane Blickwendung, geringe Spontanbewegungen, PERRL",0,-1
+RASS,"erweckbar und adäquate Reak auf Ansprache, Hände 3/5, Bein 1/5, Pup iso, mw, LR +/+, in Wachphasen massiv agitiert, dann simnolent",-3,-1
+RASS,"GCS 15, 4xorientiert, subjektiv zunehmend besser",0,0
+RASS,"wach, orientiert, kein FND, PERRL, RASS 0 ",0,0
+RASS,"wach, orientiert, kooperativ, keine Fokalneurologie ",-1,0
+RASS,"RASS -5, PERRL, Redon Kopf li",-4,-4
+RASS,"Patn. öffnet auf Ansprache die Auge, sonst schläfrig, befolgt keine Aufforderungen, bewegt 4/4",0,-1
+RASS,"wach, orientiert, neurologisch idem zum FD, PERRL, schmerzfrei, kein Fieber",0,-1
+RASS,"wach, orientiert, ängstlich, dyspnoiesch, keine FND; starke Rückenschmerzen",0,0
+RASS,"wach, adäquat, GCS 15, postoperativ schmerzzufrieden",0,0
+RASS,"GCS 14 (a4s5m6), RASS 0, PERRL 2/2mm, CAM ICU pos., nicht orientiert zu ZOPS, ",3,1
+RASS,"2x Sedierung mit Sufenta/Clonidin, GCS 5 (e3,v1,m1), RASS -4, okuläre Schmeckreaktion vorhanden. PEERL 4/4mm, rund, träge. keine Spontanbewegungen, kein Meningismus. fraglich PBZ rechts",-4,-3
+RASS,"Pat ruhig und entspannt, zwischenzeitlich sehr müde, kooperativ, PERRL",1,0
+RASS,"RASS 0, GCS 15 und voll orientiert, PERRL, kein FND, pDMS intakt, berichtet von Brennschmerz im Bereich des Thorax und Übelkeit --> Zofran/Säureblocker",0,0
+RASS,"wach, HP recht leicht rückläufig, weiter expressive Aphasie bei gebessertem Sprachverständnis",0,0
+RASS,"schläfrig unter Sufenta 0,25, GCS 8, RASS 0, CAM-ICU neg, PEERL 2mm, li. Hemiparese",-3,-2
+RASS,"schläft, erweckbar, RASS 0, befolgt einfache Aufforderungen",0,0
+RASS,"somnolent, orientiert, adäquat, PERRL, bewegt 4/4, sz zufr",-1,0
+RASS,"GAS 3, nicht erweckbar, Pupillen bds eng",-4,-3
+RASS,"RASS 0, CAM-ICU neg, PERRL, kein Anhalt auf FND, frohen Mutes",0,0
+RASS,"schläft, idem",1,0
+RASS,"wach, ansprechbar, CAM-ICU positiv, keine Sprachproduktion nunter Sprechaufsatz, ruhig kooperativ, PGRLR",0,0
+RASS,"wach, kontaktierbar, befolgt Aufforderungen adäquat, bewegt Extremitäten",0,0
+RASS,"waach, kontaktierbar, PERRL, befolgt Aufforderunbgen, bewegt 4/4, RASS 0",1,-1
+RASS,"wach, adäquat, mobilisiert, kein Delir",0,0
+RASS,"Ket/MSI/Mid, RASS-4, Pup iso, 2mm, LR +/+, keine Spontanbeweg, keine Reak auf SR",-3,-5
+RASS,"3-fach sediert, RASS-4, PERRL",-5,-4
+RASS,"wach, orientiert, kein FND",0,0
+RASS,"wach, nicht orientiert, redet daneben, ruhig",1,0
+RASS,"Wach, voll orientiert, kein FND",0,0
+RASS,"Propofol ex, anschließend AÖ spontan und bewegt 4/4. Sonst noch nicht weiter kontaktierbar, Pupille rechts rund, LR, Pupille rechts bei Hornhauttrübung nur schwer beurteilbar",-5,-3
+RASS,"somnnolent, GCS 14, RASS 0, aktuell schmerzzufrieden unter MSI-Perfusor 8mg/h , PERRL",-1,-1
+RASS,"erweckbar, öffnet die Augen, bewegt spontan linkes Bein, sonst keine Spontanbewegung, RASS-2, Pupillen isokor mw lichtreagibel",-3,-3
+RASS,"ICP stabil, EVD weiter geklemmt, keine Reaktion auf externe Reize",-5,-4
+RASS,"wach und voll adäquat, PERRL, bewegt alles, schmerzzufrieden, pnaumat. Fußpumpen",0,0
+RASS,"RASS 0, PERRL, adäquat, keine FND, bewegt 4/4",0,-1
+RASS,"wach, orientiert, kooperativ, keine FND, schmerzzufrieden",0,0
+RASS,"RASS -1, orofaziale Myoklonien, befolgt Aufforderungen adäquat, keine FND, Pupillen eng bds., prompt LR",-2,-1
+RASS,"Patient wach, ansprechbar, teilorientiert, bewegt alle Extremitäten spontan",0,0
+RASS,"schläft, zuvor neurologisch idem",-1,-1
+RASS,"Sedierungsfrei, darunter wach, zur Person orientiert, freundlich zugewandt. Kein FND. Pupillen anisocor (re>li), bds. prompt lichteragibel, rund und mittelweit.",1,-1
+RASS,"wach, orientiert, kooperativ, ruhig",0,0
+RASS,"wach ruhig ansprechbar, orientiert , alle Fragen richtig beantwortet, bewegt 4/4 ohne Seitendifferenz, PGRLR",-1,-1
+RASS,"sediert, PERRL, keine Spontanbewegungen, RASS-4",-2,-4
+RASS,"RASS -1, bei Manipulation gestresst, mäßig schwitzend, drückt beide Hände (jedoch auch ohne Aufforderung, daher frgl. Adäquanz)",-2,-1
+RASS,"RASS -3, Pup mw/ik/lr, befolgt zT Auff.",-1,-1
+RASS,"Wach, in der Zeit unscharf, ansonsten orientiert, antriebsgemindert, und niedergestimmt, kein neues FND",0,0
+RASS,"Auge spontan geöffnet, fixiert nicht, auf Schmerzreiz Zähneknirschen/Schmatzen",0,-1
+RASS,"PERRL, RASS-5",-4,-4
+RASS,"Pat. sediert nach BL, RASS -3, Pup eng isocor LR pos. bds.",-5,-4
+RASS,"RASS -3 unter Sufenta, PERRL, befolgt keine Aufforderungen",-4,-4
+RASS,"Rass-5, bewegt re Arm teils zielgerichtet, greift mit der Hand, aber nicht sicher auf Aufforderung, reagiert nicht auf akustische Reize, Pupillen li minimal größer re, wie gestern, rechtes Bein wird teils spontan bewegt",-4,-2
+RASS,"wach, voll orientier, bewegt 4/4, kein Anhalt auf Delir",-1,0
+RASS,"seit 9:00 Sedierungsreduktin (Propofol und Midazolam aus), RAAS:-5, EVD: 35ml (27ml), ICP:18mmHg, Matthias",-5,-5
+RASS,"Wirkt ratlos, zu Zeit und Situation nur unscharf orientiert, apraktisch, spielt aber Handyspiele, anonsten kein Hirnnerven-, sensibles oder motorisches Defizit",0,0
+RASS,"Sedierung x3 (Midazolam, Propofol, Sufenta) komatös, GCS 3, RASS -5, Pupillen isokor 5/5mm, areagibel. Cornealreflex bds negativ ICP zwischen 80 -70 cmH20, ",-5,-5
+RASS,"Wach, Mobilisation in die Thekla, nicht immer geordnet, bewegt spotan die Extremitäten. KG 4/5 an den Händen. Homonyme Hemianopsie nach links.",0,0
+RASS,"GCS 15, CAM-ICU neg., PERRLA",0,0
+RASS,"GCS 11 (e4,v1,m6), folt einefach Auffoerung, Anzahl Finger nicht möglich. PEERL 3/3mm, prompt. bewegt 4/4 mit Arme KG 3/5 und Beine 2-3/5",0,0
+RASS,"wach, orientiert, adäquat",0,0
+RASS,"sediert, RASS -5, in überdrehter LSL bis 8: 30 Uhr",-5,-4
+RASS,"somnolent, öffnet Augen auf Schmerzreiz, befolgt keine Aufforderungen (keine Hörgeräte eingesetzt), bewegt rechtes Bein",1,-2
+RASS,"Pat befolgt Aufforderungen, bewegt 4/4, schriftliche Kommunikation möglich, im Vgl. zur Vornacht deutlich ruhiger lt. Pflege, ",2,0
+RASS,"Pat wach, RASS 0, wirkt orientiert und adäquat, bewegt 3/4, PERRL, Fix externe links, Haldol b Bed",0,0
+RASS,"wach, adäquat, voll orientiert, zunehmend depressiv verstimmt mit starkem Gefühl des Kraftverlusst, ärgert sich über sich selbst und ist zu kraftlos zum gehen, PERRL",1,1
+RASS,"schläft, prompt erweckbar, bewegt UEX bds 5/5, OEX bds 5/5, Kribbelparästhesien rechtes Beine, Motorik voll vorhanden",1,0
+RASS,"Schluckstörungen, auch bei angedickten Flüssigkeiten, sonst keine neurologischen Defizite",1,0
+RASS,"wach, adäquat, orientiert, gibt Schmerzen im Bereich N. ischiaducus re an + einschlafen des Fußes re",0,0
+RASS,"schläft, gut erweckbar (schwerhörig) , GCS13  (A3V4M6), PGRRL, CAM-ICU nicht beurteilbar (postnarkose + leichte hypoglykemie), KG obere Extrem. 4/5 untere Extrem.1/5",-2,-2
+RASS,"wach, AÖ, blinzelt auch, aber schwer zu sagen ob sie einen versteht, Sufenta mono",-1,-2
+RASS,"wach, nicht orientiert, teiladäquat, bewegt 4/4",0,0
+RASS,"3fach sediert, RASS -2, fixiert kurzzeitig, minimale Bew. der UE bei Manipul, OE keine Bew., PERRL, mw.",-1,-2
+RASS,"Pat öffnet die Augen, zwinkert einem zu, raegiert aber nicht adäquat, drückt auf Aufforderung nicht die Hände/bewegt nicht die Beine, PERRL",0,0
+RASS,"wach, bewegt 4/4, linkes Bein weiter Fix ext.+ VAC, PERRL, CAM-ICU pos, Risperdal bei Delir",-1,1
+RASS,Sedierungsweaning.,-4,-4
+RASS,"sedierung mit Propofol+ Sufentanil. RASS-4, PERRL,  ICP 15. Beim Lagern Spitzen bis 40 unter erhöhter Sedierung. ",-4,-4
+RASS,"wach, adäquat, GCS 15, Pup. mw/ik, LR prompt, bewegt 4/4, kein FND",0,0
+RASS,"wach, befolgt Aufforderungen, Hemiparese links",-1,0
+RASS,"idem, zufrieden, Neuro Bein/Fuß re idem, Bein/Fuß li keine Kniebeugungmögl. ",0,-1
+RASS,"RASS-2, Propofol 2mg/kg/h, Remifentanil 0,1µg/kg/min, reagiert auf Manipulation/ Schmerzreiz, in Ruhe entspannt",-3,-3
+RASS,"PERRL, AÖ spontan, fixiert den Blick, ist kontaktierbar, lächelt einen an, befolgt Aufforderungen,bewegt 4/4 schwach spontan, Sufenta /Cloni (Sufenta weiter red.)",0,0
+RASS,"RASS-2, spontan erweckbar, Kommunikation sehr schleppend, kommt Aufforderungen nur sehr langsam nach, Tuohy fördert gut",-1,-1
+RASS,"Sedierungsfrei, RASS 0, orientiert und adäquat, kein FND",0,0
+RASS,"wach, orientiert, adäquat; uEX: bewegt Füße mit KG 4/5",0,0
+RASS,"RASS 0, PERRL, adäquat, keine Schmerzen, keine Angst, bewegt alle Extremitäten",0,0
+RASS,"somnolent, leicht erweckbar, PERRL, delirant",-1,-1
+RASS,"Pat schläft, prompt erweckbar, kontaktierbar, befolgt Aufforderungen, bwgt 4/4 verlangsamt. orientiert, spricht englisch, versteht deutsch. Krankheitsbedingt ist die Aussprache undeutlich, aber dennoch verständlich.",0,0
+RASS,"Pat wirkt adäquat, Sprachbarriere, bewegt 4/4 kein FND, PERRL bds",0,0
+RASS,"somnolent, GCS 9 (e3, v1, m5), Anisokorie bei RADP rechts (nachts R 4mm, direkt aregibel, indirekt reagiebel; L 3mm direk reagibel), Hemiparese links, auf Sz rechts Arm+ Bein 3-4/5 KG. ",-2,0
+RASS,"wach, adäquat, befolgt Aufforderung, bewegt seitengleich OEX 2-3/5, UEX 1-2/5 seitengleich",-1,0
+RASS,"RASS +1 (wechselnd), CAM ICU bei Sprachbarriere nicht möglich, befolgt nur teilweise Aufforderungen, nicht adäquat, bewegt nur die Arme spontan, BPS 5",2,-1
+RASS,"wach, fixiert fraglich, keine Spontanbewegung, befolgt keine Aufforderung",-1,-2
+RASS,"RASS -1-0, GCS 15, leichte Verlangsamung, heute orientiert, CAM-ICU neg. PERRL, kein FND, pDMS voll intakt, Kein Fieber, Wunde reizfrei/trocken ",-1,-1
+RASS,"intermitt. spontanes Augenöffnen, keine gezielte Rkt. auf Ansprache/ Manipulation",-3,-3
+RASS,"sedierungsfrei GCS 7, RASS 0, PEERL 2mm, CAM-ICU neg, ",0,0
+RASS,"wach, reagiert adäquat, deutliche CIP/CIM, bewegt 4/4 seitengleich KG 2/5",-3,-1
+RASS,"Schlafend sedierungsfrei, darunter inadäquate Reaktion auf Ansprache, max. Augenöffnen",-3,-3
+RASS,"wach, adäquat, kein FND",0,0
+RASS,"wach, befolgt Aufforderung, CAM-ICU pos, bewegt oEX3/5, uEX 3/5",0,0
+RASS,"wirkt ruhig, Augen spontan geöffnet; bewegt auf Aufforderung die oberen Extremitäten; bds. schwach, Hemiparese links; Im Verlauf etwas schmerzgeplagt bei Bauch-Sz s.u.",1,0
+RASS,"wach, ruhig,voll orientiert keine neurol.Defizit, teilweise keine vernünftige Konversation möglich",0,0
+RASS,"Pat. wach, schwer beurteilbar, scheint jedoch adäquat zu reagieren bei seiner Schwerhöhrigkeit, verneint Schmerzen, pupillen bds. mittelweit und lichtreagibel ",3,-2
+RASS,"Vigilanz grenzwertig, kontaktierbar und befolgt Aufforderungen, insgesamt aber sehr schwach, bewegt 4/4",-3,-2
+RASS,"wach, adäquat, neurologisch idem, kein H.a. Fazialisparese, PERRL",-1,-1
+RASS,"auf Schmerzreiz erweckbar, ungezielte Abwehrreaktion",0,-2
+RASS,"schwierig führbar, delirant, unflätig, fordernd, dazwischen somnolent => undulierende Vigilanz",1,0
+RASS,"RASS-2/-3, kein Fixieren, versucht Augen zu öffnen, nicht adäqaut kontaktierbar, befolgt keine Aufforderungen",-1,-1
+RASS,"wach, adäquat, GCS 15, RASS 0, PERRL, kein FND",1,0
+RASS,"wach, adäquat, voll orientiert, leichte ",0,0
+RASS,"wach, orientiert, keine FND, schmerzfrei, subfebril",-1,-1
+RASS,"Schläft, prompt erweckbar, öffnet dann die Augen, befolgt keine Aufforderungen.",0,-2
+RASS,"RASS 0, PERRL, keine Schmerzen, äußert etwas Angst",-1,0
+RASS,"4-fach sediert, RASS-4, PERRL",-4,-4
+RASS,"keine Sedierung, ICP 25 über RM, Pup re>li, keine LR, min Husten beim Absaugen, GCS 3, RASS -5,bewegt li Bein spontan",-4,-5
+RASS,"analgosediert, RASS-5, BPS 3, Pupillen eng isokor, LR seitengleich träge",-5,-5
+RASS,"sedierungsfrei, wach und kooperativ, bewegt spontan 4/4, kein FND",0,0
+RASS,"wach, kooperativ, scharf orientiert, RASS 0. GCS 15",0,0
+RASS,"GCS 3, bewegt nichts spontan, keine Reaktion auf Schmerzreiz, geringes würgen beim Absaugen, ICPs kompensiert",-4,-4
+RASS,Schläft,-1,0
+RASS,"somnolent, prompt erweckbar, bewegt seitengleich 4/4",-2,-1
+RASS,"Patn. reagiert auf Ansprache, öffnet Augen spontan, freundlich zugewandt, sonst keine Kommunikation möglich",0,0
+RASS,"Pat. wach, intermitt. schlafend, PERRL, bewegt 4/4 spontan, kein FND eruierbar",-1,-1
+RASS,"wach, orientiert, kooperativ",-1,0
+RASS,"RASS -4, Pupillen bds. eng, sediert",-5,-5
+RASS,"Patient wach, kontaktierbar, versucht die Augen aufzumachen, und bewegt die linke Seite KG4/5 auf Ansprache, PGRLR, GCS 9, EVD 145ml",2,-1
+RASS,"erweckbar, schaut in Anspracherichtung, befolgt keine Aufforderungen",-3,-3
+RASS,"Pat. deutlich gestresst, mit  Atemhilfsmuskulatur, schnappend -> BiPAP ass -> Druckunterstützung erhöht + Sufentabolus bessern Symptomatik, Sedierung scheinbar insuffizient und  Pat gestresst",-3,-1
+RASS,"bewegt ungezielt alle Extremitäten auf Ansprache, kein Augenöffnen, keine Adäquanz, PERRL",3,-1
+RASS,"wach, adäquat, m.E. kein neurolog. Defizit, bewegt 4/4, FNV und KHV opB, PERRL bds, keine Dysarthrie, keine mnestzischen Defizite",0,0
+RASS,"RASS-3, PERRL, bewegt alle Extremitäten, keine Kontaktierbarkeit",-3,-3
+RASS,"deutlich wacher als gestern, RASS 0, kooperativ, PERRL bds, befolgt Aufforderungen",-2,-1
+RASS,"GCS 6 (a1s1m4), RASS -4, keine Wachphasen",-4,-4
+RASS,"wach, kontaktierbar, versucht Aufforderungen zu befolgen, schwere CIP/CIM, Fieber",0,0
+RASS,"Schläft, zeitweise wach, dann adäquat, gut zugänglich, PERRL",0,0
+RASS,"öffnet Augen auf Sx.reiz, fixiert nicht, PERRL mw, keine Bewegung der Extremitäten, Cloni mono nach Sufenta ex",-2,-3
+RASS,"in den Stuhl mobilisiert, Pupillen isokor, mw, LR +/+, adäquat kontaktierbar, bewegt spontan OE",-2,-1
+RASS,"Pupillen eng, lichtreagibel +/+, RASS -3, versucht Augen auf Auffroderung zu öffnen, keine Bewegung der Extremitäten",-4,-4
+RASS,"schläft, erweckbar, PERRL, bewgt 4/4, verlangsamt, Cloni mono",-1,-1
+RASS,"Sed, RASS-4, entspannt",-4,-4
+RASS,"Pat wach, adäquat, bewegt 4/4, liest Zeitung",0,0
+RASS,"RASS -3, Clonidin + Suf idem.  Öffnet Augen auf Anspr. drückt linke Hand, und Fuß, re oohne Mot. Antwort. ICPs kompensiert mit Druckspitzen (EVD heute 105ml) ",-3,-3
+RASS,"GCS 15, RASS O, voll orientiert, kooperativ",0,0
+RASS,"RASS -1, AÖ auf Ansprache, erscheint adäquat, schreibt, Extremitäten KG3-4/5, kein Sprechen möglich",0,0
+RASS,"Patientin wach, leicht agitiert, delirant, RASS 2, PGRLR, kein FND",2,1
+RASS,"Cloni mono 15µ/h, 1x spontanes ÄÖ aber fixiert nicht, schläft immer wieder ein, hohe Tubustoleranz",-4,-3
+RASS,"PERRL, tief sediert, RASS-5, kein Fieber (auch vor ECMO)",-5,-4
+RASS,"erweckbar, kontaktierbar, befolgt teilweise Aufforderungen, kein Fieber",-3,-1
+RASS,"wach, adäquat, kein FND, 'PERRL",0,0
+RASS,"sedierungsfrei, Raumedic ex, wach, PERRL, adäquat, bewegt 4/4, dezente KG Mind links, Neglect nach links, fragt detailliert nach Erkrankung",1,-1
+RASS,"wach, schaut umher, fixiert jedoch nicht, beide Pupillen mittelweit und lichtreagiebel, keine adäquaten Rkt.",-1,-1
+RASS,"RASS 0, CAM ICU neg., voll orientiert, freundlich kooperativ, keine FND, bewegt 4/4",0,0
+RASS,"wach, zugewandt, befolgt  Aufforderungen, PERRL, bewegt OE bds, Plegie Beine ",-3,-1
+RASS,"wach, orientiert, bewegt seitengleich 4/4, keine Paresen, kein sensorisches Defizit",-1,0
+RASS,"GCS 5, PEERL 3mm, keine Reaktion auf Ansprache, CAM-ICU positiv",-3,-3
+RASS,"RASS 0, GCS 15, PERRL, orientiert und compliant, bewegt 4/4 spontan und auf aufforderung bei9 Beinbetonter Hemiparese links ",1,1
+RASS,"schläft, auf Ansprache erweckbar, befolgt einfache Aufforderungen, PERRL, bewegt OE, UE plegisch",-2,-1
+RASS,"wechselnde Vigilanz RASS-1/RASS+3 mit  Angst und Panikataken, bewegt 4/4",3,0
+RASS,"unter erhöhter Sedierung kein Augenöffnen auf Ansprache, keine Rkt. auf Aufforderung; Pupillen eng, lichtreagibel",-4,-4
+RASS,"wach, adäquat, Mobi erfolgt, PERRL, bewegt 4/4",0,0
+RASS,"delirant und desorientiert, aber führbar",0,1
+RASS,RASS -1 (schläft); intermittierend unruhige Phasen mit Eigengefährdung,3,1
+RASS,"RASS-4, Kauen bei Manipulation,",-5,-4
+RASS,"ohne Sedierung, erweckbar, befolgt keine Aufforderungen, bewegt linke Körperhälfte",-3,-3
+RASS,"wach / Somnolent, RASS -2, PERRL, befolgt keine Aufforderungen.",-4,-3
+RASS,"wach, desorientiert, PERRL, bewegt 4/4",2,1
+RASS,"wach,  GCS 13, CAM-ICU positiv, PEERL 2mm, kein FND, ",-1,0
+RASS,"GCS 15, RASS 0, PEERL 3/3mm, prompt, teilorientiert. ",0,0
+RASS,"Wach bzw. erweckbar, verlangsamt, teilorientiert, KG beider Beine 3/5",-1,-1
+RASS,"2-fach sediert mt Propofol und Sufenta, GCS 3, RASS -5; PERRL 2/2mm, träge ICP (um 12) und MAD (um 73 ) in Zielgrenzen stabil EVD_Drainage ",-5,-5
+RASS,"wach, GCS 10, RASS 0, PERRL 2/2mm, prompt, sensomot Aphasie, brachiofazialbetone Hemiparese rechts (Arm 0/5, Bein 2/5, Neglect nach rechts), keine PBZ",-1,-1
+RASS,"3xSed, ICP 10",-5,-5
+RASS,"RASS -2, PERRL, drückt beide Hände, kein Kopfnicken, bewegt alle Extr. (UE re > li), frg. erhaltene Schutzreflexe, gute Tubustoleranz",-4,-1
+RASS,"wach, nicht orientiert, befolgt eingache Aufforderungen, kein FND, leichtes Dedlikr",0,0
+RASS,nach Tracheotomie und ZVK-Wechsel noch somnolent,-4,-3
+RASS,"schwankender Verlauf von RASS +2 bis -2, CAM ICU positiv, PERRL, bewegt rechte Seite spontan",3,-1
+RASS,"3fach sediert: RASS -4, Pupillen PERRL ",-3,-4
+RASS,"wach, gestresst,CAM-ICU positiv, bewegt 4/4, ",1,1
+RASS,"GCS 5, PEERL 3mm, keine Reaktion auf Ansprache, CAM-ICU positiv",-3,-3
+RASS,"schläft, promt erweckbar, koopertiv, kein FND, bwgt 4/4 spontan. ",0,-1
+RASS,"sediert RASS-4, Pupillen isocor mw lichtreagibel",-5,-4
+RASS,schläft,0,0
+RASS,"sediert, PERRL, RASS ",2,-4
+RASS,"wach, orientiert, CIPCIM, leichtes Fieber, in den Stuhl mobilisiert",0,0
+RASS,"Patient somnolent, ruhig, auf Schmerzreiz erweckbar unter Sedierung mit Lormetazepam, Clonidin, Sufenta",-1,-2
+RASS,"Wach, orientiert, CAM-ICU neg., PERRL",-1,0
+RASS,"RASS-5, sediert Sufenta mono Pupillen isoor, LR träge, mw",-5,-5
+RASS,"wach, etwas unruhig, befolgt alle Aufforderungen, werscheint orientiert",0,0
+RASS,idem,-4,-1
+RASS,"Wach, orientiert, kein FND",0,0
+RASS,"RASS 0, GCS 15, PERRL, neurologisch weiter wie im SD beschrieben, keine Schmerzen, kein Fieber",1,0
+RASS,"RASS -4 (Prop/Suf/Mid) , bewegt spontan die Augenliden, leichte Hustereflex vorhanden (nicht reproduzierbar), ICP kompensiert auch unter Manipulation (Umlagerung), Puppilen weit isokor bds lr",-5,-5
+RASS,"RASS-1, Logorrhoe, desorientiert, PERRL, bewegt alle Extremitäten",0,0
+RASS,"RASS -1, PERRL, bew. alle Extr. stgl. nach Aufforderung, wirkt adäquat und koop.",0,0
+RASS,"wach, Augen auf, OK30° Haut nicht eingefalle, VAriation desHauutniveaus um 1 cm mit Lagewechseln, bek. Anisokorie",-3,-2
+RASS,"wach, retrograde Amnesie, PERRL, kein FND, inkompliant, gestörtes Kurzzeitgedächtnis",-2,0
+RASS,"aktuell ruhig, gut führbar, keine Schmerzen, keine Panik seit Palexia-Dosiserhöhung",1,0
+RASS,"wach, adäquat, kooperativ, RASS 0, PERRL, bewegt 4/4, ",0,0
+RASS,"Hat geschlafen, adäquat, bewegt 4/4, PERRL, sedierungsfrei",0,-1
+RASS,"wach, freundlich-kooperativ, keine Schmerzen, keine Angst, bewegt alle Extremitäten",0,0
+RASS,"öffnet Augen auf Ansprache, fixiert nicht, befolgt keine Aufforderungen, Pupillen mittelweit, isokor, lichtreagibel",0,-3
+RASS,"sehr müde, jedoch auf Ansprache erweckbar, immer wieder angst bei luftnot, compliante, arbeitet mit an den Beatmungsparametern, sediert mit cloni und intermittierenden MSI-Gaben, zur Nacht Mirtazapin 30mg + 1mg Tavor",-1,-1
+RASS,"2fach sediert (Prop/Suf),  PERRL, RASS -4",-4,-5
+RASS,"RASS -2, bewegt OE bds spontan, Pup mw/ik/lr",0,-1
+RASS,"schläft, erweckbar, RASS -1, CAM ICU positiv, befolgt einfache Aufforderungen, bewegt 4/4, re mehr als links, PERRL",0,0
+RASS,"wach, nicht kontaktierbar, keine Spontanbewegung, auf Schmerz minimal grimassieren",-3,-1
+RASS,"im Verlauf etwas wacher, bewegt rechten Arm spontan; kaut auf Tubus re Pupille weiter entrundet, Ø lr, links rund, mw, lr",-4,-4
+RASS,"Sedierungsfrei, öffnet gelegentlich spontan die Augen, befolgt keine Aufforderungen. Pupillen bekannt anisocor (li > re). Hypersalivation.",0,-2
+RASS,"RASS -5, keine Reaktion auf Schmerzreiz, unter Propofol, Sufentanil und Midazolam ICP kompniert, Pupillen eng und isokor, keine Bulbusdivergenz, CPP 70",-5,-5
+RASS,"wach, RASS +3, PERRL",0,-2
+RASS,"Pat zunehmend wacher, befolgt Auff., beantwortet einfache Fragen, befolgt 4/4, PERRL",-2,0
+RASS,"sediert, PERRL, intermitt. wach und ansprechbar, weiterhin intubuiuert",2,0
+RASS,"schläft, prompt erweckbar; kein fnD",0,0
+RASS,"in BL RASS -5, BPS 3",-5,-5
+RASS,"wach, orientiert, einegschränkte Kraft, aber bewegt 4/4, an ECMO kein Fieber, leichte Cephalgien",0,0
+RASS,"befolgt keine Aufforderungen, Pupillen weit, isocor, LR prompt",0,-2
+RASS,"wach, teilorientiert, Neurologie idem",0,0
+RASS,"erweckbar, orientiert, adäquat, Druckgefühl im Unterbauch, ",0,0
+RASS,"wach orientiert, bewegt seitengleich 4/4, ",1,0
+RASS,"wach, müde, teilorientiert, PERRL, keine FND",-1,0
+RASS,"deutliche Verbesserung der Vigilanz, schläfrig, aber leicht erweckbar, Öffnen und Schließen der Augen auf Aufforderung, Drücken der Hand re. auf Aufforderung, weiterhin Hemiparese li.",-3,-1
+RASS,"Pat. wach, kooperativ, befolgt Aufforderungen, orientiert; selbstständige Mobi in Toilettenstuhl, RASS 0",-1,-1
+RASS,"GCS 15, Rass 0, voll orientiert, PERRL",0,0
+RASS,"Pup mw/ik/lr, RASS -4, Szreiz: Strecksynergismen + KOpfwendung nach li, Bab +/+ Cloni 60, Suf 0,8",-4,-4
+RASS,"2fach sediert: RASS -4, Pupillen eng, isokor, LR bds.träge bis fragl. , ICP 7",-5,-5
+RASS,"RASS -2; Pupillen bds isokor, mittelweit, lichtreagibel; kann Anforderungen nicht folgen, grimassiert",-1,-3
+RASS,"Suf/Dex/Prop/ Midazolam, Pupillen eng und isokor. RASS -4",2,-4
+RASS,"wach, nicht orientiert, ruhig",-2,0
+RASS,Klin. und neurolog. unverändert. ,0,-1
+RASS,"wach, adäquat, HP li, FP rechts, Uhrglasverband re, klinisch idem",0,0
+RASS,"schläfrig, prompt erweckbar, PERRL, orientiert, bewegt 4/4",0,0
+RASS,"pupillen bds. eng, GCS, ICP 5mmHg",-5,-5
+RASS,"öffnet die Augen auf Ansprache, PERRL, fixiert nicht",-2,-2
+RASS,"wach, orientiert, befolgt Aufforderungen, PERRL, kein FND",-1,0
+RASS,"RASS 0, leichte Schmerzen rechte Tibia (wolle keine zusätzliche Analgesie), adäquat, kooperativ, PERRL",0,0
+RASS,"RASS -5, analgosediert mit Propofol/Sufenta; PERRL; ICP jetzt 11",-5,-5
+RASS,"wirkst adäquat, PERRL bds",1,-1
+RASS,"delirant, halluzinierend, agitiert, keine Paresen, PERRL",0,2
+RASS,"Patientin unter Propofol tief sediert RASS -3, zwichendurch die Augen aufgemacht, aber kein Kontakt, PERLR",-5,-4
+RASS,"Pat wach, adäquat, kein Anhalt auf FND, PERRL, bewegt alle Extremitäten ",0,0
+RASS,"somnolent, erweckbar, phasenweise orientiert, bewegt 4/4, seitengleich",-2,-1
+RASS,"GCS 15, desorientiert, kooperativ, ruhig, kein FND",-1,0
+RASS,"GCS 14, ruft viel",0,0
+RASS,"Augenöffnen spontan, fixiert, drückt die linke Hand, bewegt lniks > rechts, PERRL, Anspannen linker Arm",-1,-1
+RASS,"RASS 0, GCS 15, PERRL, weiter deutlich aphasisch aber versucht zu vokalisieren, wieter hochgr. armbetonte Parese rechts, bewegt Bein auf Schmerzreiz,  befolgt Anwesungen links ",-1,1
+RASS,"Tetraparese  deutlich rückläufg, rechter Arm KG 4/5, rest 5/5, PERRL",0,0
+RASS,"spontane AÖ, keine Spontanbewegung, nicht kontaktierbar, Pup. mw/ik, LR prompt",-4,-3
+RASS,"Wach, adäquat, kein FND",0,0
+RASS,"wach, GCS 14, RASS 0 bis -1, teilorientiert (nicht Zeit). PERRL 2/2mm, prompt.  keine Paresen, ",1,1
+RASS,"sedierungsfrei, GCS 4, Pup. mw/ik, LR prompt",3,-3
+RASS,"tief sediert; keine gezielte Rkt. auf Schmerzreiz oder Aufforderung; Pupillen isocor, lichtreagibel",-4,-4
+RASS,"Patient adequat, allseits orientiert, Schwierigkeiten beim Artikulieren (Kieferfraktur) PERRL",1,0
+RASS,"Zunächst wach und Kommunikation gut möglich, kooperativ, nach Umstellung in BIPAP sehr agitiert, erst nach GF Erhöhung und Sedalamboli wieder ruhiger und schläft, PERRL",1,1
+RASS,"keinen neuen Befunde, wach, schlaffe (periph.) Biparese mit V.a. traumat. Plexusläsionen dd: bds. Polyradikulopathien zervikal; Pat. wirkt durchaus ""hospistalisiert"", aber nicht desorientiert/delirant im engeren Sinne",2,1
+RASS,idem,3,-1
+RASS,"wach, orientiert, GCS 14, schriftilche Kommunikation, RASS 0, CAM-ICU neg, PERRL 2mm prompt, kein FND",0,0
+RASS,"RASS +1 (MSi) , GCS A4V1M6 befolgt einfache Aufforderungen , PGRRL, bewwegt 4/4 aber Paraparese ",0,0
+RASS,"Patient wach, kontaktierbar, unter 2 X Sedierung GCS 10, RASS0, bewegt 4/4 auf Aufforderung, mit KG 1/5, PGRLR",-2,-1
+RASS,"wach, kontaktierbar, voll orientiert, bewegt 4/4, PERRL",-1,0
+RASS,"schläft, daher in Ruhe gelassen, allzeit kardiopulmonal stabil",0,0
+RASS,"wach, kooperativ, befolgt Aufforderungen, kein FND. RASS 0",0,0
+RASS,"Pat. leicht sediert, hustet, öffnet kurz die Augen, sonst aktuell keine Aufwachreaktion, Pupillen isokor, bds. LR",-3,-3
+RASS,"wach, adäquat, bewegt alles, PERRL mw, GCS 14",0,0
+RASS,"GCS 11 unter Sufenta 0,1, neurologisch Status idem",-1,-1
+RASS,"wach, nicht orientiert, in guter Stimmung, nestelt, Rass 0, PERRL, kein FND, bewegt 4/4",-1,1
+RASS,"RASS -3 (Suf/Mid), nur ungzielte Raktion auf Schmrzreiz, ICP stabil, Pupillen isocor eentrundet kaum lr",-5,-5
+RASS,"RASS -4, kaut,  ICPs stabil 6-7 auch bei Lagerung. ",-4,-4
+RASS,"Sufenta+Cloni, weiter nur AÖ auf Manipulation, noch keine Aufwachreaktion, PERRL",-4,-4
+RASS,"sediert mit Suf/cloni, RASS -5. kaut auf dem Tubus. benötigtt zum Tubuslagewx Propofol",-4,-4
+RASS,"Wach, befolgt Aufforderungen, kein FND. PERRL.",0,0
+RASS,"erweckbar, kontaktierbar, befolgt teilweise Aufforderungen, kein Fieber",-3,-1
+RASS,"keine Reaktion auf Ansprache oder SR, RASS -5, Sedierung Sufenta/Cloni, Pupillen bds. eng",-5,-5
+RASS,"leichtes Zwinkern auf Ansprache, RAsS-4, PERRL eng, normotherm",-4,-4
+RASS,"4-fach Sedierung, RASS-5, Pupillen eng, keine LR nachzuweisen, ICP unter 20 kompensierbar mit EVD 1-10ml/h",-5,-5
+RASS,"sehr schläfrig, erweckbar, PERRL, szfrei, bewegt 4/4 auf Aufforderung",-2,-1
+RASS,"RASS 0, PERRL, eng-mw, wirkt adäquat, bewegt alle Extr. spontan, grob orientierend kein FND",-1,-1
+RASS,"bisher keine relevante AWR, nach Propofol ex, nun auch Sufenta 0.05, Pupillen teilweise ohne LR, entrundet bds jedoch Status quo seit REA",-5,-5
+RASS,"analgosediert, RASS -5, Pup. mw/ik, LR prompt, keine mot Bewegung, nicht kontaktierbar",-5,-4
+RASS,"schläft, erweckbar; bewegt 4/4, nicht orientiert; teiladäquat GCS 12 (E4M5V3)",-1,0
+RASS,"wach, idem; freundlich zugewandt",0,0
+RASS,"schläft, erweckbar, scheint orientiert",1,0
+RASS,"adäquat, bewegt 4/4, Amaurosis, kein FND",0,0
+RASS,"schläft, rezidiv. agitiert/ängstlich, PERRL mw, bewegt 4/4",3,1
+RASS,"somnolent, Pupillen bds rund, isokor, verzögerte LR bds; bewegt 4/4 Extr spontan, agitiert",3,-1
+RASS,"RASS -3, Augen öffnen, Pupillen isokor, bewegt Kopf",-4,-3
+RASS,"wach, ruhig, keine gezielte Rkt. auf Ansprache",-3,-3
+RASS,"Sediert mit Propofol und Sufenta, Pupillen bds. engmit gegebener LR. Keine motorische Reaktion, wenig Sekret in beiden Redons ohne Sog",-4,-4
+RASS,"GCS 3 unter Sufenta mono, PERRL, ICPs kompensiert, Licox über 30, Drainagemenge über Tuohy vergleichbar mit den Vortagen",-4,-4
+RASS,"wach, adäquat, PERRL, kein FND, orientiert",-1,0
+RASS,"RASS 0, CAM ICU negativ, NRS 0, bewegt 4/4 spontan, PERRL NRS 2, hohe Therapie Motivation",0,0
+RASS,Pupillen isokor,-5,-3
+RASS,"Aö auf Ansprache und spontan, blinzeln, fixiert kurz, kein Befolgen v Auff., vegetativ ruhig, PERRL",-3,-3
+RASS,"wach, GCS13 (A4V3M6), Sprachproduktion sehr aktiv (aber schwierug zu verstehen, PGRRL",1,1
+RASS,"Pat. öffnet auf Schmerzreiz die Augen, fixiert nicht, befolgt keine Aufforderungen, keine Bewegung der Extremitäten, RASS -3, Pupillen o.B. EVD Fördermenge 145 ml",-3,-4
+RASS,"leicht sediert, keine Reaktion auf Ansprache, vegetativ gestresst, PERRL mw, Fieber!",-5,-3
+RASS,"RASS-2, erweckbar, befolgt Aufforderungen, PERRL",-3,-1
+RASS,idem,-5,-1
+RASS,"Wach, fixiert, scheint zu verstehen, aber antriebsarm für Kommunikation, PERRL",0,0
+RASS,"Pat. analgosediert (Propofol 2mg/Sufenta 0,05), Pupillen eng, LR seitengleich prompt, keine Reaktion bei körperlicher Untersuchung, ICP kompensiert, CPP im Zielbereich",-5,-5
+RASS,"wach, kontaktierbar, befolgt Aufforderungen prompt, PERRL, zu Ort zeit und Situation orientiert, dennoch insgesamt gelegentlich fabulierend ausschweifend mit Ideenflucht, insgesamt heute wieder etwas verwirrter als am Vortag",0,0
+RASS,"wach, GCS 9, RASS 0, PERRL, bewegt 4/4, kein FND, aktuell sedieurgnsfrei",1,0
+RASS,"erweckbar, orientiert, ruhig, kooperativ",1,0
+RASS,"wach, mobilisiert, spricht einzelne Worte, fixiert den Blick, beinbetonte HP rückläufig, Sufenta ex, Dexdor ex, Cloni begonnen, Haldol weiter, Pupillomotorik opB",0,0
+RASS,"wach, voll orientiert, ängstlich (s.u.)",0,0
+RASS,"2fach analgosediert, RASS -4, PERRL",-4,-4
+RASS,"3 fach Sediert, RASS -5, ICP 8,ICP norm, PSI 28, diskrete vorbekannte Anisokorie re>li, gestern 4/4 bewegt, heute obere Extremität",-4,-4
+RASS,"wach, PERRL, befolgt Aufforderungen, bewegt 4/4 , Orientierung nicht prüfbar bei TK (keine Sprache), ruhig, gut führbar",0,0
+RASS,"wach, fixiert mit dem Blick, versucht verbal zu kommunizieren, Hemiplegie links  PGRLR, GCS11, RASS0",-1,0
+RASS,"wach, kooperativ, GCS 12, bewegt 4/4",0,0
+RASS,"schläft, ist erweckbar und nickt bzw. schüttelt Kopf im Rahmen von Fragen oder Aufforderungen",1,0
+RASS,"RASS -1 (schläft), sonst idem zu SD, PERRL, mw",0,0
+RASS,"wach, bewegt spontan 4/4, befolgt keine Aufforderungen, PERRL mw",0,0
+RASS,"wach, bewegt alle Extrem., befolgt Aufforderungen, PERRL",-1,0
+RASS,"sedierungsfrei, schlafend nach 1Amp Midazolam",0,-1
+RASS,"RASS -3, PERRL, befolgt noch keine Aufforderungen, frgl. adäquat",-2,-2
+RASS,"wach, nicht orientiert, RASS 0, bwgt 4/4 spontan, befolgt Aufforderungen und ist kooperativ.",0,0
+RASS,"wach, orientiert, kooperativ",-1,0
+RASS,"Sedierungsfrei, öffnet spontan die Augen, fragl. fixierend, befolgt keine Aufforderungen",-4,-2
+RASS,Kraftminderung rechter Arm KG 2,-1,-1
+RASS,"wach, oritientiert, dysarthrisch, GCS 14, RASS 0, CAM-ICU neg, PEERL 2mm prompt, li. Arm spastisch paretisch",-1,0
+RASS,"keine Sedierung, wirkt teils gestresst,dann hyperton/tc, MSI und Cloni erhalten, fixiert den Blick, befolgt keine Aufforderungen",-3,-2
+RASS,"Sedierung aus seit >24h, PERRL, mw, Blinzeln auf Manipulation, Füße bewegt auf SR, Mundbewegung spontan, sonst keine Reaktion",-4,-4
+RASS,"somnolent, Wachphase <10 Sek, Blickdeviation bds nach oben, GCS 13 A3V4M6, keine Nackenstifigkeit, PGRRL, KG untere Extremitäten 3/5",1,0
+RASS,"RASS 0, CAM-ICU pos, GCS 14, PERRL mw., bewegt 4/4, befolgt Aufforderungen",-1,0
+RASS,"wach/somnolent, dann gut erweckbar, insb. durch moderate unangenehme Reize, kein FND - Haloperidol-Schema läuft bei V.a. hypoaktives Delir, Opiate wurden reduziert",0,0
+RASS,"Pat. wacher, scheint kontaktierbar, versucht zu sprechen, allerdings nur unverständlich, befolgt keine Aufforderungen, bewegt spontan alle Extremitäten, Pupillen eng+isokor",-1,-1
+RASS,"wach, voll orientiert, adäquat, keine Beschwerden, keine Hinweis auf FND",0,0
+RASS,"Sedierung ex seit 14h, auf Szreiz: Tubus beißen + Grimassieren, Pup nicht beurteilbar  beginnende Spontanbewegung seitengleich OE KG 3/5nJ, UE KG 2/5nJ, Bab-/-",-4,-4
+RASS,"Propofol 1 mg/kg/h Sufenta 0,3 Pupillen bds. sehr eng, LR nicht prüfbar; RASS -4/5 (reagiert auf Lagerungsmaßnahmen)",-5,-4
+RASS,"adäquat, voll orientiert, möchte schnellstmöglich Heim, PERRL",0,0
+RASS,"wach, orientiert, kein FND, PERRL, CAM ICU neg.",1,0
+RASS,"Suf/Dexdor; PERRL, Kopfwendung +, Strecksynergysmen",-4,-3
+RASS,"prompt erweckbar, nicht adäquat, befolgt Aufforderungen suffizient",0,-1
+RASS,BL,-5,-4
+RASS,"Sedierungsfrei, bewegt die linke seite spontan, befolgt Aufforderungen , aber nicht regelmäßig reproduzierbar",-2,-2
+RASS,"Wach, teilorientiert, freundlich zugewandt, PERRL",0,0
+RASS,"RASS -1, PERRL, keine Adäquanz, befolgt keine Aufforderung",-3,-2
+RASS,"RASS -5, PERRL",-4,-5
+RASS,"RASS 0, orientiert, kooperativ, PERRL",0,0
+RASS,"wach ruhig freundlich zugewandt, Zeichen einer Amnesie, beide UE 3/5, OE 5/5",-1,-1
+RASS,Pat. schläft. ,-1,0
+RASS,"wach, orientiert, PERRL, bewegt 4/4, Schmerzen re Gesichtshälfte bei bek. Trigeminusneuralgie",0,0
+RASS,"13:30 RL: PERRL mw, träge lr, RASS-5 unter Sufenta 0,5",-5,-5
+RASS,"wach, orientiert",0,0
+RASS,"ruhiger als gestern unter MCPAP, redet aber ab und zu unter der Maske, Risperdal, Melperon/Melatonin,Haldol ex, bewegt 4/4 spontan",-1,-1
+RASS,"wach, mobilisiert in den Stuhl, bewegt alles, PERRL",0,0
+RASS,"GCS 15, ruft viel, ist auf Nachfrage gelangweilt",2,0
+RASS,"Propofol beendet und nur noch Sufenta mono, bereits AÖ, aber befolgt noch keine Aufforderungen, PERRL",-5,-3
+RASS,"RASS-4,befolgt keine Aufforderungen, PERRL",-3,-2
+RASS,"wach, nicht kontaktfähig, beikannte Tetraparese bei ALS",0,0
+RASS,"GCS 3, RASS-5, Pup. entrundet lichtstarr 2mm, keine mot. Reaktion auf SR, Babinski li. +",-5,-5
+RASS,"agitiert, Pup weit/ik/lr, sonstige Neurologie idem",2,0
+RASS,"Pat. wach, agitiert, RASS +2; klagt über vermehrte Luftnot heute, bewegt 4/4, kein Anh f FND; ",0,0
+RASS,"in der Tendenz etwas wacher, öffnet sehr Verlangsamt Augen auf Ansprache, PERRL, Sklerenikterus, fixiert nicht befolgt keine Aufforderungen",-4,-3
+RASS,"RASS 0, CAM ICU negativ, bewegt 4/4 spontan, PERRL",-1,0
+RASS,"RASS -2, sediert mit Sufenta 0,3 Clonidin 120, bewegt Extremitäten nicht, PERRL",-4,-3
+RASS,"sediert, blinzelt mit Augen, PERRL",-4,-4
+RASS,"wach, adäquat, CAM ICU neg., PERRL, bewet 4/4 seitengleich",-1,0
+RASS,"Wach, orientiert und adäquat, kein FND, PERRL.",0,0
+RASS,"RASS 0 unter Dexdor und Mo, PERRL, bewegt alle Extremitäten",-1,0
+RASS,"wach, nicht adäqut, Pupillen isochor mw, lichtreagibel, bewegt 4/4 seitengleich",-1,-1
+RASS,"PERRL, sedierungsfrei,  öffnet Augen bei Manipulation, keine Blickfixierung, RASS -4, hohe Tubustoleranz, druckt rechte Hand auf Aufforderung, HP armbetont links, Beine werden bewegt auf Aufforderung",-3,-3
+RASS,"Sedierungsfrei, öffnet auf Ansprache die Augen, blick fixierend, befolgt bedingt Aufforderungen, PERRL",-1,-1
+RASS,"3fach Sedierung: Morphin/Midazolam/Clonidin Midazolam erneut um 10 % reduziert; teils kontaktfähig, befolgt Aufforderungen (Blinzeln). Maximale CIP/CIM, intermittierend Elektrotherapie",-4,-3
+RASS,"auf Ansprache erweckbar, befolgt keine Aufforderungen aber fixiert, PERRL",1,-1
+RASS,"wach, orientiert, kein FND, PERRL",1,0
+RASS,"wach, ruhig, zu allen Qualitäten orientiert, CAM-ICU negativ, bis auf bek. Sensibilität/Motorik Defizit li Hand kein FND , PGRRL",0,0
+RASS,"RASS -4, Pup mw/ik/lr, wirkt entsptannt",-3,-3
+RASS,"wach, freundlich zugewandt; bewegt 4/4",0,0
+RASS,"RASS 0, wach, freundlich kontaktierbar, keine SZ, bewegt 4/4, KG MInderung rechts proximal betont ",0,0
+RASS,"RASS 0, GCS 15, weiter schläfrig, aber orientiert und erweckbar, PERRL, kein FND, Temp 35,8°C",0,0
+RASS,"RASS0, GCS 15, bewegt 4/4 spontan, verbale Reaktion auf Ansprache, jedoch verlangsamt, klagend, nicht willig Auffoderungen zu befolgen",-1,0
+RASS,öffnet Augen auf Ansprache,2,-3
+RASS,"RASS 0, GCS 14, scheinbar orientiert, compilant, PERRL, OE bds. 4/5 KG, UE Bewegung Fuß links, keine Bewegung rechts spontan oder auf Aufforderung, kein Fieber ",-1,1
+RASS,"RASS -3, auf Schmerzreiz Grimassieren, Bewegung aller Extr. auf Schmerzreiz, PERRL, nicht kontaktierbar",-4,-3
+RASS,"etwas schläfriger als zuletzt, streckt Zunge auf Aufforderung raus, befolgt sonst keine Aufforderungen, bewegt 4/4 spontan, HP links PERRL ",1,0
+RASS,"wach, z.T. unruhig, agitiert, Pupillen isocor, lichtreagibel",-3,-1
+RASS,"schläft, prompt erweckbar, orientiert, bewegt seitengleich 4/4",0,0
+RASS,"Wach, befolgt Aufforderungen, Aphasie. Bewegt 4/4.",1,1
+RASS,"schläft, erweckbar, freundlich zugewandt. RASS 0, bwgt alle Extr seitengleich. Sz rechter OS.",0,0
+RASS,"wach, orientiert, in gutem AZ, sitzt und hält sich selbstständig an der Bettkante, lächelt, fühlt sich gut, kein Fieber",-1,0
+RASS,"wach, orientiert, einegschränkte Kraft, aber bewegt 4/4, an ECMO kein Fieber, leichte Cephalgien",0,0
+RASS,"wach, orientiert; adäquat, grobk. kein fnD",0,0
+RASS,"RASS -5, Pupillen eng, isokor, lichtreagibel, Profol und Sufenta, GCS 3, ICP 16 mit Spitzen bis 22, Temp 37,4",-5,-5
+RASS,"wach, orientiert, GCS 15, PERRL prompt, 2mm isokor rund",0,-1
+RASS,"RASS 0, PERRL, mw-w, teils fixierend, Bew. des Kopfes; frgl. reproduzierbare Bew. der re Hand nach Aufforderung, sonst keine Adäquanz",-1,-1
+RASS,"RASS 0, GCS 3, PERRL, keine Bewegung/Augenöffnung auf Schmerzreiz, ",-5,-4
+RASS,"schläft, bei Manipulation /Lagerung gibt Pat Sz an",1,-1
+RASS,"wach, kooperativ, fordernd, RASS 0, zu allen Q scharf orientiert",-1,-1
+RASS,"Aufwachversuch gut: zieht beide Beine an, öffnet die Augen, schüttelt den Kopf!",-5,-3
+RASS,"wach, Kopfverband, AÖ spontan, spricht nicht, bewegt 4/4 spontan, verlangsamt, Trisomie 21",-1,-1
+RASS,"wach, adäquat, voll orientiert, weiterhin eher ängstlich, depressiv, pessimistisch mit der Sicherheit sie würde heute sterben -> Mirtazapin zur Nacht begonnen",-2,1
+RASS,"unter 4fach Sedierung RASS -5, Pupillen bds eng, re gering >li, ICPs stets kompensiert unter 20",-5,-5
+RASS,"Clonidin 30µg, GCS 14, RASS +2, delirant + aggressiv, PEERL 3/3mm, prompt. bewegt 4/4 spontan in vollem Umfang (tritt nach Pflege)",-1,0
+RASS,schläft,1,0
+RASS,"wach, ruhig, RASS 0(Sufenta mono), befolgt keine Aufforderungen, aber reagiert prompt auf Ansprache, bewegt spontatn die linke Seite, Hemiplegie rechts",-1,-1
+RASS,"wach, heute gebesserter AZ, Fieber regredient, eingeschränkte Kraft, schlapp, bewegt 4/4",-3,-1
+RASS,"schläft, erweckbar, wenn wach unkooperativ, delirant, bewegt 4/4",3,1
+RASS,"Sedierungsfrei, AÖ auf Manipulation, keine weitere Reaktion, PERRL",0,-3
+RASS,"GCS 14, schläfrig aber gut erweckbar, desorientiert bei bekannter Demenz",0,0
+RASS,"wach, RASS 0, PERRL, bewegt 4(4, intermitt. nestelig",1,1
+RASS,"Augen öffnen auf Manipulation, kein fixieren, befolgt keine Aufforderungen, Aggitation nach Sedierungsreduktion, kein gerichtetes Aufwachen, PERRL eng, RASS -2 bis +2, bewegt 4/4",2,-2
+RASS,"RASS -3, bewegt 4/4, sitzt, befolgt keine Aufforderungen, CAM-ICU pos",-3,-1
+RASS,"RASS -5 unter 3xSed (Prop,Suf,Mid), PGRRL (re weniger lr), ICP17",-5,-5
+RASS,"schlafend, erweckbar, antwortet einzelne Worte, GCS 10 (e2,v3, m5), RASS -2, PEERL 2/2mm, prompt. bewegt 4/4 auf Sz",2,1
+RASS,"wach, Augen geöffnet; bewegt 4/4 auf Aufforderung; nicht voll orientiert; keine Schmerzen; SUF mono",-2,-2
+RASS,"GCS 14, RASS 0, PERRL 2/2mm, prompt, keine Paresen, HN intakt ",1,1
+RASS,"RASS unverändert, PERRL mw, min. LR",-4,-3
+RASS,"Hustenreflex und CPAP intermitt. mgl, sonst keine Hirnstammreflexe, Pup bds weit, lichtstarr, RASS -5, keine Sedierung, Touhy 10/h",-4,-4
+RASS,"somnolent, erweckbar, GCS 10, CAM-ICU pos, RASS 0, PEERL, kein FND",-2,0
+RASS,"RASS 0, CAM ICU negativ, orientiert, bewegt 4/4 spontan, PERRL, NRS 1",0,0
+RASS,"sediert, Pupillen isochor mw, lichtreagibel",-4,-5
+RASS,"wach, adäquat, voll orientiert, kein Hinweis auf FND, zufrieden",0,0
+RASS,"keine Sedierung, GCS 6, Anisokorie, re >li, träge LR li, re keine, normotherm, bewegt spontan re Seite, Babinski li",-4,-3
+RASS,idem,0,-1
+RASS,"wach, recht orientiert, Hemiparese links mit KG 4/5, im AHV Absinken nach ca. 4-5 sec.",-1,-1
+RASS,"3fach sediert, öffnet auf Ansprechen die Augen, befolgt keine Aufforderungen, RASS-1, PERRL, weiterhin agitierte Phasen",-2,-2
+RASS,"Prop 4, Suf 1, RASS -4, Grimassieren + Zubeißen auf Szreiz, zieht Füße auf lokalen Szreiz weg, Bab-/-, Pup mw/ik/lr ICP 14, SED ohne Burstsupp.",-4,-5
+RASS,"Vigilanz schwankend, HP li, PERRL, Sufenta mono, AÖ auf Berührungsreiz,fixiert den Blick ",-2,-2
+RASS,idem,1,-1
+RASS,"wach, Orientierung nicht vollumfänglich geprüft; gibt starke Bauchschmerzen an. Untersuchungsmöglichkeit bei Adipositas per magna eingeschränkt  MORGENS: stark agitiert bei Schmerzen. ",-1,0
+RASS,"unverändert GCS 7-8, Sufenta mono zur Abschirmung, spontanes Augenöffnen, PERRL, keine adäquate Reaktion auf Ansprache, kein Fixieren unter EVD Drainage 10ml/h Wunde nun weitgehend trocken",-3,-2
+RASS,"Pat. wach, befolgt mit rechts einfache Aufforderungen, Lidheberapraxie, Kommunikation über Kopfnicken und -schütteln, HP links KG 3/5",-1,0
+RASS,"Augen spontan offen, wach, fixiert passager, Pupillen isokor, mw und prompt LR, kein neues FND, Spastik re idem",0,-1
+RASS,"wach, fixiert nicht, niht kontaktierbar, bewegt nix, normotherm, nicht sediert",-2,-2
+RASS,"orientiert, kein Delir, ängstlich, bewegt 4/4, kein Hinweis auf FND, Kommunikation via Schrift adäquat",0,0
+RASS,"sediert, RASS-4, PERRL, zwinkert, nicht kontaktierbar",-5,-4
+RASS,Vigilanz undulierend; teils kontaktfähig,-3,-1
+RASS,"analgosediert, RASS 0, PERRL",-4,-3
+RASS,"Pat. wach, befolgt keine Aufforderungen, nicht kontaktierbar, Pup mittelweit, isokor, lichtreag; bewegt 0/4; Sed frei",-3,-3
+RASS,"Sufenta mono GCS 8, keine Augenöffnung, gezielte Reaktion auf SR, RASS -2, PEERL 2mm prompt, KeppraSpiegel 26,1",-3,-3
+RASS,"RASS-5, Pupillen mw, isocor, licht bds.++",-5,-5
+RASS,"schläft, sonst adäquat",0,0
+RASS,"blinzelt, PERRL, sediert",-3,-3
+RASS,"zweifach sediert, Pupillen isokor, eng",-5,-5
+RASS,"wah, freundlich zugewadt, CAM ICU positiv, befolg teilweise Aufforderungen",1,0
+RASS,"Pat wach, nicht adäquat, nicht compliant. GCS: 12, RASS: -1, kein Meningismus, PERRL. Kraftmindereung an beiden Beinen gleichbleibend bei janda 3/5 (Füßen) intakt",-2,-1
+RASS,"schläft, stets erweckbar, PERRL",-1,0
+RASS,"erweckbar, keine Spontanbewegung, öffnet die Augenaufansprache, RASS-1, ",-2,-2
+RASS,"keine Sedierung, TK, RASS -4, nicht kontaktierbar, Pat. schluckt und bewegt Augen",-4,-3
+RASS,"RASS 0, keine Schmerzen, kein Anhalt für Delir, PERRL, mw, CAM-ICU neg., GCS 11",0,0
+RASS,"Pat. wach, adäquat, kein FND, PERRL",0,0
+RASS,"schläfrig, durch Ansprache erweckbar, Blickfixierung, Pupillen eng + isokor + lichtreagibel",-3,-2
+RASS,"Patientin reagiert auf Ansprache mit Augenöffnen, keine Befolgung von Aufforderungen, bekannte Anisokorie",-3,-2
+RASS,"sediert, Pupillen re mininmal > li, lichtreagibel",-5,-4
+RASS,"GCS 3, kaut wenig bei phys. Reiz, RASS -4, Clonidin 30",-4,-4
+RASS,"RASS -5, PERRL, Einblutung in die Skleren",-5,-3
+RASS,"Patn. analgosediert RASS -4, PERRL, Konjuktiva-Ödeme",-4,-4
+RASS,"wach, RASS:0, teilorientiert, CAM-ICU pos., freundlich, bewegt 4/4",0,0
+RASS,"Pat wach, adäquat, sz zufr, Pup ic, mw, lr, kein FND",0,0
+RASS,"RASS 0, einfache Kommunikation via Händedruck möglich, befolgt Aufforderungen, bis auf Händedruck noch keine Extremitätenbewegungen bei CIP/CIM, PERRL",-2,-2
+RASS,"schläft, erweckbar auf Ansprache, dann nicht sicher orientiert (örtlich/zeitlich), schläfrig",0,0
+RASS,"noch verhangen RASS-1, CAM ICU negativ, bewegt 4/4 spontan, kein sensomotorisches Defizit, PERRL",0,0
+RASS,"wach, unverständliche Laute, befolgt keine Aufforderung, bewegt links gezielt und rechts ungezielt",-1,-1
+RASS,"Kommunikation auf Englisch möglich, RASS 0, CAM ICU negativ, bewegt 4/4 spontan, PERRL, distanziert sich vom Suizidversuch",0,0
+RASS,"tief sediert, RASS-3, PERRL, kein Fieber",-4,-3
+RASS,"RASS-3, lediglich Zwinkern und Augenöffnen, keine Reaktion auf Ansprache, PERRL mw",-4,-4
+RASS,"RASS 0, PERRL, innerlich unruhig, befolgt Aufforderungen, bew. Extr. stgl, adäquat",1,1
+RASS,"Neurolog. idem, GCS (a4s1m5) 10, fixiert nicht, bewegt re. Seite spontan. ",1,-1
+RASS,"wach, orientiert",0,0
+RASS,"wach, voll adäquat, PERRL, bewegt 4/4, kein FND, kein Delir",0,0
+RASS,"wach, adäquat, orientiert, aber verlangsamt, bewegt 4/4, CAM-ICU negativ",-1,0
+RASS,"RASS-1 unter Sufenta/Dex, CAM ICU negativ, bewegt 4/4 nach Aufforderung, PERRL",0,-2
+RASS,"wach, kein FND, teilorientiert, PERRL, bewgt 4/4, gut führbar",1,0
+RASS,"RASS -3, PERRL, bei Manipulation gestresst, keine Adäquanz, befolgt keine Auff., ungezielte Abwehrbew.",-3,-3
+RASS,"RASS 0, weiter agitiert unter Propofol 2,7mg/h/kg und Sufenta 0,92ug/h/kg und Dextor 13,7 ml/h max., PERRL bds. mittelweiten Pupillen, nach Tavor/Haldol befolgt kine Aufforderungen. cCT gestern opB",1,-1
+RASS,"unter 2fach Sedierung mit Propofol/Sufenta RASS -5, PERRL",-4,-4
+RASS,"RASS -1, PERRL, mw, befolgt keine Aufforderungen, frgl. adäquat",-3,-1
+RASS,"wach, adäquat, GCS 15, Pup. mw/ik, LR prompt, oEx proximal KG 4/5, distal KG 1/5, uEx KG 2/5",-1,0
+RASS,"schläft, erweckbar, bewegt 4/4, kein FND",0,0
+RASS,"keine adäquate Aufwachreaktion, Bulbusdeviation links, Sufenta/Cloni",-4,-4
+RASS,"RASS-3, PERRL, bewegt bisher nur die Augen",-3,-3
+RASS,"Sed. Morph/Dex, Delir mit Pipamperon und Risperidon behandelt, PERRL eng, RASS -2",-2,-2
+RASS,"wach, RASS 0, CAM-ICU neg., bewegt 4/4, PERRL mw., schmerzzufrieden unter PDA, pDMS intakt",0,0
+RASS,"Sedierungsfrei, wach und orientiert (RASS 0), bekannte KG-Minderung UE, sonst kein FND.",0,0
+RASS,"keine adäquaten Wachheitszeichen, intermitt. unruhig, agitiert",-4,-1
+RASS,"wach, kontaktierbar, CAM-ICU pos., bewegt 4/4 seitengleich, geringe KG-Min. Arme/Beine, LR bds. pos., li>re, li entrundet",2,-1
+RASS,"RASS 0, Sufenta, Clonidin, bewegt alles spontan",1,-1
+RASS,"wach, adäquat, ohne Beschwerden",0,0
+RASS,"2fach sediert: RASS -4, Pupille li > re, mw, LR bds. träge",-5,-5
+RASS,"wach, nicht orientiert, CAM-ICU positiv, PERRL",0,0
+RASS,"wirkt nach Erhalt Sedalam ruhig, PERR, auf Ansprache erweckbar, nicht sicher adäquat kontaktierbar",0,-1
+RASS,"Pat. reagiert auf Ansprache mit Augenöffnen, befolgt keine Aufforderungen, Pupillen mittelweit, isokor, LR seitengleich prompt",1,-1
+RASS,"GCS 7, Augen werden spontan geöffnet, kleine sporadische Bewegungen der Beine",-3,-2
+RASS,"idem, ruhig, nicht ängstlich. Kann sich von Haldol distanzieren",0,0
+RASS,"schläft, erschöpft, prompt erweckbar, keine FND, adäqaut,kein Fieber, schmerzfrei",1,0
+RASS,"wach, orientiert, schmerzzufrieden, keine FND, PERRL, kein Fieber",1,0
+RASS,"wach, orienteirt, freundlich-kooperativ, keine Schmerzen, besorgt wegen ECMO-Reduktion",0,0
+RASS,"RASS -2 unter Sufenta 0,5 ug/kg/h, öffnet Augen auf Ansprache und Befolgt Aufforderungen rechts, KG 4/5, links fragl. Babinski und trömmner verstärkt, PERRL, kein Fieber  ",-4,-3
+RASS,"wach, teilweise Shivvern, keine FND, keine Schmerzen in Ruhe, kraftlos, deprimiert, orientiert",-2,-1
+RASS,"versucht die Augen zu öffnen, PERRL sehr weit, wirkt aber nicht gestresst, an ECMO kein Fieber",-4,-3
+RASS,"somnolent, adäquat, bewegt 4/4 deutlich KG Minderung",-2,-1
+RASS,"Nicht orientiert, wahnhaft in wechselndem Ausmaß => Melatonin und Melperon zum Abend erhöht",3,1
+RASS,"RASS 0, GCS 10, PERRL, Augen spontan offen, fixiert, keine Befolgung von Aufforderungen, bewegt linke seite spontan, re keine Spontanbewegung, bewegung Fuß re auf Schmerzreiz",-3,-3
+RASS,"wach, unruhig, AUgen auf auf Ansprache, delirant, GCS 13 (A3V5M5), Hemiparese linker Arm, PGRRL (weite Pupillen bds)",3,0
+RASS,"GCS 10 (e4,v1,m6), RASS 0, Hemiparese li KG 1/5, re 4/5 KG Arm, Bein , PEERL 2/2mm, prompt.",0,0
+RASS,"Schläfrig, befolgt nach Erwecken vereinzelt einfache Aufforderungen mit rechts, keine vegetativer Stress",-1,-1
+RASS,"GCS 13, RASS -2, kontaktierbar, spricht, bewegt 4/4, nicht orientiert, treiladäquat",-4,0
+RASS,"öffnet auf Ansprache die Augen, Pupillen isokor,mw, LR +/+, bewegt spontan beide Arme",-2,-2
+RASS,"wach, adäquat, befolgt Aufforderungen, keine FND, kein Fieber",-2,0
+RASS,"agitiert, nicht adäquat kontaktierbar, pupillen isokor, mw, LR +/+, bewegt 4/4",1,0
+RASS,"konstant lichtstarre Pupillen re größer als li, keine Rkt auf ansprache oder Schmerzreiz, RASS -5, ICP konstant bis max 20",-4,-4
+RASS,"Wach, orientiert, normale Kommunikation möglich",0,0
+RASS,"wach und schlafend im Wechsel, bewegt 4/4, träumt schlimm, voll orientiert,",1,1
+RASS,"Licox stark abhängig vom RR, meist > 20mmHg in der Nacht Strecksynergismen bei Manipulation",-5,-3
+RASS,"RASS -5, 3fach sediert, ICP 11, Pupillen erweitert, lichtreagibel, isokor",-5,-4
+RASS,hebt etwas die Lider auf Ansprache,-4,-2
+RASS,"wach, orientiert, kooperativ, Neurostatus idem: beugt in beiden Armen, zunehmende Zehenbewegung links, rechts akt. keine Bewegung",0,0
+RASS," Isofluran(Anaconda)+ Sufenta/ Cloni,Haldol, RASS -5",-5,-3
+RASS,"keine Sedierung, wirkt teils gestresst,dann hyperton/tc, fixiert den Blick, befolgt nicht sicher Aufforderungen, PERRL, bewegt Arme und Beine nicht spontan",-3,-2
+RASS,"2 fach sediert, RASS -5, Pupillen bds. klein und rund, keine Spontanbeweg, keine Reakt auf Manipul.",-5,-5
+RASS,"wach, adäqaut, GCS 15, orientiert, CAM-ICU negativ, NRS 0",0,0
+RASS,"RASS 0 , bewegt 4/4, ",-3,0
+RASS,"schläft, erweckbar. ",0,0
+RASS,"Suf/Cloni, RASS-5, Pup iso, mw, LR +/+, ICP stabil, bei Manipulation Hustenreiz",-4,-5
+RASS,"somnolent, beruhigter, RASS -1",-3,-2
+RASS,"GCS 9, Pupillen mittelweit, isokor, LR seitengleich prompt",-3,-2
+RASS,"wach. kooperativ, RASS0, befolgt Aufforderungen adäquat, kommuniziert schriftlich",0,0
+RASS,"zeitweise Auge spontan offen, Blickrichtung wechselt, fixiert dabei aber auch auf direkte Ansprache noch nicht, Phenytoin-Aufsättigung gestartet, seitdem erfreulicherweise anhaltend normotensiv - Sufenta/Dexdor problemlos red.",-3,-1
+RASS,"sediert, intubiert. bewegt linke Arm spontan KrGr 3/5 Öffnet Augen auf Schmerzreiz. Fixiert, PERRL 3mm",-5,-3
+RASS,"wach, ruhig, Alluziantionen, CAM-ICU positiv, aber sehr kooperativ, Fixierung nötig",0,1
+RASS,"Schläft, prompt erweckbar, kooperativ aber räumlich und zeitlich nicht orientiert, PERRL",3,1
+RASS,keine Schmerzäußerung,1,0
+RASS,"Pat wach, adäquat, schmerzzufrieden unter PDK, schläft im Verlauf, kein Hinweis auf FND",0,0
+RASS,"Sedierungsfrei, neurologisch idem, öffnet die Augen, befolgt keine Aufforderung, Blick nicht fixierend, linke Pupille mittelweit, rund und lichtreagibel",0,-2
+RASS,"Pat auf ANsprache erweckbar, Pat in Rückenlage übernommen",0,-2
+RASS,"Pat. initial agitiert, RASS-2/3 nach MSI, Tavor, PERRL bewegt 4/4 spontan, sonst keine adäquate Reaktion",-2,-1
+RASS,"intubiert, beatmet",-4,-4
+RASS,"GCS 13, RASS -1, PERRL, kontaktierbar",0,0
+RASS,"wach, Sprachbarriere, befolgt Aufforderung, keine Parese, AVH/BVH unauffällig",0,0
+RASS,"AÖ auf Ansprache, RASS -3, PERRL, Mo mono 0,1",0,-2
+RASS,"wach, orientiert, aufgeregt, kein fnD",0,0
+RASS,s. VL-Briegf,0,0
+RASS,"Wach, langsamer als in den letzten Tagen, wiederholt oft das gleiche, nicht orientiert, jammert viel, gibt Schmerzen an => Delir => Beginn Haloperidol",1,1
+RASS,"Dexdor und MST, wach, befolgt Aufforderungen, bewegt 4/4, keine KG Minderung. Schmerzzufrieden.",0,0
+RASS,"RASS 0, 4xorientiert, bewegt 4/4 mit Kg 4/5 nJ, Sens OE/UE intakt ESS PDK opB",0,0
+RASS,"wach kontaktierbar, GCS 15, bewegt 4/4, PGRLR",-1,0
+RASS,"schläft, auf Ansprache erweckbar, befolgt einfache Aufforderungen, PERRL gibt Schmerzen in UE an",1,0
+RASS,"wach, fraglich adäquat da sie kein Deutsch spricht/ wenig versteht, lächelt, wirkt schmerzfrei; RASS 0, PERRL bds mw, bewegt 3/4 (rechter Arm paretisch (seit Kindheit), Händedruck bds 3/4)",0,0
+RASS,"RASS -4, Pupillen isokor eng, bewegt obere Extremität spontan",-4,-3
+RASS,"Pat schläft, öffnet Augen bei Manipulation, kommuniziert mit Kopfschütteln, ",-2,-2
+RASS,"wach, fixiert fraglich, befolgt keine Aufforderung ICB kompensiert ",-3,-2
+RASS,"wach adäquat, CAM-ICU neg, PGRLR, KG 3/5 UE",1,0
+RASS,"GCS 14, RASS 0, teilorieniert (nicht Zeit), keine manifesten Paresen (Bewegung schmerzrengeschränkt), in Ruhe schmerzzufrieden",0,1
+RASS,"somnolent, delirant, GCS: 14, RASS:-2, CAM-ICU: pos. Kein Meningismus, PERRL, bewegt 4/4 spontan.",-1,0
+RASS,"schläft ruhig, kein Stress",2,-2
+RASS,"RASS 0, bewegt 4/4, sedierungsfrei, PERRL",-1,-1
+RASS,"wach, vermutl Versuch, Aufforderungen zu befolgen ",-1,-1
+RASS,"wach, orientiert, kein FND, aktuell schmerzzufrieden",0,0
+RASS,"GCS 14, teilorientiert (OP, grob S ja; Z nein) RASS -1, ",-1,-1
+RASS,"GCS 14, adäquat, teilorientiert (Ort und Person pos, Zeit neg), PERRL, bewegt 4/4, gibt keine depressive Stimmung an, wirkt jedoch ermattet",-1,0
+RASS,"2fach sediert, Prop/Sufenta weiter, Pup bds eng, LR langsam, schmatzende Mundbewegungen,sonst keine Reaktion",-4,-4
+RASS,"wach, delirant aber sehr ruhig, spricht viel, disorientiert, CAM-ICU positiv, kein FND, bewegt 4/4, PGRRL",-2,0
+RASS,"schläft, zuvor erweckbar, wirkt recht orientiert, weiter Hemiparese rechts",0,0
+RASS,"RASS 0, bewegt 4/4 auf Auff, wirkt adäquat",-1,0
+RASS,"Schläfrig, aber promt erweckbar, adäqaute Kommunikation möglich.",0,0
+RASS,"wach, orientiert zu Ort + Zeit + Person, befolgt Aufforderungen, bewegt 4/4, keine Sz, Pupillen eng + lichtreagibel + isokor",0,0
+RASS,"sedierungsfrei, Pup l>r, AÖ spontan, RASS -1, keine Blickfixierung, kein Befolgen von Aufforderungen, grimassieren/schmatzende Mundbewegungen",-2,-2
+RASS,"wach, nicht kontaktierbar, fixiert nicht, gezielte Antwort auf Schmerzreize, re Parese, PGRRL",-3,-2
+RASS,"wach, desorientiert am Sprechaufsatz, Sprachproduktion wechselnde Sprache, Phasenweise agitiert und unruhig, kooperativ und verbal zu beruhigen. Pupillen bds. Mw isocor, lr+ ,",1,2
+RASS,"intermitt. Diazepam, Quetiapin, Haldol, RASS +1, CAM ICU pos., bewegt 4/4, Kommunikation unmöglich",4,1
+RASS,"wach, RAAS 0, ",-1,0
+RASS,"Sufenta mono,Cloni neu, AÖ auf Ansprache, fixiert den Blick,kein Befolgen von Aufforderungen, keine Spontanbewegung der Extremitäten, keine Blickfixierung, PERRL",-4,-3
+RASS,"wach,ruhig, kooperativ, aber CAM-ICU positiv",1,1
+RASS,"wach, nicht orientiert, freundlich zugewand, befolgt zum Teil Aufforderungen, scheint Beschwerdefrei, Pupillen unauffällig",2,0
+RASS,"ruhig, orientiert, kein neuer FND",0,0
+RASS,"wach, kontaktierbar, PERRL mw, Hemiplegie gebessert, KG li 3/5, re 5/5",-2,-2
+RASS,"weiterhin Sufenta mono, ICP stabil <20, Licox zeigt kontinuierlich Werte>50 an, bei Tubusmanipulation RR Anstieg ohne gerichtete Reaktion",-4,-4
+RASS,"fixiert auf Ansprache, befolgt intermitt. Aufforderungen",-1,0
+RASS,"wach, orientiert, PERRL, keine neurol. Auffälligkeiten",0,0
+RASS,"GCS 15, RASS 0, orientiert, adäquat, schmerzzufrieden",0,0
+RASS,"Pat. ohne Sedierung wach, fixiert, bewegt Extremitäten spontan kräftig, Pupillen o.B., jedoch nicht adäquat kontaktierbar, befolgt keine Aufforderungen",-5,-2
+RASS,"wach, kontaktierbar, orientiert // Schmerzen v.a. im Bereich der HWS und TD li thorakal",0,0
+RASS,"analgosediert, GCS 4, BPS 3, PERRL",-4,-4
+RASS,"wach, orientiert, kein FND, PERRL",0,0
+RASS,idem - weiterhin wach. ,0,-1
+RASS,"wach, kontaktierbar, befolgt Aufforderungen, linker Arm deutlich KG-gemindert: KG 2-3, PERRL, fragl. adäquat, laut Pflege adäquat, kein Anhalt auf Delir",0,0
+RASS,"schläft, davor wach, bewegt 4/4, freundlich zugewandt",0,0
+RASS,"somnolent, befolgt Aufforderungen, etwas fahrig, greift zu Schläuchen --> Clonidin 30 µg/h; perrl; CIP/CIM",0,0
+RASS,"GCS 15, CAM ICU pos, RASS 0, orientert zu P, nicht zu ZOS, PERRL 2/2mm",-1,-1
+RASS,"RASS 0, CAM ICU neg., Pupillen isokor, mw LR +, bewegt 4/4",0,0
+RASS,"RASS -4, Zwinkern, bewegt Extr. min spontan, PERRL",-4,-3
+RASS,Pat. schläft,0,0
+RASS,"Wach, befolgt Aufforderungen, kann Hände nicht drücken, PERRL.",-1,-1
+RASS,"wach, nicht klar orentiet ",-1,-2
+RASS,"Schläfrig, befolgt nach Erwecken vereinzelt einfache Aufforderungen mit rechts, keine vegetativer Stress",-1,-1
+RASS,"RASS -4 unter Clonidin und Sufenta, PERRL, keine Bewegungen der Extremitäten",1,-3
+RASS,"wach, orientiert, bewegt 4/4auf Aufforderung, PERRL; ",0,0
+RASS,"Wach, kommuniziert adäquat mit sehr diskretem Kopfnicken und -schütteln, gibt weiterhin innere Unruhe an. Händedruck rechts abgesschwächt, Arm hier in Schiene, links 4/5, Beine werden bds. proximal bewegt",0,0
+RASS,hat gut geschlafen,-1,-1
+RASS,"TK, Sedierung mit Sufenta, PERRL, Spontanbewegungen, Augenöffnung auf laute Ansprache",-4,-3
+RASS,"wach, ansprechbar, RASS0 unter Dexdor 0,4,  fixiert mit dem Blick, dreht den Kopf auf Ansprache, befolgt einfache Aufforderungen, Hemiplegie rechts",1,1
+RASS,"wach, orientiert, kein FND, PERRL, bewegt 4/4, sz zufrieden unter PDK",0,0
+RASS,"Pat mono-sediert, leicht erweckbar, nicht sicher kontaktierbar, RASS 0 bis -1",-3,-1
+RASS,"schläfrig aber erweckbar, beantwortet einfache Fragen ja/nein, eher einwortsätze, PERRL, bewegt 4/4 auf Aufforderung",0,0
+RASS,"GCS 9, RASS -2. PERRL 2/2mm, träge. Hemiparese links, rechts Arm+ Bein voller Bewegungsumfang, keine PBZ",2,0
+RASS,"wach, kontaktierbar, befolgt  Anweisungen, PERRL",-2,0
+RASS,"RASS -4, 2fach-Sedierung mit Propofol + Sufenta, Pupillen eng + anisokor li > re",-5,-5
+RASS,"Sedierungsfrei, wach, freundlich und zugewandt, befolgt Aufforderung, Hemiplegie rechts, bewegt linken Arm und Fuß auf Aufforderung und spontan. Pyschomotorisch verlangsamt. PERRL.",1,0
+RASS,"trotz Sedierungsstopp keine relavante AWR, Korneaerosion rechts, Pup. ik rechts keine relevante LR",-5,-4
+RASS,"schläft, auf Ansprache erweckbar, adäquat, compliante, RASS 0",0,0
+RASS,"keine Reak auf Ansprache, vegetativ bei Stress, Pup iso, mw, LR+/+",-3,-3
+RASS,"wach, adäquat, voll orientiert, eher deprimiert - fühlt sich im Körper gefangen und hat intermittierend auch starke luftnot/Ängste, Schwerhöhrigkeit zunehmend",-1,-1
+RASS,"schläft, intermitt etwas wacher aber gut führbar, Haldol ex, armbetonte HP links weiter, Dysarthrie",1,1
+RASS,"wach, adäquat kontaktierbar, re Hand Kraft",-1,-1
+RASS,"wach, adäquat, orientiert",0,0
+RASS,"wach unter 0,2 Suft, 30µg Cloni, GCS 10 (a4, s1, m5), RASS  0, Pupillen PERRL pomt 2/2mm, Pat. geift nach Untrsucher. ",1,0
+RASS,Pat schläft,3,0
+RASS,"RASS 0, GCS 15, compliant und orientiert, bewegt 4/4 spontan und auf Aufforderung, bds. keine LR bei Blindheit bds. und Linsentrübung links ",1,0
+RASS,Morphin mono,-2,-2
+RASS,"Nach Sedierungreduktion wach, fixiert, bewegt 4/4, kooperativ, PERRL",-3,-2
+RASS,"wach, adäquat, kein Hinweis auf FND",0,0
+RASS,"wach und adäquat, bewegt alles",0,0
+RASS,"tief sediert,PERRL",-5,-5
+RASS,"RASS 0 ,GCS 15 befolgt Aufforderungen mit Augen und dezent Hand links KG 3/5, Ellenbogenstreckeer 1/5, Fuß links KG 3/5, Kniestrecker links KG 2/5, PERRL, Hemiplegie re, weiter Dysartrie + Facialisparese re, weiter Fieber 38°C ",0,0
+RASS,"RASS 0, Pupillen isokor, mittelweit, lichtreagibel, Dyspnoe, Husten, adäquat,",0,-1
+RASS,"GCS 15, RASS 0, PERRL, steht auf über Bettgitter. KrGr 5 4/4, Im Einvernehmen mit Patient Bauchgurt angelegt, ab kurz vor 3 unruhig versucht wieder über Bettgitter zu steigen, Sedierungs versuch mit Sedalam ohne Effekt.",1,0
+RASS,"wach, adäquat und orientiert, PERRL, sz-zufr., bewegt 4/4",0,0
+RASS,"komatös, aktuell nicht erweckbar; wenn wach sehr agitiert und schreiend; GCS3, Rass-4; PERRL, Miosis; bewegt aktuell 0/4, sonst aber 4/4; Sedierung mit Clonidin, Tavor, Haloperidol",2,-1
+RASS,"wach, freundlich, ruhig, weiter dysarthrisch, Motorik i.R.d. Parkinson-Syndroms unauffällig, keine Hinweise für Psychose; insgesamt weiter besser werdend",1,0
+RASS,"Pat auf Ansprache erweckbar, zu Zeit und Ort nicht orientiert, Hemiparese re, PEERL",0,0
+RASS,"unruhig bis RASS +3, teilorientiert, bettflüchtig, bewegt 4/4, PERRL mw.",3,0
+RASS,"wach, adäquat, orientiert",0,0
+RASS,BL  ,-5,-4
+RASS,"RASS -3, Pup. bds. mw, keine LR, keine Adäquanz",-4,-4
+RASS,"wach, adäquat, voll orientiert und berichtet auch von dem Sprung, bejaht Drogen, kann aber nicht aüßern, was sie genommen hat, PERRL",-2,-2
+RASS,"Wach, orientiert, missmutig, vorbekannte HP links, ansonsten keine neuen neurologischen Defizite.",0,0
+RASS,"RASS 0, GCS 14, deutlich somnolent, erweckbar und adäquat, PERRL, kein FND --> Haldol pausiert, Melperon nach Rückfrage",-1,-1
+RASS,"RASS-4, AÖ auf Ansprache leicht, PERRL, rechts Bulbusdeviation nach rechts oben außen",-4,-3
+RASS,"Suf 0.2 RASS -5 Pup mw/ik/lr, keine Reaktion auf Szreiz",-4,-5
+RASS,"RASS 0, KG OEX 3/5, UEX 2/5, Pupillen bds. mw lichtreagibel, Sensibilität soweit beurteilbar intakt, befolgt Aufforderungen, erscheint adäquat, CAM-ICU pos.",1,0
+RASS,"wach, RASS 0, Pupillen mw + lichtreagibel + isokor, bewegt 4/4, kooperativ, sz-zufr., Kommunikation bei Sprachbarriere erschwert",0,0
+RASS,"RASS -5; Pupillen isocor, LR +",-3,-5
+RASS,"wach, teil-orientiert, unruhig; Pupillen isocor, lichtreagibel",2,-1
+RASS,"gut erweckbar,befolgt keine Aufforderungen, auf italienisch reagiert mit unklaren Wörten, bewegt 4/4",1,0
+RASS,"sedierungsfrei, AÖ spontan, keine Reaktion auf Ansprache, gezielte Schmerzabwehr mit rechts, Tubustoleranz weiter hoch, PERRL, keine Extubation mgl",-3,-3
+RASS,"Wacher, öffnet Augen auf Ansprache und Manipulation, drückt Hand, bewegt Füße nicht auf Aufforderung",-3,-2
+RASS,"prompt erweckbar bei CO2-Retention, aber deutl. muskulär schwacher als gestern",-1,-1
+RASS,"schläfrig, leicht zu erwecken, orientiert, bewegt alle Extremitäten",0,0
+RASS,"Pat auf Ansprache erweckbar, kooperativ, Extremitäten werden nicht bewegt",-2,-2
+RASS,"GCS 15, RASS 0, PEERL 3/3mm, rund, prompt.",-1,-1
+RASS,"wach, adäquat, kein FND, bewegt 4/4, PERRL",0,0
+RASS,"wach, GCS 15. RAAS 0, voll orientiert, keine manifestes FND. ",0,0
+RASS,"sediert RASS-5, Pupillen isochor, mw, lichtreagibel",-5,-5
+RASS,Kaum geschlafen,0,0
+RASS,"keine Aufwachreaktion unter Sufenta mono, Pupillen isokor, eng, prompte LR seitengleich, ICP im einstelligen Bereich, weiterhin feste Drainage mit 10ml/h über Touhy, heute Drainage beendet, Tuohy geklemmt.",-4,-4
+RASS,"GCS 15, RASS 0, PEERL 3/3mm, prompt schmerzufrieden",-1,0
+RASS,"wach, wirkt orientiert, PERRL, hochgradioge armbetonte Hemiparese links vorbestehend, bewegt re normal, befolgt AUffordderungen, Hypoglossusparese neu, wenig Hustenreflex, motor. Aphasie",0,0
+RASS,"wünscht Schlafmed, ansonsten adäquat, kein Hinweis auf FND, PERRL ",1,0
+RASS,"RASS -1, schläft kaum",1,-1
+RASS,"RASS -1, fixiert, befolgt keine Aufforderungen, bewegt spontan beide Arme",-2,-1
+RASS,"Pat. öffnet die Augen, nickt mit dem Kopf auf Ansprache, PERRL, später unruhig, wirkt gestresst",0,-1
+RASS,öffnet Augen auf Ansprache,2,-3
+RASS,"GCS 14, RASS 0, linkes Auge besser selbstständig zu öffnen, Visus opB, rechts nur Hell/Dunkelö Diskriminierung",-1,-1
+RASS,schläft,0,0
+RASS,"wach, ruhig,heute deutlich adäquater und orientiert, kein FND, bewegt 4/4, Haldolschema weiter",-2,0
+RASS,"nicht kontaktierbar, paraplegie unverändert, bewegt spontan die obere Extremitäten",-2,-1
+RASS,"wach, keine Sedierung, öffnet Augen, fixiert den Blick, drückt beide Hände auf Aufforderung, keine Übelkeit am Nachmittag/Abend",0,-1
+RASS,"RASS 0, GCS 14, PERRL, fragl. orientiert, befolgt Aufforderungen, bewegt 4/4 spontan und auf Schmerzreiz, weiter mit deutlichen Schmerzen --> Morphinboli mit Schmerzreduktion ",0,0
+RASS,schläft,0,0
+RASS,"wach, etwas unruhig, Visus re>li, AHV seitengleich, KG 5/5 bds, kein sensomotor. Def.",0,0
+RASS,"wach, fixiert, nicht befolgt keine Aufforderung, keine Bewegung auf Schmerzreiz",-3,-3
+RASS,"schläft, prompt erweckbar, dann besser orientiert, adäquat",0,0
+RASS,"sediert, RASS-4, PERRL, normotherm",-5,-4
+RASS,"Wach, kommuniziert adäquat, ist psychomotorisch sehr unruhig unter der mehrfach angepassten antipsychotischen Therapie, empfindet HighFlow angenehmer als CPAP, scheint so etwas ruhiger",1,1
+RASS,"RASS 0, PERRL, mw, bewegt alle Extr. stgl.",0,0
+RASS,"RASS -3, nicht kontaktierbar, bewegt Kopf, Pupillen isokor, mw",-4,-3
+RASS,"wach, voll orientiert, RASS 0, CAM-ICU neg., bewegt 4/4 seitengleich mit KG 5/5 nJ, keine Dysarthrie, kein Neglect, AHV unauffällig, Pupillen isokor, lichtreagibel, mw.",0,0
+RASS,"wach, freundlich zugewandt, orientiert, kein FND, CAM-ICU negativ, GCS 15",0,0
+RASS,"wach, adäquat, PERRL, CAM-ICU neg, RASS 0",0,0
+RASS,"RASS0 unter Diazepam, Clonidin, CAM-ICU+, RASS +1, PERRL 2mm prompt",4,1
+RASS,"4-fach sediert, RASS-4",-4,-4
+RASS,"RASS -5, Pupillen isokor, mw. Skleren- und Hautikterus ",-5,-3
+RASS,"RASS 0, GCS 14, weiter somnolent, promt erweckbar und adäquat, wenn auch nicht orientiert, PERRL, kein FND, Fieber bis 38,2°C am frühen Nachmittag --> Kühlung ",0,0
+RASS,"RASS -2, öffnet Augen auf Ansprache, befolgt Auforderungen, erste gezielte BEwegung Füsse und Hände,VErsuch der Blickwendung bei Ansprache",-4,-2
+RASS,"sedierung Propofol 0,5mg, Sufenta 0,1µg. GCS 3, RASS -5. Herblick nach rechts oben, PEERL 2/2mm, träge. auf Sz keine motorische Reaktion. keine PBZ bds",-5,-4
+RASS,"Cloni mono red, ab morgen ex, dann abends Risperdal, adynam, kontaktierbar, bewegt 4/4",0,-1
+RASS,"RASS -3, phasenweise Blickfolge",0,-2
+RASS,"Pupillen isokor, mw, lichtreagibel, 3fach sediert",-5,-4
+RASS,"wach, orientiert, kein FND",-2,0
+RASS,"schläft, erweckbar, kein fnD; orientiert, adäquat",0,0
+RASS,"RASS 0, GCS 14 (A4/M6/S4), teilorientiert bei Demenz, PERRL, bewegt 4/4 spontan + auf Aufforderung, kein Fieber, Schmerzen bei Dekubitus re Ferse ",1,0
+RASS,"RASS -5; Pupillen isocor, lichtreagibel, ",-5,-5
+RASS,"wach, orientiert, keine Schmerzen, keine FND, kein Fieber, Übelkeit",0,0
+RASS,"wach, guter AZ, kein FND",0,0
+RASS,"Schläft, prompt erweckbar, einfache Kommunikation gut möglich",0,0
+RASS,"erwecht nachts einige mal aus dem Schlaf, dann voll adäquat",0,0
+RASS,"GCS 8 (a2s1m5), Pat. schläft, kein Hinweis auf erneuten epilept. Anfall",-4,0
+RASS,"PERRL, befolgt alle Auff adäquat, bewegt alle Extremitäten auf Auff. RASS 0, CAM iCU negativ",1,0
+RASS,"2-fach sediert, RASS-4, PERRL",-4,-4
+RASS,"Rückenlage, 2fach sediert, RASS-4, PERRL",-5,-4
+RASS,"Sedierungsfrei, wach. Kein FND. Bewegt spontan alle Extremitäten.",-1,-1
+RASS,"RASS-3, Dexdor/Remi, PERRL eng, keine Bewegungen auf Sx.reiz, ",-4,-4
+RASS,"RASS-5, PERRL",-5,-5
+RASS,"wach, adäquat",0,0
+RASS,"GCS 15, RASS -1, voll orientiert, starke Übelkeit",-1,-1
+RASS,"spontan/Ansprahce: keine Reaktion, Szreiz: Grimassieren, Augenöffnen, Streckung re OE, lokaler Szreiz Füße: Wegziehen, Bulbusdeviation re nach temporokranial Tuohy in situ, Redon subgaleal fördert blutig-serös",-4,-4
+RASS,"wach, teil-orientiert, keine retrograde Amnesie",-1,-1
+RASS,"somnolent, GCS 9 (e2,v2,m5), RASS -3, PERRL 3/3mm, prompt. bewegt 4/4 gezielte Abwehr. ",2,-1
+RASS,"RASS 0, GCS 15, PERRL, voll orientiert und compliant, kein FND, pDMS voll intakt, kein Fieber",-1,0
+RASS,"Zweifachsedierung, darunter RASS -4, ruhig, PERRL.",-4,-4
+RASS,"Wach, voll orientiert, adäquat",0,0
+RASS,"Pat wach, adäquat, kein FND; PERRL bds, bewegt 4/4, Pulse peripher palpabel",0,0
+RASS,"wach, adäquat, kein FND, bewegt 4/4, PERRL, normale Sprachproduktion, Mimik unauffällig, bekommt mehrfach Dipi",-1,0
+RASS,"wach, fixiert, keine Rkt auf auf Ansprache, nicht schwitzend, PERRL",2,-2
+RASS,"Agitiert, scheint unter visuellen Halluzinationen zu leiden, ansonsten neurologisch Status idem",2,0
+RASS,öffnet Augen auf Ansprache,-2,-3
+RASS,"wach, adäquat, bewegt 4/4 mit voller Kraft, PERRL bds, FNV und AHV opB",-1,-1
+RASS,analgosediert mit Propofol/Remi; RASS -4; perrl,-4,-5
+RASS,"Sufenta im TD weiter redutziert, AÖ spontan, fixiert nicht, keine Kommunikation möglich, PERRL",-3,-2
+RASS,"RASS 0, befolgt keine Aufforderungen, fixiert nicht, PERRL, Exophthalmus, keine Spontanbewegung, vegetative Reaktion auf Schmerzreiz",-4,-4
+RASS,"RASS-1, spontan erweckbar, fixiert kurz, versucht zu sprechen, befolgt aber keine Aufforderungen, PERRL",0,0
+RASS,"Propofol bei kompensierten ICP unter Drainage 5ml/h, Pupillen ohne LR, li>re Suf 0.8",-4,-5
+RASS,"RASS-3, erweckbar,fixiert aber nicht mit den Augen, PERRL",-3,-3
+RASS,"RASS 0, wach, befolgt Aufforderungen, bewegt 4/4, wenn Pupillendifferenz ganz dezent re>li, beide lichtreagibel, Sufenta 0,65",-1,-1
+RASS,"wach, orientiert, keine FND, kein Fieber",1,0
+RASS,"Augen öffnen bei Manipulation, kein fixieren, befolgt keine Aufforderungen, PERRL mw., keine Spontanbewegung",-3,-4
+RASS,"schläft, ruhig, prompt erweckbar, RASS -1, GCS 15. kein FND, Pupillen isokor und LR.",0,0
+RASS,"wach, orientiert, bewegt 4/4, KG 5/5 bds, Pupillen mw, isokor, LR",0,-1
+RASS,"GCS 9 (a2s3m5), Pat. sehr schläfrig unter Haldol + Diazepam, PERRL 2/2mm",2,0
+RASS,"anfangs wach, orientiert, ängstlich, Hemiparese links, PERRL, dann intubiert und beatmet",-1,-1
+RASS,"wach, orientiert, adäquat, kooperativ, keine Schmerzen, freundlich und zufrieden",0,0
+RASS,"erweckbar, adäquat. bewegt 4/4",0,0
+RASS,"Sufenta mono auf 0,3 reduziert, dabei heftiges Gegenatmen und beißen auf dem Tubus, für BroKo und CT daher Propofol hinzugenommen",-4,-4
+RASS,"RASS -3, öffnet spontan Augen, fixiert nicht, befolgt keine Auff., kaum Spontanbew., PERRL, mw",-3,-3
+RASS,"RASS 0, Beinheberschwäche links KG 3/5 nJ, atemabh. Sz",-1,0
+RASS,"wach, delirant,CAM-ICU pos, Logorrhoe, aber freundlich zugewand, bewegt 4/4, , Haldol, Pipamperon,Sedalam b.Bed.",1,0
+RASS,"wach, orientiert, kein FND",0,0
+RASS,"schaut im Zimmer umher, reagiert adäquat auf Ansprache, Pupillen mittelweit, lichtreagibel",-3,-3
+RASS,"RASS-5, 3fach sediert für üLSL (Prop/Suf/Keta); PERRL üLSL seit 19:30",2,-4
+RASS,"GCS 12, RASS -1,  Pupille re mw und prompt LR, Pupille li mw keine LR, befolgt Aufforderungen, Hemiparese rechts, Armbetont, Dysphagie, kein Würgereflex",0,-1
+RASS,"siehe FD, keine grundsätzlichen Veränderungen. Zur Nacht hin zunehmende motorische Unruhe ohne vegetative Entgleisung, Gabe von Tavor i.v. (p.o.-Schema ab morgen) auch unter dem V.a. Alkohol(+?)-Entzug",1,0
+RASS,"RASS 0, CAM ICU positiv, teilorientiert bei vorbekannter Demenz, blind, bewegt 4/4 spontan",0,0
+RASS,"GCS 8, RASS -3 postoperativ, dann wieder aggitiert, tachypnoeisch, PERRL eng, Sedierung mit Dexdor/Sufenta/Sedalam",-3,-3
+RASS,"wach, kontaktierbar, drückt li Hand auf Aufforderung, bewegt re Hand spontan, Füße nicht",-1,-1
+RASS,"wach, orientiert, adäquat",0,0
+RASS,"RASS 0 ,CAM-ICU neg., Pat. schläft aber erweckbar, PERRL, CIP/CIM weiter KG 4/5 ubiquitär, kein Fieber ",0,0
+RASS,"RASS -1, PERRL, bew. alle Extr. stgl. n. Auff., teilweise unruhig, versucht sich zu artikulieren",-1,0
+RASS,"wach, adäquat , kein FND, schmerzzufrieden",0,0
+RASS,"wach, freundlich zugewandt, PERRL, kein FND",0,0
+RASS,"wach, adäquat, PERRL, beklagt Schmerzen im Bereich der Rektalschiene",0,0
+RASS,"sediert, RASS-2, Pupillen isokor, mw lichtreagbiel",-4,-3
+RASS,"wach, orientiert, bewegt seitengleich 4/4 KG 5/5",-2,0
+RASS,"wach, nicht-orientiert; befolgt Aufforderungen teilweise;",1,0
+RASS,"wach, orientiert, bewegt nicht immobilisierte Extremitäten, Pupillen isokor",0,-1
+RASS,"GCS 3, Pat. blinzelt und hustet, sonst keine Reaktion, ICP 12, CPP 67",-3,-5
+RASS,"Pat. wach, voll orientiert, etwas unruhig und ängstlich, redet viel, kein FND",1,1
+RASS,"postoperativ RASS-5, PERRL",-5,-3
+RASS,"Pat produktiv delirant, halluziniert, bewegt 4/4, befolgt einfache Aufforderungen Beginn Hadolschema",2,2
+RASS,"RASS -2, PERRL, Augenöffnen, befolgt keine Aufforderungen, keine Adäquanz",-4,-3
+RASS,"schläft, erweckbar, keine Progredienz des bekannten FND. Cloni ujdn Sufentanil",1,-1
+RASS,"Sediert mit Ketamin/Sufenta/Sedalam/Cloni, RASS-5, PERRL",-4,-4
+RASS,phasenweite situativ nicht voll orientiert,-1,-1
+RASS,"schläft, kein FND",1,0
+RASS,"Sedierung sehr schwierig, Patient wechselt von RASS -4 in Hustenphasen; Opiatrotation Sufentanyl --> Morphin unter der Vorstellung, den Hustenreiz zu coupieren",-3,-3
+RASS,"schwer erweckbar, auf starken Schmerzreiz spontane Augenöffnung, befolgt keinerlei Aufforderungen, fixiert den Blick",0,-1
+RASS,"wach, nicht adäquat, wirkt teilweis gestresst, nicht kontaktierbar, bewegt seitengleich 4/4, jedoch KG gemindert 2/5",-3,-2
+RASS,"GCS 11, RAAS -2, ",0,-1
+RASS,Zweifachsedierung mit Propofol und Sufenta. Zur Abschirmung Clonidin. Bewegt rechten Arm und reagiert auf Ansprache. PERRL. Hemiparese rechts. Drainage 70 ml über EVD.,-3,-2
+RASS,"wach, adäquat, entpsannt, keine SHcmerzen, PERRL, kein FND",0,0
+RASS,"RASS 0, PERRL, adäquat, koop., bewegt alle Extr. stgl.",0,0
+RASS,"RASS -1/0, bewegt alle Extr., teilweise inadäquat, geringgradig kooperativer",1,1
+RASS,"schläft, leicht zu erwecken, PERRL, bewegt 4/4",0,0
+RASS,"schläft aber jederzeit erweckbar, RASS 0, GCS 15, CAM-ICU neg., bewegt 4/4, kein Anhalt für FND",0,0
+RASS,"RASS 0, Pat. zu Person orientiert, nicht zu Zeit oder Ort, bewegt 4/4, kein Hinweis für FND",0,0
+RASS,"sediert, RASS-1, PERRL mw, schwere CIP CIM, bewegt das rechte Bein auf Aufforderung",0,-1
+RASS,"Sedierungsfrei, wach, kein FND.",0,0
+RASS,"akt. 2fach sediert: Pupillen isokor, mw, LR +/+ -> Ext. : Pupillen isokor, mw, LR +/+, schluckt, v.a. armbetonte Hemiparese li",-2,-2
+RASS,"wach, adäquat, orientiert, grob kein FND, keine Schmerzen // Tavor bei innerer Unruhe",0,0
+RASS,"wach, gestresst, fraglich adäquat, schwere CIP/CIM, kein FIeber, PERRL",2,0
+RASS,"MSI/Cloni, öffnet Augen spontan, PERRL, inkompl. Lidschluss, nicht adäquat kontaktierbar",-2,-2
+RASS,aktuell schlafend,-1,-1
+RASS,"Sufenta 0.3µ, AÖ, reagiert auf Geräusche mit Augenbewegungen, sonst kein Kontakt möglich, keine Extermitätenbewegungen, PERRL",-3,-3
+RASS,"RASS 0, CAM ICU neg., NRS bis 3-4, orientiert, OE ohne FND, Bein re: Beugen Knie 3/5, Fuß Beugen 2/5 / Fuß Strecken 3/5, Bein li: Beugen Knie 1/5, Fuß Strecken 2/5, Beugen 2/5",0,0
+RASS,"schläft, in wachen Phasen desorientiert, nur teils kooperativ,  Schmerzen mit Bedarfsmed. toleriert. ",1,1
+RASS,"wach, orientiert, adäquat, bewegt 4/4 (Fixx. ext. in situ)",0,0
+RASS,"RASS 0 ,GCS 15, CAM-ICU neg., Pat. wirkt weiter niedergeschlagen/erschöpft, PERRL, CIP/CIM weiter KG 4/5 ubiquitär, kein Fieber ",-1,0
+RASS,"wach, kontaktierbar, CAM ICU neg., PERRL, bewegt 4/4 seitengleich",3,0
+RASS,"RASS -3, kaum AÖ , nicht kontaktierbar, bewegt 4/4, Sufenta/Cloni/Diazepam/Haldol",-1,-1
+RASS,"RASS -1 bis -2, PERRL, bewegt alle Extremitäten",-1,-1
+RASS,"Wach, orientiert und kommunikatiiv",-2,-1
+RASS,"wach, orientiert, bewegt 4/4 seitengleich, KG Minderung im Sinne CIP/CIM",0,0
+RASS,"RASS -1, bewegt 4/4 mit KG 4/5 nJ, Pup mw/Ik/lr, adäquat, beantwortet j/n Fragen, sz zufr",-1,0
+RASS,"wach, adäquat, keine FND, PERRL, kein Fieber",2,0
+RASS,"schläft, sonst GCS15 und adäquat, kooperativ, kein Hinweis auf Delir, keine AS",0,0
+RASS,RASS -5; re Pupille teilentrundet; Ø lr; Propofol/Sufenta ICP <5; CPP 65-70 mmHg,-4,-4
+RASS,"wach, orientiert, bewegt seitengleich 4/4, keine Paresen",0,0
+RASS,"ICP 12   Prop 3, Mid 0.3 Suf 1.5 , RASS -5, meistens Burst suppression, Pup mw/ik/keine LR",-5,-5
+RASS,"Patn. schläfrig, öffnet die Augen auf Ansprache, bewegt auf Aufforderung den linken Fuß, sonst keine Kommunikation möglich",-3,-2
+RASS,"RASS 0, PERRL, mw, nickt nach Anfrage, drückt dezent beide Hände, keine Bew. des Fußes links",0,0
+RASS,"wach, Dysathie",2,0
+RASS,"wach, kooperativ. PERRL, SChmerzfrei.",2,0
+RASS,"GCS14/15, kein Anhalt für Delir, befolgt Auffoderungen, Bewegung aller 4 Extremitäten spontan",0,-1
+RASS,"wach, fixiert, befolgt keine Aufforderung, keine Bewegung auf Schmerzreiz",-3,-2
+RASS,"schläft, respektive prompt erweckbar; läuft, kein fnD",0,0
+RASS,"Sedierungsfrei, darunter wach, kooperativ, befolgt Aufforderunge, nicht voll orientiert.",-1,-1
+RASS,"wach, kooperativ, orientiert, RASS 0, GCS 15, kein neues FND, ICPs über Touhy abgeleitet und stets im Zielbereich",0,0
+RASS,"wach, orientiert, adäquat, kein FND, GCS 15, Pupille re 2mm, links 2,5mm, re Z.n. Phako, Lichtreflex bds. prompt.  ",0,-1
+RASS,"in Bauchlage, tief sediert",-5,-5
+RASS,"RASS -2, GCS 9 (A4/M4/S1) mit Augenöffnung spontan + auf Ansprache fragl. Fix unter Sufenta 0,15ug/kg/h + Dextor 0,7ug/kg/h , PERRL bds., Bewegung auf Arm li und Bein li, Bewegung Beine bds. auf Schmerzreiz li>re, 37,5°C",0,-2
+RASS,"RASS 0, Augen spontan geöffnet, fixiert, kommuniziert nonverbal, weiter aphasisch, befolgt Aufforderungen, bewegt 4/4 spontan und re auf Aufforderung, PERRL, links Fuß mit Bewegung auf sens. Reiz, Hand ohne Bewegung ",1,0
+RASS,"Sufenta 0,1 RASS -3, GCS 4 Pup. mw/ik, LR prompt, AÖ auf SzReiz, keine mot Bewegung",-3,-3
+RASS,"öffnet Augen auf Ansprache,fixiert, befolgt keine Aufforderungen",0,-2
+RASS,"schläft, prompt erweckbar, kein FND, bwgt 4/4 spontan, abgeschagen, red. AZ. Dexmedetomidin läuft mit 0,3µg",-1,-1
+RASS,"2fach sediert, PERRL mw, RASS-5. GCS 3",-5,-5
+RASS,"wach, kontaktierbar, befolgt kurze Aufforderungen, PERRL mw",0,0
+RASS,"wach, delirant, hyperventiliert sich",-1,-1
+RASS,"bewegt 4/4, beantwortet Fragen zur Zeit und Person voll adäquat, PERRL, freundlich zugewandt, in der Nacht wohl unscharf orientiert und unruhig/aggressiv",-1,0
+RASS,"erweckbar, dann ungerichtet, fixiert nicht",-2,-2
+RASS,"RASS -4, Grimmassieren auf Ansprache, fixiert nicht, befolgt keine Aufforderungen, Pupillen bds eng, dezent lichtreagibel",-3,-4
+RASS,"Schläft, am Abend voll orientiert, kein FND",0,0
+RASS,"sediert, PERRL eng",2,-4
+RASS,"wach, CAM-ICU pos., teilw. adäquat, verlangsamt, RASS 0 bis -2, PERRL mw.",0,0
+RASS,"schläft, prompt erweckbar, teilorientiert, adäquat, bewegt 4/4 spontan",0,0
+RASS,"Sed 4ml/h, Suf 0.1, RASS -3, Pup mw/ik/lr, bewegt OE spontan, keine Bew UE auf Szreiz",-5,-3
+RASS,"Neurologisch idem, erweckbar, ausgeprägte CIP/CIM",0,0
+RASS,"schlafend, zuvor GCS 15",0,0
+RASS,"2fach sediert,Prop/Sufenta, PERRL, RASS -4",-4,-5
+RASS,"adynam, bewegt verzögert 4/4 mit minimaler Kraft (V.a. CIP/CIM)",-2,-2
+RASS,"RASS-5, ICP 17, spO2 37 in Sonde, CPP~70 - Sed red und Katechosamin erhöht ",-5,-4
+RASS,"öffnet Augen auf Ansprache, Pup weit/ik/lr, brachiofaz. HP li idem, zu Person + Zeit orientiert, verneint Sz",2,-1
+RASS,"RASS-2 bis -3, AÖ spontan, keine Agitation, PERRL",-5,-2
+RASS,"RASS -1, PERRL, bewegt alle Extr., CIP/CIM, keine Luftnot, keine Schmerzen",-1,-1
+RASS,"analgosediert, GCS 3, Pup. nach Umlagerung mw/ik, LR prompt",-5,-5
+RASS,"wach, adäquat, orientiert, kooperativ, schmerzfrei",0,0
+RASS,"erweckbar, gut führbar unter Sedierung mit Clonidin/Sufenta/Lormetazepam, bewegt 4/4 seitengleich",-2,-1
+RASS,"zunehmend delirant im Tagesverlauf, PERRL, keine FND, bewegt 4/4, beklagt Schmerzen, BPS-NI 9-11",2,1
+RASS,prompt erweckbar,0,0
+RASS,"wach, adäquat, befolgt Aufforderungen, PERRL, Fazialisparese li, HP rechts, unbestimmtes Zucken re Fuss, subfebrile Temp",0,0
+RASS,"soporös, befolgt Anweisungen, öffnet aber nicht die Augen; Rass -3, GCS8; Hemiparese re",-3,-3
+RASS,"wach, adäquat nonverbal, orientiert. CAM-ICU neg. leichte Taubheit re Mittelgesicht.  bewegt 4/4 spontan. ",0,0
+RASS,"wach, oreintiert, kein ",0,0
+RASS,"aktuell sediert, voher spontanes Augenöffnen, E bds, bewegt li UE KG 2/5 nJ auf lokalen Szreiz, re UE keine Bew, ",-3,-1
+RASS,"wach, voll orientiert, adäquat; kein fnD",0,0
+RASS,"sedierungsfrei, GCS 12 (e4,v1,m6), PERRL 3/3mm + prompt. zeigt korrekte Zahl Finger auf Aufforderung, jedoch keine verbale Äußerung. ",-1,-1
+RASS,"Wach, kooperativ, Hemiparese links regredient (proximal). Isst gut zu Mittag. PERRL.",-1,-1
+RASS,"wach, RASS -1, pupillen eng bds. bewegt 4/4, KG oEx 5/5, uE 4/5  teilorientiert",0,0
+RASS,"Wach unter CPAP mit Maske, spricht einzelne Worte, nickt, schüttelt Kopf, befolgt alle Aufforderungen, GCS 12 (a3s3m6), PERRL 2/2mm",-3,-1
+RASS,"wach, fixiert nicht, etwas unruhig am Tubus, ",-3,0
+RASS,"4-fach sediert, Pupille li> re, bds. keine LR, keine motorische Reaktion ",-5,-5
+RASS,"AS zur üSL je 6h, PERRL nach Umlagerung, ",-3,-3
+RASS,"unter 4mg Prop und 1.5µ Sufenta RASS -1, AÖ auf Berührung, erscheint adäquat",-4,-2
+RASS,"schläfrig, erweckbar, kooperativ, RASS 0 / -1, teiladäquat, PERRL",-1,0
+RASS,"2fach sediert: RASS -4, Pupillen isokor,mw, LR bds. träge ",-5,-5
+RASS,"öffnet Augen nicht, lediglich Nästeln, PERRL, GCS 5",-2,-2
+RASS,"2-fach sediert, RASS -5, PERRL",-5,-5
+RASS,"Pat nach Extubation wach, adäquat, gibt Sz im Abdomen und Übelkeit an",-1,-1
+RASS,"sedierungsfrei, keine Reaktion, keine mot. Reaktion, ICP stets komp",-3,-4
+RASS,"sediert, RASS-3, heute ruhiger, PERRL, nicht kontaktierbar, Blutungsneigung",-4,-3
+RASS,"RAAS 0, PEERL, Blickricht-Nystagmus. Fazilisparese re, Dysphagie, Hemiparese re, li Hand 3/5, li Ellenbogen 3/5, li Fuß 3/5, li Knie 3/5, kein Singultus, schmerzfrei + analgesiefrei",0,0
+RASS,"wach, adäquat, kooperativ, orientiert, grob kein FND, PERRL",0,0
+RASS,"wach, Dysarthrie/armbetonte Hemiparese rechts, PERRL",0,0
+RASS,"kommt intubiert, PERRL; nach Sedierungsweaning, problemlose Extubation, danach Paraplegie, KG-Minderung Faustschluss, GCS 14",-4,-2
+RASS,"Augen spontan, Fixiert und schaut in Richtung bei Ansprache, keine gezielte Reak auf Aufford., Pup iso, mw, LR +/+, zunehmend wacher lt. Pflege, Husten bei Tubuswechsel aber kein Schluckreflex",-1,-2
+RASS,"RASS -5 unter 3fach-Sedierung, GCS 3, Pupillen eng, isocor, lr bds., ICP 20",-4,-5
+RASS,"Schläft, prompt erweckbar, orientiert, kein FND",-1,0
+RASS,"RASS 0, CAM ICU negativ, befolgt Aufforderungen, verminderter Kraftgrad beim Händedrücken, PERRL, nachts wieder vermehrt gestresst",0,0
+RASS,"wach, nicht kontaktierbar, schwer dement, bewegt 4/4, singt vor sich hin, PERRL",1,0
+RASS,"Pat. auf laute Ansprache erweckbar, fokussiert, keine adäquate Reaktion, PERRL, bewegt 4/4",3,-1
+RASS,"schläfrig, aber erweckbar, AÖ auf Ansprachen, bewegt Extremitäten auf Sz-Reiz, JP mit leichtem Sog",-1,-2
+RASS,"Wach, zunehmende Spontanbewegungen linke Extremitäten, noch keine Kommunikation möglich, PERRL",-3,-2
+RASS,"RASS 0, beklagt wieder etwas abdominelle Schmerzen und Angst, wirkt dabei aber ruhig und stressfrei, PERRL",-1,-1
+RASS,"Prop/Sufenta, RASS-5",-4,-4
+RASS,"wach, adäquat, freundlich zugewandt",0,0
+RASS,"schläft, ist erweckbar, orientiert, kein FND, PERRL",-1,0
+RASS,in der Nacht teilweise desorientiert und verwirrt. kein fnD,0,0
+RASS,"RASS 1-2, PERRL, heute agghitierter, weiter deutlich aphasisch aber versucht zu vokalisieren, wieter hochgr. armbetonte Parese rechts, bewegt Bein auf Schmerzreiz,  befolgt Anwesungen links ",1,1
+RASS,"Postoperativ stärkste Schmerzen  NAS 10,  linke Hand palmar >dorsal. Rekap Finger 3sek. bewegt Finger. 2 Amp Dipi ohne Effekt. 12,5mg Ketanest. Schmerzfrei NAS 0-1.",2,-1
+RASS,"freundlich zugewandt, GCS 15, kein FND",0,0
